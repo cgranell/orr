@@ -1,0 +1,481 @@
+---
+title: "During analysis"
+subtitle: "Data/coding practices and tools"
+author: "Carlos Granell"
+institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
+date: last-modified
+date-format: "MMM D, YYYY"
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    logo: ../images/ESCOLA-DOCTORAT-es-negre.png
+    footer: "[cgranell.github.io/rrp](https://cgranell.github.io/rrp)"
+    theme: default
+    transition: fade
+    preview-links: true
+    author-meta: "Carlos Granell"
+    date-meta: "15/03/2024"
+    chalkboard: 
+      theme: whiteboard
+      buttons: false
+      boardmarker-width: 3
+from: markdown+emoji
+execute:
+  echo: true
+---
+
+# \[#11\] Open data != reproducible data {#rec11 .center .r-fit-text}
+
+## Open != reproducible
+
+> “Openness and Open Science (data sharing, code sharing, open access, etc.) are enablers of reproducibility, but do not necessarily guarantee it” [@chiarelli2021]
+
+::: incremental
+-   Open != Good (of high academic quality)
+
+-   Reproducible != Good (of high academic quality)
+
+-   Open != reproducible
+:::
+
+::: notes
+Source: [Becoming a better scientist with open and reproducible research (2)](https://lgatto.github.io/open-and-rr-2/)
+:::
+
+# \[#12\] Data (required) for reproducibility {#rec12 .center .r-fit-text}
+
+## Data for reproducibility
+
+### If datasets are valuable contributions by themselves [@noy2023]
+
+::: {.fragment .fade-in}
+Go to [Recomendation #13](#rec13)
+:::
+
+## Data for reproducibility {data-menu-title="Data for reproducibility (II)"}
+
+### If datasets are meaningless outside of the accompanying article [@noy2023]
+
+::: incremental
+-   Reproducibility means **access** to the required datasets to recreate the reported results
+
+-   Access does not necessarily imply that datasets are open or citable or discoverable by themselves
+
+-   **Recommended**: Deposit reproducibility package (data, code, docs) on Zenodo or similar rather than supplementary material tied to the paper
+
+:::
+
+## Data for reproducibility: Example
+
+[Using mobile devices as scientific measurement instruments: Reliable android task scheduling](https://doi.org/10.1016/j.pmcj.2022.101550) {{< fa file-pdf >}}
+
+```{mermaid}
+%%| echo: false
+%%| messages: false
+
+flowchart LR; 
+  I1(Analysis Notebook) -. data+code included in ref 26 .-> Z2[REF 26: Reproducibility Package archived on Zenodo <br> 'Universitat Jaume I Research Data' Community]
+  click Z2 "https://zenodo.org/records/5032028"
+  I1 == input ==> A((PAPER in PDF))
+  click A "https://doi.org/10.1016/j.pmcj.2022.101550"
+  A == output: software ==> O1(NTD Software)
+  A == output ==> O2(Fig 4)
+  A == output ==> O3(Fig 5)
+  A == output ==> O4(Other figs)
+  O1 -. in ref 21 .-> Z1[NTD Software archived on Zenodo]
+  O2 -. in ref 26 .-> Z2
+  click O2 "https://ars.els-cdn.com/content/image/1-s2.0-S1574119222000074-gr4_lrg.jpg"
+  O3 -. in ref 26 .-> Z2
+  click O3 "https://ars.els-cdn.com/content/image/1-s2.0-S1574119222000074-gr5_lrg.jpg"
+  Z1 -. based on .-> G1[Github Repo]
+  click Z1 "https://zenodo.org/records/6477770"
+  click G1 "https://github.com/GeoTecINIT/nativescript-task-dispatcher"
+  Z2 -. based on .-> G2[Github Repo]
+  click G2 "https://github.com/GeoTecINIT/nativescript-journalpaper"
+  
+  classDef key fill:#aaaaaa,stroke-width:4px
+  class A,O2,O3 key
+```
+
+::: notes
+Source: [Mermaid cheatsheet](https://jojozhuang.github.io/tutorial/mermaid-cheat-sheet/)
+:::
+
+# \[#13\] Be (data) FAIR, my friend {#rec13 .center .r-fit-text}
+
+## (Data) FAIR principles
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](../images/slides/fair-principles.png){width="90%" fig-align="center"}
+:::
+
+::: {.column width="60%"}
+-   Emphasis on identifiers, metadata, standards, licenses, permanence [@wilkinson2016]
+
+-   Analysis on [metadata standards](https://github.com/leipzig/metadata-in-rcr) for reproducible research [@leipzig2021]
+
+-   Ten simple rules for credit data [@wood-charlson2022]
+:::
+::::
+
+::: aside
+[go-fair.org](https://www.go-fair.org/fair-principles/)
+:::
+
+## (Data) FAIR
+
+### If datasets *are* valuable contributions by themselves [@noy2023]
+
+::: incremental
+-   Datasets should be findable, accessible, interoperable, and reusable
+
+-   Datasets are **first-class citizen** in scientific discourse...
+
+-   ...so others can reuse, cite, evaluate, create value based on them to **advance knowledge**
+:::
+
+## (Data) FAIR {data-menu-title="(Data) FAIR (II)"}
+
+::: {.incremental}
+
+-   **Findable**: DOI/Handler (when deposited) + metadata (`README` file) + deposit (institutional/[general](https://zenodo.org/)/[thematic](https://www.re3data.org/) repositories)
+
+-   **Accessible**: standard protocol (HTTP,...) + how-to-access info (`README` file) + deposit
+
+-   **Interoperable**: Open formats + standard schema or vocabularies + deposit
+
+-   **Reusable**: Open license + deposit
+
+:::
+
+::: {.notes}
+Write on blackboard: **Minimum to be FAIR compliant is**: `README` file + Open formats + License + Zenodo
+:::
+
+
+## (Data) FAIR in GIScience
+
+[Coalition for Publishing Data in the Earth and Space Sciences (COPDESS)](https://copdess.org/enabling-fair-data-project/commitment-statement-in-the-earth-space-and-environmental-sciences/):
+
+> All journals in geosciences require authors to make all data that supports the conclusions in their papers available in publicly accessible repositories that follow the FAIR principles
+
+::: {.fragment .fade-in}
+All data? :anguished:
+:::
+
+## (Data) FAIR according to UJI
+
+[Declaració institucional a favor de la promoció de l’accés obert a la Universitat Jaume I](https://ujiapps.uji.es/ade/rest/storage/5ULDFW5YMLK0ZEFHGZLHRGJRX3V80U73)
+
+> Los datos de investigación deberán ser FAIR (findable, accessible, interoperable and reusable) e ir acompañados de una licencia estándar que indique explícitamente las condiciones de uso y favorezca la reproductibilidad científica
+
+::: {.fragment .fade-in}
+All data? :fearful:
+:::
+
+## (Data) FAIR according to UJI
+
+[Código de Buenas Prácticas en Investigación y Doctorado](https://www.uji.es/investigacio/base/etica/cbpid/)
+
+> El personal investigador de la Universitat Jaume I [...] garantizará la adecuada gestión y conservación de los datos de investigación (datasets) para cumplir siempre que sea posible con los principios FAIR, esto es, que dichos datos puedan ser localizables, accesibles, interoperables y reutilizables
+
+::: {.fragment .fade-in}
+¡¡siempre que sea posible!! :zany_face:
+:::
+
+## A (personal) view on [#13](#rec13) and [#14](#rec14)
+
+::: {.fragment .fade-in-then-semi-out}
+Is a dataset a **valuable** contribution of your paper? Are you going to exploit it in various experiments?
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- Invest time to make it FAIRable
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+Does a dataset play a supporting role in your paper? Does it make sense only for one particular paper/experiment?
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- Take it easy, my friend: Document (`README` file), pick a licence, and archive on Zenodo
+:::
+
+
+
+# \[#14\] Use open source tools whenever possible {#rec14 .center .r-fit-text}
+
+## {data-menu-title="Open source tools"}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+::: {.fragment .fade-in-then-semi-out}
+### Instead of
+
+-   ArcGIS
+-   Google Maps/Places
+-   Stata, SPSS 
+-   Excel
+
+:::
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment .fade-in}
+### Use
+
+-   QGIS
+-   OpenStreetMap
+-   Python, R, ...
+-   or combination of commercial-open tools
+:::
+:::
+::::
+
+
+::: {.fragment .fade-in}
+::: callout-note
+## **Example**
+
+[ArcGIS Python Notebooks](https://developers.arcgis.com/python/guide/using-the-jupyter-notebook-environment/): Mixed approach to make the **implicit** (click-based analytical workflow) **explicit** (code-based analytical workflow)
+
+:::
+:::
+
+
+# \[#15\] Learn/use scripting languages {#rec15 .center .r-fit-text}
+
+
+## Scripting languages 
+
+
+::: {.incremental}
+
+-   Play with data, measure & explore, distrust of your intuition
+
+
+-   R/Python scripts describe every step of an analysis
+
+
+    -   Descriptive-based analysis (vs. click-based) of what your analysis does
+
+
+-   Others can understand WHAT and **HOW** has been done (Remember: [*'Show me', not 'trust me'*](https://cgranell.github.io/rrp/materials/01-concept-slides.html#/show-me-not-trust-me)) 
+
+:::
+
+
+::: {.fragment .fade-in}
+::: callout-tip
+## **Tips**
+
+Look at section *During analysis: best coding practices* in [@alston2021] 
+
+:::
+:::
+
+   
+
+
+# \[#16\] Learn/use computational notebooks {#rec16 .center .r-fit-text}
+
+
+## Computational notebooks
+
+::: {.incremental}
+-   A computational notebook is a (cloud-based/local) **editor** composed of cells, which is used for **literate programming**
+
+-   Each cell may contain:
+
+    - narrative/text/documentation, or
+    - executable code (python, R, ...), or 
+    - results as code output (charts, tables, plots, maps, ...)
+
+::: 
+
+
+## {data-menu-title="Computational notebooks (II)"}
+
+
+### Computational notebooks as first-class citizens
+
+::: {.incremental}
+
+  -   EarthCube annual meetings include a call for notebooks ([CFN 22](https://www.earthcube.org/post/call-for-notebooks-cfn-22) as peer-reviewed submissions - See [Notebooks 2022 proceedings](https://github.com/earthcube2022)
+
+  - American Geophysical Union (AGU)'s [Notebooks Now!](https://data.agu.org/notebooks-now/) [@caprarelli2023]
+  
+  - [Urban Data/Code](https://doi.org/10.1177/23998083211059670) submissions to [Environment and Planning B: Urban Analytics and City Science](https://journals.sagepub.com/home/EPB)
+
+  - Master/[PhD theses](https://paocorrales.github.io/Tesis_doctorado/index.html) as computational notebooks?
+
+:::
+
+## Computational notebooks: examples
+
+
+[JupyterLabs](https://jupyter.org/), [RMarkdown](https://rmarkdown.rstudio.com/), [Quarto](https://quarto.org/), [Google Colab](https://colab.research.google.com/), [Matlab Live Scripts](https://es.mathworks.com/help/matlab/live-scripts-and-functions.html), [Wolfram](https://www.wolfram.com/computational-notebooks/), see more in [Wikipedia](https://en.wikipedia.org/wiki/Notebook_interface)
+
+[@pimentel2019] studied 1.4 millions of notebooks (GitHub)
+
+  -   Only 24% ran without exceptions 
+  -   Only 4% produced same results
+  -   Conclusions: *best practices for the reproducibility of notebooks*
+
+
+
+# \[#17\] Preserve computational environment {#rec17 .center .r-fit-text}
+
+
+## {data-menu-title="Preserve computational environment"}
+
+### Manage packages/libraries dependencies
+
+
+::: {.fragment .fade-in}
+
+  -   document/manage specific versions of all packages and dependences used in a project
+
+:::
+
+::: {.fragment .fade-in}
+  -  `renv` for R or `venv` for Python. See [post on `renv` usage](https://www.r-bloggers.com/2023/03/r-renv-how-to-manage-dependencies-in-r-projects-easily/)
+
+:::: {.columns}
+::: {.column width="50%"}
+
+```{r}
+#| eval: false
+# authors' workflow
+renv::activate()  
+renv::snapshot()  # check state
+renv::snapshot()  # check state
+```
+:::
+::: {.column width="50%"}
+
+```{r}
+#| eval: false
+# others' workflow
+renv::restore()  
+```
+:::
+::::
+
+
+:::
+
+::: {.fragment .fade-in}
+  -   complement them with best coding practices (setting a seed, etc.)
+
+:::
+
+# \[#18\] Learn/use containerisation tools {#rec18 .center .r-fit-text}
+
+## Container tools
+
+### Beyond package management tools... 
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+  -   [Docker](https://www.docker.com/) and family tools [@nust2020-docker]
+
+  -   [Binder](https://mybinder.org/) deploys a cloud-based docker container based on a git repo
+
+  -   [`repo2docker`](https://github.com/jupyterhub/repo2docker) fetches a git repository and builds a container image based on the configuration files found in the repository
+
+:::
+
+::: {.column width="40%"}
+
+![](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1008316.g002){width="100%" fig-align="center"}
+
+:::
+::::
+
+
+::: notes
+Container: creating a snapshot of a computational environment
+:::
+
+
+# \[#19\] Be (software) FAIR, my friend {#rec19 .center .r-fit-text}
+
+## (Software) FAIR
+
+### Document your source code [@barker2022], [@hasselbring2020] 
+
+::: {.incremental}
+
+  -   **Findable**: Deposit source code in a repository that provides DOIs and metadata
+
+  -   **Accessible**: Able to download source code
+
+  -   **Interoperable**: Use open source programming languages and software
+
+  -   **Reusable**: Release software under an open usage license
+
+:::
+
+::: aside
+Cite software properly [@smith2016] - See [Recommendation #23](03-after-slides.qmd#rec23) 
+:::
+
+## (Software) FAIR according to UJI
+
+[Declaración institucional a favor de la promoción del acceso abierto en la
+Universitat Jaume I](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)
+
+::: {.fragment .fade-in}
+Nothing
+:::
+
+::: {.fragment .fade-in}
+
+[Código de Buenas Prácticas en Investigación y Doctorado](https://www.uji.es/investigacio/base/etica/cbpid/)
+
+> La Universitat Jaume I [...] adoptará medidas para facilitar al personal investigador el depósito de [...] herramientas de código abierto en acceso abierto en el repositorio institucional o específico
+
+:::
+
+## (Software) FAIR according to UJI
+
+> El investigador o investigadora deberá decidir si comparte el código (software) desarrollado en su trabajo. Para ello tendrá en cuenta si la comunidad científica puede beneficiarse de dicho trabajo, o en aras a una mayor reproducibilidad de su trabajo. En tales casos, podría ser conveniente publicarlo con una licencia adecuada que proteja la autoría y derechos. La publicación del código podría restringirse si el investigador o investigadora tiene perspectivas
+futuras de comercialización o si el código incluye secretos comerciales o registrados.
+
+
+# \[#20\] Make use of *Make* {#rec20 .center .r-fit-text}
+
+## {data-menu-title="*Make*"}
+
+
+### [GNU Make](https://www.gnu.org/software/make/) is +40 years old but still relevant today 
+
+::: {.incremental}
+  -   coordinates and automates command-line processes, such as a series of independent scripts
+
+  -   provides “one-entry” point to your analysis
+
+:::
+
+::: {.fragment .fade-in}
+::: callout-tip
+## **Tips/Readings**
+
+[Reproducibility with Make](https://the-turing-way.netlify.app/reproducible-research/make.html)
+
+[SnakeMake](https://snakemake.readthedocs.io/en/stable/): Python alternative to Make
+:::
+:::
+
+
+# References {.scrollable}
