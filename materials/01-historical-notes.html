@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Historical notes – Open Reproducible Research: Practices and Tools</title>
+<title>4&nbsp; Historical Notes – Open Reproducible Research: Practices and Tools</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -85,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html">Background</a></li><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical notes</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html">Background</a></li><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical Notes</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -164,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../materials/01-historical-notes.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical notes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical Notes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -287,17 +306,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides"><span class="header-section-number">4.1</span> Slides</a></li>
-  <li><a href="#additional-resources-readings-and-videos" id="toc-additional-resources-readings-and-videos" class="nav-link" data-scroll-target="#additional-resources-readings-and-videos"><span class="header-section-number">4.2</span> Additional resources, readings, and videos</a></li>
+  <li><a href="#additional-resources-and-readings" id="toc-additional-resources-and-readings" class="nav-link active" data-scroll-target="#additional-resources-and-readings"><span class="header-section-number">4.1</span> Additional resources and readings</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html">Background</a></li><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical notes</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html">Background</a></li><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical Notes</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical notes</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical Notes</span></h1>
 </div>
 
 
@@ -326,9 +344,10 @@ ul.task-list li input[type="checkbox"] {
 <em>(Popper’s Conjectures and Refutations)</em></p>
 </blockquote>
 <p><em>Philosopher of science <a href="https://en.wikipedia.org/wiki/Karl_Popper">Karl Popper</a></em></p>
-</div></div><p>Reproducibility is not a new concept that has emerged recently. We, of course, find traces of reproducibility in past periods of science.</p>
-<section id="slides" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="slides"><span class="header-section-number">4.1</span> Slides</h2>
+</div></div><p>This slide deck, titled “Historical Notes on Open and Reproducible Research”, provides a chronological and conceptual overview of how the movement for openness in science has evolved. It frames the current “<a href="https://en.wikipedia.org/wiki/Replication_crisis">reproducibility/replication crisis</a>” not as a new phenomenon, but as the latest chapter in a centuries-long effort to make knowledge transparent and verifiable.</p>
+<p>Simply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method and scientific journals. Before this, science was often secretive, shared only through private letters. The shift toward academic journals represented the first major “open” revolution, moving from private discovery to public claim.</p>
+<p>The presentation transitions into the modern era, highlighting a growing concern in the scientific community – the reproducibility crisis. It notes that a significant portion of published research across various fields cannot be independently replicated.</p>
+<p>In essence, the slide deck argues that while technology has changed, the fundamental goal remains the same: science must be a “communal” activity where the process is as visible and scrutinised as the results.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -340,18 +359,30 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <div class="slides">
-<p><a href="01-historical-notes-slides.html">Slides</a></p>
-</div>
-<div class="source">
-<p><a href="https://github.com/cgranell/orr/tree/main/materials/01-historical-notes-slides.qmd">Source</a></p>
+<p><a href="https://cgranell.github.io/rrp/materials/01-historical-notes-slides.html">Slides</a></p>
 </div>
 </div>
 </div>
-</section>
-<section id="additional-resources-readings-and-videos" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="additional-resources-readings-and-videos"><span class="header-section-number">4.2</span> Additional resources, readings, and videos</h2>
+<section id="additional-resources-and-readings" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="additional-resources-and-readings"><span class="header-section-number">4.1</span> Additional resources and readings</h2>
+<ul>
+<li><p>The <a href="https://www.nationalacademies.org/">National Academies of Sciences, Engineering, and Medicine</a> report Reproducibility and Replicability in Science <span class="citation" data-cites="NAP2019">(<a href="../references.html#ref-NAP2019" role="doc-biblioref">National Academies of Sciences and Medicine 2019</a>)</span> posited that “reproducibility is strongly associated with transparency; a study’s data and code have to be available in order for others to reproduce and confirm results”. It defines reproducibility and replicability and examines the factors that may lead to non-reproducibility and non-replicability in research.</p></li>
+<li><p>In the background chapter of the FORRT Replication Handbook <span class="citation" data-cites="roseler2025">(<a href="../references.html#ref-roseler2025" role="doc-biblioref">Röseler et al. 2025</a>)</span>, the authors establish repeatability not just as a tool for validation, but as the very ‘cornerstone’ of scientific integrity. They argue that the current rarity of replication studies—often less than 1% of published work—undermines the cumulative nature of science. By bridging various disciplines from neuroimaging to economics, the chapter advocates for a shift away from isolated discoveries toward a more robust, transparent, and ‘repetitive’ scientific culture, specifically within the realm of quantitative research.”</p></li>
+<li><p>FORRT <span class="citation" data-cites="forrt">(<a href="../references.html#ref-forrt" role="doc-biblioref">Community 2025</a>)</span> is a <em>Framework for Open and Reproducible Research Training</em> advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. FORRT provides a pedagogical infrastructure and didactic resources designed to recognize and support the teaching and mentoring of open and reproducible science.</p></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-forrt" class="csl-entry" role="listitem">
+Community, The FORRT. 2025. <em>Framework for Open and Reproducible Research Training</em>. <a href="https://forrt.org/">https://forrt.org/</a>.
+</div>
+<div id="ref-NAP2019" class="csl-entry" role="listitem">
+National Academies of Sciences, Engineering, and Medicine. 2019. <em>Reproducibility and Replicability in Science</em>. The National Academies Press. <a href="https://doi.org/10.17226/25303">https://doi.org/10.17226/25303</a>.
+</div>
+<div id="ref-roseler2025" class="csl-entry" role="listitem">
+Röseler, L., L. Wallrich, H. Hartmann, et al. 2025. <em>Handbook for Reproduction and Replication Studies</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.16990114">https://doi.org/10.5281/zenodo.16990114</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

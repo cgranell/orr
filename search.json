@@ -142,34 +142,23 @@
   {
     "objectID": "materials/01-historical-notes.html",
     "href": "materials/01-historical-notes.html",
-    "title": "4  Historical notes",
+    "title": "4  Historical Notes",
     "section": "",
-    "text": "4.1 Slides\nReproducibility is not a new concept that has emerged recently. We, of course, find traces of reproducibility in past periods of science.",
+    "text": "4.1 Additional resources and readings\nThis slide deck, titled “Historical Notes on Open and Reproducible Research”, provides a chronological and conceptual overview of how the movement for openness in science has evolved. It frames the current “reproducibility/replication crisis” not as a new phenomenon, but as the latest chapter in a centuries-long effort to make knowledge transparent and verifiable.\nSimply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method and scientific journals. Before this, science was often secretive, shared only through private letters. The shift toward academic journals represented the first major “open” revolution, moving from private discovery to public claim.\nThe presentation transitions into the modern era, highlighting a growing concern in the scientific community – the reproducibility crisis. It notes that a significant portion of published research across various fields cannot be independently replicated.\nIn essence, the slide deck argues that while technology has changed, the fundamental goal remains the same: science must be a “communal” activity where the process is as visible and scrutinised as the results.",
     "crumbs": [
       "Background",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Historical notes</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Historical Notes</span>"
     ]
   },
   {
-    "objectID": "materials/01-historical-notes.html#slides",
-    "href": "materials/01-historical-notes.html#slides",
-    "title": "4  Historical notes",
+    "objectID": "materials/01-historical-notes.html#additional-resources-and-readings",
+    "href": "materials/01-historical-notes.html#additional-resources-and-readings",
+    "title": "4  Historical Notes",
     "section": "",
-    "text": "TipSlide Deck Historical notes\n\n\n\n\nSlides\n\n\nSource",
+    "text": "The National Academies of Sciences, Engineering, and Medicine report Reproducibility and Replicability in Science (National Academies of Sciences and Medicine 2019) posited that “reproducibility is strongly associated with transparency; a study’s data and code have to be available in order for others to reproduce and confirm results”. It defines reproducibility and replicability and examines the factors that may lead to non-reproducibility and non-replicability in research.\nIn the background chapter of the FORRT Replication Handbook (Röseler et al. 2025), the authors establish repeatability not just as a tool for validation, but as the very ‘cornerstone’ of scientific integrity. They argue that the current rarity of replication studies—often less than 1% of published work—undermines the cumulative nature of science. By bridging various disciplines from neuroimaging to economics, the chapter advocates for a shift away from isolated discoveries toward a more robust, transparent, and ‘repetitive’ scientific culture, specifically within the realm of quantitative research.”\nFORRT (Community 2025) is a Framework for Open and Reproducible Research Training advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. FORRT provides a pedagogical infrastructure and didactic resources designed to recognize and support the teaching and mentoring of open and reproducible science.\n\n\n\n\n\nCommunity, The FORRT. 2025. Framework for Open and Reproducible Research Training. https://forrt.org/.\n\n\nNational Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. The National Academies Press. https://doi.org/10.17226/25303.\n\n\nRöseler, L., L. Wallrich, H. Hartmann, et al. 2025. Handbook for Reproduction and Replication Studies. Zenodo. https://doi.org/10.5281/zenodo.16990114.",
     "crumbs": [
       "Background",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Historical notes</span>"
-    ]
-  },
-  {
-    "objectID": "materials/01-historical-notes.html#additional-resources-readings-and-videos",
-    "href": "materials/01-historical-notes.html#additional-resources-readings-and-videos",
-    "title": "4  Historical notes",
-    "section": "4.2 Additional resources, readings, and videos",
-    "text": "4.2 Additional resources, readings, and videos",
-    "crumbs": [
-      "Background",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Historical notes</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Historical Notes</span>"
     ]
   },
   {
@@ -199,7 +188,7 @@
     "href": "materials/01-concept.html#application-exercises",
     "title": "5  Concept",
     "section": "5.2 Application exercises",
-    "text": "5.2 Application exercises\n\n\n\n\n\n\nTipReflection Reproducibility in your discipline\n\n\n\n\nReflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (hint: check The Turing Way’s definitions page (The Turing Way Community 2022).\n\n\n\n\nThe Turing Way Community. 2022. The Turing Way: A Handbook for Reproducible, Ethical and Collaborative Research. Zenodo. https://doi.org/10.5281/zenodo.3233853.",
+    "text": "5.2 Application exercises\n\n\n\n\n\n\nTipReflection Reproducibility in your discipline\n\n\n\n\nReflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (hint: check The Turing Way’s definitions page (The Turing Way Community 2025).\n\n\n\n\nThe Turing Way Community. 2025. The Turing Way: A Handbook for Reproducible, Ethical and Collaborative Research. Zenodo. https://doi.org/10.5281/zenodo.3233853.",
     "crumbs": [
       "Background",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Concept</span>"
@@ -452,7 +441,117 @@
     "href": "materials/05-glossary.html",
     "title": "13  Glossary",
     "section": "",
-    "text": "To clarify the meaning of some key terms and concepts used throughout this course, we briefly define them below.\n\n13.0.1 FAIR (principles)\nSet of requirements to make data findable, accessible, interoperable and reusable.\n\n\n13.0.2 Institutional repositories\nA data repository offered by institutional organisations such as universities. At the Universitat Jaume I, repositori.uji.es is the open access institutional repository that contains the scientific, teaching, academic and institutional production of the university community.\n\n\n13.0.3 Open Access\nOpen access content is accessible to all with limited or no copyright and licensing restrictions: no authentication requirements, no resources under an embargo, no paid access, etc. Content may concern scientific publications, data, code, documentation, and any other research artefact relevant to produce or interpret correctly the results of the research.\n\n\n13.0.4 Open Data\nOpen data refers to the research data or content gathered, used or produced during a research project and is made available for public access and re-use.\n\n\n13.0.5 Open Science\nFor (MR et al. 2017), “open science refers to the process of making the content and process of producing evidence and claims transparent and accessible to others.” It is, therefore, a general term that encompasses a way of doing science that promotes greater accessibility, transparency, efficiency and collaboration of research, more connected to society. It is based on open access to all components and phases of the research.\n\n\n13.0.6 Open Source Software\nSoftware artefact that are publicly accessed, with a license that allows its use, download, creation of derivatives and distribution.\n\n\n13.0.7 Data Repositories\nA data repository is an online service that provides a permanent archive for researchers to deposit data sets (software, documents, etc.) associated with their research.\n\n\n13.0.8 Research Data\nFactual (digital) records (numbers, textual records, images, sounds) used as primary sources for scientific research, and that are commonly accepted in the scientific community as necessary to validate research results.\n\n\n13.0.9 Reproducibility\nThe ability of another researcher or team to obtain the same results using the same methods and data (and most likely using the same or similar computational environment) from the original study.\n\n\n13.0.10 Replicability\nThe ability of another researcher or team to obtain results consistent with the original study using different methods and/or data (and most likely using a similar computational environment).\n\n\n\n\nMR, Munafò, Nosek BA, Bishop DVM, et al. 2017. “A Quick Guide to Software Licensing for the Scientist-Programmer.” Nature Human Behaviour 1 (0021). https://doi.org/10.1038/s41562-016-0021.",
+    "text": "13.1 FAIR (principles)\nTo clarify the meaning of some key terms and concepts used throughout this course, we briefly define them below.\nSet of requirements to make data findable, accessible, interoperable and reusable.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#institutional-repositories",
+    "href": "materials/05-glossary.html#institutional-repositories",
+    "title": "13  Glossary",
+    "section": "13.2 Institutional repositories",
+    "text": "13.2 Institutional repositories\nA data repository offered by institutional organisations such as universities. At the Universitat Jaume I, repositori.uji.es is the open access institutional repository that contains the scientific, teaching, academic and institutional production of the university community.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#open-access",
+    "href": "materials/05-glossary.html#open-access",
+    "title": "13  Glossary",
+    "section": "13.3 Open Access",
+    "text": "13.3 Open Access\nOpen access content is accessible to all with limited or no copyright and licensing restrictions: no authentication requirements, no resources under an embargo, no paid access, etc. Content may concern scientific publications, data, code, documentation, and any other research artefact relevant to produce or interpret correctly the results of the research.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#open-data",
+    "href": "materials/05-glossary.html#open-data",
+    "title": "13  Glossary",
+    "section": "13.4 Open Data",
+    "text": "13.4 Open Data\nOpen data refers to the research data or content gathered, used or produced during a research project and is made available for public access and re-use.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#open-peer-review",
+    "href": "materials/05-glossary.html#open-peer-review",
+    "title": "13  Glossary",
+    "section": "13.5 Open Peer Review",
+    "text": "13.5 Open Peer Review\nMoving away from anonymous, closed reviews and critiques to a more transparent evaluation process.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#open-science",
+    "href": "materials/05-glossary.html#open-science",
+    "title": "13  Glossary",
+    "section": "13.6 Open Science",
+    "text": "13.6 Open Science\nFor (MR et al. 2017), “open science refers to the process of making the content and process of producing evidence and claims transparent and accessible to others.” It is, therefore, a general term that encompasses a way of doing science that promotes greater accessibility, transparency, efficiency and collaboration of research, more connected to society. It is based on open access to all components and phases of the research.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#open-source-software",
+    "href": "materials/05-glossary.html#open-source-software",
+    "title": "13  Glossary",
+    "section": "13.7 Open Source Software",
+    "text": "13.7 Open Source Software\nSoftware artefact that are publicly accessed, with a license that allows its use, download, creation of derivatives and distribution.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#data-repositories",
+    "href": "materials/05-glossary.html#data-repositories",
+    "title": "13  Glossary",
+    "section": "13.8 Data Repositories",
+    "text": "13.8 Data Repositories\nA data repository is an online service that provides a permanent archive for researchers to deposit data sets (software, documents, etc.) associated with their research.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#research-data",
+    "href": "materials/05-glossary.html#research-data",
+    "title": "13  Glossary",
+    "section": "13.9 Research Data",
+    "text": "13.9 Research Data\nFactual (digital) records (numbers, textual records, images, sounds) used as primary sources for scientific research, and that are commonly accepted in the scientific community as necessary to validate research results.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#reproducibility",
+    "href": "materials/05-glossary.html#reproducibility",
+    "title": "13  Glossary",
+    "section": "13.10 Reproducibility",
+    "text": "13.10 Reproducibility\nThe ability of another researcher or team to obtain the same results using the same methods and data (and most likely using the same or similar computational environment) from the original study.",
+    "crumbs": [
+      "Additional materials",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "materials/05-glossary.html#replicability",
+    "href": "materials/05-glossary.html#replicability",
+    "title": "13  Glossary",
+    "section": "13.11 Replicability",
+    "text": "13.11 Replicability\nThe ability of another researcher or team to obtain results consistent with the original study using different methods and/or data (and most likely using a similar computational environment).\n\n\n\n\nMR, Munafò, Nosek BA, Bishop DVM, et al. 2017. “A Quick Guide to Software Licensing for the Scientist-Programmer.” Nature Human Behaviour 1 (0021). https://doi.org/10.1038/s41562-016-0021.",
     "crumbs": [
       "Additional materials",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Glossary</span>"
@@ -463,7 +562,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Baker, M. 2015. “First Results from Psychology’s Largest\nReproducibility Test.” In Nature News. https://doi.org/10.1038/nature.2015.17433.\n\n\nBaker, M. 2017. “Check Your Chemistry.” Nature 548\n(7668): 485–88. https://doi.org/10.1038/548485a.\n\n\nBarba, Lorena A. 2018. “Terminologies for Reproducible\nResearch.” In arXiv Preprint arXiv:1802.03311. https://arxiv.org/abs/1802.03311.\n\n\nButton, KS, JPA Ioannidis, C Mokrysz, et al. 2013. “Power Failure:\nWhy Small Sample Size Undermines the Reliability of\nNeuroscience.” Nature Reviews Neuroscience 14 (5):\n365–76. https://doi.org/10.1038/nrn3475.\n\n\nDonoho, David L, and Victoria Stodden. 2015. “Reproducible\nResearch in the Mathematical Sciences.” In Princeton\nCompanion to Applied Mathematics. Princeton University Press. https://www.stodden.net/papers/PCAM_20140620-VCS.pdf.\n\n\nFoundation, The National Science, and The Institute of Education\nSciences U. S. Department of Education. 2019. Companion Guidelines\non Replication & Reproducibility in Education Research. The\nNational Science Foundation. https://www.nsf.gov/pubs/2019/nsf19022/nsf19022.pdf.\n\n\nIoannidis, JP. 2005. “Why Most Published Research Findings Are\nFalse.” PLOS Medicine 2 (8): e124. https://doi.org/10.1371/journal.pmed.0020124.\n\n\nIoannidis, JP, TD Stanley, and H Doucouliagos. 2017. “The Power of\nBias in Economics Research.” The Economic Journal 127\n(605): F236–65. https://doi.org/10.1111/ecoj.12461.\n\n\nKarathanasis, Nestoras, Daniel Hwang, Vibol Heng, et al. 2022.\n“Reproducibility Efforts as a Teaching Tool: A Pilot\nStudy.” PLOS Computational Biology 18 (11): e1010615. https://doi.org/10.1371/journal.pcbi.1010615.\n\n\nLeBeau, Brandon, Scott Ellison, and Ariel M. Aloe. 2021.\n“Reproducible Analyses in Education Research.” Review\nof Research in Education 45 (1): 195–222. https://doi.org/10.3102/0091732X20985076.\n\n\nMarkowetz, F. 2015. “Five Selfish Reasons to Work\nReproducibly.” Genome Biology 16: 274. https://doi.org/10.1186/s13059-015-0850-7.\n\n\nMcDermott, Matthew B. A., Shirly Wang, Nikki Marinsek, Rajesh Ranganath,\nLuca Foschini, and Marzyeh Ghassemi. 2021. “Reproducibility in\nMachine Learning for Health Research: Still a Ways to Go.”\nScience Translational Medicine 13 (586): eabb1655. https://doi.org/10.1126/scitranslmed.abb1655.\n\n\nMesnard, Olivier, and Lorena A. Barba. 2017. “Reproducible and\nReplicable Computational Fluid Dynamics: It’s Harder Than You\nThink.” Computing in Science Engineering 19 (4): 44–55.\nhttps://doi.org/10.1109/MCSE.2017.3151254.\n\n\nMoassefi, Mana, Pouria Rouzrokh, Gian Marco Conte, et al. 2023.\n“Reproducibility of Deep Learning Algorithms Developed for Medical\nImaging Analysis: A Systematic Review.” Journal of Digital\nImaging 36 (5): 2306–12. https://doi.org/10.1007/s10278-023-00870-5.\n\n\nMontgomery, Erwin B. 2024. Reproducibility in Biomedical Research:\nEpistemological and Statistical Problems and the Future. 2nd ed.\nAcademic Press.\n\n\nMR, Munafò, Nosek BA, Bishop DVM, et al. 2017. “A Quick Guide to\nSoftware Licensing for the Scientist-Programmer.” Nature\nHuman Behaviour 1 (0021). https://doi.org/10.1038/s41562-016-0021.\n\n\nNiven, Daniel J., T. Jared McCormick, Sharon E. Straus, et al. 2018.\n“Reproducibility of Clinical Research in Critical Care: A Scoping\nReview.” BMC Medicine 16 (1). https://doi.org/10.1186/s12916-018-1018-6.\n\n\nNosek, Brian A., Tom E. Hardwicke, Hannah Moshontz, et al. 2022.\n“Replicability, Robustness, and Reproducibility in Psychological\nScience.” Annual Review of Psychology 73 (1): 719–48. https://doi.org/10.1146/annurev-psych-020821-114157.\n\n\nNüst, Daniel, Carlos Granell, and Frank O Ostermann. 2023. Impact of\nReproducible Paper Guidelines on Computational Papers: A Longitudinal\nStudy on the AGILE and GIScience Conference Series. OSF. https://doi.org/10.17605/OSF.IO/XZJCH.\n\n\nNüst, Daniel, C Granell, B Hofer, et al. 2018. “Reproducible\nResearch and GIScience: An Evaluation Using AGILE Conference\nPapers.” PeerJ 6: e5072. https://doi.org/10.7717/peerj.5072.\n\n\nOpen Science Collaboration. 2015. “Estimating the Reproducibility\nof Psychological Science.” Science 349 (6251): aac4716.\nhttps://doi.org/10.1126/science.aac4716.\n\n\nOstermann, Frank O., Daniel Nüst, Carlos Granell, Barbara Hofer, and\nMarkus Konkol. 2021. “Reproducible Research\nand GIScience: An Evaluation Using GIScience Conference\nPapers.” In 11th International Conference on\nGeographic Information Science (GIScience 2021) - Part II, edited\nby Krzysztof Janowicz and Judith A. Verstegen, vol. 208. Leibniz\nInternational Proceedings in Informatics (LIPIcs). Schloss Dagstuhl –\nLeibniz-Zentrum für Informatik. https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2.\n\n\nPeng, RD. 2011. “Reproducible Research in Computational\nScience.” Science 334 (6060): 1226–27. https://doi.org/10.1126/science.1213847.\n\n\nPownall, Madeleine, Flávio Azevedo, Laura M. König, et al. 2023.\n“Teaching Open and Reproducible Scholarship: A Critical Review of\nthe Evidence Base for Current Pedagogical Methods and Their\nOutcomes.” Royal Society Open Science 10 (5). https://doi.org/10.1098/rsos.221255.\n\n\nStark, PB. 2018. “Before Reproducibility Must Come\nPreproducibility.” Nature 557 (7706): 613–14. https://doi.org/10.1038/d41586-018-05256-0.\n\n\nStodden, Victoria, David H Bailey, Jonathan Borwein, R. J. LeVeque, W.\nRider, and W. Stein. 2013. “Setting the Default to Reproducible.\nReproducibility in Computational and Experimental Mathematics.”\nComputational Science Research. SIAM News 46 (5): 4–6. https://stodden.net/icerm_report.pdf.\n\n\nStodden, V, and SB Miguez. 2014. “Best Practices for Computational\nScience: Software Infrastructure and Environments for Reproducible and\nExtensible Research.” Journal of Open Research Software\n2 (1): e21. https://doi.org/10.5334/jors.ay.\n\n\nStupple, Aaron, David Singerman, and Leo Anthony Celi. 2019. “The\nReproducibility Crisis in the Age of Digital Medicine.” Npj\nDigital Medicine 2 (1). https://doi.org/10.1038/s41746-019-0079-z.\n\n\nThe Turing Way Community. 2019. The Turing Way: A Handbook for\nReproducible Data Science. Zenodo. https://doi.org/10.5281/zenodo.3233986.\n\n\nThe Turing Way Community. 2022. The Turing Way: A Handbook for\nReproducible, Ethical and Collaborative Research. Zenodo. https://doi.org/10.5281/zenodo.3233853.\n\n\nThe Turing Way Community, and Scriberia. 2024. Illustrations from The Turing Way: Shared under CC-BY 4.0\nfor reuse. Zenodo. https://doi.org/10.5281/zenodo.10556824.\n\n\nThomas Perry, Rebecca Morris, and Rosanna Lea. 2022. “A Decade of\nReplication Study in Education? A Mapping Review (2011–2020).”\nEducational Research and Evaluation 27 (1-2): 12–34. https://doi.org/10.1080/13803611.2021.2022315.\n\n\nVilhuber, Lars. 2020. “Reproducibility and\nReplicability in Economics.”\nHarvard Data Science Review 2 (4). https://doi.org/10.1162/99608f92.4f6b9e67.\n\n\nWilson, Greg. 2019. Teaching Tech Together: How to Make Lessons That\nWork and Build a Teaching Community Around It. Taylor &\nFrancis. https://teachtogether.tech/.",
+    "text": "Baker, M. 2015. “First Results from Psychology’s Largest\nReproducibility Test.” In Nature News. https://doi.org/10.1038/nature.2015.17433.\n\n\nBaker, M. 2017. “Check Your Chemistry.” Nature 548\n(7668): 485–88. https://doi.org/10.1038/548485a.\n\n\nBarba, Lorena A. 2018. “Terminologies for Reproducible\nResearch.” In arXiv Preprint arXiv:1802.03311. https://arxiv.org/abs/1802.03311.\n\n\nButton, KS, JPA Ioannidis, C Mokrysz, et al. 2013. “Power Failure:\nWhy Small Sample Size Undermines the Reliability of\nNeuroscience.” Nature Reviews Neuroscience 14 (5):\n365–76. https://doi.org/10.1038/nrn3475.\n\n\nCommunity, The FORRT. 2025. Framework for Open and Reproducible\nResearch Training. https://forrt.org/.\n\n\nDonoho, David L, and Victoria Stodden. 2015. “Reproducible\nResearch in the Mathematical Sciences.” In Princeton\nCompanion to Applied Mathematics. Princeton University Press. https://www.stodden.net/papers/PCAM_20140620-VCS.pdf.\n\n\nFoundation, The National Science, and The Institute of Education\nSciences U. S. Department of Education. 2019. Companion Guidelines\non Replication & Reproducibility in Education Research. The\nNational Science Foundation. https://www.nsf.gov/pubs/2019/nsf19022/nsf19022.pdf.\n\n\nIoannidis, JP. 2005. “Why Most Published Research Findings Are\nFalse.” PLOS Medicine 2 (8): e124. https://doi.org/10.1371/journal.pmed.0020124.\n\n\nIoannidis, JP, TD Stanley, and H Doucouliagos. 2017. “The Power of\nBias in Economics Research.” The Economic Journal 127\n(605): F236–65. https://doi.org/10.1111/ecoj.12461.\n\n\nKarathanasis, Nestoras, Daniel Hwang, Vibol Heng, et al. 2022.\n“Reproducibility Efforts as a Teaching Tool: A Pilot\nStudy.” PLOS Computational Biology 18 (11): e1010615. https://doi.org/10.1371/journal.pcbi.1010615.\n\n\nLeBeau, Brandon, Scott Ellison, and Ariel M. Aloe. 2021.\n“Reproducible Analyses in Education Research.” Review\nof Research in Education 45 (1): 195–222. https://doi.org/10.3102/0091732X20985076.\n\n\nMarkowetz, F. 2015. “Five Selfish Reasons to Work\nReproducibly.” Genome Biology 16: 274. https://doi.org/10.1186/s13059-015-0850-7.\n\n\nMcDermott, Matthew B. A., Shirly Wang, Nikki Marinsek, Rajesh Ranganath,\nLuca Foschini, and Marzyeh Ghassemi. 2021. “Reproducibility in\nMachine Learning for Health Research: Still a Ways to Go.”\nScience Translational Medicine 13 (586): eabb1655. https://doi.org/10.1126/scitranslmed.abb1655.\n\n\nMesnard, Olivier, and Lorena A. Barba. 2017. “Reproducible and\nReplicable Computational Fluid Dynamics: It’s Harder Than You\nThink.” Computing in Science Engineering 19 (4): 44–55.\nhttps://doi.org/10.1109/MCSE.2017.3151254.\n\n\nMoassefi, Mana, Pouria Rouzrokh, Gian Marco Conte, et al. 2023.\n“Reproducibility of Deep Learning Algorithms Developed for Medical\nImaging Analysis: A Systematic Review.” Journal of Digital\nImaging 36 (5): 2306–12. https://doi.org/10.1007/s10278-023-00870-5.\n\n\nMontgomery, Erwin B. 2024. Reproducibility in Biomedical Research:\nEpistemological and Statistical Problems and the Future. 2nd ed.\nAcademic Press.\n\n\nMR, Munafò, Nosek BA, Bishop DVM, et al. 2017. “A Quick Guide to\nSoftware Licensing for the Scientist-Programmer.” Nature\nHuman Behaviour 1 (0021). https://doi.org/10.1038/s41562-016-0021.\n\n\nNational Academies of Sciences, Engineering, and Medicine. 2019.\nReproducibility and Replicability in Science. The National\nAcademies Press. https://doi.org/10.17226/25303.\n\n\nNiven, Daniel J., T. Jared McCormick, Sharon E. Straus, et al. 2018.\n“Reproducibility of Clinical Research in Critical Care: A Scoping\nReview.” BMC Medicine 16 (1). https://doi.org/10.1186/s12916-018-1018-6.\n\n\nNosek, Brian A., Tom E. Hardwicke, Hannah Moshontz, et al. 2022.\n“Replicability, Robustness, and Reproducibility in Psychological\nScience.” Annual Review of Psychology 73 (1): 719–48. https://doi.org/10.1146/annurev-psych-020821-114157.\n\n\nNüst, Daniel, Carlos Granell, and Frank O Ostermann. 2023. Impact of\nReproducible Paper Guidelines on Computational Papers: A Longitudinal\nStudy on the AGILE and GIScience Conference Series. OSF. https://doi.org/10.17605/OSF.IO/XZJCH.\n\n\nNüst, Daniel, C Granell, B Hofer, et al. 2018. “Reproducible\nResearch and GIScience: An Evaluation Using AGILE Conference\nPapers.” PeerJ 6: e5072. https://doi.org/10.7717/peerj.5072.\n\n\nOpen Science Collaboration. 2015. “Estimating the Reproducibility\nof Psychological Science.” Science 349 (6251): aac4716.\nhttps://doi.org/10.1126/science.aac4716.\n\n\nOstermann, Frank O., Daniel Nüst, Carlos Granell, Barbara Hofer, and\nMarkus Konkol. 2021. “Reproducible Research\nand GIScience: An Evaluation Using GIScience Conference\nPapers.” In 11th International Conference on\nGeographic Information Science (GIScience 2021) - Part II, edited\nby Krzysztof Janowicz and Judith A. Verstegen, vol. 208. Leibniz\nInternational Proceedings in Informatics (LIPIcs). Schloss Dagstuhl –\nLeibniz-Zentrum für Informatik. https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2.\n\n\nPeng, RD. 2011. “Reproducible Research in Computational\nScience.” Science 334 (6060): 1226–27. https://doi.org/10.1126/science.1213847.\n\n\nPownall, Madeleine, Flávio Azevedo, Laura M. König, et al. 2023.\n“Teaching Open and Reproducible Scholarship: A Critical Review of\nthe Evidence Base for Current Pedagogical Methods and Their\nOutcomes.” Royal Society Open Science 10 (5). https://doi.org/10.1098/rsos.221255.\n\n\nRöseler, L., L. Wallrich, H. Hartmann, et al. 2025. Handbook for\nReproduction and Replication Studies. Zenodo. https://doi.org/10.5281/zenodo.16990114.\n\n\nStark, PB. 2018. “Before Reproducibility Must Come\nPreproducibility.” Nature 557 (7706): 613–14. https://doi.org/10.1038/d41586-018-05256-0.\n\n\nStodden, Victoria, David H Bailey, Jonathan Borwein, R. J. LeVeque, W.\nRider, and W. Stein. 2013. “Setting the Default to Reproducible.\nReproducibility in Computational and Experimental Mathematics.”\nComputational Science Research. SIAM News 46 (5): 4–6. https://stodden.net/icerm_report.pdf.\n\n\nStodden, V, and SB Miguez. 2014. “Best Practices for Computational\nScience: Software Infrastructure and Environments for Reproducible and\nExtensible Research.” Journal of Open Research Software\n2 (1): e21. https://doi.org/10.5334/jors.ay.\n\n\nStupple, Aaron, David Singerman, and Leo Anthony Celi. 2019. “The\nReproducibility Crisis in the Age of Digital Medicine.” Npj\nDigital Medicine 2 (1). https://doi.org/10.1038/s41746-019-0079-z.\n\n\nThe Turing Way Community. 2019. The Turing Way: A Handbook for\nReproducible Data Science. Zenodo. https://doi.org/10.5281/zenodo.3233986.\n\n\nThe Turing Way Community. 2025. The Turing Way: A Handbook for\nReproducible, Ethical and Collaborative Research. Zenodo. https://doi.org/10.5281/zenodo.3233853.\n\n\nThe Turing Way Community, and Scriberia. 2024. Illustrations from The Turing Way: Shared under CC-BY 4.0\nfor reuse. Zenodo. https://doi.org/10.5281/zenodo.10556824.\n\n\nThomas Perry, Rebecca Morris, and Rosanna Lea. 2022. “A Decade of\nReplication Study in Education? A Mapping Review (2011–2020).”\nEducational Research and Evaluation 27 (1-2): 12–34. https://doi.org/10.1080/13803611.2021.2022315.\n\n\nVilhuber, Lars. 2020. “Reproducibility and\nReplicability in Economics.”\nHarvard Data Science Review 2 (4). https://doi.org/10.1162/99608f92.4f6b9e67.\n\n\nWilson, Greg. 2019. Teaching Tech Together: How to Make Lessons That\nWork and Build a Teaching Community Around It. Taylor &\nFrancis. https://teachtogether.tech/.",
     "crumbs": [
       "References"
     ]
