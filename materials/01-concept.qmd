@@ -1,31 +1,40 @@
 ---
-title: "Concept"
-citation-location: margin
+title: "Foundations of Reproducibility/Replicability"
 ---
 
-Review the concepts of reproducibility, replication, and computational reproducibility
+This slide deck, titled "Foundations of Reproducibility/Replicability", serves as a deep dive into the definitions and technical requirements that underpin the modern Open Science movement. It moves beyond the historical context to define the specific "rules of the game" for conducting verifiable research.
+
+The core of the presentation is built around the "Turing Way" matrix, which categorises research based on two variables: Data and Analysis.
+
+- **Reproducible**: Using the same data and same analysis to reach the same result.
+
+- **Replicable**: Using new data but the same analysis to see if the findings hold.
+
+- **Robust**: Using the same data but different analytical methods to see if the conclusion remains stable.
+
+- **Generalisable**: Using new data and different methods to see if the concept applies broadly.
 
 
-## Slides
+![Source: [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducible-definit-e1fab23b60e9cc4744a33ed3b5089919.svg){fig-alt="Turing Way matrix" fig-align="center" width="80%"}
 
-::: {.callout-tip icon=false}
-## **Slide Deck** Reproducibility: concepts
+
+The deck outlines that achieving reproducibility is not an "all or nothing" state but a spectrum of practices that can be adopted incrementally. It emphasises that while the ideal is to be fully reproducible, even small steps towards transparency can significantly enhance the credibility and impact of research. 
+
+A key point in the slides is that "publication is not the scholarship; it is merely an advertisement of the scholarship". The real scholarship consists of the full software environment, the code, and the data. The presentation argues that research moves from "unreproducible" to "gold standard" as more of these artifacts are made available and linked together.
+
+
+::: {.callout-note icon=true}
+## *Slide Deck*: Foundations of Reproducibility/Replicability
 
 ::: slides
-[Slides](01-concept-slides.qmd)
-:::
-
-::: source
-[Source](https://github.com/cgranell/rrp/tree/main/materials/01-concept-slides.qmd)
+[Slides](https://cgranell.github.io/rrp/materials/01-concept-slides.html)
 :::
 
 :::
 
 
-## Application exercises
-
-::: {.callout-tip icon=false}
-## **Reflection** Reproducibility in your discipline
+::: {.callout-tip icon=true}
+## *Reflection*: Reproducibility in your discipline
 
 ::: reflect
 Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (hint: check The Turing Way’s definitions page [@turingway2025].
@@ -34,14 +43,16 @@ Reflect on the extent to which these terms (reproduction, replication, robustnes
 
 ## Additional resources, readings, and videos
 
-::: video
-If you’re still hesitant to embrace reproducibility, next talk by [Dr. Florian Markowetz](https://www.cruk.cam.ac.uk/research-groups/markowetz-group/), based on his paper [@markowetz2015], will convince you!
+
+- If you’re still hesitant to embrace reproducibility, next talk by [Dr. Florian Markowetz](https://www.cruk.cam.ac.uk/research-groups/markowetz-group/), based on his paper [@markowetz2015], will convince you!
 
 {{< video https://www.youtube.com/watch?v=yVT07Sukv9Q
     title="Five Selfish Reasons to Work Reproducibly"
     aspect-ratio="21x9"
 >}}
-:::
 
 
+- In the [Understanding Replications and Reproductions](https://forrt.org/replication_handbook/understanding.html) chapter of the FORRT Replication Handbook [@roseler2025], the authors establish a clear taxonomy for "repetitive research", distinguishing between reproduction (same data) and replication (new data). They argue that reproduction serves as an essential, cost-effective baseline that should precede any replication attempt. By exploring the "closeness" of studies through both theoretical and methodological lenses, the chapter highlights that a "failed" replication doesn't always mean the original was wrong -- it might simply reveal the "boundary conditions" of a theory. Ultimately, the text frames these practices not as antagonistic acts, but as a collaborative spectrum ranging from simple numerical verification to the broad testing of scientific generalizability.
+
+- More information on these definitions and terminology accross disciplines can be found in [@barba2018] and [@plesser2018].
 

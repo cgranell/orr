@@ -1,5 +1,6 @@
 ---
 title: Reproducibility vs. replicability across disciplines
+citation-location: document
 ---
 
 This table compares the concepts of reproducibility and replicability between different disciplines, to highlight slightly different interpretations between communities. [@barba2018] discusses different interpretations of the terms reproducibility and replicability across disciplines, authors, and stakeholder groups.

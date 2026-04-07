@@ -2,9 +2,11 @@
 title: "Navigating the Course"
 ---
 
-The course content is organised in different teaching chapters/units. It is not intended to follow the chaptre in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs and interests. The following flowchart gives you an idea of how the chapter are connected and how you can navigate through them.:
+The course content is organised in different teaching chapters/units. It is not intended to follow the chaptre in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs and interests. The flowchart shows the different chapters/units of the course and how they are connected. The arrows indicate the recommended order of reading, but you can navigate through the chapters in any order depending on your needs and interests
 
 ```{mermaid}
+|## fig-caption: "Course structure and navigation."
+|## fig-align: center
 flowchart TB
   A[Foreword] --> B(1. Intro)
   B --> C{Role?}

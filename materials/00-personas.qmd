@@ -1,6 +1,5 @@
 ---
 title: "Learner Persona"
-citation-location: margin
 ---
 
 Who is this course for? 

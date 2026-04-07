@@ -1,12 +1,37 @@
 project:
   type: book
+  resources: 
+    - /static
 
 book:
   title: "Open Reproducible Research: Practices and Tools"
   subtitle: "What can I do to make my next article (more) reproducible?"
-  author: "Carlos Granell"
+  site-url: "https://cgranell.github.io/orr"
+  repo-url: "https://www.github.com/cgranell/orr"
   date: "3/26/2026"
   reader-mode: true
+  cover-image: "images/hex_sticker_ORR.png"
+  author: 
+    - id: granell
+      name: 
+        given: "Carlos"
+        family: "Granell Canut"
+        literal: "Carlos Granell Canut"
+      orcid: "0000-0003-1004-9695"
+      
+      attributes:
+        corresponding: true
+        equal-contributor: true
+        deceased: false
+      roles:
+        - conceptualization
+        - project-administration
+        - writing-original-draft
+        - writing-review-editing
+      affiliations:
+        - name: "GEOTEC, Universitat Jaume I de Castellón, Spain"
+
+  
   chapters:
     - index.qmd
     - part: "Foreword"
@@ -24,9 +49,8 @@ book:
         - materials/02-assessment.qmd
     - part: "The Reproducibility Process: Practices and Recommendations"
       chapters:
-        - materials/03-before.qmd
-        - materials/03-during.qmd
-        - materials/03-after.qmd
+        - materials/03-practices.qmd
+        - materials/03-stages.qmd
     - part: "ORR @ UJI"
       chapters:
         - materials/04-uji.qmd
@@ -38,13 +62,17 @@ book:
         - materials/05-glossary.qmd
     - references.qmd
 
+  navbar: 
+    logo: "images/ESCOLA-DOCTORAT-es-blanco.png"
+    logo-alt: "Escola de Doctorat, UJI"
+    logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/"
 
   page-footer:
     center: "[cgranell.github.io/orr](https://cgranell.github.io/orr)"
 
 bibliography: references.bib
 citations-hover: true
-citation-location: document
+citation-location: margin
 
 format:
   html:

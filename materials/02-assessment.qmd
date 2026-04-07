@@ -1,5 +1,5 @@
 ---
-title: "Pre-reproducibility Assessment"
+title: "Assessment Criteria"
 ---
 
 If you are very interested in a paper, you want to understand the inner aspects pretty well. So, you give reproducibility a try. It is however advisable to assess first the level of *pre-reproducibility* of a paper [@stark2018] before attempting a real reproduction. That is, do you --as reader/reviewer of the paper-- have full access to all the resources necessary to perform the actual reproduction?
@@ -10,7 +10,7 @@ In the context of the [Reproducible Research \@ AGILE](https://reproducible-agil
 
 With the experience gained in the above studies, we revised the set of reproducibility criteria to refine them for an ongoing longitudinal study [@nust2023]. The resulting criteria, which are compatible with the original ones, are shown in @fig-criteria, which in turn align nicely with the welcome illustration (see @fig-turingway) of [The Turing Way project](https://book.the-turing-way.org/).
 
-![Assessment criteria [@nust2023]](images/slides/assessmentRubric.png){#fig-criteria}
+![Assessment criteria [@nust2023]](../images/slides/assessmentRubric.png){#fig-criteria}
 
 ::: column-margin
 ![The Turing Way project [@turingway2024_illustrations]](https://book.the-turing-way.org/_images/reproducibility.jpg){#fig-turingway}

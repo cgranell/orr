@@ -10,7 +10,7 @@ This course teaches best practices and recommendations for getting started with 
 | [GitHub](#github)     | ✗      | ✓✓     | ✓     |
 | [Markdown](#markdown) | ✓✓     | ✓✓✓    | ✗     |
 
-: Importance of each tech/tool according to the [stages of a research project](../practices.qmd); ✓✓✓ very important , ✓✓ fairly important, ✓ important, ✗: Not at all {#tbl-tech} {tbl-colwidths: "[55,15,15,15]"} {striped .hover}
+: Importance of each tech/tool according to the [stages of a research project](03-practices.qmd); ✓✓✓ very important , ✓✓ fairly important, ✓ important, ✗: Not at all {#tbl-tech} {tbl-colwidths: "[55,15,15,15]"} {striped .hover}
 
 Course participants can follow this course without using any specific tools, although the technologies for computational reproducibility are broad and changing rapidly. The following list (ordered alphabetically) is an ongoing effort to compile recent and mature technology to support any stage and/or of reproducibility research (see side table). While they are not strictly necessary to follow this course, participants are encouraged to familiarise themselves with some of these technologies and tools to begin practising.
 
