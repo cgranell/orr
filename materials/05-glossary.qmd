@@ -5,42 +5,50 @@ title: "Glossary"
 To clarify the meaning of some key terms and concepts used throughout this course, we briefly define them below.
 
 
-### FAIR (principles)
+## FAIR (principles)
 Set of requirements to make data findable, accessible, interoperable and reusable.
 
-### Institutional repositories 
+## Institutional repositories 
 
 A data repository offered by institutional organisations such as universities. At the Universitat Jaume I, [repositori.uji.es](https://repositori.uji.es/xmlui/) is the open access institutional repository that contains the scientific, teaching, academic and institutional production of the university community. 
 
-### Open Access
+## Open Access
 
 Open access content is accessible to all with limited or no copyright and licensing restrictions: no authentication requirements, no resources under an embargo, no paid access, etc. Content may concern scientific publications, data, code, documentation, and any other research artefact relevant to produce or interpret correctly the results of the research. 
 
-### Open Data
+## Open Data
 
 Open data refers to the research data or content gathered, used or produced during a research project and is made available for public access and re-use.
 
-### Open Science
+## Open Peer Review 
+
+Moving away from anonymous, closed reviews and critiques to a more transparent evaluation process.
+
+
+## Open Science
 
 For [@munafo2017], "open science refers to the process of making the content and process of producing evidence and claims transparent and accessible to others." It is, therefore, a general term that encompasses a way of doing science that promotes greater accessibility, transparency, efficiency and collaboration of research, more connected to society. It is based on open access to all components and phases of the research.
 
-### Open Source Software
+## Open Source Software
 
 Software artefact that are publicly accessed, with a license that allows its use, download, creation of derivatives and distribution.
 
-### Data Repositories
+
+
+
+## Data Repositories
 
 A data repository is an online service that provides a permanent archive for researchers to deposit data sets (software, documents, etc.) associated with their research.
 
 
-### Research Data
+## Research Data
 
 Factual (digital) records (numbers, textual records, images, sounds) used as primary sources for scientific research, and that are commonly accepted in the scientific community as necessary to validate research results.
 
-### Reproducibility
+## Reproducibility
 
 The ability of another researcher or team to obtain the *same* results using the same methods and data (and most likely using the same or similar computational environment) from the original study. 
 
-### Replicability
+## Replicability
 
 The ability of another researcher or team to obtain results *consistent* with the original study using different methods and/or data (and most likely using a similar computational environment).

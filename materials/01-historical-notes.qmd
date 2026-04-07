@@ -1,5 +1,5 @@
 ---
-title: "Historical notes"
+title: "Historical Notes"
 ---
 
 ::: {.column-margin}
@@ -13,24 +13,29 @@ title: "Historical notes"
 :::
 
 
-Reproducibility is not a new concept that has emerged recently. We, of course, find traces of reproducibility in past periods of science.  
+This slide deck, titled "Historical Notes on Open and Reproducible Research", provides a chronological and conceptual overview of how the movement for openness in science has evolved. It frames the current "[reproducibility/replication crisis](https://en.wikipedia.org/wiki/Replication_crisis)" not as a new phenomenon, but as the latest chapter in a centuries-long effort to make knowledge transparent and verifiable.
 
-## Slides
+Simply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method and scientific journals. Before this, science was often secretive, shared only through private letters. The shift toward academic journals represented the first major "open" revolution, moving from private discovery to public claim.
+
+The presentation transitions into the modern era, highlighting a growing concern in the scientific community -- the reproducibility crisis. It notes that a significant portion of published research across various fields cannot be independently replicated.
+
+In essence, the slide deck argues that while technology has changed, the fundamental goal remains the same: science must be a "communal" activity where the process is as visible and scrutinised as the results.
 
 
 ::: {.callout-tip icon=false}
 ## **Slide Deck** Historical notes
 
 ::: slides
-[Slides](01-historical-notes-slides.html)
-:::
-
-::: source
-[Source](https://github.com/cgranell/orr/tree/main/materials/01-historical-notes-slides.qmd)
+[Slides](https://cgranell.github.io/rrp/materials/01-historical-notes-slides.html)
 :::
 
 :::
 
 
-## Additional resources, readings, and videos
+## Additional resources and readings
 
+- The [National Academies of Sciences, Engineering, and Medicine](https://www.nationalacademies.org/) report Reproducibility and Replicability in Science [@NAP2019] posited that "reproducibility is strongly associated with transparency; a study's data and code have to be available in order for others to reproduce and confirm results". It defines reproducibility and replicability and examines the factors that may lead to non-reproducibility and non-replicability in research.
+
+- In the background chapter of the FORRT Replication Handbook [@roseler2025], the authors establish repeatability not just as a tool for validation, but as the very 'cornerstone' of scientific integrity. They argue that the current rarity of replication studies—often less than 1% of published work—undermines the cumulative nature of science. By bridging various disciplines from neuroimaging to economics, the chapter advocates for a shift away from isolated discoveries toward a more robust, transparent, and 'repetitive' scientific culture, specifically within the realm of quantitative research."
+
+- FORRT [@forrt] is a *Framework for Open and Reproducible Research Training* advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. FORRT provides a pedagogical infrastructure and didactic resources designed to recognize and support the teaching and mentoring of open and reproducible science.
