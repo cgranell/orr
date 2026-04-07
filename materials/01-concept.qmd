@@ -1,0 +1,47 @@
+---
+title: "Concept"
+citation-location: margin
+---
+
+Review the concepts of reproducibility, replication, and computational reproducibility
+
+
+## Slides
+
+::: {.callout-tip icon=false}
+## **Slide Deck** Reproducibility: concepts
+
+::: slides
+[Slides](01-concept-slides.qmd)
+:::
+
+::: source
+[Source](https://github.com/cgranell/rrp/tree/main/materials/01-concept-slides.qmd)
+:::
+
+:::
+
+
+## Application exercises
+
+::: {.callout-tip icon=false}
+## **Reflection** Reproducibility in your discipline
+
+::: reflect
+Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (hint: check The Turing Way’s definitions page [@turingway2022].
+:::
+:::
+
+## Additional resources, readings, and videos
+
+::: video
+If you’re still hesitant to embrace reproducibility, next talk by [Dr. Florian Markowetz](https://www.cruk.cam.ac.uk/research-groups/markowetz-group/), based on his paper [@markowetz2015], will convince you!
+
+{{< video https://www.youtube.com/watch?v=yVT07Sukv9Q
+    title="Five Selfish Reasons to Work Reproducibly"
+    aspect-ratio="21x9"
+>}}
+:::
+
+
+

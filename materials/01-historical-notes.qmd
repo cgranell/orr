@@ -1,0 +1,36 @@
+---
+title: "Historical notes"
+---
+
+::: {.column-margin}
+
+![](https://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg){fig-alt="Karl Popper" fig-align="center" width="70%"}
+
+> “At the core of the scientific method is the attempt to refute or disprove theories.”    
+*(Popper's Conjectures and Refutations)* 
+
+*Philosopher of science [Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)*
+:::
+
+
+Reproducibility is not a new concept that has emerged recently. We, of course, find traces of reproducibility in past periods of science.  
+
+## Slides
+
+
+::: {.callout-tip icon=false}
+## **Slide Deck** Historical notes
+
+::: slides
+[Slides](01-historical-notes-slides.qmd)
+:::
+
+::: source
+[Source](https://github.com/cgranell/orr/tree/main/materials/01-historical-notes-slides.qmd)
+:::
+
+:::
+
+
+## Additional resources, readings, and videos
+

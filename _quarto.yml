@@ -2,24 +2,37 @@ project:
   type: book
 
 book:
-  title: "my book"
-  author: "Norah Jones"
+  title: "Open Reproducible Research: Practices and Tools"
+  subtitle: "What can I do to make my next article (more) reproducible?"
+  author: "Carlos Granell"
   date: "3/26/2026"
+  reader-mode: true
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - part: "Foreword"
+      chapters:
+        - materials/00-personas.qmd
+        - materials/00-units.qmd
+        - materials/00-tech-stack.qmd
+    - part: "Background"
+      chapters:
+        - materials/01-historical-notes.qmd
+        - materials/01-concept.qmd
+        - materials/01-comparison.qmd
     - references.qmd
 
+
+  page-footer:
+    center: "[cgranell.github.io/orr](https://cgranell.github.io/orr)"
+
 bibliography: references.bib
+citations-hover: true
+citation-location: document
 
 format:
   html:
     theme:
       - cosmo
       - brand
-  pdf:
-    documentclass: scrreprt
-
 
 

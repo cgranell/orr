@@ -1,5 +1,23 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+Hello!
+And welcome!
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+This introductory course **Open Reproducible Research (ORR)** is scheduled to be offered in 2 or 3 weeks. While the course is running, some material might not be visible and will be unlocked as the course unfolds. At any other time, this website (as a book format) remains online and publicy accesible, with small updates happening on an ongoing basis and larger updates every time the course is offered again.
+
+This course emphasises the principles and strategies of open science and reproducible research practices and gives you practice (recommendations) in their application to present scientific and technical material in an informative and clear manner. The course is not focused on a particular discipline or area of knowledge, as it is intended for participants with varied backgrounds. Specific aspects in this course, if any, are applied to [GIScience](https://en.wikipedia.org/wiki/Geographic_information_science). 
+
+This material contains something for everyone who wants to teach or learn open and reproducible research practices. Instructors may begin by exploring the [connections among the core chapters](materials/00-units.qmd) and the [technology stack](materials/00-tech-stack.qmd) before proceeding to the other chapters. Thee course does not include pedagogical and desing principles; it is a brief, practical introduction based on a [curated list of related works](references.qmd) and my previous experience on the topic. If you are a learner, consider jumping straight into the [next chapter](materials/00-personas.qmd) to identify your *learner persona*. 
+
+Please note that this course uses a [Code of Conduct](https://github.com/cgranell/rrp/blob/main/CODE_OF_CONDUCT.md).
+By contributing to this project, you agree to abide by its terms.
+
+
+## License {.unnumbered}
+
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a><br />This online work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a>.
+Visit [here](https://github.com/cgranell/orr/blob/main/LICENSE.md) for more information about the license.
+
+## Acknowledgements {.unnumbered}
+
+Huge thanks to the [Reproducible Research @ AGILE](https://reproducible-agile.github.io/) community, especially to the following individuals who have contributed to improving these materials: Daniel Nüst, Frank Ostermann, Markus Konkol, Sergi Trilles, ...
