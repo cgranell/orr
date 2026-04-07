@@ -24,10 +24,10 @@ A key point in the slides is that "publication is not the scholarship; it is mer
 
 
 ::: {.callout-note icon=true}
-## *Slide Deck*: Foundations of Reproducibility/Replicability
+## Slide Deck 
 
 ::: slides
-[Slides](https://cgranell.github.io/rrp/materials/01-concept-slides.html)
+[Foundations of Reproducibility/Replicability](https://cgranell.github.io/rrp/materials/01-concept-slides.html)
 :::
 
 :::

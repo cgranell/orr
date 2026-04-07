@@ -23,10 +23,10 @@ In essence, the slide deck argues that while technology has changed, the fundame
 
 
 ::: {.callout-note icon=true}
-## *Slide Deck* Historical notes
+## Slide Deck
 
 ::: slides
-[Slides](https://cgranell.github.io/rrp/materials/01-historical-notes-slides.html)
+[Historical Notes on Open and Reproducible Research](https://cgranell.github.io/rrp/materials/01-historical-notes-slides.html)
 :::
 
 :::
