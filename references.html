@@ -64,11 +64,11 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -94,10 +94,32 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/" class="navbar-brand navbar-brand-logo">
+    <img src="./images/ESCOLA-DOCTORAT-es-blanco.png" alt="Escola de Doctorat, UJI" class="navbar-logo light-content">
+    <img src="./images/ESCOLA-DOCTORAT-es-blanco.png" alt="Escola de Doctorat, UJI" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/">
+    <span class="navbar-title">Open Reproducible Research: Practices and Tools</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+    <a href="https://www.github.com/cgranell/orr" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -106,33 +128,13 @@ div.csl-indent {
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Open Reproducible Research: Practices and Tools</a> 
-        <div class="sidebar-tools-main">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -188,7 +190,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./materials/01-concept.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Concept</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Foundations of Reproducibility/Replicability</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -211,7 +213,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./materials/02-assessment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pre-reproducibility Assessment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Assessment Criteria</span></span></a>
   </div>
 </li>
       </ul>
@@ -227,20 +229,14 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/03-before.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Before</span></span></a>
+  <a href="./materials/03-practices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Recommendations and practices for open and reproducible research</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/03-during.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">During</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/03-after.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">After</span></span></a>
+  <a href="./materials/03-stages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Before, during and after</span></span></a>
   </div>
 </li>
       </ul>
@@ -257,7 +253,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./materials/04-uji.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Open Reproducible Research at UJI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Reproducible Research at UJI</span></span></a>
   </div>
 </li>
       </ul>
@@ -278,13 +274,13 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./materials/05-key-people.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Individuals to follow</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Individuals to follow</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./materials/05-glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
   </div>
 </li>
       </ul>
@@ -325,7 +321,16 @@ div.csl-indent {
 </header>
 
 
+
+
+
+
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-alston2021" class="csl-entry" role="listitem">
+Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide
+to Conducting Reproducible Research.”</span> <em>The Bulletin of the
+Ecological Society of America</em> 102 (2): e01801. <a href="https://doi.org/10.1002/bes2.1801">https://doi.org/10.1002/bes2.1801</a>.
+</div>
 <div id="ref-baker2015" class="csl-entry" role="listitem">
 Baker, M. 2015. <span>“First Results from Psychology’s Largest
 Reproducibility Test.”</span> In <em>Nature News</em>. <a href="https://doi.org/10.1038/nature.2015.17433">https://doi.org/10.1038/nature.2015.17433</a>.
@@ -338,6 +343,11 @@ Baker, M. 2017. <span>“Check Your Chemistry.”</span> <em>Nature</em> 548
 Barba, Lorena A. 2018. <span>“Terminologies for Reproducible
 Research.”</span> In <em>arXiv Preprint arXiv:1802.03311</em>. <a href="https://arxiv.org/abs/1802.03311">https://arxiv.org/abs/1802.03311</a>.
 </div>
+<div id="ref-berti2022" class="csl-entry" role="listitem">
+Berti, Johann, Marin Dacos, Gabriel Gallezot, et al. 2022. <em>Passport
+for Open Science - a Practical Guide Ofr PhD Students</em>. University
+of Lille. <a href="https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/">https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/</a>.
+</div>
 <div id="ref-button2013" class="csl-entry" role="listitem">
 Button, KS, JPA Ioannidis, C Mokrysz, et al. 2013. <span>“Power Failure:
 Why Small Sample Size Undermines the Reliability of
@@ -347,6 +357,10 @@ Neuroscience.”</span> <em>Nature Reviews Neuroscience</em> 14 (5):
 <div id="ref-forrt" class="csl-entry" role="listitem">
 Community, The FORRT. 2025. <em>Framework for Open and Reproducible
 Research Training</em>. <a href="https://forrt.org/">https://forrt.org/</a>.
+</div>
+<div id="ref-cooper2019" class="csl-entry" role="listitem">
+Cooper, Natalie, and Pen-Yuah Hsing. 2019. <em>Reproducible Code</em>.
+British Ecological Society. <a href="https://www.britishecologicalsociety.org/publications/guides-to/">https://www.britishecologicalsociety.org/publications/guides-to/</a>.
 </div>
 <div id="ref-donoho2015" class="csl-entry" role="listitem">
 Donoho, David L, and Victoria Stodden. 2015. <span>“Reproducible
@@ -372,6 +386,10 @@ Bias in Economics Research.”</span> <em>The Economic Journal</em> 127
 Karathanasis, Nestoras, Daniel Hwang, Vibol Heng, et al. 2022.
 <span>“Reproducibility Efforts as a Teaching Tool: A Pilot
 Study.”</span> <em>PLOS Computational Biology</em> 18 (11): e1010615. <a href="https://doi.org/10.1371/journal.pcbi.1010615">https://doi.org/10.1371/journal.pcbi.1010615</a>.
+</div>
+<div id="ref-keshav2007" class="csl-entry" role="listitem">
+Keshav, S. 2007. <span>“How to Read a Paper.”</span> <em>ACM SIGCOMM
+Computer Communication Review</em> (New York, NY, USA) 37 (3): 83–84. <a href="https://doi.org/10.1145/1273445.1273458">https://doi.org/10.1145/1273445.1273458</a>.
 </div>
 <div id="ref-lebeau2021" class="csl-entry" role="listitem">
 LeBeau, Brandon, Scott Ellison, and Ariel M. Aloe. 2021.
@@ -425,6 +443,10 @@ Nosek, Brian A., Tom E. Hardwicke, Hannah Moshontz, et al. 2022.
 <span>“Replicability, Robustness, and Reproducibility in Psychological
 Science.”</span> <em>Annual Review of Psychology</em> 73 (1): 719–48. <a href="https://doi.org/10.1146/annurev-psych-020821-114157">https://doi.org/10.1146/annurev-psych-020821-114157</a>.
 </div>
+<div id="ref-nust2018_readpaper" class="csl-entry" role="listitem">
+Nüst, Daniel, Carl Boettiger, and Ben Marwick. 2018. <em>How to Read a
+Research Compendium</em>. arXiv. <a href="https://doi.org/10.48550/ARXIV.1806.09525">https://doi.org/10.48550/ARXIV.1806.09525</a>.
+</div>
 <div id="ref-nust2023" class="csl-entry" role="listitem">
 Nüst, Daniel, Carlos Granell, and Frank O Ostermann. 2023. <em>Impact of
 Reproducible Paper Guidelines on Computational Papers: A Longitudinal
@@ -434,6 +456,11 @@ Study on the AGILE and GIScience Conference Series</em>. OSF. <a href="https://d
 Nüst, Daniel, C Granell, B Hofer, et al. 2018. <span>“Reproducible
 Research and GIScience: An Evaluation Using AGILE Conference
 Papers.”</span> <em>PeerJ</em> 6: e5072. <a href="https://doi.org/10.7717/peerj.5072">https://doi.org/10.7717/peerj.5072</a>.
+</div>
+<div id="ref-nust2020" class="csl-entry" role="listitem">
+Nüst, Daniel, Frank Ostermann, Rusne Sileryte, et al. 2020.
+<em>Reproducible Publications at AGILE Conferences: Guidelines for
+Authors, Scientific Reviewers, and Reproducibility Reviewers</em>. <a href="https://doi.org/10.17605/OSF.IO/CB7Z8">https://doi.org/10.17605/OSF.IO/CB7Z8</a>.
 </div>
 <div id="ref-OSC2015" class="csl-entry" role="listitem">
 Open Science Collaboration. 2015. <span>“Estimating the Reproducibility
@@ -453,6 +480,11 @@ Leibniz-Zentrum f<span>ü</span>r Informatik. <a href="https://doi.org/10.4230/L
 <div id="ref-peng2011" class="csl-entry" role="listitem">
 Peng, RD. 2011. <span>“Reproducible Research in Computational
 Science.”</span> <em>Science</em> 334 (6060): 1226–27. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a>.
+</div>
+<div id="ref-plesser2018" class="csl-entry" role="listitem">
+Plesser, Hans E. 2018. <span>“Reproducibility Vs. Replicability: A Brief
+History of a Confused Terminology.”</span> <em>Frontiers in
+Neuroinformatics</em> Volume 11 - 2017. <a href="https://doi.org/10.3389/fninf.2017.00076">https://doi.org/10.3389/fninf.2017.00076</a>.
 </div>
 <div id="ref-pownall2023" class="csl-entry" role="listitem">
 Pownall, Madeleine, Flávio Azevedo, Laura M. König, et al. 2023.
@@ -512,11 +544,7 @@ Wilson, Greg. 2019. <em>Teaching Tech Together: How to Make Lessons That
 Work and Build a Teaching Community Around It</em>. Taylor &amp;
 Francis. <a href="https://teachtogether.tech/">https://teachtogether.tech/</a>.
 </div>
-</div>
-
-
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -590,7 +618,7 @@ Francis. <a href="https://teachtogether.tech/">https://teachtogether.tech/</a>.
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/cgranell\.github\.io\/orr");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -920,7 +948,7 @@ Francis. <a href="https://teachtogether.tech/">https://teachtogether.tech/</a>.
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./materials/05-glossary.html" class="pagination-link" aria-label="Glossary">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Glossary</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Glossary</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
