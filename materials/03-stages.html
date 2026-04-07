@@ -283,12 +283,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#before-analysis-basics-to-get-started" id="toc-before-analysis-basics-to-get-started" class="nav-link active" data-scroll-target="#before-analysis-basics-to-get-started"><span class="header-section-number">9.1</span> Before analysis: basics to get started</a></li>
-  <li><a href="#slide-deck-before-analysis-basics-to-get-started" id="toc-slide-deck-before-analysis-basics-to-get-started" class="nav-link" data-scroll-target="#slide-deck-before-analysis-basics-to-get-started"><span class="header-section-number">9.2</span> <strong>Slide Deck</strong> Before analysis: basics to get started</a></li>
-  <li><a href="#during-analysis" id="toc-during-analysis" class="nav-link" data-scroll-target="#during-analysis"><span class="header-section-number">9.3</span> During analysis</a></li>
-  <li><a href="#slide-deck-during-analysis-datacoding-practices-and-tools" id="toc-slide-deck-during-analysis-datacoding-practices-and-tools" class="nav-link" data-scroll-target="#slide-deck-during-analysis-datacoding-practices-and-tools"><span class="header-section-number">9.4</span> <strong>Slide Deck</strong> During analysis: data/coding practices and tools</a></li>
-  <li><a href="#after-analysis" id="toc-after-analysis" class="nav-link" data-scroll-target="#after-analysis"><span class="header-section-number">9.5</span> After analysis</a></li>
-  <li><a href="#additional-resources-and-readings" id="toc-additional-resources-and-readings" class="nav-link" data-scroll-target="#additional-resources-and-readings"><span class="header-section-number">9.6</span> Additional resources and readings</a></li>
+  <li><a href="#before-analysis-planing-for-reproducibility" id="toc-before-analysis-planing-for-reproducibility" class="nav-link active" data-scroll-target="#before-analysis-planing-for-reproducibility"><span class="header-section-number">9.1</span> Before analysis: planing for reproducibility</a></li>
+  <li><a href="#during-analysis-reproducible-workflows" id="toc-during-analysis-reproducible-workflows" class="nav-link" data-scroll-target="#during-analysis-reproducible-workflows"><span class="header-section-number">9.2</span> During analysis: reproducible workflows</a></li>
+  <li><a href="#after-analysis-writing-and-sharing-reproducible-resources" id="toc-after-analysis-writing-and-sharing-reproducible-resources" class="nav-link" data-scroll-target="#after-analysis-writing-and-sharing-reproducible-resources"><span class="header-section-number">9.3</span> After analysis: writing and sharing reproducible resources</a></li>
+  <li><a href="#additional-resources-and-readings" id="toc-additional-resources-and-readings" class="nav-link" data-scroll-target="#additional-resources-and-readings"><span class="header-section-number">9.4</span> Additional resources and readings</a></li>
   </ul>
 </nav>
     </div>
@@ -314,8 +312,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="before-analysis-basics-to-get-started" class="level2 page-columns page-full" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="before-analysis-basics-to-get-started"><span class="header-section-number">9.1</span> Before analysis: basics to get started</h2>
+<section id="before-analysis-planing-for-reproducibility" class="level2 page-columns page-full" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="before-analysis-planing-for-reproducibility"><span class="header-section-number">9.1</span> Before analysis: planing for reproducibility</h2>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -327,16 +325,39 @@ ul.task-list li input[type="checkbox"] {
 <p>“Science is a way of trying not to fool yourself. The principle is that you must not fool yourself, and you are the easiest person to fool.” <em>(<a href="https://en.wikiquote.org/wiki/Richard_Feynman">Quotes</a>)</em></p>
 </blockquote>
 <p><em>Nobel laureate and physics professor <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a></em></p>
-</div></div><p>Next recommendations summarise some organizational aspects and reproducible practices for the preparation and first steps of a project.</p>
-</section>
-<section id="slide-deck-before-analysis-basics-to-get-started" class="level2 callout-notetip" data-icon="false" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="slide-deck-before-analysis-basics-to-get-started"><span class="header-section-number">9.2</span> <strong>Slide Deck</strong> Before analysis: basics to get started</h2>
+</div></div><p>This slide deck, titled “Before analysis: planning for reproducibility” focuses on the organisational steps a researcher must take before a single line of code is written or data is collected. The central thesis is that reproducibility is not something you “fix” at the end of a research project; it is a mindset that must be integrated into the planning phase to avoid the “reproducibility debt” that accumulates through disorganised workflows.</p>
+<p>The presentation emphasises that the “research journey” is often messy and non-linear. To counter this natural entropy, researchers should adopt a “project-centric” approach. This involves treating every research question as a self-contained unit where data, code, and documentation are inextricably linked. It highlights that the primary beneficiary of these practices is often your “future self,” who will inevitably forget the logic behind current decisions. It advocates for moving away from “hand-crafted” manual processes toward automated, scripted workflows that ensure the path from raw data to final results is transparent and repeatable.</p>
+<p>List of recommendations/practices:</p>
+<ul>
+<li><p><strong>Adopt a project-oriented workflow</strong>: Use dedicated folders to ensure that all paths are relative to the project root, making the project portable across different computers.</p></li>
+<li><p><strong>Organize files logically</strong>: Use a consistent folder structure (e.g., separate folders for <code>/data</code>, <code>/scripts</code>, <code>/results</code>, and <code>/docs</code>).</p></li>
+<li><p><strong>Use consistent, machine-readable file names</strong>: Do not rely on filenames like <code>final_v2_REALLY_FINAL.docx</code>. Avoid spaces and special characters. Use delimiters like underscores or hyphens to make files easy to search and sort. Use chronological markers like ISO 8601 date formats (<code>YYYY-MM-DD</code>) in filenames so they sort naturally by time.</p></li>
+<li><p><strong>Separate raw data from processed data</strong>: Never overwrite your raw data. Treat it as “read-only” and save any cleaned versions in a separate directory.</p></li>
+<li><p><strong>Leverage open data formats</strong>: Use open, text-based formats whenever possible. For example, use CSV instead of Excel for tabular data, and use plain text files for code and documentation.</p></li>
+<li><p><strong>Document and write “README” files early</strong>: Create a <code>README.md</code> file at the start of the project to describe the purpose, structure, and requirements of the research. This serves as a guide for both current and future collaborators (including your future self).</p></li>
+<li><p><strong>Plan for data sharing</strong>: Identify and add a convenient license for your data.</p></li>
+<li><p><strong>Plan for code sharing</strong>: Identify and add a convenient license for your code and software artefacts.</p></li>
+<li><p><strong>Use version control</strong>: Use Git to track changes systematically and provide a “time machine” for your code (local repository).</p></li>
+<li><p><strong>Use online remote repositories</strong>: Use GitHub to ease collaborateive develpment and sharing of code and software artefacts (remote repository).</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Slide Deck
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="slides">
-<p><a href="03-before-slides.qmd">Slides</a></p>
+<p><a href="https://cgranell.github.io/rrp/materials/03-before-slides.html">Before analysis: planning for reproducibility</a></p>
+</div>
+</div>
 </div>
 </section>
-<section id="during-analysis" class="level2 page-columns page-full" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="during-analysis"><span class="header-section-number">9.3</span> During analysis</h2>
+<section id="during-analysis-reproducible-workflows" class="level2 page-columns page-full" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="during-analysis-reproducible-workflows"><span class="header-section-number">9.2</span> During analysis: reproducible workflows</h2>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -348,16 +369,40 @@ ul.task-list li input[type="checkbox"] {
 <p>“The ideas we can most trust are those that have been the most tried and tested.” <em>(<a href="https://en.wikiquote.org/wiki/Karl_Popper">Quotes</a>)</em></p>
 </blockquote>
 <p><em>Philosopher of science <a href="https://en.wikipedia.org/wiki/Karl_Popper">Karl Popper</a></em></p>
-</div></div><p>You will find more specific recommendations for data/coding practices and tools, and for writing and sharing reproducible resources, respectively.</p>
-</section>
-<section id="slide-deck-during-analysis-datacoding-practices-and-tools" class="level2 callout-info" data-icon="true" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="slide-deck-during-analysis-datacoding-practices-and-tools"><span class="header-section-number">9.4</span> <strong>Slide Deck</strong> During analysis: data/coding practices and tools</h2>
+</div></div><p>This slide deck, titled “During Research: reproducible workflows”, focuses on the execution phase of a project. While the previous stage (“Before”) dealt with setup adn prep actions, this one provides the practical habits required to maintain a reproducible record as the research actually happens.</p>
+<p>The core idea is that reproducibility is a continuous process, not a final step. It introduces the concept of the “computational environment” — the idea that your results are a product of not just your data, but the specific versions of software, libraries, and operating systems you use.</p>
+<p>The deck also warns against “manual interventions” (like fixing a typo in a CSV file by hand), as these create “dark matter” in the research process, that is, steps that happened but left no record. Instead, it advocates for a script-based workflow where every transformation of the data is recorded in code. A significant portion of the deck is dedicated to literate programming (using tools like Quarto), which allows researchers to weave together their narrative, their code, and their results into a single, dynamic document that automatically updates when the data changes.</p>
+<p>List of recommendations/practices:</p>
+<ul>
+<li><p><strong>Open data does not guarantee reproducible data</strong>:</p></li>
+<li><p><strong>Select data worthwhile for reproducibility</strong>:</p></li>
+<li><p><strong>Adopt FAIR principles for data management with caution</strong>: FAIR data is not necessarily reproducible data. FAIR focuses on making data Findable, Accessible, Interoperable, and Reusable, but it does not guarantee that the data is well-documented or that the analysis can be reproduced. To ensure reproducibility, you need to go beyond FAIR and also focus on the quality of documentation, version control, and providing clear instructions for how to use the data.</p></li>
+<li><p><strong>Use open source tools whenever possible</strong>:</p></li>
+<li><p><strong>Learn/use scripting languages</strong>: Avoid manual “point-and-click” operations in software like Excel. If a change is made to the data, it should be <em>documented</em> in a script. AI assistants can be used to generate code snippets, but the researcher should understand and review the code to ensure it is correct and reproducible.</p></li>
+<li><p><strong>Embrace literate programming</strong>: Use Quarto or similar tools to keep your text and code (scripts) in the same file. This prevents for example “copy-paste” errors between your statistics software and your word processor.</p></li>
+<li><p><strong>Manage sofware dependences</strong>: Save information about your software versions and package dependencies. This allows others to recreate the exact technical conditions under which your results were generated.</p></li>
+<li><p><strong>Record your computational environment</strong>:</p></li>
+<li><p><strong>Adopt FAIR principles for software/code management</strong>:</p></li>
+<li><p><strong>Automate workflows</strong>: Use tools such as Make or similar tools to automate the execution of your analysis pipeline. This ensures that all steps are executed in the correct order and that any changes to the data or code will trigger the necessary updates to the results.</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Slide Deck
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="slides">
-<p><a href="03-during-slides.qmd">Slides</a></p>
+<p><a href="https://cgranell.github.io/rrp/materials/03-during-slides.html">During analysis: data/coding practices and tools</a></p>
+</div>
+</div>
 </div>
 </section>
-<section id="after-analysis" class="level2 page-columns page-full" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="after-analysis"><span class="header-section-number">9.5</span> After analysis</h2>
+<section id="after-analysis-writing-and-sharing-reproducible-resources" class="level2 page-columns page-full" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="after-analysis-writing-and-sharing-reproducible-resources"><span class="header-section-number">9.3</span> After analysis: writing and sharing reproducible resources</h2>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -369,25 +414,40 @@ ul.task-list li input[type="checkbox"] {
 <p>“I do not mind if you think slowly, but I do object when you publish more quickly than you think.” <em>(<a href="https://en.wikiquote.org/wiki/Wolfgang_Pauli">Quotes</a>)</em></p>
 </blockquote>
 <p><em>Nobel laureate and physics professor <a href="https://en.wikipedia.org/wiki/Wolfgang_Pauli">Wolfgang Pauli</a></em></p>
-</div></div><p>Next recommendations summarise some reproducible practices for writing and depositing results (written paper and associated resources).</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+</div></div><p>This presentation, titled “After analysis: writing and sharing reproducible resources,” focuses on the final stages of the research lifecycle: how to document, cite, and share materials so that others (and your future self) can verify and build upon your work.</p>
+<p>The core message is a shift from “Trust Me” (results published without access to data/code) to “Show Me” (pre-publication transparency). It argues that the common phrase “data and code available upon request” is insufficient and often leads to a dead end. Instead, reproducibility requires proactive sharing of all computational artifacts, including software versions, specific libraries, and raw data, at the time of submission.</p>
+<p>The deck emphasises that software is a primary research object, not just a tool. This means researchers must explicitly cite the software and packages they use, just as they would cite a journal article. The presentation advocates for the use of Research Compendia and modern publishing tools like Quarto to create “dynamic documents” where the analysis and the narrative are linked. The ultimate goal is to move towards “reproducible manuscripts” that allow readers to interact with the data and code directly within the article, fostering a culture of openness and verification in scientific research/publishing.</p>
+<p>List of recommendations/practices:</p>
+<ul>
+<li><p><strong>Move beyond “Available Upon Request”</strong>: Never rely on post-publication requests. Data and code must be available at the time of pre-publication or submission.</p></li>
+<li><p><strong>Report software versions</strong>: Always specify the exact versions of packages, libraries, and frameworks used. A change in version can lead to different results.</p></li>
+<li><p><strong>Cite the software you use</strong>: Treat software as a first-class citizen. Use commands like citation() in R to get proper references for the R engine and specific packages.</p></li>
+<li><p><strong>Include a DASA Section</strong>: Add a “Data and Software Availability” (DASA) section to your paper. This section should provide persistent links (like DOIs) to repositories and describe the conditions for access.</p></li>
+<li><p><strong>Share preprints</strong>: Deposit versions of your paper in repositories (like arXiv, BioRxiv, or SocArXiv) before formal journal review to increase visibility and access.</p></li>
+<li><p><strong>Formally share data and code</strong>: Document and deposit your resources in permanent repositories (like Zenodo or OSF) and link them to your GitHub account for versioned archiving.</p></li>
+<li><p><strong>Create research compendia</strong>: Organize all digital materials (data, code, reports) in a standardized, recognizable collection to make the entire project easy to navigate.</p></li>
+<li><p><strong>Use literate programming tools</strong>: Adopt tools like Quarto or RMarkdown to create dynamic documents where code and text are woven together, ensuring figures and tables update automatically.</p></li>
+<li><p><strong>Aim for reproducible manuscripts</strong>: Look toward the future of publishing—interactive papers that allow readers to engage with the data and code directly within the article.</p></li>
+<li><p><strong>Spread the word</strong>: Reproducibility is a community effort and a cultural change. Encourage colleagues to adopt these practices.</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><strong>Slide Deck</strong> After analysis: writing and sharing reproducible resources
+<span class="screen-reader-only">Note</span>Slide Deck
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <div class="slides">
-<p><a href="03-after-slides.qmd">Slides</a></p>
+<p><a href="https://cgranell.github.io/rrp/materials/03-after-slides.html">After analysis: writing and sharing reproducible resources</a></p>
 </div>
 </div>
 </div>
 </section>
-<section id="additional-resources-and-readings" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="additional-resources-and-readings"><span class="header-section-number">9.6</span> Additional resources and readings</h2>
+<section id="additional-resources-and-readings" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="additional-resources-and-readings"><span class="header-section-number">9.4</span> Additional resources and readings</h2>
 
 
 </section>
