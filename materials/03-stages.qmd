@@ -2,7 +2,7 @@
 title: "Before, during and after"
 ---
 
-[@alston2021] outlined basic steps toward making research more reproducible base on three stages of a research project: (1) **before**, (2) **during**, and (3) **after** analysis. 
+[@alston2021] outlined basic steps toward making research more reproducible based on three stages of a research project: (1) **before**, (2) **during**, and (3) **after** analysis. 
 
 ```{mermaid}
 %%| fig-width: 6.5

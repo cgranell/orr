@@ -2,7 +2,7 @@
 title: "Learner Persona"
 ---
 
-Who is this course for? 
+**Who is this course for?**
 
 There are many answers to this question, depending on your needs, prior skills, and motivation to adopt the *right way* of doing science 😀.
 

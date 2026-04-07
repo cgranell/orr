@@ -74,10 +74,11 @@ bibliography: references.bib
 citations-hover: true
 citation-location: margin
 
-format:
+format: 
   html:
     theme:
-      - cosmo
-      - brand
+    - cosmo
+    - brand
+ 
 
 

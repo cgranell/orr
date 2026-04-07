@@ -34,17 +34,17 @@ A key point in the slides is that "publication is not the scholarship; it is mer
 
 
 ::: {.callout-tip icon=true}
-## *Reflection*: Reproducibility in your discipline
+## Reflection: Reproducibility in your discipline
 
 ::: reflect
 Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (hint: check The Turing Way’s definitions page [@turingway2025].
 :::
 :::
 
-## Additional resources, readings, and videos
+## Additional resources and readings
 
 
-- If you’re still hesitant to embrace reproducibility, next talk by [Dr. Florian Markowetz](https://www.cruk.cam.ac.uk/research-groups/markowetz-group/), based on his paper [@markowetz2015], will convince you!
+If you’re still hesitant to embrace reproducibility, next talk by [Dr. Florian Markowetz](https://www.cruk.cam.ac.uk/research-groups/markowetz-group/), based on his paper [@markowetz2015], will convince you!
 
 {{< video https://www.youtube.com/watch?v=yVT07Sukv9Q
     title="Five Selfish Reasons to Work Reproducibly"
@@ -52,7 +52,7 @@ Reflect on the extent to which these terms (reproduction, replication, robustnes
 >}}
 
 
-- In the [Understanding Replications and Reproductions](https://forrt.org/replication_handbook/understanding.html) chapter of the FORRT Replication Handbook [@roseler2025], the authors establish a clear taxonomy for "repetitive research", distinguishing between reproduction (same data) and replication (new data). They argue that reproduction serves as an essential, cost-effective baseline that should precede any replication attempt. By exploring the "closeness" of studies through both theoretical and methodological lenses, the chapter highlights that a "failed" replication doesn't always mean the original was wrong -- it might simply reveal the "boundary conditions" of a theory. Ultimately, the text frames these practices not as antagonistic acts, but as a collaborative spectrum ranging from simple numerical verification to the broad testing of scientific generalizability.
+In the [Understanding Replications and Reproductions](https://forrt.org/replication_handbook/understanding.html) chapter of the FORRT Replication Handbook [@roseler2025], the authors establish a clear taxonomy for "repetitive research", distinguishing between reproduction (same data) and replication (new data). They argue that reproduction serves as an essential, cost-effective baseline that should precede any replication attempt. By exploring the "closeness" of studies through both theoretical and methodological lenses, the chapter highlights that a "failed" replication doesn't always mean the original was wrong -- it might simply reveal the "boundary conditions" of a theory. Ultimately, the text frames these practices not as antagonistic acts, but as a collaborative spectrum ranging from simple numerical verification to the broad testing of scientific generalizability.
 
-- More information on these definitions and terminology accross disciplines can be found in [@barba2018] and [@plesser2018].
+More information on these definitions and terms accross disciplines can be found in [@barba2018] and [@plesser2018].
 
