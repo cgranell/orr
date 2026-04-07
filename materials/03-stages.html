@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,6 +91,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -311,6 +333,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><span class="citation" data-cites="alston2021">(<a href="../references.html#ref-alston2021" role="doc-biblioref">Alston and Rick 2021</a>)</span> outlined basic steps toward making research more reproducible base on three stages of a research project: (1) <strong>before</strong>, (2) <strong>during</strong>, and (3) <strong>after</strong> analysis.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-alston2021" class="csl-entry" role="listitem">
+Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Conducting Reproducible Research.”</span> <em>The Bulletin of the Ecological Society of America</em> 102 (2): e01801. <a href="https://doi.org/10.1002/bes2.1801">https://doi.org/10.1002/bes2.1801</a>.
+</div></div><div class="cell" data-fig-width="6.5" data-fig-caption="Three stages of a research project. Source: [@alston2021]." data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+  A[Before analysis] --&gt; B[During analysis]
+  B --&gt; C[After analysis]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>We borrow this simple outline to better categorise and explain the set of practical recommendations and practices that follow. Note that most of the following recommendations are already widely accepted best practices for scientific research and that striving for a reasonable level of reproducibility is more achievable than you may expect. Essentially, researchers must think carefully before, during, and after analysis to ensure the reproducibility, openness and transparency of their work.</p>
 <section id="before-analysis-planing-for-reproducibility" class="level2 page-columns page-full" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="before-analysis-planing-for-reproducibility"><span class="header-section-number">9.1</span> Before analysis: planing for reproducibility</h2>
 
@@ -447,6 +487,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="additional-resources-and-readings" class="level2" data-number="9.4">
 <h2 data-number="9.4" class="anchored" data-anchor-id="additional-resources-and-readings"><span class="header-section-number">9.4</span> Additional resources and readings</h2>
+
 
 
 </section>
