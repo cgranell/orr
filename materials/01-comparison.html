@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Reproducibility vs.&nbsp;replicability across disciplines – Open Reproducible Research: Practices and Tools</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../references.html" rel="next">
+<link href="../materials/01-concept.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html">Background</a></li><li class="breadcrumb-item"><a href="../materials/01-comparison.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reproducibility vs.&nbsp;replicability across disciplines</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Open Reproducible Research: Practices and Tools</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foreword</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials/00-personas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Learner Persona</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials/00-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Navigating the Course</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials/00-tech-stack.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tech stack</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Background</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials/01-historical-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical notes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials/01-concept.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Concept</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials/01-comparison.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reproducibility vs.&nbsp;replicability across disciplines</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/01-historical-notes.html">Background</a></li><li class="breadcrumb-item"><a href="../materials/01-comparison.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reproducibility vs.&nbsp;replicability across disciplines</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reproducibility vs.&nbsp;replicability across disciplines</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This table compares the concepts of reproducibility and replicability between different disciplines, to highlight slightly different interpretations between communities. <span class="citation" data-cites="barba2018">(<a href="../references.html#ref-barba2018" role="doc-biblioref">Barba 2018</a>)</span> discusses different interpretations of the terms reproducibility and replicability across disciplines, authors, and stakeholder groups.</p>
+<div class="column-screen-inset-right">
+<table class="table-striped caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 35%">
+<col style="width: 35%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area of knowledge</th>
+<th>Reproducibility</th>
+<th>Replicability</th>
+<th>Additional readings</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><strong>To obtain the same results using the original data and exact methods</strong></td>
+<td><strong>To obtain consistent results when repeating a study with new data or under similar conditions, and/or similar methods</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Experimental sciences (physics, chemistry, biology)</td>
+<td>Recreating a specific experiment using the same equipment and protocols</td>
+<td>Repeating the experiment with different variables and subjects to verify the generalization of the results</td>
+<td><span class="citation" data-cites="baker2017">(<a href="../references.html#ref-baker2017" role="doc-biblioref">Baker 2017</a>)</span>, <span class="citation" data-cites="mesnard2017">(<a href="../references.html#ref-mesnard2017" role="doc-biblioref">Mesnard and Barba 2017</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Computer science</td>
+<td>Obtain the same results when executing the same code and data</td>
+<td>Obtain consistent/similar results by implementing the same algorithm or code in a different environment and/or on a different data set</td>
+<td><span class="citation" data-cites="peng2011">(<a href="../references.html#ref-peng2011" role="doc-biblioref">Peng 2011</a>)</span>, <span class="citation" data-cites="stodden2014">(<a href="../references.html#ref-stodden2014" role="doc-biblioref">Stodden and Miguez 2014</a>)</span>, <span class="citation" data-cites="turingway2019">(<a href="../references.html#ref-turingway2019" role="doc-biblioref">The Turing Way Community 2019</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Social sciences (psychology, sociology)</td>
+<td>Obtain similar results when repeating a study using new participants</td>
+<td>Repeating a study with different groups of participants or in different cultural contexts to evaluate the generalizability of the findings</td>
+<td><span class="citation" data-cites="baker2015">(<a href="../references.html#ref-baker2015" role="doc-biblioref">Baker 2015</a>)</span>, <span class="citation" data-cites="OSC2015">(<a href="../references.html#ref-OSC2015" role="doc-biblioref">Open Science Collaboration 2015</a>)</span>, <span class="citation" data-cites="nosek2022">(<a href="../references.html#ref-nosek2022" role="doc-biblioref">Nosek et al. 2022</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Mathematical science</td>
+<td>Obtaining the same results by following the same reasoning and methods.</td>
+<td>Repetition of demonstrations and proofs in different mathematical contexts to confirm the validity and generality of the theorems</td>
+<td><span class="citation" data-cites="stodden2013">(<a href="../references.html#ref-stodden2013" role="doc-biblioref">Stodden et al. 2013</a>)</span>, <span class="citation" data-cites="donoho2015">(<a href="../references.html#ref-donoho2015" role="doc-biblioref">Donoho and Stodden 2015</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Economics</td>
+<td>Obtaining the same results when applying the same model to new data sets or economic contexts</td>
+<td>Repetition of economic analyses with data from different periods or in different regions to evaluate the robustness of the results.</td>
+<td><span class="citation" data-cites="ioannidis2017">(<a href="../references.html#ref-ioannidis2017" role="doc-biblioref">Ioannidis et al. 2017</a>)</span>, <span class="citation" data-cites="vilhuber2020">(<a href="../references.html#ref-vilhuber2020" role="doc-biblioref">Vilhuber 2020</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Education</td>
+<td>Replicate a study using the same design and methods to confirm the results</td>
+<td>Repeating the study in different schools or educational settings to examine the applicability of the findings</td>
+<td><span class="citation" data-cites="NSF2019">(<a href="../references.html#ref-NSF2019" role="doc-biblioref">Foundation and Education Sciences U. S. Department of Education 2019</a>)</span>, <span class="citation" data-cites="lebeau2021">(<a href="../references.html#ref-lebeau2021" role="doc-biblioref">LeBeau et al. 2021</a>)</span>, <span class="citation" data-cites="perry2022">(<a href="../references.html#ref-perry2022" role="doc-biblioref">Thomas Perry and Lea 2022</a>)</span>, <span class="citation" data-cites="karathanasis2022">(<a href="../references.html#ref-karathanasis2022" role="doc-biblioref">Karathanasis et al. 2022</a>)</span>, <span class="citation" data-cites="pownall2023">(<a href="../references.html#ref-pownall2023" role="doc-biblioref">Pownall et al. 2023</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Medicine and health sciences</td>
+<td>Repeat a study using the same methods to validate the results</td>
+<td>Repeat a clinical study with different patient groups or under different healthcare conditions to confirm the applicability of the findings.</td>
+<td><span class="citation" data-cites="ioannidis2005">(<a href="../references.html#ref-ioannidis2005" role="doc-biblioref">Ioannidis 2005</a>)</span>, <span class="citation" data-cites="button2013">(<a href="../references.html#ref-button2013" role="doc-biblioref">Button et al. 2013</a>)</span>, <span class="citation" data-cites="niven2018">(<a href="../references.html#ref-niven2018" role="doc-biblioref">Niven et al. 2018</a>)</span> , <span class="citation" data-cites="stupple2019">(<a href="../references.html#ref-stupple2019" role="doc-biblioref">Stupple et al. 2019</a>)</span>, <span class="citation" data-cites="mcdermott2021">(<a href="../references.html#ref-mcdermott2021" role="doc-biblioref">McDermott et al. 2021</a>)</span>, <span class="citation" data-cites="moassefi2023">(<a href="../references.html#ref-moassefi2023" role="doc-biblioref">Moassefi et al. 2023</a>)</span>, <span class="citation" data-cites="montgomery2024">(<a href="../references.html#ref-montgomery2024" role="doc-biblioref">Montgomery 2024</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-baker2015" class="csl-entry" role="listitem">
+Baker, M. 2015. <span>“First Results from Psychology’s Largest Reproducibility Test.”</span> In <em>Nature News</em>. <a href="https://doi.org/10.1038/nature.2015.17433">https://doi.org/10.1038/nature.2015.17433</a>.
+</div>
+<div id="ref-baker2017" class="csl-entry" role="listitem">
+Baker, M. 2017. <span>“Check Your Chemistry.”</span> <em>Nature</em> 548 (7668): 485–88. <a href="https://doi.org/10.1038/548485a">https://doi.org/10.1038/548485a</a>.
+</div>
+<div id="ref-barba2018" class="csl-entry" role="listitem">
+Barba, Lorena A. 2018. <span>“Terminologies for Reproducible Research.”</span> In <em>arXiv Preprint arXiv:1802.03311</em>. <a href="https://arxiv.org/abs/1802.03311">https://arxiv.org/abs/1802.03311</a>.
+</div>
+<div id="ref-button2013" class="csl-entry" role="listitem">
+Button, KS, JPA Ioannidis, C Mokrysz, et al. 2013. <span>“Power Failure: Why Small Sample Size Undermines the Reliability of Neuroscience.”</span> <em>Nature Reviews Neuroscience</em> 14 (5): 365–76. <a href="https://doi.org/10.1038/nrn3475">https://doi.org/10.1038/nrn3475</a>.
+</div>
+<div id="ref-donoho2015" class="csl-entry" role="listitem">
+Donoho, David L, and Victoria Stodden. 2015. <span>“Reproducible Research in the Mathematical Sciences.”</span> In <em>Princeton Companion to Applied Mathematics</em>. Princeton University Press. <a href="https://www.stodden.net/papers/PCAM_20140620-VCS.pdf">https://www.stodden.net/papers/PCAM_20140620-VCS.pdf</a>.
+</div>
+<div id="ref-NSF2019" class="csl-entry" role="listitem">
+Foundation, The National Science, and The Institute of Education Sciences U. S. Department of Education. 2019. <em>Companion Guidelines on Replication &amp; Reproducibility in Education Research</em>. The National Science Foundation. <a href="https://www.nsf.gov/pubs/2019/nsf19022/nsf19022.pdf">https://www.nsf.gov/pubs/2019/nsf19022/nsf19022.pdf</a>.
+</div>
+<div id="ref-ioannidis2005" class="csl-entry" role="listitem">
+Ioannidis, JP. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLOS Medicine</em> 2 (8): e124. <a href="https://doi.org/10.1371/journal.pmed.0020124">https://doi.org/10.1371/journal.pmed.0020124</a>.
+</div>
+<div id="ref-ioannidis2017" class="csl-entry" role="listitem">
+Ioannidis, JP, TD Stanley, and H Doucouliagos. 2017. <span>“The Power of Bias in Economics Research.”</span> <em>The Economic Journal</em> 127 (605): F236–65. <a href="https://doi.org/10.1111/ecoj.12461">https://doi.org/10.1111/ecoj.12461</a>.
+</div>
+<div id="ref-karathanasis2022" class="csl-entry" role="listitem">
+Karathanasis, Nestoras, Daniel Hwang, Vibol Heng, et al. 2022. <span>“Reproducibility Efforts as a Teaching Tool: A Pilot Study.”</span> <em>PLOS Computational Biology</em> 18 (11): e1010615. <a href="https://doi.org/10.1371/journal.pcbi.1010615">https://doi.org/10.1371/journal.pcbi.1010615</a>.
+</div>
+<div id="ref-lebeau2021" class="csl-entry" role="listitem">
+LeBeau, Brandon, Scott Ellison, and Ariel M. Aloe. 2021. <span>“Reproducible Analyses in Education Research.”</span> <em>Review of Research in Education</em> 45 (1): 195–222. <a href="https://doi.org/10.3102/0091732X20985076">https://doi.org/10.3102/0091732X20985076</a>.
+</div>
+<div id="ref-mcdermott2021" class="csl-entry" role="listitem">
+McDermott, Matthew B. A., Shirly Wang, Nikki Marinsek, Rajesh Ranganath, Luca Foschini, and Marzyeh Ghassemi. 2021. <span>“Reproducibility in Machine Learning for Health Research: Still a Ways to Go.”</span> <em>Science Translational Medicine</em> 13 (586): eabb1655. <a href="https://doi.org/10.1126/scitranslmed.abb1655">https://doi.org/10.1126/scitranslmed.abb1655</a>.
+</div>
+<div id="ref-mesnard2017" class="csl-entry" role="listitem">
+Mesnard, Olivier, and Lorena A. Barba. 2017. <span>“Reproducible and Replicable Computational Fluid Dynamics: It’s Harder Than You Think.”</span> <em>Computing in Science Engineering</em> 19 (4): 44–55. <a href="https://doi.org/10.1109/MCSE.2017.3151254">https://doi.org/10.1109/MCSE.2017.3151254</a>.
+</div>
+<div id="ref-moassefi2023" class="csl-entry" role="listitem">
+Moassefi, Mana, Pouria Rouzrokh, Gian Marco Conte, et al. 2023. <span>“Reproducibility of Deep Learning Algorithms Developed for Medical Imaging Analysis: A Systematic Review.”</span> <em>Journal of Digital Imaging</em> 36 (5): 2306–12. <a href="https://doi.org/10.1007/s10278-023-00870-5">https://doi.org/10.1007/s10278-023-00870-5</a>.
+</div>
+<div id="ref-montgomery2024" class="csl-entry" role="listitem">
+Montgomery, Erwin B. 2024. <em>Reproducibility in Biomedical Research: Epistemological and Statistical Problems and the Future</em>. 2nd ed. Academic Press.
+</div>
+<div id="ref-niven2018" class="csl-entry" role="listitem">
+Niven, Daniel J., T. Jared McCormick, Sharon E. Straus, et al. 2018. <span>“Reproducibility of Clinical Research in Critical Care: A Scoping Review.”</span> <em>BMC Medicine</em> 16 (1). <a href="https://doi.org/10.1186/s12916-018-1018-6">https://doi.org/10.1186/s12916-018-1018-6</a>.
+</div>
+<div id="ref-nosek2022" class="csl-entry" role="listitem">
+Nosek, Brian A., Tom E. Hardwicke, Hannah Moshontz, et al. 2022. <span>“Replicability, Robustness, and Reproducibility in Psychological Science.”</span> <em>Annual Review of Psychology</em> 73 (1): 719–48. <a href="https://doi.org/10.1146/annurev-psych-020821-114157">https://doi.org/10.1146/annurev-psych-020821-114157</a>.
+</div>
+<div id="ref-OSC2015" class="csl-entry" role="listitem">
+Open Science Collaboration. 2015. <span>“Estimating the Reproducibility of Psychological Science.”</span> <em>Science</em> 349 (6251): aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>.
+</div>
+<div id="ref-peng2011" class="csl-entry" role="listitem">
+Peng, RD. 2011. <span>“Reproducible Research in Computational Science.”</span> <em>Science</em> 334 (6060): 1226–27. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a>.
+</div>
+<div id="ref-pownall2023" class="csl-entry" role="listitem">
+Pownall, Madeleine, Flávio Azevedo, Laura M. König, et al. 2023. <span>“Teaching Open and Reproducible Scholarship: A Critical Review of the Evidence Base for Current Pedagogical Methods and Their Outcomes.”</span> <em>Royal Society Open Science</em> 10 (5). <a href="https://doi.org/10.1098/rsos.221255">https://doi.org/10.1098/rsos.221255</a>.
+</div>
+<div id="ref-stodden2013" class="csl-entry" role="listitem">
+Stodden, Victoria, David H Bailey, Jonathan Borwein, R. J. LeVeque, W. Rider, and W. Stein. 2013. <span>“Setting the Default to Reproducible. Reproducibility in Computational and Experimental Mathematics.”</span> <em>Computational Science Research. SIAM News</em> 46 (5): 4–6. <a href="https://stodden.net/icerm_report.pdf">https://stodden.net/icerm_report.pdf</a>.
+</div>
+<div id="ref-stodden2014" class="csl-entry" role="listitem">
+Stodden, V, and SB Miguez. 2014. <span>“Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research.”</span> <em>Journal of Open Research Software</em> 2 (1): e21. <a href="https://doi.org/10.5334/jors.ay">https://doi.org/10.5334/jors.ay</a>.
+</div>
+<div id="ref-stupple2019" class="csl-entry" role="listitem">
+Stupple, Aaron, David Singerman, and Leo Anthony Celi. 2019. <span>“The Reproducibility Crisis in the Age of Digital Medicine.”</span> <em>Npj Digital Medicine</em> 2 (1). <a href="https://doi.org/10.1038/s41746-019-0079-z">https://doi.org/10.1038/s41746-019-0079-z</a>.
+</div>
+<div id="ref-turingway2019" class="csl-entry" role="listitem">
+The Turing Way Community. 2019. <em>The Turing Way: A Handbook for Reproducible Data Science</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.3233986">https://doi.org/10.5281/zenodo.3233986</a>.
+</div>
+<div id="ref-perry2022" class="csl-entry" role="listitem">
+Thomas Perry, Rebecca Morris, and Rosanna Lea. 2022. <span>“A Decade of Replication Study in Education? A Mapping Review (2011–2020).”</span> <em>Educational Research and Evaluation</em> 27 (1-2): 12–34. <a href="https://doi.org/10.1080/13803611.2021.2022315">https://doi.org/10.1080/13803611.2021.2022315</a>.
+</div>
+<div id="ref-vilhuber2020" class="csl-entry" role="listitem">
+Vilhuber, Lars. 2020. <span>“Reproducibility and <span>Replicability</span> in <span>Economics</span>.”</span> <em>Harvard Data Science Review</em> 2 (4). <a href="https://doi.org/10.1162/99608f92.4f6b9e67">https://doi.org/10.1162/99608f92.4f6b9e67</a>.
+</div>
+</div>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../materials/01-concept.html" class="pagination-link" aria-label="Concept">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Concept</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p><a href="https://cgranell.github.io/orr">cgranell.github.io/orr</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
