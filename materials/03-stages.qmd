@@ -2,6 +2,20 @@
 title: "Before, during and after"
 ---
 
+[@alston2021] outlined basic steps toward making research more reproducible base on three stages of a research project: (1) **before**, (2) **during**, and (3) **after** analysis. 
+
+```{mermaid}
+%%| fig-width: 6.5
+%%| fig-align: center
+%%| fig-caption: "Three stages of a research project. Source: [@alston2021]."
+flowchart TB
+  A[Before analysis] --> B[During analysis]
+  B --> C[After analysis]
+```
+
+We borrow this simple outline to better categorise and explain the set of practical recommendations and practices that follow. Note that most of the following recommendations are already widely accepted best practices for scientific research and that striving for a reasonable level of reproducibility is more achievable than you may expect. Essentially, researchers must think carefully before, during, and after analysis to ensure the reproducibility, openness and transparency of their work.
+
+
 ## Before analysis: planing for reproducibility
 
 ::: {.column-margin}
