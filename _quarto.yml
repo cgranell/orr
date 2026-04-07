@@ -19,6 +19,23 @@ book:
         - materials/01-historical-notes.qmd
         - materials/01-concept.qmd
         - materials/01-comparison.qmd
+    - part: "The Pre-reproducibility Assessment"
+      chapters:
+        - materials/02-assessment.qmd
+    - part: "The Reproducibility Process: Practices and Recommendations"
+      chapters:
+        - materials/03-before.qmd
+        - materials/03-during.qmd
+        - materials/03-after.qmd
+    - part: "ORR @ UJI"
+      chapters:
+        - materials/04-uji.qmd
+    - part: "Tools"
+        
+    - part: "Additional materials"
+      chapters: 
+        - materials/05-key-people.qmd
+        - materials/05-glossary.qmd
     - references.qmd
 
 

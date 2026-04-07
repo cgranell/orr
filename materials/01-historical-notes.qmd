@@ -22,7 +22,7 @@ Reproducibility is not a new concept that has emerged recently. We, of course, f
 ## **Slide Deck** Historical notes
 
 ::: slides
-[Slides](01-historical-notes-slides.qmd)
+[Slides](01-historical-notes-slides.html)
 :::
 
 ::: source

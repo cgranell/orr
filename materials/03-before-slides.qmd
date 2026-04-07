@@ -1,0 +1,414 @@
+---
+title: "Before analysis"
+subtitle: "Basics to get started"
+author: "Carlos Granell"
+institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
+date: last-modified
+date-format: "MMM D, YYYY"
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    logo: ../images/ESCOLA-DOCTORAT-es-negre.png
+    footer: "[cgranell.github.io/rrp](https://cgranell.github.io/rrp)"
+    theme: default
+    transition: fade
+    preview-links: true
+    author-meta: "Carlos Granell"
+    date-meta: "15/03/2024"
+    chalkboard: 
+      theme: whiteboard
+      buttons: false
+      boardmarker-width: 3
+from: markdown+emoji
+execute:
+  echo: true
+---
+
+# Focus is the art of knowing what to ignore. {background-color="#4f6952"}
+
+::: {.fragment .fade-in}
+
+The fastest way to raise your level of performance: Cut your number of commitments in half.
+
+:::
+
+
+# \[#1\] ONE project = ONE folder {#rec01}
+
+## What's a project?
+
+::: columns
+::: {.column width="50%"}
+::: incremental
+-   an experiment in a PhD project
+
+-   master project thesis
+
+-   ideas for future research
+
+-   regular meeting notes/minutes
+
+-   teaching materials
+:::
+:::
+
+::: {.column width="50%"}
+::: incremental
+-   a review paper
+
+-   a conference presentation
+
+-   a workshop/seminar materials
+
+-   a book
+
+-   PhD thesis manuscript
+:::
+:::
+:::
+
+# \[#2\] Choose your best way to organise a project/folder {#rec02}
+
+## Project/folder structure
+
+### Make sure it's consistent, informative, works for you, and stick to it
+
+::: columns
+::: {.column width="40%"}
+-   `README.md`
+
+-   `LICENSE`
+
+-   `CODE_OF_CONDUCT`
+
+-   `CONTRIBUTING`
+:::
+
+::: {.column width="60%"}
+-   data: `data`, `data-raw`
+
+-   code: `scripts`, `analysis`
+
+-   results: `reports`, `figs`
+
+-   documentation: `notes`, `docs`...
+:::
+:::
+
+::: {.fragment .fade-in}
+::: callout-note
+## **Example**
+
+[Turing's project structure](https://book.the-turing-way.org/project-design/project-repo/project-repo-advanced.html) [@turingway2022]
+:::
+:::
+
+# \[#3\] Choose a consistent file naming convention {#rec03}
+
+## File naming convention
+
+::: columns
+::: {.column width="40%" align="center"}
+<img src="../images/slides/phdcomics1531.gif" width="90%"/>
+:::
+
+::: {.column width="60%"}
+::: incremental
+-   File names are **machine-readable**, **human-readable**, and play well with **default ordering**
+
+-   Script file names begin with numbers/letters to indicate the sequence in the analysis: `01_download_data.R`
+
+-   Data file names begin with dates (YYYYMMDD) as prefix: `20200115_survey.csv`
+:::
+:::
+:::
+
+::: {.notes}
+Source: [phdcomics.com](http://phdcomics.com/comics/archive.php?comicid=1531)
+:::
+
+# \[#4\] Never ever touch raw data {#rec04}
+
+Remember [Newton's letter to Flamsteed](https://cgranell.github.io/rrp/materials/01-historical-notes-slides.html#/newtons-request-for-raw-data)
+
+## Raw data
+
+::: {.incremental}
+-   Store raw data permanently (`data-raw` folder)
+
+-   Use scripts to process/clean raw datasets
+
+-   Store processed data in a separate folder (`data` or `data-clean` folder)
+
+-   Document the process (simple steps, diagrams, content/structure of datasets, provenance) in a plain text `README` file (See [Recommendation #6](#rec06))
+:::
+
+# \[#5\] Use open data formats {#rec05}
+
+## Open formats
+
+::: {.incremental}
+-   Use open, text-based formats whenever possible
+
+-   Independent of specific software tools or vendors
+
+-   Alternatively, provide data in an open format besides proprietary format
+
+    -   Microsoft Excel (`.xls`) + Comma-separated values (`.csv`)
+    
+    -   ESRI Shapefile (`.shp`) + GeoPackages (`.gpkg`)
+    
+:::
+
+
+::: {.fragment .fade-in}
+::: callout-note
+## **Example**
+
+Dutch national centre of expertise and repository for research data (DANS) - [Preferred vs non-preferred formats](https://dans.knaw.nl/en/file-formats/)
+:::
+:::
+
+
+# \[#6\] Document, document, and document {#rec06 .center .r-fit-text}
+
+## README file(s)
+
+::: incremental
+-   Include a `README` file in the `root` folder to describe the project, basic orientation to use your code, data, etc.
+
+::: {.fragment .fade-in}
+::: callout-tip
+## **Tips**
+
+Suggestions for writing a good [README](https://www.makeareadme.com/) and [GitHub's README](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+
+If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/)
+:::
+:::
+:::
+
+## README file(s) {data-menu-title="README file(s) (II)"}
+
+::: {.incremental}
+-   Include (if required) `README` files in each subfolder to describe metadata/complex content
+
+-   Keep track of ideas, discussions and decisions about the project (in the `notes` folder)
+
+-   Plain text files can be easily version controlled (See [Recommendations #9](#rec10) and [#10](#rec10))
+:::
+
+# \[#7\] Add a (data) license {#rec07 .center .r-fit-text}
+
+## Concept
+
+### A license is a *contract* between the *authors* and *users* [@jolly2012]
+
+::: {.fragment .fade-in-then-semi-out}
+Without a license, **copyright** is automatically attached to your work
+:::
+
+::: {.fragment .fade-in}
+If you plan to make your work (data/databases/documents) public, **always specify a [license](https://book.the-turing-way.org/reproducible-research/licensing/licensing-data.html)** via a *LICENSE file* (`LICENSE.md` or `LICENSE.txt`)
+:::
+
+::: {.notes}
+[Choosealicense.com](https://choosealicense.com/)
+:::
+
+## Data licenses: Creative Commons
+
+:::: {.columns}
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="75%" style="text-align: center"}
+[**CC BY-SA-NC-ND**](https://creativecommons.org/about/cclicenses/)
+
+|        |                                                            |
+|--------|------------------------------------------------------------|
+| **BY** | Creators/authors must be credited                          |
+| **SA** | Derivatives or redistributions must have identical license |
+| **NC** | Only non-commercial usage is allowed                       |
+| **ND** | No derivatives are allowed                                 |
+:::
+
+::: {.column width="20%"}
+::: {.fragment .fade-in}
+![](https://cent.uji.es/pub/guia-lpi-docencia/cc-icn-by.png){width="112px" title="CC Attribution"} <br/>
+:::
+
+::: {.fragment .fade-in}
+![](https://cent.uji.es/pub/guia-lpi-docencia/cc-icn-by-nc.png){width="112px" title="CC Attribution-NonCommercial"} <br/>
+:::
+
+::: {.fragment .fade-in}
+![](https://cent.uji.es/pub/guia-lpi-docencia/cc-icn-by-nd.png){width="112px" title="CC Attribution-NoDerivates"} <br/>
+:::
+
+::: {.fragment .fade-in}
+![](https://cent.uji.es/pub/guia-lpi-docencia/cc-icn-by-nd.png){width="112px" title="CC AttributionShareAlike"} <br/>
+:::
+
+::: {.fragment .fade-in}
+![](https://cent.uji.es/pub/guia-lpi-docencia/cc-icn-by-nc-sa.png){width="112px" title="CC Attribution-NonCommercial-ShareAlike"} <br/>
+:::
+
+::: {.fragment .fade-in}
+![](https://cent.uji.es/pub/guia-lpi-docencia/cc-icn-by-nc-nd.png){width="112px" title="CC Attribution-NonCommercial-NoDerivates"} <br/>
+:::
+:::
+::::
+
+## Data licenses: Creative Commons {.smaller data-menu-title="Data licenses: CC example"}
+
+### Ex: Article (or data/datasets) to be published
+
+| As user/viewer, can you                                       | CC BY 4.0 | CC BY-NC-ND                                     |
+|-------------------------------|------------------|------------------------|
+| Read, print and download it?                                     | YES       | YES                                             |
+| Redistribute or republish it?                        | YES       | YES                                             |
+| Translate it?                                        | YES       | YES (private use only and not for distribution) |
+| Download for text and data mining?                   | YES       | YES                                             |
+| Reuse portions in other works [^1]? | YES       | YES                                             |
+| Sell or re-use it for commercial purpose?                        | YES       | NO                                              |
+
+[^1]: Use with caution!
+
+## Data licenses: CC Zero
+
+:::: {.columns}
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+[**CC0 “No Rights Reserved"**](https://creativecommons.org/public-domain/cc0/)
+:::
+
+::: {.column width="60%"}
+Creators/researchers/educators put their works into the global public domain for the benefit of society
+:::
+::::
+
+## Data licenses: Open Data Commons
+
+:::: {.columns}
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+[**Open Data Commons**](https://opendatacommons.org/licenses/index.html) ^[[Differences between CC and ODC licenses](https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-data.html#a-note-on-the-differences-between-cc-and-odc-licenses)]
+:::
+
+::: {.column width="60%"}
+::: {.fragment .fade-in}
+[ODC Public Domain Dedication and License (PDDL)](https://opendatacommons.org/licenses/pddl/): Public Domain for data/databases (≅CC0)
+:::
+
+::: {.fragment .fade-in}
+[ODC-By](https://opendatacommons.org/licenses/by/): Attribution for data/databases (≅CC-BY)
+:::
+
+::: {.fragment .fade-in}
+[ODC Open Data License (ODbL)](https://opendatacommons.org/licenses/odbl/): Attribution Share-Alike for data/databases (≅CC-BY-SA)
+:::
+:::
+::::
+
+
+## Data licenses: What UJI recommends
+
+### [Copyright and licences](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)
+
+
+- Final projects (TFG, TFM): CC BY-SA
+ 
+- Doctoral theses: CC BY-SA or CC BY-NC-SA
+  
+- Teaching materials: CC BY-NC-SA     
+
+
+# \[#8\] Add a (software) license {#rec08 .center .r-fit-text}
+
+## Software licenses
+
+
+### Always add a [license](https://book.the-turing-way.org/reproducible-research/licensing/licensing-compatibility) to the software you plan to make public
+
+:::: {.columns}
+
+::: {.column width="50%" style="text-align: center"}
+
+**Permissive** = attribution (recommended for academic work)
+:::
+
+::: {.column width="50%" style="text-align: center"}
+
+**Copyleft** = share-alike (derivative work maintain same license as the original)
+
+:::
+::::
+
+## {data-menu-title="Software licenses (II)"}
+
+![](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1002598.g002&type=large){width=65% fig-align="center"}
+
+
+
+::: {.aside}
+Source: [@morin2012]
+:::
+
+
+## Software licenses: What UJI recommends
+
+See [Recommendation 19](https://cgranell.github.io/rrp/materials/03-during-slides.html#/rec19)
+
+
+# \[#9\] Learn/use version control systems {#rec09 .center .r-fit-text}
+
+
+## {data-menu-title="Version control systems"}
+
+### Turn your local project folder into a version control repository
+
+::: incremental
+
+-   to keep track changes of your work over time
+
+-   to roll back to past edits (track history)
+
+-   to handle properly text formats (code, text docs, markdown docs) as opposed to rich/binary formats (Word, gif/jpg)
+
+-   **Tools:** [Git](https://git-scm.com/), SVN, Mercurial
+
+-   **Readings**: [Getting started with Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/), [@perez2016], [@bryan2018]
+
+:::
+::::
+
+# \[#10\] Learn/use online (Git) repository hosting services {#rec10 .center .r-fit-text}
+
+## {data-menu-title="Online (Git) repository hosting services"}
+
+### Easier for individuals and teams to use Git for version control and collaboration
+
+::: incremental
+
+-   VCS + collaborative features + development support features
+
+-   **Tools**: [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)
+
+-   **Readings**: 
+
+    -   [Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)
+
+    -   [@perez2016], [@bryan2020]
+
+:::
+
+
+# References {.scrollable}
