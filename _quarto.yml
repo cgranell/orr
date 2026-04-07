@@ -62,10 +62,10 @@ book:
         - materials/05-glossary.qmd
     - references.qmd
 
-  navbar: 
-    logo: "images/ESCOLA-DOCTORAT-es-blanco.png"
-    logo-alt: "Escola de Doctorat, UJI"
-    logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/"
+  #navbar: 
+  #  logo: "images/ESCOLA-DOCTORAT-es-blanco.png"
+  #  logo-alt: "Escola de Doctorat, UJI"
+  #  logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/"
 
   page-footer:
     center: "[cgranell.github.io/orr](https://cgranell.github.io/orr)"
