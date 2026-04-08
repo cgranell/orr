@@ -39,4 +39,4 @@ What do you think their scores should be?
 
 Choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (Not Applicable \[NA\], Undocumented \[0\], Documented \[1\], Available \[2\], Available and Open \[3\]) for all of reproducibility criteria except the computational environment:
 
-Based on the **reproduction plan template** ([doc](static/repro_plan.docx), [pdf](static/repro_plan.pdf)), fill only the first two columns as the content of the *planned measures* column depends on the [Unit 3 Practices](practices.qmd)
+Based on the **reproduction plan template** ([doc](static/repro_plan.docx), [pdf](static/repro_plan.pdf)), fill only the first two columns as the content of the *planned measures* column depends on the [Recommendations and practices for open and reproducible research](03-practices.qmd)

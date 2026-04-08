@@ -8,7 +8,7 @@ title: "Before, during and after"
 %%| fig-width: 6.5
 %%| fig-align: center
 %%| fig-caption: "Three stages of a research project. Source: [@alston2021]."
-flowchart TB
+flowchart LR
   A[Before analysis] --> B[During analysis]
   B --> C[After analysis]
 ```
@@ -36,7 +36,7 @@ List of recommendations/practices:
 
 - **Adopt a project-oriented workflow**: Use dedicated folders to ensure that all paths are relative to the project root, making the project portable across different computers.
 
-- **Organize files logically**: Use a consistent folder structure (e.g., separate folders for `/data`, `/scripts`, `/results`, and `/docs`).
+- **Organise files logically**: Use a consistent folder structure (e.g., separate folders for `/data`, `/scripts`, `/results`, and `/docs`).
 
 - **Use consistent, machine-readable file names**: Do not rely on filenames like `final_v2_REALLY_FINAL.docx`. Avoid spaces and special characters. Use delimiters like underscores or hyphens to make files easy to search and sort. Use chronological markers like ISO 8601 date formats (`YYYY-MM-DD`) in filenames so they sort naturally by time.
 
@@ -46,13 +46,13 @@ List of recommendations/practices:
 
 - **Document and write "README" files early**: Create a `README.md` file at the start of the project to describe the purpose, structure, and requirements of the research. This serves as a guide for both current and future collaborators (including your future self).
 
-- **Plan for data sharing**: Identify and add a convenient license for your data.
+- **Plan for data sharing**: Identify a convenient license for your data.
 
-- **Plan for code sharing**: Identify and add a convenient license for your code and software artefacts. 
+- **Plan for code sharing**: Identify a convenient license for your code and software artefacts. 
 
 - **Use version control**: Use Git to track changes systematically and provide a "time machine" for your code (local repository).
 
-- **Use online remote repositories**: Use GitHub to ease collaborateive develpment and sharing of code and software artefacts (remote repository).
+- **Use online remote repositories**: Use GitHub to ease collaborative development and sharing of code and software artefacts (remote repository).
 
 ::: {.callout-note icon=true}
 ## Slide Deck
@@ -86,7 +86,7 @@ List of recommendations/practices:
 
 - **Open data does not guarantee reproducible data**:
 
-- **Select data worthwhile for reproducibility**:
+- **Pay attention to data that is relevant for reproducibility**:
 
 - **Adopt FAIR principles for data management with caution**: FAIR data is not necessarily reproducible data. FAIR focuses on making data Findable, Accessible, Interoperable, and Reusable, but it does not guarantee that the data is well-documented or that the analysis can be reproduced. To ensure reproducibility, you need to go beyond FAIR and also focus on the quality of documentation, version control, and providing clear instructions for how to use the data.
 
@@ -94,7 +94,7 @@ List of recommendations/practices:
 
 - **Learn/use scripting languages**: Avoid manual "point-and-click" operations in software like Excel. If a change is made to the data, it should be *documented* in a script. AI assistants can be used to generate code snippets, but the researcher should understand and review the code to ensure it is correct and reproducible.
 
-- **Embrace literate programming**: Use Quarto or similar tools to keep your text and code (scripts) in the same file. This prevents for example "copy-paste" errors between your statistics software and your word processor.
+- **Embrace notebooks**: Use Quarto or similar tools to keep your text and code (scripts) in the same file. This prevents for example "copy-paste" errors between your statistics software and your word processor.
 
 - **Manage sofware dependences**: Save information about your software versions and package dependencies. This allows others to recreate the exact technical conditions under which your results were generated.
 

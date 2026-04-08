@@ -1,0 +1,34 @@
+---
+title: "Worth following"
+---
+
+There are many researchers who are pioneers and leaders in the use and adoption of good practices for reproducible research in their disciplines, either individually or in their research group, or critically write aobut research integrity and academic pubñished, which are also linked to open science and reproducibility. Below are some examples 
+
+
+[Lorena Barba's](https://lorenabarba.com/) group works on applied mathematics, programming and fluid mechanics, making  reprpducibility practices central to their research. 
+
+[Victoria Stodden](https://stodden.net/) researches to improve the reliability of scientific results in the face of increasingly sophisticated computational approaches. 
+
+[Peter Kedron](https://peterkedron.com/)'s research interest is reproducibility, replicability, and open science practices in the geographical sciences.
+
+[Mine Çetinkaya-Rundel](https://mine-cr.com/) works on statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.
+
+[For better science](https://forbetterscience.com/) is a blog by Leonid Schneider that critically writes about research integrity and academic publishing, which are also linked to open science and reproducibility.
+
+[Retraction watch](https://retractionwatch.com/) is a blog that reports on retractions of scientific papers, which can be an important aspect of understanding the challenges and issues in scientific research and reproducibility.
+
+[Reproducible Research @ AGILE](https://reproducible-research.github.io/) reports on the activities on reproducible research in the context of the AGILE conference and in the field of GIScience.
+
+[Institute for Replication (I4R)](https://i4replication.org/index.html) is an organization that promotes replication studies in various scientific disciplines, which is a key aspect of reproducibility and scientific integrity.
+
+[Pangeo](https://pangeo.io/) is a community for open, reproducible, scalable geoscience.
+
+[ReproducibiliTea Journal Clubs](https://www.reproducibilitea.org/) are a global network of journal clubs that focus on reproducibility in science, providing a platform for discussion and learning about best practices in research.
+
+[The UK Reproducibility Network (UKRN)](https://www.ukrn.org/) hosts an series of [open sicence primers](https://www.ukrn.org/primers/) to introduce a broad audience to important topics in open and reproducible scholarship.
+
+[The Center for Open Science](https://www.cos.io/) is an organization that provides tools and resources to promote open science and reproducibility, including the Open Science Framework (OSF) which is a platform for sharing research materials and data.
+
+[Replication Research](https://ejournals.uni-muenster.de/replicationresearch/index) is an interdisciplinary journal for replication research.
+
+[RDA Reproducibility Checklist Working Group](https://www.rd-alliance.org/groups/rda-reproducibility-checklist-working-group/activity/) develops checklists to assess the reproducibility of research, which can be a valuable resource for researchers looking to improve their practices.

@@ -55,12 +55,11 @@ book:
       chapters:
         - materials/04-uji.qmd
     - part: "Tools"
-        
-    - part: "Additional materials"
-      chapters: 
-        - materials/05-key-people.qmd
-        - materials/05-glossary.qmd
-    - references.qmd
+    - references.qmd    
+  appendices: 
+    - materials/appendice-key-people.qmd
+    - materials/appendice-glossary.qmd
+    
 
   #navbar: 
   #  logo: "images/ESCOLA-DOCTORAT-es-blanco.png"
@@ -68,7 +67,8 @@ book:
   #  logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/"
 
   page-footer:
-    center: "[cgranell.github.io/orr](https://cgranell.github.io/orr)"
+    center: "[Open Reproducible Research (ORR)](https://cgranell.github.io/orr)"
+    #background: "light"
 
 bibliography: references.bib
 citations-hover: true
@@ -77,8 +77,6 @@ citation-location: margin
 format: 
   html:
     theme:
-    - cosmo
-    - brand
- 
-
+      light: cosmo
+      dark: superhero #darkly
 

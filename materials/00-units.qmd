@@ -35,4 +35,4 @@ flowchart TB
 
 I am pretty sure that the chapters above only grasp the surface of open reproducible research. Depending on your needs, course length, and participant profiles, you, as an educator, can develop certain units in greater depth, add new ones focusing, for example, on the technology stack to support computational reproducibility, or include practical activities such as actual reproduction of existing papers in your discipline. 
 
-As a learner, you have [many articles, web sites and documents](05-key-people.qmd) to expand your knowledge and curiosity about reproducibility research 😀.
+As a learner, you have [many articles, web sites and documents](appendice-key-people.qmd) to expand your knowledge and curiosity about reproducibility research 😀.
