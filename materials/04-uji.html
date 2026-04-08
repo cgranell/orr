@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../materials/05-key-people.html" rel="next">
+<link href="../references.html" rel="next">
 <link href="../materials/03-stages.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -41,10 +41,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0a428b2b166f5de82137ea72b5aca274.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -76,7 +80,169 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -101,8 +267,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Open Reproducible Research: Practices and Tools</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <a href="https://www.github.com/cgranell/orr" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -243,10 +410,16 @@ ul.task-list li input[type="checkbox"] {
       <span class="sidebar-item-text sidebar-link text-start">
  <span class="menu-text">Tools</span></span>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Additional materials</span></a>
+ <span class="menu-text">Appendices</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -254,24 +427,18 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/05-key-people.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Individuals to follow</span></span></a>
+  <a href="../materials/appendice-key-people.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Worth following</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/05-glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  <a href="../materials/appendice-glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -283,12 +450,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#timeline" id="toc-timeline" class="nav-link active" data-scroll-target="#timeline"><span class="header-section-number">10.1</span> Timeline</a></li>
-  <li><a href="#uji" id="toc-uji" class="nav-link" data-scroll-target="#uji"><span class="header-section-number">10.2</span> UJI</a></li>
+  <li><a href="#what-uji-recommends-about-orr" id="toc-what-uji-recommends-about-orr" class="nav-link" data-scroll-target="#what-uji-recommends-about-orr"><span class="header-section-number">10.2</span> What UJI recommends about ORR</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/04-uji.html">ORR @ UJI</a></li><li class="breadcrumb-item"><a href="../materials/04-uji.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Reproducible Research at UJI</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -337,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ul>
-<li><p><strong>October 2022, UJI</strong>: <a href="https://www.uji.es/investigacio/base/etica/cbpid/">Código de Buenas Prácticas en Investigación y Doctorado (CBPID)</a>.</p></li>
+<li><p><strong>October 2022, UJI</strong>: <a href="https://www.uji.es/upo/rest/contenido/1102833261/raw?idioma=es">Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2022</a>.</p></li>
 <li><p><strong>March 2023, UJI</strong>: UJI adhered to the CoARA Coalition for Advancing Research Assessment (<a href="https://coara.eu/">COARA</a>).</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -396,33 +564,40 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>July 2023, ANECA-CRUE</strong>: Proposal of the <a href="https://coara.eu/app/uploads/2023/12/National-Chaptern-Spain.pdf">CoARA National Chapter Spain</a>.</p></li>
 <li><p><strong>November 2023, National Committee of Research Ethics</strong>: published <a href="https://www.ciencia.gob.es/InfoGeneralPortal/documento/cedef913-3842-4f90-9ffc-032d256125f0">Recomendaciones éticas para la investigación en IA</a>.</p></li>
 <li><p><strong>December 2023, ANECA</strong>: published <a href="https://www.aneca.es/convocatoria-2023">new criteria for SEXENIOS assessment</a>, which are a first attempt to align with the CoARA principles.</p></li>
-<li><p><strong>February 2024, ANECA-CRUE</strong>: Kick-off of the <a href="https://coara.eu/coalition/national-chapters/coara-national-chapter-spain/">CoARA Spanish National Chapter</a></p></li>
+<li><p><strong>February 2024, ANECA-CRUE</strong>: Kick-off the <a href="https://coara.eu/coalition/national-chapters/coara-national-chapter-spain/">CoARA Spanish National Chapter</a></p></li>
 <li><p><strong>March 2024, ANECA</strong>: published <a href="https://www.aneca.es/documents/20123/53669/Criterios200324_anexos.pdf/470f9b03-fd7a-85b6-4f3a-1925c0f82c50?t=1711094067735">new criteria for accreditation</a> to associate professor and full professor, which are a first attempt to align with the CoARA principles.</p></li>
-<li><p><strong>April 2024, UJI</strong>: made public a roadmap document called “Action Plan CoARA 2024-2027” that specifies the development of diagnosis-evaluation-implementation activities to improve research assessment at the UJI.</p></li>
+<li><p><strong>April 2024, UJI</strong>: published a roadmap document called “<a href="https://www.uji.es/investigacio/base/coara/noticies/pla_accio/SLT_FM_ES_CoARA_UJI.pdf">Action Plan CoARA 2024-2027</a>” that specifies the development of diagnosis-evaluation-implementation activities to improve research assessment at the UJI.</p></li>
+<li><p><strong>May 2024, UJI</strong>: published a document called “<a href="https://www.uji.es/upo/rest/contenido/1039818540/raw?idioma=es">Plan de Acción en el marco de la Estrategia Nacional de Ciencia Abierta (2023-2027)</a>”</p></li>
+<li><p><strong>June 2024, UJI</strong>: set up an institutional web site “<a href="https://www.uji.es/investigacio/base/coara/">Evaluación de la actividade investigadora (CoARA-UJI)</a> to provide information about the CoARA initiative and the activities at UJI to align with its principles and commitments.</p></li>
+<li><p><strong>Sep-Oct 2024, UJI</strong>: published <a href="https://www.uji.es/investigacio/base/enca/noticies/termometre/informe_cas.pdf">Termometro del acceso abierto de la UJI 2023-2024</a>, which reports about the current situation of engagment in open access by UJI researchers.</p></li>
+<li><p><strong>Oct 2024, UJI</strong>: set up an institutional web site “<a href="https://www.uji.es/investigacio/base/enca/">Estrategia de Ciencia Abierta (ENCA-UJI)</a> to provide information about the activities at UJI to align with the ENCA actions.</p></li>
+<li><p><strong>Mar 2025, UJI</strong>: published the results of the Survey on Open Science at UJI available as a brief summary “<a href="http://hdl.handle.net/10234/745519">Breve informe sobre la encuesta ¿Qué pensamos sobre la evaluación científica de nuestra investigación?</a>”</p></li>
+<li><p><strong>July 2025, UJI</strong>: <a href="https://www.uji.es/investigacio/base/etica/cbpid/">Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2025</a>.</p></li>
 </ul>
 </section>
-<section id="uji" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="uji"><span class="header-section-number">10.2</span> UJI</h2>
+<section id="what-uji-recommends-about-orr" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="what-uji-recommends-about-orr"><span class="header-section-number">10.2</span> What UJI recommends about ORR</h2>
+<p>As part of the <a href="https://www.uji.es/serveis/cd/bib/pco/">Open Knowledge Portal</a>, the UJI library provides guides for researchers about</p>
 <ul>
-<li><p>As part of the <a href="https://www.uji.es/serveis/cd/bib/pco/">Open Knowledge Portal</a>, the UJI library provides guides for researchers about the <a href="https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/">open access dissemination of the results of the investigation</a>, and <a href="https://www.uji.es/serveis/cd/bib/pco/base/drets2/">copyright and licenses</a>.</p></li>
-<li><p>Open Access Declaration, October 2020. <a href="https://ujiapps.uji.es/ade/rest/storage/5ULDFW5YMLK0ZEFHGZLHRGJRX3V80U73">Declaració institucional a favor de la promoció de l’accés obert a la Universitat Jaume I</a>.</p></li>
-<li><p>Best practices for research and Doctorate, October 2022. <a href="https://www.uji.es/investigacio/base/etica/cbpid/">Código de Buenas Prácticas en Investigación y Doctorado, CBPID</a></p></li>
+<li><p><a href="https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/">how to publish open access</a>, including information about the different types of open access, the benefits of publishing open access, and the steps to publish open access.</p></li>
+<li><p><a href="https://www.uji.es/serveis/cd/bib/serveis/investigacio/dades/?">support guidelines to manage and publish research data</a>, including information about the importance of research data management, the steps to manage and publish research data, and the resources available to support researchers in this process.</p></li>
+<li><p><a href="https://www.uji.es/serveis/cd/bib/pco/base/drets2/">copyright and licenses</a>, including information about the different types of licenses and how to choose the appropriate license for research outputs.</p></li>
 </ul>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>As regards…</th>
-<th>…UJI recommends (April 2024)</th>
+<th>…UJI recommends (July 2025)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Sharing publications</td>
-<td>Deposit journal articles and book chapters (<em>preprint</em>, <em>postprint</em>, publisher’s document) in the [institutional repository](<a href="https://repositori.uji.es/" class="uri">https://repositori.uji.es/</a>). Also recommended other types of publications</td>
+<td>Sharing publications [<a href="https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/">source</a>]</td>
+<td>Mandatory archival of journal articles (<em>publisher’s final paper</em> &gt; <em>postprint</em> &gt; <em>preprint</em> ) in the <a href="https://repositori.uji.es/">institutional repository</a>. Also recommended other types of publications (book chapters, conference papers, etc.)</td>
 </tr>
 <tr class="even">
-<td>Publication licences</td>
-<td>CC BY-SA, CC BY-SA-NC</td>
+<td>Publication licences [<a href="https://www.uji.es/serveis/cd/bib/pco/base/drets2/">source</a>]</td>
+<td>CC BY-SA (TFG, TFM, PhD) CC BY-SA-NC (PhD, Educational resources)</td>
 </tr>
 <tr class="odd">
 <td>Data licences</td>
@@ -442,6 +617,38 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<p>Regarding research data, the UJI library provides <a href="https://www.uji.es/serveis/cd/bib/serveis/investigacio/dades/?">specific guidelines for small and large datasets</a>, which are summarised in the following table:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Small Datasets (&lt;500 MB)</th>
+<th>Large Datasets (500 MB - 50 GB)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary platform</td>
+<td>UJI Repository (Investigació)</td>
+<td>ZENODO (<a href="https://zenodo.org/communities/universitatjaumei/?page=1&amp;size=20">UJI Community</a>)</td>
+</tr>
+<tr class="even">
+<td>Identifier</td>
+<td>Handle</td>
+<td>DOI</td>
+</tr>
+<tr class="odd">
+<td>Required files</td>
+<td>Dataset + Readme.txt</td>
+<td>Dataset + Readme.txt</td>
+</tr>
+<tr class="even">
+<td>Preferred license</td>
+<td>CC-BY / CC-0</td>
+<td>CC-BY / CC-0</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -449,6 +656,19 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -854,8 +1074,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../materials/05-key-people.html" class="pagination-link" aria-label="Individuals to follow">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Individuals to follow</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -866,7 +1086,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><a href="https://cgranell.github.io/orr">cgranell.github.io/orr</a></p>
+<p><a href="https://cgranell.github.io/orr">Open Reproducible Research (ORR)</a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

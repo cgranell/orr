@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>12&nbsp; Glossary – Open Reproducible Research: Practices and Tools</title>
+<title>Appendix B — Glossary – Open Reproducible Research: Practices and Tools</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -52,18 +52,21 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../references.html" rel="next">
-<link href="../materials/05-key-people.html" rel="prev">
+<link href="../materials/appendice-key-people.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0a428b2b166f5de82137ea72b5aca274.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -95,7 +98,169 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating slimcontent quarto-light">
+<body class="nav-sidebar floating slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -104,7 +269,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/05-key-people.html">Additional materials</a></li><li class="breadcrumb-item"><a href="../materials/05-glossary.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Glossary</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/appendice-key-people.html">Appendices</a></li><li class="breadcrumb-item"><a href="../materials/appendice-glossary.html"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -120,8 +285,9 @@ div.csl-indent {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Open Reproducible Research: Practices and Tools</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <a href="https://www.github.com/cgranell/orr" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -262,10 +428,16 @@ div.csl-indent {
       <span class="sidebar-item-text sidebar-link text-start">
  <span class="menu-text">Tools</span></span>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Additional materials</span></a>
+ <span class="menu-text">Appendices</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -273,24 +445,18 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/05-key-people.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Individuals to follow</span></span></a>
+  <a href="../materials/appendice-key-people.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Worth following</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/05-glossary.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  <a href="../materials/appendice-glossary.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -301,26 +467,27 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#fair-principles" id="toc-fair-principles" class="nav-link active" data-scroll-target="#fair-principles"><span class="header-section-number">12.1</span> FAIR (principles)</a></li>
-  <li><a href="#institutional-repositories" id="toc-institutional-repositories" class="nav-link" data-scroll-target="#institutional-repositories"><span class="header-section-number">12.2</span> Institutional repositories</a></li>
-  <li><a href="#open-access" id="toc-open-access" class="nav-link" data-scroll-target="#open-access"><span class="header-section-number">12.3</span> Open Access</a></li>
-  <li><a href="#open-data" id="toc-open-data" class="nav-link" data-scroll-target="#open-data"><span class="header-section-number">12.4</span> Open Data</a></li>
-  <li><a href="#open-peer-review" id="toc-open-peer-review" class="nav-link" data-scroll-target="#open-peer-review"><span class="header-section-number">12.5</span> Open Peer Review</a></li>
-  <li><a href="#open-science" id="toc-open-science" class="nav-link" data-scroll-target="#open-science"><span class="header-section-number">12.6</span> Open Science</a></li>
-  <li><a href="#open-source-software" id="toc-open-source-software" class="nav-link" data-scroll-target="#open-source-software"><span class="header-section-number">12.7</span> Open Source Software</a></li>
-  <li><a href="#data-repositories" id="toc-data-repositories" class="nav-link" data-scroll-target="#data-repositories"><span class="header-section-number">12.8</span> Data Repositories</a></li>
-  <li><a href="#research-data" id="toc-research-data" class="nav-link" data-scroll-target="#research-data"><span class="header-section-number">12.9</span> Research Data</a></li>
-  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility"><span class="header-section-number">12.10</span> Reproducibility</a></li>
-  <li><a href="#replicability" id="toc-replicability" class="nav-link" data-scroll-target="#replicability"><span class="header-section-number">12.11</span> Replicability</a></li>
+  <li><a href="#fair-principles" id="toc-fair-principles" class="nav-link active" data-scroll-target="#fair-principles"><span class="header-section-number">B.1</span> FAIR (principles)</a></li>
+  <li><a href="#institutional-repositories" id="toc-institutional-repositories" class="nav-link" data-scroll-target="#institutional-repositories"><span class="header-section-number">B.2</span> Institutional repositories</a></li>
+  <li><a href="#open-access" id="toc-open-access" class="nav-link" data-scroll-target="#open-access"><span class="header-section-number">B.3</span> Open Access</a></li>
+  <li><a href="#open-data" id="toc-open-data" class="nav-link" data-scroll-target="#open-data"><span class="header-section-number">B.4</span> Open Data</a></li>
+  <li><a href="#open-peer-review" id="toc-open-peer-review" class="nav-link" data-scroll-target="#open-peer-review"><span class="header-section-number">B.5</span> Open Peer Review</a></li>
+  <li><a href="#open-science" id="toc-open-science" class="nav-link" data-scroll-target="#open-science"><span class="header-section-number">B.6</span> Open Science</a></li>
+  <li><a href="#open-source-software" id="toc-open-source-software" class="nav-link" data-scroll-target="#open-source-software"><span class="header-section-number">B.7</span> Open Source Software</a></li>
+  <li><a href="#data-repositories" id="toc-data-repositories" class="nav-link" data-scroll-target="#data-repositories"><span class="header-section-number">B.8</span> Data Repositories</a></li>
+  <li><a href="#research-data" id="toc-research-data" class="nav-link" data-scroll-target="#research-data"><span class="header-section-number">B.9</span> Research Data</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility"><span class="header-section-number">B.10</span> Reproducibility</a></li>
+  <li><a href="#replicability" id="toc-replicability" class="nav-link" data-scroll-target="#replicability"><span class="header-section-number">B.11</span> Replicability</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/05-key-people.html">Additional materials</a></li><li class="breadcrumb-item"><a href="../materials/05-glossary.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Glossary</span></a></li></ol></nav>
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/appendice-key-people.html">Appendices</a></li><li class="breadcrumb-item"><a href="../materials/appendice-glossary.html"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Glossary</span></h1>
+<h1 class="title">Appendix B — Glossary</h1>
 </div>
 
 
@@ -338,50 +505,50 @@ div.csl-indent {
 
 
 <p>To clarify the meaning of some key terms and concepts used throughout this course, we briefly define them below.</p>
-<section id="fair-principles" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="fair-principles"><span class="header-section-number">12.1</span> FAIR (principles)</h2>
+<section id="fair-principles" class="level2" data-number="B.1">
+<h2 data-number="B.1" class="anchored" data-anchor-id="fair-principles"><span class="header-section-number">B.1</span> FAIR (principles)</h2>
 <p>Set of requirements to make data findable, accessible, interoperable and reusable.</p>
 </section>
-<section id="institutional-repositories" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="institutional-repositories"><span class="header-section-number">12.2</span> Institutional repositories</h2>
+<section id="institutional-repositories" class="level2" data-number="B.2">
+<h2 data-number="B.2" class="anchored" data-anchor-id="institutional-repositories"><span class="header-section-number">B.2</span> Institutional repositories</h2>
 <p>A data repository offered by institutional organisations such as universities. At the Universitat Jaume I, <a href="https://repositori.uji.es/xmlui/">repositori.uji.es</a> is the open access institutional repository that contains the scientific, teaching, academic and institutional production of the university community.</p>
 </section>
-<section id="open-access" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="open-access"><span class="header-section-number">12.3</span> Open Access</h2>
+<section id="open-access" class="level2" data-number="B.3">
+<h2 data-number="B.3" class="anchored" data-anchor-id="open-access"><span class="header-section-number">B.3</span> Open Access</h2>
 <p>Open access content is accessible to all with limited or no copyright and licensing restrictions: no authentication requirements, no resources under an embargo, no paid access, etc. Content may concern scientific publications, data, code, documentation, and any other research artefact relevant to produce or interpret correctly the results of the research.</p>
 </section>
-<section id="open-data" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="open-data"><span class="header-section-number">12.4</span> Open Data</h2>
+<section id="open-data" class="level2" data-number="B.4">
+<h2 data-number="B.4" class="anchored" data-anchor-id="open-data"><span class="header-section-number">B.4</span> Open Data</h2>
 <p>Open data refers to the research data or content gathered, used or produced during a research project and is made available for public access and re-use.</p>
 </section>
-<section id="open-peer-review" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="open-peer-review"><span class="header-section-number">12.5</span> Open Peer Review</h2>
+<section id="open-peer-review" class="level2" data-number="B.5">
+<h2 data-number="B.5" class="anchored" data-anchor-id="open-peer-review"><span class="header-section-number">B.5</span> Open Peer Review</h2>
 <p>Moving away from anonymous, closed reviews and critiques to a more transparent evaluation process.</p>
 </section>
-<section id="open-science" class="level2 page-columns page-full" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="open-science"><span class="header-section-number">12.6</span> Open Science</h2>
+<section id="open-science" class="level2 page-columns page-full" data-number="B.6">
+<h2 data-number="B.6" class="anchored" data-anchor-id="open-science"><span class="header-section-number">B.6</span> Open Science</h2>
 <p>For <span class="citation" data-cites="munafo2017">(<a href="../references.html#ref-munafo2017" role="doc-biblioref">MR et al. 2017</a>)</span>, “open science refers to the process of making the content and process of producing evidence and claims transparent and accessible to others.” It is, therefore, a general term that encompasses a way of doing science that promotes greater accessibility, transparency, efficiency and collaboration of research, more connected to society. It is based on open access to all components and phases of the research.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-munafo2017" class="csl-entry" role="listitem">
 MR, Munafò, Nosek BA, Bishop DVM, et al. 2017. <span>“A Quick Guide to Software Licensing for the Scientist-Programmer.”</span> <em>Nature Human Behaviour</em> 1 (0021). <a href="https://doi.org/10.1038/s41562-016-0021">https://doi.org/10.1038/s41562-016-0021</a>.
 </div></div></section>
-<section id="open-source-software" class="level2" data-number="12.7">
-<h2 data-number="12.7" class="anchored" data-anchor-id="open-source-software"><span class="header-section-number">12.7</span> Open Source Software</h2>
+<section id="open-source-software" class="level2" data-number="B.7">
+<h2 data-number="B.7" class="anchored" data-anchor-id="open-source-software"><span class="header-section-number">B.7</span> Open Source Software</h2>
 <p>Software artefact that are publicly accessed, with a license that allows its use, download, creation of derivatives and distribution.</p>
 </section>
-<section id="data-repositories" class="level2" data-number="12.8">
-<h2 data-number="12.8" class="anchored" data-anchor-id="data-repositories"><span class="header-section-number">12.8</span> Data Repositories</h2>
+<section id="data-repositories" class="level2" data-number="B.8">
+<h2 data-number="B.8" class="anchored" data-anchor-id="data-repositories"><span class="header-section-number">B.8</span> Data Repositories</h2>
 <p>A data repository is an online service that provides a permanent archive for researchers to deposit data sets (software, documents, etc.) associated with their research.</p>
 </section>
-<section id="research-data" class="level2" data-number="12.9">
-<h2 data-number="12.9" class="anchored" data-anchor-id="research-data"><span class="header-section-number">12.9</span> Research Data</h2>
+<section id="research-data" class="level2" data-number="B.9">
+<h2 data-number="B.9" class="anchored" data-anchor-id="research-data"><span class="header-section-number">B.9</span> Research Data</h2>
 <p>Factual (digital) records (numbers, textual records, images, sounds) used as primary sources for scientific research, and that are commonly accepted in the scientific community as necessary to validate research results.</p>
 </section>
-<section id="reproducibility" class="level2" data-number="12.10">
-<h2 data-number="12.10" class="anchored" data-anchor-id="reproducibility"><span class="header-section-number">12.10</span> Reproducibility</h2>
+<section id="reproducibility" class="level2" data-number="B.10">
+<h2 data-number="B.10" class="anchored" data-anchor-id="reproducibility"><span class="header-section-number">B.10</span> Reproducibility</h2>
 <p>The ability of another researcher or team to obtain the <em>same</em> results using the same methods and data (and most likely using the same or similar computational environment) from the original study.</p>
 </section>
-<section id="replicability" class="level2" data-number="12.11">
-<h2 data-number="12.11" class="anchored" data-anchor-id="replicability"><span class="header-section-number">12.11</span> Replicability</h2>
+<section id="replicability" class="level2" data-number="B.11">
+<h2 data-number="B.11" class="anchored" data-anchor-id="replicability"><span class="header-section-number">B.11</span> Replicability</h2>
 <p>The ability of another researcher or team to obtain results <em>consistent</em> with the original study using different methods and/or data (and most likely using a similar computational environment).</p>
 
 
@@ -391,6 +558,19 @@ MR, Munafò, Nosek BA, Bishop DVM, et al. 2017. <span>“A Quick Guide to Softwa
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -791,14 +971,11 @@ MR, Munafò, Nosek BA, Bishop DVM, et al. 2017. <span>“A Quick Guide to Softwa
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../materials/05-key-people.html" class="pagination-link" aria-label="Individuals to follow">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Individuals to follow</span></span>
+      <a href="../materials/appendice-key-people.html" class="pagination-link" aria-label="Worth following">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Worth following</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -808,7 +985,7 @@ MR, Munafò, Nosek BA, Bishop DVM, et al. 2017. <span>“A Quick Guide to Softwa
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><a href="https://cgranell.github.io/orr">cgranell.github.io/orr</a></p>
+<p><a href="https://cgranell.github.io/orr">Open Reproducible Research (ORR)</a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
