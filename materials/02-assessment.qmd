@@ -1,20 +1,47 @@
 ---
 title: "Assessment Criteria"
+citation-location: document
 ---
 
-If you are very interested in a paper, you want to understand the inner aspects pretty well. So, you give reproducibility a try. It is however advisable to assess first the level of *pre-reproducibility* of a paper [@stark2018] before attempting a real reproduction. That is, do you --as reader/reviewer of the paper-- have full access to all the resources necessary to perform the actual reproduction?
+If you are very interested in a paper, you want to understand the inner aspects pretty well. So, you give reproducibility a try. It is however advisable to assess first the level of *pre-reproducibility* of a paper [@stark2018] before attempting a real reproduction. That is, do you --as reader/reviewer-- have full access to all the resources necessary to perform an actual reproduction?
 
-In the context of the [Reproducible Research \@ AGILE](https://reproducible-agile.github.io/), we proposed a set of criteria to evaluate the degree of reproducibility of an article [@nust2018]. In that work, we evaluated a selection of papers published in the [AGILE conference series](https://agile-gi.eu/). Using the same criteria framework and methodological approach, we evaluated conference articles published in the [GIScience conference series](https://giscience.org/) [@ostermann2021].
+In the context of the [Reproducible Research \@ AGILE](https://reproducible-agile.github.io/), we proposed a set of criteria to evaluate the degree of reproducibility of an article [@nust2018]. In that work, we evaluated a selection of papers published in the [AGILE conference series](https://agile-gi.eu/). Later, using the same assessmebnt criteria and methodological approach, we evaluated the level of reproducibility of conference articles published in the [GIScience conference series](https://giscience.org/) [@ostermann2021]. 
+
+
+::: column-margin
+![The Turing Way project [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducibility-25eb7ff22debf28197c01618f7c65637.jpg){#fig-turingway}
+:::
+
+With the experience gained in the above studies, we revised the set of reproducibility criteria to refine them for an ongoing longitudinal study (see prereg study [@nust2023]) published as preprint [@granelljosis]. The resulting criteria, which are compatible with the original ones, are shown in @fig-criteria, which in turn align nicely with the welcome illustration (see @fig-turingway) of The Turing Way project's [Guide for Reproducible Research](https://book.the-turing-way.org/reproducible-research/reproducible-research/).
+
 
 ## Criteria
 
-With the experience gained in the above studies, we revised the set of reproducibility criteria to refine them for an ongoing longitudinal study [@nust2023]. The resulting criteria, which are compatible with the original ones, are shown in @fig-criteria, which in turn align nicely with the welcome illustration (see @fig-turingway) of [The Turing Way project](https://book.the-turing-way.org/).
+@fig-criteria illustrates the four criteria of the rubric.  
 
-![Assessment criteria [@nust2023]](../images/slides/assessmentRubric.png){#fig-criteria}
+- `Input data`
+- `Methods, analysis, processing`
+- `Results`
+- `Computational environment`
 
-::: column-margin
-![The Turing Way project [@turingway2024_illustrations]](https://book.the-turing-way.org/_images/reproducibility.jpg){#fig-turingway}
+The `Input data` and `Results` criteria remain unchanged with respect to initial version of the rubric [@nust2018][@ostermann2021]. The former Methods criterion, which included categories for preprocessing, analysis, and computational environment in previous studies, has been simplified into a single criterion: `Methods, analysis, processing`. This change avoids ambiguity and disagreements over assigning methodological steps to either  preprocessing or analysis. Additionally, the `Computational environment` is now treated as a separate, fourth criterion. This reflects its broader role in computational research and data science, encompassing all code and infrastructure used for both analysis and result presentation. 
+
+
+::: column-screen-inset-right
+![Assessment criteria and rubric [@nust2023][@granelljosis]](../images/slides/reproducible-assessment-criteria-rubric.svg){#fig-criteria}
 :::
+
+Finally, numeric levels previously used in the past rubric are replaced with descriptive labels and single-letter codes. This enhances interpretability, because the levels were always only ordinal, and avoids any misinterpretation as to the differences in value between the labels, because efforts of going from one level to the next and the impact of a higher level compared to a lower one are far from equal steps orlinear relationships. The UDAO levels are, in ascending order of potential reproducibility:  
+
+- **Not Applicable (NA)**
+- **Undocumented (U)**
+- **Documented (D)**
+- **Documented and Available (A)** 
+- **Documented, Available, and Open (O)**
+
+For the `Computational environment` criterion, only a binary evaluation (True/False) is applied, recognising the challenges from past assessments to consistently assigning more granular levels.
+
+
 
 ## Assessment example
 
@@ -22,7 +49,7 @@ As example, let’s investigate this paper (or choose your own if you have a goo
 
 What do you think their scores should be?
 
-|                               | NA  | Undocumented \[0\] | Documented \[1\] | Available \[2\] | Available & open \[3\] |
+|                               | NA  | Undocumented [U] | Documented [D] | Available [A] | Open [O] |
 |------------|------------|------------|------------|------------|------------|
 | Input data                    |     |                    |                  |                 |                        |
 | Methods, Analysis, Processing |     |                    |                  |                 |                        |

@@ -1,0 +1,53 @@
+---
+title: "Guidelines for open and reproducible research"
+---
+
+As a reviewer, reader or researcher interested in the work of others, if you were to reproduce a study, you would
+
+-   read the published manuscript [@keshav2007] under the lens of the assessment criteria for reproducibility [@nust2018_readpaper]
+
+-   look for published data and code 
+
+-   recreate the analysis in your execution environment
+
+-   compare the results you obtain to the published results
+
+-   if they are the *same*, the study is reproducible; otherwise, it is not
+
+
+Very cool; But If you had to write a reproducible paper... How do you start?
+
+We have heard many excuses to avoid taking reproducible practices seriously in one's research, such as "I have never heard of reproducibility before", "I'm not good at using tools; Did you say github? Docker?", "I have never been trained on reproducibility", "I don't know where to find tutorials, guidelines...", "I'm superbusy! I do not have enough time", and "I do theoretical stuff. Reproduction is not for me".
+
+No matter your excuse; If you do not want to *fool* yourself (see Feynman's quote in next chapter), reproducible research practices are essential to enable not only reproducible but transparent, open and honest science. Indeed, conducting reproducible research is neither overly difficult nor does it require encyclopedic knowledge of multiple research tools, standards, and protocols. The good news is that **most researchers already do much of the work necessary to make research reproducible**. The point here is then to identify those aspects that could improve the level of reproducibility of your research and adapt them to your workflow and research habits.
+
+You should ask yourself:
+
+-   What habits should I adopt to change my daily research routine?
+
+-   What aspects should I improve the most?
+
+-   What guidelines or recommendations can I follow?
+
+
+## Key guidelines
+
+There are excellent practical guides with general recommendations for promoting reproducibility, research data management and open science. As an author/reseaarcher, who wants to integrate open reproducibility research practices into her next research paper or research project, the following resources are an excellent starting point: 
+
+- The British Ecological Society publishes brief [better science guides](https://www.britishecologicalsociety.org/content-type/better-science-guides/) for conducting open science on ecology but applicable to any discipline. Among them, the guide *Reproducible code* [@cooper2019], updated in 2025 as a [Quarto book](https://bes-guide.github.io/reproducible-code/), explains organisational and managerial aspects for making software code more reproducible.
+
+- *Passport for Open Science: A Practical Guide for PhD Students* [@berti2022] explains how the principles of open science can be applied to doctoral research. The proposed practices are applicable to any discipline and, although focused on doctoral students, they are aimed at any researcher regardless of their previous experience.
+
+- *A Beginner’s Guide to Conducting Reproducible Research* [@alston2021] is a very concise, practical guide to apply reproducible practices to a research project.
+
+- [*The Turing Way*](https://book.the-turing-way.org/) is indeed a compendium of guides on open science, reproducibility, and research ethics, among other interesting topics [@turingway2025]. Have a look at the [Guide for Reproducible Research](https://book.the-turing-way.org/reproducible-research/reproducible-research/) 
+
+- *Reproducible Publications at AGILE Conferences: Guidelines for Authors, Scientific Reviewers, and Reproducibility Reviewers* [@nust2020] describes specific aspects to write reproducible conference papers in the field of GIScience.
+
+- UKRN's [*open science primers*](https://www.ukrn.org/primers/) cover a wide variety of topics in open and reproducible scholarship.
+
+- *A Student’s Guide to Open Science: Using the Replication Crisis to Reform Psychology* [@pennington2023] is a practical guide to open science for students and early-career researchers, with a focus on psychology but applicable to other disciplines. The book provides clear and tangible advice on how to implement open science practices, including pre-prints, open materials, registered reports, and open data. It also offers guidance on using platforms like the Open Science Framework (OSF) and joining open science communities. A highlight of the book is the inclusion of anonymous researchers sharing their mistakes in their open science journey, reinforcing the message that credible open science requires admitting to previous errors and self-correcting.
+
+- [FORRT’s Educational Nexus](https://forrt.org/nexus/) is a hub for community-driven initiatives and resources to support the learning and practice of open science,research transparency, replicability, and reproducibility, including a collection of open educational resources, such as [lesson plans](https://forrt.org/lesson-plans/), and the [open science glossary](https://forrt.org/glossary/). 
+
+

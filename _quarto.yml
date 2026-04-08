@@ -49,8 +49,9 @@ book:
         - materials/02-assessment.qmd
     - part: "The Reproducibility Process: Practices and Recommendations"
       chapters:
+        - materials/03-guidelines.qmd
         - materials/03-practices.qmd
-        - materials/03-stages.qmd
+        - materials/03-case-geotec.qmd
     - part: "ORR @ UJI"
       chapters:
         - materials/04-uji.qmd
