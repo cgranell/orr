@@ -29,6 +29,6 @@ There are many researchers who are pioneers and leaders in the use and adoption 
 
 [The Center for Open Science](https://www.cos.io/) is an organization that provides tools and resources to promote open science and reproducibility, including the Open Science Framework (OSF) which is a platform for sharing research materials and data.
 
-[Replication Research](https://ejournals.uni-muenster.de/replicationresearch/index) is an interdisciplinary journal for replication research.
+MüCOS/FORRT Journal [Replication Research](http://replicationresearch.org) is an interdisciplinary journal for replication research.
 
 [RDA Reproducibility Checklist Working Group](https://www.rd-alliance.org/groups/rda-reproducibility-checklist-working-group/activity/) develops checklists to assess the reproducibility of research, which can be a valuable resource for researchers looking to improve their practices.

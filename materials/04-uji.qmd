@@ -21,7 +21,7 @@ The UJI and Spain's national funding and evaluation agencies in general are rece
 -   **Consider the value and impact of all research results (including data sets and software)** in addition to research publications, and consider a wide range of impact measures including indicators qualitative, such as influence on scientific policy and practices.
 :::
 
--   **October 2022, UJI**: [Código de Buenas Prácticas en Investigación y Doctorado (CBPID)](https://www.uji.es/investigacio/base/etica/cbpid/).
+-   **October 2022, UJI**: [Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2022](https://www.uji.es/upo/rest/contenido/1102833261/raw?idioma=es).
 
 -   **March 2023, UJI**: UJI adhered to the CoARA Coalition for Advancing Research Assessment ([COARA](https://coara.eu/)).
 
@@ -71,25 +71,52 @@ As a community, [CoARA](https://coara.eu/) will develop and apply changes
 
 -   **December 2023, ANECA**: published [new criteria for SEXENIOS assessment](https://www.aneca.es/convocatoria-2023), which are a first attempt to align with the CoARA principles.
 
--   **February 2024, ANECA-CRUE**: Kick-off of the [CoARA Spanish National Chapter](https://coara.eu/coalition/national-chapters/coara-national-chapter-spain/)
+-   **February 2024, ANECA-CRUE**: Kick-off the [CoARA Spanish National Chapter](https://coara.eu/coalition/national-chapters/coara-national-chapter-spain/)
 
 -   **March 2024, ANECA**: published [new criteria for accreditation](https://www.aneca.es/documents/20123/53669/Criterios200324_anexos.pdf/470f9b03-fd7a-85b6-4f3a-1925c0f82c50?t=1711094067735) to associate professor and full professor, which are a first attempt to align with the CoARA principles.
 
--   **April 2024, UJI**: made public a roadmap document called "Action Plan CoARA 2024-2027" that specifies the development of diagnosis-evaluation-implementation activities to improve research assessment at the UJI.
+-   **April 2024, UJI**: published a roadmap document called "[Action Plan CoARA 2024-2027](https://www.uji.es/investigacio/base/coara/noticies/pla_accio/SLT_FM_ES_CoARA_UJI.pdf)" that specifies the development of diagnosis-evaluation-implementation activities to improve research assessment at the UJI.
 
-## UJI
+-  **May 2024, UJI**: published a document called "[Plan de Acción en el marco de la Estrategia Nacional de Ciencia Abierta (2023-2027)](https://www.uji.es/upo/rest/contenido/1039818540/raw?idioma=es)" 
 
--   As part of the [Open Knowledge Portal](https://www.uji.es/serveis/cd/bib/pco/), the UJI library provides guides for researchers about the [open access dissemination of the results of the investigation](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/), and [copyright and licenses](https://www.uji.es/serveis/cd/bib/pco/base/drets2/).
+-   **June 2024, UJI**: set up an institutional web site "[Evaluación de la actividade investigadora (CoARA-UJI)](https://www.uji.es/investigacio/base/coara/) to provide information about the CoARA initiative and the activities at UJI to align with its principles and commitments.
 
--   Open Access Declaration, October 2020. [Declaració institucional a favor de la promoció de l’accés obert a la Universitat Jaume I](https://ujiapps.uji.es/ade/rest/storage/5ULDFW5YMLK0ZEFHGZLHRGJRX3V80U73).
+-   **Sep-Oct 2024, UJI**: published [Termometro del acceso abierto de la UJI 2023-2024](https://www.uji.es/investigacio/base/enca/noticies/termometre/informe_cas.pdf), which reports about the current situation of engagment in open access by UJI researchers. 
 
--   Best practices for research and Doctorate, October 2022. [Código de Buenas Prácticas en Investigación y Doctorado, CBPID](https://www.uji.es/investigacio/base/etica/cbpid/)
+-   **Oct 2024, UJI**: set up an institutional web site "[Estrategia de Ciencia Abierta (ENCA-UJI)](https://www.uji.es/investigacio/base/enca/) to provide information about the activities at UJI to align with the ENCA actions.
 
-| As regards...            | ...UJI recommends (April 2024)                                                                                                                                                                             |
+-   **Mar 2025, UJI**: published the results of the Survey on Open Science at UJI available as a brief summary "[Breve informe sobre la encuesta ¿Qué pensamos sobre la evaluación científica de nuestra investigación?](http://hdl.handle.net/10234/745519)"
+
+-   **July 2025, UJI**: [Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2025](https://www.uji.es/investigacio/base/etica/cbpid/).
+
+
+
+## What UJI recommends about ORR
+
+As part of the [Open Knowledge Portal](https://www.uji.es/serveis/cd/bib/pco/), the UJI library provides guides for researchers about 
+
+- [how to publish open access](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/), including information about the different types of open access, the benefits of publishing open access, and the steps to publish open access.
+
+- [support guidelines to manage and publish research data](https://www.uji.es/serveis/cd/bib/serveis/investigacio/dades/?), including information about the importance of research data management, the steps to manage and publish research data, and the resources available to support researchers in this process.
+
+- [copyright and licenses](https://www.uji.es/serveis/cd/bib/pco/base/drets2/), including information about the different types of licenses and how to choose the appropriate license for research outputs.
+
+
+| As regards...            | ...UJI recommends (July 2025) |
 |----------------------|--------------------------------------------------|
-| Sharing publications     | Deposit journal articles and book chapters (*preprint*, *postprint*, publisher's document) in the \[institutional repository\](<https://repositori.uji.es/>). Also recommended other types of publications |
-| Publication licences     | CC BY-SA, CC BY-SA-NC                                                                                                                                                                                      |
-| Data licences            | Researchers can choose between CC licences or copyright licences (potential commercial value).                                                                                                             |
-| Software licences        | Researchers can choose between permissive licences or copyright licences (potential commercial value).                                                                                                     |
-| Data FAIR principles     | Whenever possible, researchers will apply FAIR principles to research data (including deposit)                                                                                                             |
-| Software FAIR principles | Whenever possible, deposit software tools in open access repositories (including deposit)                                                                                                                  |
+| Sharing publications [[source](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/)]     | Mandatory archival of journal articles (*publisher's final paper* > *postprint* > *preprint* ) in the [institutional repository](https://repositori.uji.es/). Also recommended other types of publications (book chapters, conference papers, etc.) |
+| Publication licences [[source](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)]    | CC BY-SA (TFG, TFM, PhD) CC BY-SA-NC (PhD, Educational resources)  |
+| Data licences            | Researchers can choose between CC licences or copyright licences (potential commercial value).|
+| Software licences        | Researchers can choose between permissive licences or copyright licences (potential commercial value). |
+| Data FAIR principles     | Whenever possible, researchers will apply FAIR principles to research data (including deposit) |
+| Software FAIR principles | Whenever possible, deposit software tools in open access repositories (including deposit) |
+
+
+Regarding research data, the UJI library provides [specific guidelines for small and large datasets](https://www.uji.es/serveis/cd/bib/serveis/investigacio/dades/?), which are summarised in the following table:
+
+| Feature | Small Datasets (<500 MB) | Large Datasets (500 MB - 50 GB) |
+|---------|--------------------------|---------------------------------|
+| Primary platform | UJI Repository (Investigació) | ZENODO ([UJI Community](https://zenodo.org/communities/universitatjaumei/?page=1&size=20))|
+| Identifier | Handle | DOI |
+| Required files | Dataset + Readme.txt | Dataset + Readme.txt |
+| Preferred license | CC-BY / CC-0 | CC-BY / CC-0 |
