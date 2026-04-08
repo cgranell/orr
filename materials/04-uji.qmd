@@ -7,6 +7,10 @@ title: "Open Reproducible Research at UJI"
 The UJI and Spain's national funding and evaluation agencies in general are recently taking key steps towards open and transparent science.
 
 
+::: {.column-margin}
+Since 2020, the UJI has organised an annual workshop on Ethics in Research (*[Jornadas de Ética de la Investigación](https://www.uji.es/investigacio/base/etica/recursosformatius/jornades/)*), including topics such as CoARA, open science, and research integrity. Guest speakers presentations are [publicy available](https://www.uji.es/investigacio/base/etica/recursosformatius/jornades/videosessions/).
+::::
+
 -   **October 2020, UJI**: Institutional statement to promote open access [Declaración institucional a favor de la promoción del acceso abierto en la Universitat Jaume I](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es).
 
 -   **April 2021, AEI**: [Agencia Estatal de Investigación](https://www.aei.gob.es/) (AEI) adhered to the [DORA Declaration](https://sfdora.org/) about research assessment with the commitment to “review all calls and documents supporting the evaluation to ensure their correct implementation”.
@@ -88,7 +92,6 @@ As a community, [CoARA](https://coara.eu/) will develop and apply changes
 -   **Mar 2025, UJI**: published the results of the Survey on Open Science at UJI available as a brief summary "[Breve informe sobre la encuesta ¿Qué pensamos sobre la evaluación científica de nuestra investigación?](http://hdl.handle.net/10234/745519)"
 
 -   **July 2025, UJI**: [Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2025](https://www.uji.es/investigacio/base/etica/cbpid/).
-
 
 
 ## What UJI recommends about ORR
