@@ -12,18 +12,20 @@ We use the following published journal article as a case study. I set aside its 
 
 > Miguel Matey-Sanz, Alberto González-Pérez, Sven Casteleyn, Carlos Granell. [Implementing and evaluating the Timed Up and Go test automation using smartphones and smartwatches](https://doi.org/10.1109/JBHI.2024.3456169). IEEE Journal of Biomedical and Health Informatics, 28(11): 6594-6605, 2024.
 
+@fig-roadmap-start illustrates the stops along the road to open science and reproducibility that we followed in this case study. Each stop is described in more detail below.
+
 ::: column-screen-inset-right
-![](../images/road-to-openscience/00_GEOTEC_RRP_collapse.png)
+![Road stops to Open Science](../images/road-to-openscience/00_GEOTEC_RRP_collapse.png){#fig-roadmap-start}
 :::
 
 ## Stop: we plan with open science & reproducibility in mind
 
-Most of your time is about conducting your research tasks and selecting and using the tooling and methods required. We, for instance, write code or use supporting tools for data collection, data analysis and data visualization. We programmatically run models and machine learning algorithms to produce plots and graphs. We also produce maps as we explore lots of geospatial datasets. Our code research is often experimental and iterative, and demands to work with notebooks, either in python or R, to interactively explore, transform, process, analyse and visualise datasets. We also build web applications or mobile apps, which follow a more general purpose software engineering practices.
+Most of your time is about conducting your research tasks and selecting and using the tooling and methods required (@fig-roadmap-planning). We, for instance, write code or use supporting tools for data collection, data analysis and data visualization. We programmatically run models and machine learning algorithms to produce plots and graphs. We also produce maps as we explore lots of geospatial datasets. Our code research is often experimental and iterative, and demands to work with notebooks, either in python or R, to interactively explore, transform, process, analyse and visualise datasets. We also build web applications or mobile apps, which follow a more general purpose software engineering practices.
 
 So, when it comes to writing code, managing datasets, and so on, you need to follow basic recommendations and practices for making your resources more reproducible and easy to manage and document. There are excellent [practical guides published elsewhere](03-guidelines.qmd) with general recommendations for promoting reproducibility, research data management and open science. And, of course, [the selection of recommendations to apply before and during research](03-practices.qmd).
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/01_GEOTEC_RRP.png)
+![Planning from the beginning](../images/road-to-openscience/01_GEOTEC_RRP.png){#fig-roadmap-planning}
 :::
 
 ## Stop: we develop (code) using version control
@@ -46,20 +48,20 @@ It is a good idea to have a default license when a new project is created. Depen
 We use container technology [@moreau2023], but its adoption by GEOTEC members depends heavily on the technical background and ease of each researcher with docker, docker-compose, etc. In general, GEOTEC strongly encourages the use of this technology to facilitate the development, maintenance, and reproducibility of research code. We expect to have a `dockerfile` or `compose.yml` in each GitHub repository.
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/02_GEOTEC_RRP.png)
+![Version control is central to coding](../images/road-to-openscience/02_GEOTEC_RRP.png){#fig-roadmap-vcs}
 :::
 
 ## Stop: we write papers using version control
 
-If research code is under control, so are research papers. For example, we extensively use the cloud-based [Overleaf](https://www.overleaf.com/) application for collaborative paper writing, which keeps track of every change or edit by authors using version control tools.
+If research code is under control, so are research papers (@fig-roadmap-writing). For example, we extensively use the cloud-based [Overleaf](https://www.overleaf.com/) application for collaborative paper writing, which keeps track of every change or edit by authors using version control tools.
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/03_GEOTEC_RRP.png)
+![Version control is central to writing](../images/road-to-openscience/03_GEOTEC_RRP.png){#fig-roadmap-writing}
 :::
 
 ## Stop: we release/archive data/code at the time of submission
 
-When the article is almost ready to be submitted, it is time to permanently archive the version of the software/data used/developed/reported in the article. In short, the idea is to create a static, read-only version of the repositories and deposit them on Zenodo. So each relevant GitHub repository for an article must have an associated Zenodo record. There are [websites that explain how to release a github repo as a Zenodo record](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content), so GitHub repo content and license are automatically exported to the Zenodo registry.
+When the article is almost ready to be submitted, it is time to permanently archive the version of the software/data used/developed/reported in the article (@#fig-roadmap-archiving). In short, the idea is to create a static, read-only version of the repositories and deposit them on Zenodo. So each relevant GitHub repository for an article must have an associated Zenodo record. There are [websites that explain how to release a github repo as a Zenodo record](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content), so GitHub repo content and license are automatically exported to the Zenodo registry.
 
 When creating [an entry on Zenodo](https://doi.org/10.5281/zenodo.12570519), either from scratch or from a GitHub repo, pay attention to the following fields.
 
@@ -95,12 +97,12 @@ Once the Zenodo record is created and published, it is recommendable to add it t
 The community curator (university library) will then be notified to either accept or reject the new record.
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/04_GEOTEC_RRP.png)
+![Archive early, share early](../images/road-to-openscience/04_GEOTEC_RRP.png){#fig-roadmap-archiving}
 :::
 
 ## Stop: we add a reproducibility declaration to the paper
 
-Another task to perform before submitting an article to a journal is to add a brief explanation of where the data and/or code used in the reported article are located.
+Another task to perform before submitting an article to a journal is to add a brief explanation of where the data and/or code used in the reported article are located (@fig-roadmap-dasa).
 
 > “The collected datasets and code used for their processing, along with the machine learning models, the code for training them, and the data obtained from the experiments are available under permissive licences as a reproducible package (specifying required dependencies, software versions, and documentation) on Zenodo [57].”
 
@@ -109,7 +111,7 @@ Another task to perform before submitting an article to a journal is to add a br
 The example above, taken from [the runing example](https://doi.org/10.1109/JBHI.2024.3456169), cites the previously archived research resources on Zenodo (*ref 57*), along with a mention of the selected permissive license. It is not included above but recommended to include a description of the hardware and software resources required for the analytical workflow, such as the hardware configuration (CPU/GPU, memory size, special devices, etc.), operating system, runtime or computational demand (can be omitted if negligible or very low), and the requirements configuration, i.e. a list of required libraries and versions. The latter can be omitted from the article if a `requirements.txt`, `environment.yml`, `Dockerfile`, `compose.yml` or similar together with a README file are part of the associated code repository (Github) that is connected to the corresponding Zenodo registry. For example, this is the [`requirements.txt`](https://github.com/GeoTecINIT/tug-automation-sp-sw-rp/blob/v1.0.0-r1/requirements.txt) file and [`Dockerfile`](https://github.com/GeoTecINIT/tug-automation-sp-sw-rp/blob/v1.0.0-r1/Dockerfile) file related to *ref 57* of the paper.
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/05_GEOTEC_RRP.png)
+!["Help me if you, reader, can"](../images/road-to-openscience/05_GEOTEC_RRP.png){#fig-roadmap-dasa}
 :::
 
 ## Stop: we deposit preprint at the time of submission
@@ -122,7 +124,7 @@ We upload the preprint to [arXiv](https://arxiv.org/), [SSRN](https://www.ssrn.c
 
 ## Reviewers have access to the paper and all relevant resources
 
-The process of reviewing an article often involves several iterations to satisfy reviewers' comments and suggestions. These updates may involve fixing code errors, collecting more data, completing analyses, etc. When all edits are done, we publish new versions of the research code and data resources as we did in the previous steps. Therefore, tagging distinct versions of a GitHub repository helps a lot in case multiple updates occur during the peer review process of an article. Each version in a GitrHub repository is mapped to a version in the associated Zenodo entry. 
+The process of reviewing an article often involves several iterations to satisfy reviewers' comments and suggestions (@#fig-roadmap-reviewers). These updates may involve fixing code errors, collecting more data, completing analyses, etc. When all edits are done, we publish new versions of the research code and data resources as we did in the previous steps. Therefore, tagging distinct versions of a GitHub repository helps a lot in case multiple updates occur during the peer review process of an article. Each version in a GitrHub repository is mapped to a version in the associated Zenodo entry. 
 
 We can use either the canonical DOI of a Zenodo entry or the final version used in the article in the resource citation. The canonical DOI represent all versions of a given resource in Zenodo, and will always resolve to the lastest version. For the below resource, we cite the version used in the published article (version v1.0.0-r1, [10.5281/zenodo.12570519](https://doi.org/10.5281/zenodo.12570519)) instead of the canonical DOI ([10.5281/zenodo.7991797](https://doi.org/10.5281/zenodo.7991797)). In this example, both DOIs resolve to the same version of the resource.
 
@@ -130,35 +132,37 @@ We can use either the canonical DOI of a Zenodo entry or the final version used 
 
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/07_GEOTEC_RRP.png)
+![Reproducible workflows directly imply less painful revisions](../images/road-to-openscience/07_GEOTEC_RRP.png){#fig-roadmap-reviewers}
 :::
 
 ## Stop: we update connected resources once the paper is published
 
-Once a paper is accepted and published, it is good practice to complete bits of information such as DOI and citation details in:
+Once a paper is accepted and published, it is recommended to complete the information on archived resources (@fig-roadmap-connected) to enable connectivty between them.
 
 - GitHub: update `README` file to add DOI link to paper, DOI to Zenodo, handler to the posprint deposit, etc.
 - Zenodo: update entry to add publications information and related work. 
 
-By doing so, we allow bi-directional interconnection between all resources. From the published paper, simply clicking on a DOI will take you to the Zenodo entry and from there to the corresponding GitHub repository. Conversely, you can navigate from the GitHub repository to the Zenodo entry and to the published paper or postprint version.
+This allows for bi-directional interconnection between all resources. From the published paper, simply click on the DOI to access the Zenodo entry and, from there, the corresponding GitHub repository. Conversely, you can navigate from the GitHub repository to the Zenodo entry and then to the published paper or the postprint version.
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/08_GEOTEC_RRP.png)
+![Scientific work can be seen as a web of connected resources](../images/road-to-openscience/08_GEOTEC_RRP.png){#fig-roadmap-connected}
 :::
 
 
 ### Stop: we (library indeed) deposit pre- or post-print in the institutional repository
 
-At UJI, the library requests from authors the pre- or postprint version of a non-open access article, depending on the publisher's conditions. In the case of an open access article, the library will deposit the published version in the institutional repository. For example, this is the [handler](http://hdl.handle.net/10234/691992) of the open access scientific article deposited in the [institutional repository](https://repositori.uji.es/). 
+At UJI, the library requests preprints or postprints of a non-open access article from authors, according to the publisher's terms. In the case of an open access article, the library will deposit the published version in the [institutional repository](https://repositori.uji.es/). For example, this is the [handler](http://hdl.handle.net/10234/691992) of the open access scientific article deposited in the UJI repository. 
 
 ::: column-screen-inset-right
-![](../images/road-to-openscience/09_GEOTEC_RRP.png)
+![Green route to open access publishing](../images/road-to-openscience/09_GEOTEC_RRP.png){#fig-roadmap-deposit}
 :::
 
 
 ## Final stop: end of the road to open science & reproducibility?
 
+@fig-roadmap-end illustrates the full picture. Is this the end of the road? In what ways can we improve? Do new tools affect this workflow? How?
+
 ::: column-screen-inset-right
-![](../images/road-to-openscience/00_GEOTEC_RRP_expand.png)
+![Road stops to Open Science](../images/road-to-openscience/00_GEOTEC_RRP_expand.png){#fig-roadmap-end}
 :::
 
