@@ -1,9 +1,30 @@
 ---
 title: "Assessment Criteria"
+reference-location: margin
 citation-location: document
 ---
 
-If you are very interested in a paper, you want to understand the inner aspects pretty well. So, you give reproducibility a try. It is however advisable to assess first the level of *pre-reproducibility* of a paper [@stark2018] before attempting a real reproduction. That is, do you --as reader/reviewer-- have full access to all the resources necessary to perform an actual reproduction?
+## Why to reproduce
+
+**Why do you want to reproduce a paper or research study?**
+
+- Advance knowledge -- Will reproducing this study yield generalisable, useful insights? 
+
+- Replication value -- How important is confirming the study findings? "If it was valuable enough to publish, it is valuable enough to replicate" [@feldman2025]
+
+::: column-margin
+::: {.callout-note}
+**Replication value** is defined as a metric for prioritising studies for replication based on their impact and credibility [@feldman2025].
+:::
+:::
+
+- Personal motivation -- Why does this study matter to you? Is it relevant to your research? Skills development by learning via reproduction/replication?
+
+- Feasibility -- Do you have the data, tools, time, and skills required? Technical requirements (equipment, lab setup, etc) Enough expertise? Can you really do it?
+
+- Prior replications -- Has anyone already attempted or published a reproduction? Are findings *conclusive*?
+
+Whatever motivated your choice, if a paper interests you enough to attempt reproduction you should first understand its methods and materials in detail. Before starting a full reproduction, assess the paper’s *pre‑reproducibility* [@stark2018]: as a reader or reviewer, do you have access to the data, code, parameters, and documentation needed? Are the methods and dependencies described clearly? How feasible would it be to reproduce it?
 
 In the context of the [Reproducible Research \@ AGILE](https://reproducible-agile.github.io/), we proposed a set of criteria to evaluate the degree of reproducibility of an article [@nust2018]. In that work, we evaluated a selection of papers published in the [AGILE conference series](https://agile-gi.eu/). Later, using the same assessmebnt criteria and methodological approach, we evaluated the level of reproducibility of conference articles published in the [GIScience conference series](https://giscience.org/) [@ostermann2021]. 
 
@@ -67,3 +88,17 @@ What do you think their scores should be?
 Choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (Not Applicable \[NA\], Undocumented \[0\], Documented \[1\], Available \[2\], Available and Open \[3\]) for all of reproducibility criteria except the computational environment:
 
 Based on the **reproduction plan template** ([doc](static/repro_plan.docx), [pdf](static/repro_plan.pdf)), fill only the first two columns as the content of the *planned measures* column depends on the [Recommendations and practices for open and reproducible research](03-practices.qmd)
+
+## Aditional resources and readings
+
+- Given a reference list, [FLoRa Annotator](https://forrt.org/annotator/) finds which studies have been replicated and how the authors interpreted the results. 
+
+- [CODECHECK](https://codecheck.org.uk/project/) provides an approach for independent execution of computations underlying research articles. See Daniel's presentation to learn what CODECHECK is about.
+
+{{< video https://www.uni-muenster.de/imperia/md/video/MueCOS/danielnust-3-3-2026.mp4
+    title="How to get your reproducibility certificate with CODECHECK by Daniel Nüst"
+    aspect-ratio="21x9"
+>}}
+
+
+
