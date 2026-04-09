@@ -52,7 +52,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../materials/03-practices.html" rel="next">
+<link href="../materials/03-guidelines.html" rel="next">
 <link href="../materials/01-comparison.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -65,9 +65,9 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-449d2e1f53a75669d2ddaa35cb7ba385.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0a428b2b166f5de82137ea72b5aca274.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -396,14 +396,20 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/03-practices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Recommendations and practices for open and reproducible research</span></span></a>
+  <a href="../materials/03-guidelines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Guidelines for open and reproducible research</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/03-stages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Before, during and after</span></span></a>
+  <a href="../materials/03-practices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Recommendations and practices: before, during and after</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials/03-case-geotec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Case study: GEOTEC’s road to Open Science &amp; Reproducibility</span></span></a>
   </div>
 </li>
       </ul>
@@ -420,7 +426,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../materials/04-uji.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Open Reproducible Research at UJI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Open Reproducible Research at UJI</span></span></a>
   </div>
 </li>
       </ul>
@@ -497,44 +503,53 @@ div.csl-indent {
 </header>
 
 
-<p>If you are very interested in a paper, you want to understand the inner aspects pretty well. So, you give reproducibility a try. It is however advisable to assess first the level of <em>pre-reproducibility</em> of a paper <span class="citation" data-cites="stark2018">(<a href="../references.html#ref-stark2018" role="doc-biblioref">Stark 2018</a>)</span> before attempting a real reproduction. That is, do you –as reader/reviewer of the paper– have full access to all the resources necessary to perform the actual reproduction?</p>
-<div class="no-row-height column-margin column-container"><div id="ref-stark2018" class="csl-entry" role="listitem">
-Stark, PB. 2018. <span>“Before Reproducibility Must Come Preproducibility.”</span> <em>Nature</em> 557 (7706): 613–14. <a href="https://doi.org/10.1038/d41586-018-05256-0">https://doi.org/10.1038/d41586-018-05256-0</a>.
-</div><div id="ref-nust2018" class="csl-entry" role="listitem">
-Nüst, Daniel, C Granell, B Hofer, et al. 2018. <span>“Reproducible Research and GIScience: An Evaluation Using AGILE Conference Papers.”</span> <em>PeerJ</em> 6: e5072. <a href="https://doi.org/10.7717/peerj.5072">https://doi.org/10.7717/peerj.5072</a>.
-</div><div id="ref-ostermann2021" class="csl-entry" role="listitem">
-Ostermann, Frank O., Daniel Nüst, Carlos Granell, Barbara Hofer, and Markus Konkol. 2021. <span>“<span class="nocase">Reproducible Research and GIScience: An Evaluation Using GIScience Conference Papers</span>.”</span> In <em>11th International Conference on Geographic Information Science (GIScience 2021) - Part II</em>, edited by Krzysztof Janowicz and Judith A. Verstegen, vol. 208. Leibniz International Proceedings in Informatics (LIPIcs). Schloss Dagstuhl – Leibniz-Zentrum f<span>ü</span>r Informatik. <a href="https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2">https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2</a>.
-</div></div><p>In the context of the <a href="https://reproducible-agile.github.io/">Reproducible Research @ AGILE</a>, we proposed a set of criteria to evaluate the degree of reproducibility of an article <span class="citation" data-cites="nust2018">(<a href="../references.html#ref-nust2018" role="doc-biblioref">Nüst et al. 2018</a>)</span>. In that work, we evaluated a selection of papers published in the <a href="https://agile-gi.eu/">AGILE conference series</a>. Using the same criteria framework and methodological approach, we evaluated conference articles published in the <a href="https://giscience.org/">GIScience conference series</a> <span class="citation" data-cites="ostermann2021">(<a href="../references.html#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>.</p>
-<section id="criteria" class="level2 page-columns page-full" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="criteria"><span class="header-section-number">7.1</span> Criteria</h2>
-<p>With the experience gained in the above studies, we revised the set of reproducibility criteria to refine them for an ongoing longitudinal study <span class="citation" data-cites="nust2023">(<a href="../references.html#ref-nust2023" role="doc-biblioref">Nüst et al. 2023</a>)</span>. The resulting criteria, which are compatible with the original ones, are shown in <a href="#fig-criteria" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>, which in turn align nicely with the welcome illustration (see <a href="#fig-turingway" class="quarto-xref">Figure&nbsp;<span>7.2</span></a>) of <a href="https://book.the-turing-way.org/">The Turing Way project</a>.</p>
-<div class="no-row-height column-margin column-container"></div><div id="fig-criteria" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/slides/assessmentRubric.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.1: Assessment criteria <span class="citation" data-cites="nust2023">(<a href="../references.html#ref-nust2023" role="doc-biblioref">Nüst et al. 2023</a>)</span>
-</figcaption>
-<div class="no-row-height column-margin column-container"><div id="ref-nust2023" class="csl-entry" role="listitem">
-Nüst, Daniel, Carlos Granell, and Frank O Ostermann. 2023. <em>Impact of Reproducible Paper Guidelines on Computational Papers: A Longitudinal Study on the AGILE and GIScience Conference Series</em>. OSF. <a href="https://doi.org/10.17605/OSF.IO/XZJCH">https://doi.org/10.17605/OSF.IO/XZJCH</a>.
-</div></div></figure>
-</div>
+<p>If you are very interested in a paper, you want to understand the inner aspects pretty well. So, you give reproducibility a try. It is however advisable to assess first the level of <em>pre-reproducibility</em> of a paper <span class="citation" data-cites="stark2018">(<a href="../references.html#ref-stark2018" role="doc-biblioref">Stark 2018</a>)</span> before attempting a real reproduction. That is, do you –as reader/reviewer– have full access to all the resources necessary to perform an actual reproduction?</p>
+<p>In the context of the <a href="https://reproducible-agile.github.io/">Reproducible Research @ AGILE</a>, we proposed a set of criteria to evaluate the degree of reproducibility of an article <span class="citation" data-cites="nust2018">(<a href="../references.html#ref-nust2018" role="doc-biblioref">Nüst et al. 2018</a>)</span>. In that work, we evaluated a selection of papers published in the <a href="https://agile-gi.eu/">AGILE conference series</a>. Later, using the same assessmebnt criteria and methodological approach, we evaluated the level of reproducibility of conference articles published in the <a href="https://giscience.org/">GIScience conference series</a> <span class="citation" data-cites="ostermann2021">(<a href="../references.html#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div id="fig-turingway" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-turingway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://book.the-turing-way.org/_images/reproducibility.jpg" class="img-fluid figure-img">
+<img src="https://book.the-turing-way.org/build/reproducibility-25eb7ff22debf28197c01618f7c65637.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-turingway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.2: The Turing Way project <span class="citation" data-cites="turingway2024_illustrations">(<a href="../references.html#ref-turingway2024_illustrations" role="doc-biblioref">The Turing Way Community and Scriberia 2024</a>)</span>
+Figure&nbsp;7.1: The Turing Way project <span class="citation" data-cites="turingway2024_illustrations">(<a href="../references.html#ref-turingway2024_illustrations" role="doc-biblioref">The Turing Way Community and Scriberia 2024</a>)</span>
 </figcaption>
-<div id="ref-turingway2024_illustrations" class="csl-entry" role="listitem">
-The Turing Way Community, and Scriberia. 2024. <em><span class="nocase">Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse</span></em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.10556824">https://doi.org/10.5281/zenodo.10556824</a>.
-</div></figure>
+</figure>
 </div>
-</div></div></section>
+</div></div><p>With the experience gained in the above studies, we revised the set of reproducibility criteria to refine them for an ongoing longitudinal study (see prereg study <span class="citation" data-cites="nust2023">(<a href="../references.html#ref-nust2023" role="doc-biblioref">Nüst et al. 2023</a>)</span>) published as preprint <span class="citation" data-cites="granelljosis">(<a href="../references.html#ref-granelljosis" role="doc-biblioref">Granell et al. 2026</a>)</span>. The resulting criteria, which are compatible with the original ones, are shown in <a href="#fig-criteria" class="quarto-xref">Figure&nbsp;<span>7.2</span></a>, which in turn align nicely with the welcome illustration (see <a href="#fig-turingway" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>) of The Turing Way project’s <a href="https://book.the-turing-way.org/reproducible-research/reproducible-research/">Guide for Reproducible Research</a>.</p>
+<section id="criteria" class="level2 page-columns page-full" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="criteria"><span class="header-section-number">7.1</span> Criteria</h2>
+<p><a href="#fig-criteria" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> illustrates the four criteria of the rubric.</p>
+<ul>
+<li><code>Input data</code></li>
+<li><code>Methods, analysis, processing</code></li>
+<li><code>Results</code></li>
+<li><code>Computational environment</code></li>
+</ul>
+<p>The <code>Input data</code> and <code>Results</code> criteria remain unchanged with respect to initial version of the rubric [<span class="citation" data-cites="nust2018">Nüst et al. (<a href="../references.html#ref-nust2018" role="doc-biblioref">2018</a>)</span>]<span class="citation" data-cites="ostermann2021">(<a href="../references.html#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>. The former Methods criterion, which included categories for preprocessing, analysis, and computational environment in previous studies, has been simplified into a single criterion: <code>Methods, analysis, processing</code>. This change avoids ambiguity and disagreements over assigning methodological steps to either preprocessing or analysis. Additionally, the <code>Computational environment</code> is now treated as a separate, fourth criterion. This reflects its broader role in computational research and data science, encompassing all code and infrastructure used for both analysis and result presentation.</p>
+<div class="page-columns page-full">
+<div id="fig-criteria" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="../images/slides/reproducible-assessment-criteria-rubric.svg" class="img-fluid figure-img column-screen-inset-right">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Assessment criteria and rubric [<span class="citation" data-cites="nust2023">Nüst et al. (<a href="../references.html#ref-nust2023" role="doc-biblioref">2023</a>)</span>]<span class="citation" data-cites="granelljosis">(<a href="../references.html#ref-granelljosis" role="doc-biblioref">Granell et al. 2026</a>)</span>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Finally, numeric levels previously used in the past rubric are replaced with descriptive labels and single-letter codes. This enhances interpretability, because the levels were always only ordinal, and avoids any misinterpretation as to the differences in value between the labels, because efforts of going from one level to the next and the impact of a higher level compared to a lower one are far from equal steps orlinear relationships. The UDAO levels are, in ascending order of potential reproducibility:</p>
+<ul>
+<li><strong>Not Applicable (NA)</strong></li>
+<li><strong>Undocumented (U)</strong></li>
+<li><strong>Documented (D)</strong></li>
+<li><strong>Documented and Available (A)</strong></li>
+<li><strong>Documented, Available, and Open (O)</strong></li>
+</ul>
+<p>For the <code>Computational environment</code> criterion, only a binary evaluation (True/False) is applied, recognising the challenges from past assessments to consistently assigning more granular levels.</p>
+</section>
 <section id="assessment-example" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="assessment-example"><span class="header-section-number">7.2</span> Assessment example</h2>
 <p>As example, let’s investigate this paper (or choose your own if you have a good contender): <a href="https://drops.dagstuhl.de/opus/volltexte/2018/9343/pdf/LIPIcs-GISCIENCE-2018-15.pdf">Enhanced Multi Criteria Decision Analysis for Planning Power Transmission Lines</a></p>
@@ -552,10 +567,10 @@ The Turing Way Community, and Scriberia. 2024. <em><span class="nocase">Illustra
 <tr class="header">
 <th></th>
 <th>NA</th>
-<th>Undocumented [0]</th>
-<th>Documented [1]</th>
-<th>Available [2]</th>
-<th>Available &amp; open [3]</th>
+<th>Undocumented [U]</th>
+<th>Documented [D]</th>
+<th>Available [A]</th>
+<th>Open [O]</th>
 </tr>
 </thead>
 <tbody>
@@ -608,7 +623,26 @@ The Turing Way Community, and Scriberia. 2024. <em><span class="nocase">Illustra
 <p>Based on the <strong>reproduction plan template</strong> (<a href="static/repro_plan.docx">doc</a>, <a href="static/repro_plan.pdf">pdf</a>), fill only the first two columns as the content of the <em>planned measures</em> column depends on the <a href="../materials/03-practices.html">Recommendations and practices for open and reproducible research</a></p>
 
 
-
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-granelljosis" class="csl-entry" role="listitem">
+Granell, Carlos, Frank Olaf Ostermann, Daniel Nüst, et al. 2026. <span>“Longitudinal Assessment of Research in GIScience Domain Shows a Positive Impact of Reproducible Research Practices.”</span> <em>EarthArXiv</em> 1 (1): 1–32. <a href="https://doi.org/10.31223/X5RJ3W">https://doi.org/10.31223/X5RJ3W</a>.
+</div>
+<div id="ref-nust2023" class="csl-entry" role="listitem">
+Nüst, Daniel, Carlos Granell, and Frank O Ostermann. 2023. <em>Impact of Reproducible Paper Guidelines on Computational Papers: A Longitudinal Study on the AGILE and GIScience Conference Series</em>. OSF. <a href="https://doi.org/10.17605/OSF.IO/XZJCH">https://doi.org/10.17605/OSF.IO/XZJCH</a>.
+</div>
+<div id="ref-nust2018" class="csl-entry" role="listitem">
+Nüst, Daniel, C Granell, B Hofer, et al. 2018. <span>“Reproducible Research and GIScience: An Evaluation Using AGILE Conference Papers.”</span> <em>PeerJ</em> 6: e5072. <a href="https://doi.org/10.7717/peerj.5072">https://doi.org/10.7717/peerj.5072</a>.
+</div>
+<div id="ref-ostermann2021" class="csl-entry" role="listitem">
+Ostermann, Frank O., Daniel Nüst, Carlos Granell, Barbara Hofer, and Markus Konkol. 2021. <span>“<span class="nocase">Reproducible Research and GIScience: An Evaluation Using GIScience Conference Papers</span>.”</span> In <em>11th International Conference on Geographic Information Science (GIScience 2021) - Part II</em>, edited by Krzysztof Janowicz and Judith A. Verstegen, vol. 208. Leibniz International Proceedings in Informatics (LIPIcs). Schloss Dagstuhl – Leibniz-Zentrum f<span>ü</span>r Informatik. <a href="https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2">https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2</a>.
+</div>
+<div id="ref-stark2018" class="csl-entry" role="listitem">
+Stark, PB. 2018. <span>“Before Reproducibility Must Come Preproducibility.”</span> <em>Nature</em> 557 (7706): 613–14. <a href="https://doi.org/10.1038/d41586-018-05256-0">https://doi.org/10.1038/d41586-018-05256-0</a>.
+</div>
+<div id="ref-turingway2024_illustrations" class="csl-entry" role="listitem">
+The Turing Way Community, and Scriberia. 2024. <em><span class="nocase">Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse</span></em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.10556824">https://doi.org/10.5281/zenodo.10556824</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -1032,8 +1066,8 @@ The Turing Way Community, and Scriberia. 2024. <em><span class="nocase">Illustra
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../materials/03-practices.html" class="pagination-link" aria-label="Recommendations and practices for open and reproducible research">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Recommendations and practices for open and reproducible research</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../materials/03-guidelines.html" class="pagination-link" aria-label="Guidelines for open and reproducible research">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Guidelines for open and reproducible research</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
