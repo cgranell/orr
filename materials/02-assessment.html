@@ -478,9 +478,8 @@ div.csl-indent {
   <ul>
   <li><a href="#why-to-reproduce" id="toc-why-to-reproduce" class="nav-link active" data-scroll-target="#why-to-reproduce"><span class="header-section-number">7.1</span> Why to reproduce</a></li>
   <li><a href="#criteria" id="toc-criteria" class="nav-link" data-scroll-target="#criteria"><span class="header-section-number">7.2</span> Criteria</a></li>
-  <li><a href="#assessment-example" id="toc-assessment-example" class="nav-link" data-scroll-target="#assessment-example"><span class="header-section-number">7.3</span> Assessment example</a></li>
-  <li><a href="#reproduction-plan" id="toc-reproduction-plan" class="nav-link" data-scroll-target="#reproduction-plan"><span class="header-section-number">7.4</span> Reproduction plan</a></li>
-  <li><a href="#aditional-resources-and-readings" id="toc-aditional-resources-and-readings" class="nav-link" data-scroll-target="#aditional-resources-and-readings"><span class="header-section-number">7.5</span> Aditional resources and readings</a></li>
+  <li><a href="#example-reproducibility-assessment-of-a-conference-paper" id="toc-example-reproducibility-assessment-of-a-conference-paper" class="nav-link" data-scroll-target="#example-reproducibility-assessment-of-a-conference-paper"><span class="header-section-number">7.3</span> Example: Reproducibility assessment of a conference paper</a></li>
+  <li><a href="#aditional-resources-and-readings" id="toc-aditional-resources-and-readings" class="nav-link" data-scroll-target="#aditional-resources-and-readings"><span class="header-section-number">7.4</span> Aditional resources and readings</a></li>
   </ul>
 </nav>
     </div>
@@ -582,80 +581,132 @@ Figure&nbsp;7.2: Assessment criteria and rubric [<span class="citation" data-cit
 </ul>
 <p>For the <code>Computational environment</code> criterion, only a binary evaluation (True/False) is applied, recognising the challenges from past assessments to consistently assigning more granular levels.</p>
 </section>
-<section id="assessment-example" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="assessment-example"><span class="header-section-number">7.3</span> Assessment example</h2>
-<p>As example, let’s investigate this paper (or choose your own if you have a good contender): <a href="https://drops.dagstuhl.de/opus/volltexte/2018/9343/pdf/LIPIcs-GISCIENCE-2018-15.pdf">Enhanced Multi Criteria Decision Analysis for Planning Power Transmission Lines</a></p>
-<p>What do you think their scores should be?</p>
-<table class="table-striped table-hover caption-top table">
+<section id="example-reproducibility-assessment-of-a-conference-paper" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="example-reproducibility-assessment-of-a-conference-paper"><span class="header-section-number">7.3</span> Example: Reproducibility assessment of a conference paper</h2>
+<p>As example, let’s investigate this paper (or choose your own if you have a good contender): <a href="https://agile-giss.copernicus.org/articles/5/2/2024/">Developing a city-specific walkability index through a participatory approach</a>, published in the <a href="https://agile-giss.copernicus.org/articles/5/index.html">AGILE 2024 proceedings</a></p>
+<p>How to proceed: spend no more than 30 minutes on the assessment and avoid trying to fully understand the paper. Make a pragmatic judgement about how feasible reproduction is; if it looks likely (e.g.&nbsp;levels A and O), you can attempt a real reproduction later.</p>
+<p>So, how to begin? First, look for hints in the paper, such as a DASA section, data statements or similar text</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>DASA section
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The data sources used in this study are presented in Table 2 and are openly available. In particular, the data sources used are the following: OpenStreetMap (2023) (OSM), Rijksinstituut voor Volksgezondheid en Milieu (2020) (RIVM),Ministerie van Binnenlandse Zaken en Koninkrijksrelaties(2023)(BGT), Gemeente Amsterdam (2020)(AOD),Rijkswaterstaat Ministerie van Infrastructuur en Waterstaat (2022) (BRON), OVapiB.V. (2023) (OV-API). For the data processing, we used Quantum GIS and Python.The PCA was made with the help of the software package Ken-Q from Banasick (2023). All software used is open-source and publicly available.The dataset, which includes the processed street-level walkability scores from this study, is publicly accessible and shared through a data portal (Cardoso, 2023).The data can also be explored through the open-access interactive web tool <a href="(https://miliasv.github.io/CTstreets/info_page/)">CTstreets Map</a>.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<p>Second, based on the DASA section or similar statements, do you think all inputs datasets/sources are publicy available? Do you have access to methods and tools (software code, etc)?</p>
+<p>Optionally, if somebody else evaluated the paper before, you can also look at the <a href="https://doi.org/10.17605/osf.io/csb7r">reproducibility report</a>.</p>
+<p>What do you think the study’s scores should be?</p>
+<table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th>NA</th>
-<th>Undocumented [U]</th>
-<th>Documented [D]</th>
-<th>Available [A]</th>
-<th>Open [O]</th>
+<th style="text-align: right;">Criteria</th>
+<th style="text-align: center;">Reproducibility levels</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Input data</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: right;"><code>Input Data</code></td>
+<td style="text-align: center;">[UDAO] or NA</td>
 </tr>
 <tr class="even">
-<td>Methods, Analysis, Processing</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: right;"><code>Methods, Analysis, Processing</code></td>
+<td style="text-align: center;">[UDAO] or NA</td>
 </tr>
 <tr class="odd">
-<td>Results</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: right;"><code>Results</code></td>
+<td style="text-align: center;">[UDAO] or NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>Computational Environment</code></td>
+<td style="text-align: center;">[True/False]</td>
 </tr>
 </tbody>
 </table>
-<table class="table-striped table-hover caption-top table">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Suggested Reproducibity assessment
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th>Yes</th>
-<th>No</th>
+<th style="text-align: right;">Criteria</th>
+<th style="text-align: center;">Reproducibility levels</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Computational environment</td>
-<td></td>
-<td></td>
+<td style="text-align: right;"><code>Input Data</code></td>
+<td style="text-align: center;"><strong>A</strong>vailable and Documented</td>
+<td>Multiple datasets, including OpenStreetMap, BGT, and RIVM, are openly available and referenced with specific sources.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>Methods, Analysis, Processing</code></td>
+<td style="text-align: center;"><strong>D</strong>ocumented</td>
+<td>Ref (Cardoso, 2023) in paper includes a broken linked. Yet, through the reproducibilty report we learn that there is a <a href="https://github.com/reproducible-agile/WalkabilityInAmsterdam">code repository</a>, but is not directly available from the paper. With a bit of investigacion, we can reach the original <a href="https://github.com/matias-cs/WalkabilityInAmsterdam">code repo</a>. Even though some scripts are provided, some data preprocessing and integration steps were done manually in QGIS. Code repo has no licence.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><code>Results</code></td>
+<td style="text-align: center;"><strong>D</strong>ocumented</td>
+<td>Results are shared through a public portal. No DOI.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>Computational Environment</code></td>
+<td style="text-align: center;"><strong>False</strong></td>
+<td>Some details (“we used Quantum GIS and Python”) but insufficient to perform an actual reproduction.</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Reflection: Reproduction plan
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="reflect">
+<p>Choose one of your recent published paper or a current draft, and carry out a reproducibility self-assessment in which you assign a level (NA, U, D, A, O) for all of reproducibility criteria except the computational environment:</p>
+<p>Based on the <strong>reproduction plan template</strong> (<a href="../static/repro_plan.docx">doc</a>, <a href="../static/repro_plan.pdf">pdf</a>), fill only the <strong>first two columns</strong> as the content of the <em>planned measures</em> column depends on the <a href="../materials/03-practices.html">Recommendations and practices for open and reproducible research</a></p>
+</div>
+</div>
+</div>
 </section>
-<section id="reproduction-plan" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="reproduction-plan"><span class="header-section-number">7.4</span> Reproduction plan</h2>
-<p>Choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (Not Applicable [NA], Undocumented [0], Documented [1], Available [2], Available and Open [3]) for all of reproducibility criteria except the computational environment:</p>
-<p>Based on the <strong>reproduction plan template</strong> (<a href="static/repro_plan.docx">doc</a>, <a href="static/repro_plan.pdf">pdf</a>), fill only the first two columns as the content of the <em>planned measures</em> column depends on the <a href="../materials/03-practices.html">Recommendations and practices for open and reproducible research</a></p>
-</section>
-<section id="aditional-resources-and-readings" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="aditional-resources-and-readings"><span class="header-section-number">7.5</span> Aditional resources and readings</h2>
+<section id="aditional-resources-and-readings" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="aditional-resources-and-readings"><span class="header-section-number">7.4</span> Aditional resources and readings</h2>
 <ul>
 <li><p>Given a reference list, <a href="https://forrt.org/annotator/">FLoRa Annotator</a> finds which studies have been replicated and how the authors interpreted the results.</p></li>
 <li><p><a href="https://codecheck.org.uk/project/">CODECHECK</a> provides an approach for independent execution of computations underlying research articles. See Daniel’s presentation to learn what CODECHECK is about.</p></li>
