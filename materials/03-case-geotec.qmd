@@ -124,7 +124,11 @@ We upload the preprint to [arXiv](https://arxiv.org/), [SSRN](https://www.ssrn.c
 
 ## Reviewers have access to the paper and all relevant resources
 
-The process of reviewing an article often involves several iterations to satisfy reviewers' comments and suggestions (@#fig-roadmap-reviewers). These updates may involve fixing code errors, collecting more data, completing analyses, etc. When all edits are done, we publish new versions of the research code and data resources as we did in the previous steps. Therefore, tagging distinct versions of a GitHub repository helps a lot in case multiple updates occur during the peer review process of an article. Each version in a GitrHub repository is mapped to a version in the associated Zenodo entry. 
+The process of reviewing an article often involves several iteractions to satisfy reviewers' comments and suggestions (@fig-peer-review). 
+
+![On the subject of peer review. Source: Nick D Kim, [science and ink](https://www.lab-initio.com/).](../images//slides/scienceandink-peer-review.jpg){#fig-peer-review fig-align="center" width="80%"}
+
+Updates may involve fixing code errors, collecting more data, completing analyses, etc. When all edits are done, we publish new versions of the research code and data resources as we did in the previous steps (@fig-roadmap-reviewers). Therefore, tagging distinct versions of a GitHub repository helps a lot in case multiple updates occur during the peer review process of an article. Each version in a GitrHub repository is mapped to a version in the associated Zenodo entry. 
 
 We can use either the canonical DOI of a Zenodo entry or the final version used in the article in the resource citation. The canonical DOI represent all versions of a given resource in Zenodo, and will always resolve to the lastest version. For the below resource, we cite the version used in the published article (version v1.0.0-r1, [10.5281/zenodo.12570519](https://doi.org/10.5281/zenodo.12570519)) instead of the canonical DOI ([10.5281/zenodo.7991797](https://doi.org/10.5281/zenodo.7991797)). In this example, both DOIs resolve to the same version of the resource.
 

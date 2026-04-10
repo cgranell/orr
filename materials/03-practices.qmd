@@ -4,9 +4,7 @@ title: "Recommendations and practices: before, during and after"
  
  Researchers and scientists in academic institutions are expected to publish at a regular rate. The more, the better. It may not be demanded, but scientific publications certainly give a boost to a researcher's carreer [@szabo2025]. Incentives do not necessarily align with the goals of reproducibility, openness, and transparency. For example, the "[publish or perish](https://en.wikipedia.org/wiki/Publish_or_perish)" culture encourages researchers to focus on quantity over quality, leading to rushed publications that may lack thorough documentation and sharing of data and code (@fig-incentives). 
 
-![On the subject of incentives in research. Source: Leonid Schneider, [ForBetterScience.com](https://forbetterscience.com/)](../images//slides/betterforsicence_racing-science.jpeg){#fig-incentives fig-align="center" width="80%"}
-
-
+![On the subject of incentives in research. Source: Leonid Schneider, [ForBetterScience.com](https://forbetterscience.com/).](../images//slides/betterforscience_racing-science.jpeg){#fig-incentives fig-align="center" width="80%"}
 
 It is crucial to adopt practices that promote reproducibility at every stage of the research process, from planning to execution to dissemination. In this regard, [@alston2021] outlined a series of basic actions and recomentdatiosn toward making research more reproducible based on three stages of a research project: (1) **before**, (2) **during**, and (3) **after** analysis. 
 

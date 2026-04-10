@@ -68,19 +68,20 @@ For the `Computational environment` criterion, only a binary evaluation (True/Fa
 As example, let’s investigate this paper (or choose your own if you have a good contender): [Developing a city-specific walkability index through a participatory approach](https://agile-giss.copernicus.org/articles/5/2/2024/), published in the [AGILE 2024 proceedings](https://agile-giss.copernicus.org/articles/5/index.html)
 
 
-How to proceed: spend no more than 30 minutes on the assessment and avoid trying to fully understand the paper. Make a pragmatic judgement about how feasible reproduction is; if it looks likely (e.g. levels A and O), you can attempt a real reproduction later.
+How to proceed: In general, spend no more than 30 minutes on the assessment and avoid trying to fully understand the paper. Make a pragmatic judgement about how feasible reproduction is; if it looks likely (e.g. levels A and O), you can attempt a real reproduction later.
 
-So, how to begin? First, look for hints in the paper, such as a DASA section, data statements or similar text
+So, how to begin? Some ideas to read a paper with a computational perspective in mind are given by [@nust2018_readpaper]. Apart from useful guidelines published elsewhere, when assessing a scientific article --normally structured as Introduction, Methods, Results, and Discussion-- look for sections that describe the datasets, methods, and tools used. The Methods or Data and Methods sections are the usual places to check. Also look for explicit data-and-software-availability statements (DASA), data declarations, or similar sentences, which are increasingly common in recent publications.
+  
 
 ::: {.callout-note collapse="true"}
-## DASA section
+## DASA section found in the example paper
 
 > The data sources used in this study are presented in Table 2 and are openly available. In particular, the data sources used are the following: OpenStreetMap (2023) (OSM), Rijksinstituut voor Volksgezondheid en Milieu (2020) (RIVM),Ministerie van Binnenlandse Zaken en Koninkrijksrelaties(2023)(BGT), Gemeente Amsterdam (2020)(AOD),Rijkswaterstaat Ministerie van Infrastructuur en Waterstaat (2022) (BRON), OVapiB.V. (2023) (OV-API). For the data processing, we used Quantum GIS and Python.The PCA was made with the help of the software package Ken-Q from Banasick (2023). All software used is open-source and publicly available.The dataset, which includes the processed street-level walkability scores from this study, is publicly accessible and shared through a data portal (Cardoso, 2023).The data can also be explored through the open-access interactive web tool [CTstreets Map]((https://miliasv.github.io/CTstreets/info_page/)).
 :::
 
 Second, based on the DASA section or similar statements, do you think all inputs datasets/sources are publicy available? Do you have access to methods and tools (software code, etc)?
 
-Optionally, if somebody else evaluated the paper before, you can also look at the [reproducibility report](https://doi.org/10.17605/osf.io/csb7r).
+Third, if somebody else evaluated the same paper before, you can also look at the [reproducibility report](https://doi.org/10.17605/osf.io/csb7r).
 
 What do you think the study's scores should be?
 
