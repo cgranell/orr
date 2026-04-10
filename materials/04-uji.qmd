@@ -107,19 +107,19 @@ As part of the [Open Knowledge Portal](https://www.uji.es/serveis/cd/bib/pco/), 
 
 | As regards...            | ...UJI recommends (July 2025) |
 |----------------------|--------------------------------------------------|
-| Sharing publications [[source](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/)]     | Mandatory archival of journal articles (*publisher's final paper* > *postprint* > *preprint* ) in the [institutional repository](https://repositori.uji.es/). Also recommended other types of publications (book chapters, conference papers, etc.) |
-| Publication licences [[source](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)]    | CC BY-SA (TFG, TFM, PhD) CC BY-SA-NC (PhD, Educational resources)  |
-| Data licences            | Researchers can choose between CC licences or copyright licences (potential commercial value).|
-| Software licences        | Researchers can choose between permissive licences or copyright licences (potential commercial value). |
-| Data FAIR principles     | Whenever possible, researchers will apply FAIR principles to research data (including deposit) |
-| Software FAIR principles | Whenever possible, deposit software tools in open access repositories (including deposit) |
+| **Sharing publications** [[source](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/)]     | Mandatory archival of journal articles (*publisher's final paper* > *postprint* > *preprint* ) in the [institutional repository](https://repositori.uji.es/). Also recommended other types of publications (book chapters, conference papers, etc.) |
+| **Publication licences** [[source](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)]    | CC BY-SA (TFG, TFM, PhD) CC BY-SA-NC (PhD, Educational resources)  |
+| **Data licences** [[source](https://www.uji.es/serveis/cd/bib/serveis/investigacio/dades/?)]            | Researchers can choose between CC licences or copyright licences (potential commercial value).|
+| **Software licences**  [[Source](https://ujiapps.uji.es/ade/rest/storage/9E7UL1LGULHCGZTNSEO0CSGO2NCWUFGT)]      | Researchers can choose between permissive licences or copyright licences (potential commercial value). |
+| **Data FAIR principles** [[Source](https://ujiapps.uji.es/ade/rest/storage/9E7UL1LGULHCGZTNSEO0CSGO2NCWUFGT)]     | Whenever possible, researchers will apply FAIR principles to research data and deposit it in open access (institutional) repositories |
+| **Software FAIR principles** [[Source](https://ujiapps.uji.es/ade/rest/storage/9E7UL1LGULHCGZTNSEO0CSGO2NCWUFGT)] | Whenever possible, deposit software results/tools in open access (instituational) repositories. (*Note: Nothing about FAIR principles for software*) |
 
 
 Regarding research data, the UJI library provides [specific guidelines for small and large datasets](https://www.uji.es/serveis/cd/bib/serveis/investigacio/dades/?), which are summarised in the following table:
 
 | Feature | Small Datasets (<500 MB) | Large Datasets (500 MB - 50 GB) |
 |---------|--------------------------|---------------------------------|
-| Primary platform | UJI Repository (Investigació) | ZENODO ([UJI Community](https://zenodo.org/communities/universitatjaumei/?page=1&size=20))|
-| Identifier | Handle | DOI |
-| Required files | Dataset + Readme.txt | Dataset + Readme.txt |
-| Preferred license | CC-BY / CC-0 | CC-BY / CC-0 |
+| **Primary platform** | [UJI Repository (Investigació)](https://repositori.uji.es/handle/10234/9) | ZENODO ([UJI Community](https://zenodo.org/communities/universitatjaumei/?page=1&size=20))|
+| **Used identifier** | Handler | DOI |
+| **Required files** | Dataset + Readme.txt | Dataset + Readme.txt |
+| **Preferred license** | CC-BY / CC-0 | CC-BY / CC-0 |
