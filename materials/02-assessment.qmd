@@ -63,31 +63,82 @@ Finally, numeric levels previously used in the past rubric are replaced with des
 For the `Computational environment` criterion, only a binary evaluation (True/False) is applied, recognising the challenges from past assessments to consistently assigning more granular levels.
 
 
+## Example: Reproducibility assessment of a conference paper
 
-## Assessment example
+As example, let’s investigate this paper (or choose your own if you have a good contender): [Developing a city-specific walkability index through a participatory approach](https://agile-giss.copernicus.org/articles/5/2/2024/), published in the [AGILE 2024 proceedings](https://agile-giss.copernicus.org/articles/5/index.html)
 
-As example, let’s investigate this paper (or choose your own if you have a good contender): [Enhanced Multi Criteria Decision Analysis for Planning Power Transmission Lines](https://drops.dagstuhl.de/opus/volltexte/2018/9343/pdf/LIPIcs-GISCIENCE-2018-15.pdf)
 
-What do you think their scores should be?
+How to proceed: spend no more than 30 minutes on the assessment and avoid trying to fully understand the paper. Make a pragmatic judgement about how feasible reproduction is; if it looks likely (e.g. levels A and O), you can attempt a real reproduction later.
 
-|                               | NA  | Undocumented [U] | Documented [D] | Available [A] | Open [O] |
-|------------|------------|------------|------------|------------|------------|
-| Input data                    |     |                    |                  |                 |                        |
-| Methods, Analysis, Processing |     |                    |                  |                 |                        |
-| Results                       |     |                    |                  |                 |                        |
-: {.striped .hover}
+So, how to begin? First, look for hints in the paper, such as a DASA section, data statements or similar text
 
-|                           | Yes | No  |
-|---------------------------|-----|-----|
-| Computational environment |     |     |
+::: {.callout-note collapse="true"}
+## DASA section
 
-: {.striped .hover}
+> The data sources used in this study are presented in Table 2 and are openly available. In particular, the data sources used are the following: OpenStreetMap (2023) (OSM), Rijksinstituut voor Volksgezondheid en Milieu (2020) (RIVM),Ministerie van Binnenlandse Zaken en Koninkrijksrelaties(2023)(BGT), Gemeente Amsterdam (2020)(AOD),Rijkswaterstaat Ministerie van Infrastructuur en Waterstaat (2022) (BRON), OVapiB.V. (2023) (OV-API). For the data processing, we used Quantum GIS and Python.The PCA was made with the help of the software package Ken-Q from Banasick (2023). All software used is open-source and publicly available.The dataset, which includes the processed street-level walkability scores from this study, is publicly accessible and shared through a data portal (Cardoso, 2023).The data can also be explored through the open-access interactive web tool [CTstreets Map]((https://miliasv.github.io/CTstreets/info_page/)).
+:::
 
-## Reproduction plan
+Second, based on the DASA section or similar statements, do you think all inputs datasets/sources are publicy available? Do you have access to methods and tools (software code, etc)?
 
-Choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (Not Applicable \[NA\], Undocumented \[0\], Documented \[1\], Available \[2\], Available and Open \[3\]) for all of reproducibility criteria except the computational environment:
+Optionally, if somebody else evaluated the paper before, you can also look at the [reproducibility report](https://doi.org/10.17605/osf.io/csb7r).
 
-Based on the **reproduction plan template** ([doc](static/repro_plan.docx), [pdf](static/repro_plan.pdf)), fill only the first two columns as the content of the *planned measures* column depends on the [Recommendations and practices for open and reproducible research](03-practices.qmd)
+What do you think the study's scores should be?
+
+::: {.list-table tbl-colwidths="[25,25,50]" aligns="r,c"}
+- - Criteria
+  - Reproducibility levels
+
+- - `Input Data`
+  - [UDAO] or NA
+
+- - `Methods, Analysis, Processing`
+  - [UDAO] or NA
+
+- - `Results`
+  - [UDAO] or NA
+
+- - `Computational Environment`
+  - [True/False]
+:::
+
+
+
+::: {.callout-note collapse="true"}
+## Suggested Reproducibity assessment
+
+::: {.list-table tbl-colwidths="[25,25,50]" aligns="r,c"}
+- - Criteria
+  - Reproducibility levels
+  - Notes
+
+- - `Input Data`
+  - **A**vailable and Documented
+  - Multiple datasets, including OpenStreetMap, BGT, and RIVM, are openly available and referenced with specific sources.
+
+- - `Methods, Analysis, Processing`
+  - **D**ocumented
+  - Ref (Cardoso, 2023) in paper includes a broken linked. Yet, through the reproducibilty report we learn that there is a [code repository](https://github.com/reproducible-agile/WalkabilityInAmsterdam), but is not directly available from the paper. With a bit of investigacion, we can reach the original [code repo](https://github.com/matias-cs/WalkabilityInAmsterdam). Even though some scripts are provided, some data preprocessing and integration steps were done manually in QGIS. Code repo has no licence.
+
+- - `Results`
+  - **D**ocumented
+  - Results are shared through a public portal. No DOI.
+
+- - `Computational Environment`
+  - **False**
+  - Some details ("we used Quantum GIS and Python") but insufficient to perform an actual reproduction.
+:::
+:::
+
+::: {.callout-tip icon=true}
+## Reflection: Reproduction plan
+
+::: reflect
+Choose one of your recent published paper or a current draft, and carry out a reproducibility self-assessment in which you assign a level (NA, U, D, A, O) for all of reproducibility criteria except the computational environment:
+
+Based on the **reproduction plan template** ([doc](../static/repro_plan.docx), [pdf](../static/repro_plan.pdf)), fill only the **first two columns** as the content of the *planned measures* column depends on the [Recommendations and practices for open and reproducible research](03-practices.qmd)
+:::
+:::
+
 
 ## Aditional resources and readings
 
