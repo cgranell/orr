@@ -65,9 +65,9 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0a428b2b166f5de82137ea72b5aca274.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-66c9649715f74f1e4324758aa2390964.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-449d2e1f53a75669d2ddaa35cb7ba385.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -513,7 +513,7 @@ Szabo, Csaba. 2025. <em>Unreliable: Bias, Fraud, and the Reproducibility Crisis 
 </div></div><div id="fig-incentives" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-incentives-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://forbetterscience.com/wp-content/uploads/2015/10/racing-science.jpeg?w=1440" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+<img src="../images//slides/betterforsicence_racing-science.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-incentives-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;9.1: On the subject of incentives in research. Source: Leonid Schneider, <a href="https://forbetterscience.com/">ForBetterScience.com</a>
@@ -523,14 +523,14 @@ Figure&nbsp;9.1: On the subject of incentives in research. Source: Leonid Schnei
 <p>It is crucial to adopt practices that promote reproducibility at every stage of the research process, from planning to execution to dissemination. In this regard, <span class="citation" data-cites="alston2021">(<a href="../references.html#ref-alston2021" role="doc-biblioref">Alston and Rick 2021</a>)</span> outlined a series of basic actions and recomentdatiosn toward making research more reproducible based on three stages of a research project: (1) <strong>before</strong>, (2) <strong>during</strong>, and (3) <strong>after</strong> analysis.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-alston2021" class="csl-entry" role="listitem">
 Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Conducting Reproducible Research.”</span> <em>The Bulletin of the Ecological Society of America</em> 102 (2): e01801. <a href="https://doi.org/10.1002/bes2.1801">https://doi.org/10.1002/bes2.1801</a>.
-</div></div><div class="cell" data-fig-width="6.5" data-fig-caption="Three stages of a research project. Source: [@alston2021]." data-layout-align="center">
+</div></div><div class="cell" data-fig-caption="Three stages of a research project. Source: [@alston2021]." data-fig-width="6.5" data-layout-align="center">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  A[Before analysis] --&gt; B[During analysis]
-  B --&gt; C[After analysis]
+  A[BEFORE ANALYSIS] --&gt; B[DURING ANALYSIS]
+  B --&gt; C[AFTER ANALYSIS]
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -555,16 +555,16 @@ Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Co
 <p>The presentation emphasises that the “research journey” is often messy and non-linear. To counter this natural entropy, researchers should adopt a “project-centric” approach. This involves treating every research question as a self-contained unit where data, code, and documentation are inextricably linked. It highlights that the primary beneficiary of these practices is often your “future self,” who will inevitably forget the logic behind current decisions. It advocates for moving away from “hand-crafted” manual processes toward automated, scripted workflows that ensure the path from raw data to final results is transparent and repeatable.</p>
 <p>List of recommendations/practices:</p>
 <ul>
-<li><p><strong>Adopt a project-oriented workflow</strong>: Use dedicated folders to ensure that all paths are relative to the project root, making the project portable across different computers.</p></li>
-<li><p><strong>Organise files logically</strong>: Use a consistent folder structure (e.g., separate folders for <code>/data</code>, <code>/scripts</code>, <code>/results</code>, and <code>/docs</code>).</p></li>
-<li><p><strong>Use consistent, machine-readable file names</strong>: Do not rely on filenames like <code>final_v2_REALLY_FINAL.docx</code>. Avoid spaces and special characters. Use delimiters like underscores or hyphens to make files easy to search and sort. Use chronological markers like ISO 8601 date formats (<code>YYYY-MM-DD</code>) in filenames so they sort naturally by time.</p></li>
-<li><p><strong>Separate raw data from processed data</strong>: Never overwrite your raw data. Treat it as “read-only” and save any cleaned versions in a separate directory.</p></li>
-<li><p><strong>Leverage open data formats</strong>: Use open, text-based formats whenever possible. For example, use CSV instead of Excel for tabular data, and use plain text files for code and documentation.</p></li>
-<li><p><strong>Document and write “README” files early</strong>: Create a <code>README.md</code> file at the start of the project to describe the purpose, structure, and requirements of the research. This serves as a guide for both current and future collaborators (including your future self).</p></li>
-<li><p><strong>Plan for data sharing</strong>: Identify a convenient license for your data.</p></li>
-<li><p><strong>Plan for code sharing</strong>: Identify a convenient license for your code and software artefacts.</p></li>
-<li><p><strong>Use version control</strong>: Use Git to track changes systematically and provide a “time machine” for your code (local repository).</p></li>
-<li><p><strong>Use online remote repositories</strong>: Use GitHub to ease collaborative development and sharing of code and software artefacts (remote repository).</p></li>
+<li><p>[#1] <strong>Adopt a project-oriented workflow</strong>: Use dedicated folders to ensure that all paths are relative to the project root, making the project portable across different computers.</p></li>
+<li><p>[#2] <strong>Organise files logically</strong>: Use a consistent folder structure (e.g., separate folders for <code>/data</code>, <code>/scripts</code>, <code>/results</code>, and <code>/docs</code>).</p></li>
+<li><p>[#3] <strong>Use consistent, machine-readable file names</strong>: Do not rely on filenames like <code>final_v2_REALLY_FINAL.docx</code>. Avoid spaces and special characters. Use delimiters like underscores or hyphens to make files easy to search and sort. Use chronological markers like ISO 8601 date formats (<code>YYYY-MM-DD</code>) in filenames so they sort naturally by time.</p></li>
+<li><p>[#4] <strong>Separate raw data from processed data</strong>: Never overwrite your raw data. Treat it as “read-only” and save any cleaned versions in a separate directory.</p></li>
+<li><p>[#5] <strong>Leverage open data formats</strong>: Use open, text-based formats whenever possible. For example, use CSV instead of Excel for tabular data, and use plain text files for code and documentation.</p></li>
+<li><p>[#6] <strong>Document and write “README” files early</strong>: Create a <code>README.md</code> file at the start of the project to describe the purpose, structure, and requirements of the research. This serves as a guide for both current and future collaborators (including your future self).</p></li>
+<li><p>[#7] <strong>Plan for data sharing</strong>: Identify a convenient license for your data.</p></li>
+<li><p>[#8] <strong>Plan for code sharing</strong>: Identify a convenient license for your code and software artefacts.</p></li>
+<li><p>[#9] <strong>Use version control</strong>: Use Git to track changes systematically and provide a “time machine” for your code (local repository).</p></li>
+<li><p>[#10] <strong>Use online remote repositories</strong>: Use GitHub to ease collaborative development and sharing of code and software artefacts (remote repository).</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -600,16 +600,16 @@ Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Co
 <p>The deck also warns against “manual interventions” (like fixing a typo in a CSV file by hand), as these create “dark matter” in the research process, that is, steps that happened but left no record. Instead, it advocates for a script-based workflow where every transformation of the data is recorded in code. A significant portion of the deck is dedicated to literate programming (using tools like Quarto), which allows researchers to weave together their narrative, their code, and their results into a single, dynamic document that automatically updates when the data changes.</p>
 <p>List of recommendations/practices:</p>
 <ul>
-<li><p><strong>Open data does not guarantee reproducible data</strong>:</p></li>
-<li><p><strong>Pay attention to data that is relevant for reproducibility</strong>:</p></li>
-<li><p><strong>Adopt FAIR principles for data management with caution</strong>: FAIR data is not necessarily reproducible data. FAIR focuses on making data Findable, Accessible, Interoperable, and Reusable, but it does not guarantee that the data is well-documented or that the analysis can be reproduced. To ensure reproducibility, you need to go beyond FAIR and also focus on the quality of documentation, version control, and providing clear instructions for how to use the data.</p></li>
-<li><p><strong>Use open source tools whenever possible</strong>:</p></li>
-<li><p><strong>Learn/use scripting languages</strong>: Avoid manual “point-and-click” operations in software like Excel. If a change is made to the data, it should be <em>documented</em> in a script. AI assistants can be used to generate code snippets, but the researcher should understand and review the code to ensure it is correct and reproducible.</p></li>
-<li><p><strong>Embrace notebooks</strong>: Use Quarto or similar tools to keep your text and code (scripts) in the same file. This prevents for example “copy-paste” errors between your statistics software and your word processor.</p></li>
-<li><p><strong>Manage sofware dependences</strong>: Save information about your software versions and package dependencies. This allows others to recreate the exact technical conditions under which your results were generated.</p></li>
-<li><p><strong>Record your computational environment</strong>:</p></li>
-<li><p><strong>Adopt FAIR principles for software/code management</strong>:</p></li>
-<li><p><strong>Automate workflows</strong>: Use tools such as Make or similar tools to automate the execution of your analysis pipeline. This ensures that all steps are executed in the correct order and that any changes to the data or code will trigger the necessary updates to the results.</p></li>
+<li><p>[#11] <strong>Open data does not guarantee reproducible data</strong>:</p></li>
+<li><p>[#12] <strong>Pay attention to data that is relevant for reproducibility</strong>:</p></li>
+<li><p>[#13] <strong>Adopt FAIR principles for data management with caution</strong>: FAIR data is not necessarily reproducible data. FAIR focuses on making data Findable, Accessible, Interoperable, and Reusable, but it does not guarantee that the data is well-documented or that the analysis can be reproduced. To ensure reproducibility, you need to go beyond FAIR and also focus on the quality of documentation, version control, and providing clear instructions for how to use the data.</p></li>
+<li><p>[#14] <strong>Use open source tools whenever possible</strong>:</p></li>
+<li><p>[#15] <strong>Learn/use scripting languages</strong>: Avoid manual “point-and-click” operations in software like Excel. If a change is made to the data, it should be <em>documented</em> in a script. AI assistants can be used to generate code snippets, but the researcher should understand and review the code to ensure it is correct and reproducible.</p></li>
+<li><p>[#16] <strong>Embrace notebooks</strong>: Use Quarto or similar tools to keep your text and code (scripts) in the same file. This prevents for example “copy-paste” errors between your statistics software and your word processor.</p></li>
+<li><p>[#17] <strong>Manage sofware dependences</strong>: Save information about your software versions and package dependencies. This allows others to recreate the exact technical conditions under which your results were generated.</p></li>
+<li><p>[#18] <strong>Record your computational environment</strong>:</p></li>
+<li><p>[#19] <strong>Adopt FAIR principles for software/code management</strong>:</p></li>
+<li><p>[#20] <strong>Automate workflows</strong>: Use tools such as Make or similar tools to automate the execution of your analysis pipeline. This ensures that all steps are executed in the correct order and that any changes to the data or code will trigger the necessary updates to the results.</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -645,16 +645,16 @@ Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Co
 <p>The deck emphasises that software is a primary research object, not just a tool. This means researchers must explicitly cite the software and packages they use, just as they would cite a journal article. The presentation advocates for the use of Research Compendia and modern publishing tools like Quarto to create “dynamic documents” where the analysis and the narrative are linked. The ultimate goal is to move towards “reproducible manuscripts” that allow readers to interact with the data and code directly within the article, fostering a culture of openness and verification in scientific research/publishing.</p>
 <p>List of recommendations/practices:</p>
 <ul>
-<li><p><strong>Move beyond “Available Upon Request”</strong>: Never rely on post-publication requests. Data and code must be available at the time of pre-publication or submission.</p></li>
-<li><p><strong>Report software versions</strong>: Always specify the exact versions of packages, libraries, and frameworks used. A change in version can lead to different results.</p></li>
-<li><p><strong>Cite the software you use</strong>: Treat software as a first-class citizen. Use commands like citation() in R to get proper references for the R engine and specific packages.</p></li>
-<li><p><strong>Include a DASA Section</strong>: Add a “Data and Software Availability” (DASA) section to your paper. This section should provide persistent links (like DOIs) to repositories and describe the conditions for access.</p></li>
-<li><p><strong>Share preprints</strong>: Deposit versions of your paper in repositories (like arXiv, BioRxiv, or SocArXiv) before formal journal review to increase visibility and access.</p></li>
-<li><p><strong>Formally share data and code</strong>: Document and deposit your resources in permanent repositories (like Zenodo or OSF) and link them to your GitHub account for versioned archiving.</p></li>
-<li><p><strong>Create research compendia</strong>: Organize all digital materials (data, code, reports) in a standardized, recognizable collection to make the entire project easy to navigate.</p></li>
-<li><p><strong>Use literate programming tools</strong>: Adopt tools like Quarto or RMarkdown to create dynamic documents where code and text are woven together, ensuring figures and tables update automatically.</p></li>
-<li><p><strong>Aim for reproducible manuscripts</strong>: Look toward the future of publishing—interactive papers that allow readers to engage with the data and code directly within the article.</p></li>
-<li><p><strong>Spread the word</strong>: Reproducibility is a community effort and a cultural change. Encourage colleagues to adopt these practices.</p></li>
+<li><p>[#21] <strong>Move beyond “Available Upon Request”</strong>: Never rely on post-publication requests. Data and code must be available at the time of pre-publication or submission.</p></li>
+<li><p>[#22] <strong>Report software versions</strong>: Always specify the exact versions of packages, libraries, and frameworks used. A change in version can lead to different results.</p></li>
+<li><p>[#23] <strong>Cite the software you use</strong>: Treat software as a first-class citizen. Use commands like <code>citation()</code> in R to get proper references for the R engine and specific packages.</p></li>
+<li><p>[#24] <strong>Include a DASA Section</strong>: Add a “Data and Software Availability” (DASA) section to your paper. This section should provide persistent links (like DOIs) to repositories and describe the conditions for access.</p></li>
+<li><p>[#25] <strong>Share preprints</strong>: Deposit versions of your paper in repositories (like arXiv, BioRxiv, or SocArXiv) before formal journal review to increase visibility and access.</p></li>
+<li><p>[#26] <strong>Formally share data and code</strong>: Document and deposit your resources in permanent repositories (like Zenodo or OSF) and link them to your GitHub account for versioned archiving.</p></li>
+<li><p>[#27] <strong>Create research compendia</strong>: Organize all digital materials (data, code, reports) in a standardized, recognizable collection to make the entire project easy to navigate.</p></li>
+<li><p>[#28] <strong>Use literate programming tools</strong>: Adopt tools like Quarto or RMarkdown to create dynamic documents where code and text are woven together, ensuring figures and tables update automatically.</p></li>
+<li><p>[#29] <strong>Aim for reproducible manuscripts</strong>: Look toward the future of publishing—interactive papers that allow readers to engage with the data and code directly within the article.</p></li>
+<li><p>[#30] <strong>Spread the word</strong>: Reproducibility is a community effort and a cultural change. Encourage colleagues to adopt these practices.</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
