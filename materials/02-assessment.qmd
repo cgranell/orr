@@ -65,7 +65,7 @@ For the `Computational environment` criterion, only a binary evaluation (True/Fa
 
 ## Example: Reproducibility assessment of a conference paper
 
-As example, let’s investigate this paper (or choose your own if you have a good contender): [Developing a city-specific walkability index through a participatory approach](https://agile-giss.copernicus.org/articles/5/2/2024/), published in the [AGILE 2024 proceedings](https://agile-giss.copernicus.org/articles/5/index.html)
+As example, let’s investigate this paper (or choose your own if you have a good contender): [Developing a city-specific walkability index through a participatory approach](https://agile-giss.copernicus.org/articles/5/2/2024/), published in the [AGILE 2024 proceedings](https://agile-giss.copernicus.org/articles/5/index.html).
 
 
 How to proceed: In general, spend no more than 30 minutes on the assessment and avoid trying to fully understand the paper. Make a pragmatic judgement about how feasible reproduction is; if it looks likely (e.g. levels A and O), you can attempt a real reproduction later.
@@ -105,7 +105,7 @@ What do you think the study's scores should be?
 
 
 ::: {.callout-note collapse="true"}
-## Suggested Reproducibity assessment
+## Suggested Reproducibility assessment of the example paper
 
 ::: {.list-table tbl-colwidths="[25,25,50]" aligns="r,c"}
 - - Criteria
@@ -114,7 +114,7 @@ What do you think the study's scores should be?
 
 - - `Input Data`
   - **A**vailable and Documented
-  - Multiple datasets, including OpenStreetMap, BGT, and RIVM, are openly available and referenced with specific sources.
+  - Multiple datasets, including OpenStreetMap, BGT, and RIVM, are openly available and referenced with specific sources. Not all of them are permannetly archived (without DOI/handler).
 
 - - `Methods, Analysis, Processing`
   - **D**ocumented
