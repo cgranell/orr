@@ -534,7 +534,7 @@ Note
 <li><p>Prior replications – Has anyone already attempted or published a reproduction? Are findings <em>conclusive</em>?</p></li>
 </ul>
 <p>Whatever motivated your choice, if a paper interests you enough to attempt reproduction you should first understand its methods and materials in detail. Before starting a full reproduction, assess the paper’s <em>pre‑reproducibility</em> <span class="citation" data-cites="stark2018">(<a href="../references.html#ref-stark2018" role="doc-biblioref">Stark 2018</a>)</span>: as a reader or reviewer, do you have access to the data, code, parameters, and documentation needed? Are the methods and dependencies described clearly? How feasible would it be to reproduce it?</p>
-<p>In the context of the <a href="https://reproducible-agile.github.io/">Reproducible Research @ AGILE</a>, we proposed a set of criteria to evaluate the degree of reproducibility of an article <span class="citation" data-cites="nust2018">(<a href="../references.html#ref-nust2018" role="doc-biblioref">Nüst et al. 2018</a>)</span>. In that work, we evaluated a selection of papers published in the <a href="https://agile-gi.eu/">AGILE conference series</a>. Later, using the same assessmebnt criteria and methodological approach, we evaluated the level of reproducibility of conference articles published in the <a href="https://giscience.org/">GIScience conference series</a> <span class="citation" data-cites="ostermann2021">(<a href="../references.html#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>.</p>
+<p>In the context of the <a href="https://reproducible-agile.github.io/">Reproducible Research @ AGILE</a>, we proposed a set of criteria to evaluate the degree of reproducibility of an article <span class="citation" data-cites="nust2018">(<a href="../references.html#ref-nust2018" role="doc-biblioref">Nüst, Granell, et al. 2018</a>)</span>. In that work, we evaluated a selection of papers published in the <a href="https://agile-gi.eu/">AGILE conference series</a>. Later, using the same assessmebnt criteria and methodological approach, we evaluated the level of reproducibility of conference articles published in the <a href="https://giscience.org/">GIScience conference series</a> <span class="citation" data-cites="ostermann2021">(<a href="../references.html#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div id="fig-turingway" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -558,7 +558,7 @@ Figure&nbsp;7.1: The Turing Way project <span class="citation" data-cites="turin
 <li><code>Results</code></li>
 <li><code>Computational environment</code></li>
 </ul>
-<p>The <code>Input data</code> and <code>Results</code> criteria remain unchanged with respect to initial version of the rubric [<span class="citation" data-cites="nust2018">Nüst et al. (<a href="../references.html#ref-nust2018" role="doc-biblioref">2018</a>)</span>]<span class="citation" data-cites="ostermann2021">(<a href="../references.html#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>. The former Methods criterion, which included categories for preprocessing, analysis, and computational environment in previous studies, has been simplified into a single criterion: <code>Methods, analysis, processing</code>. This change avoids ambiguity and disagreements over assigning methodological steps to either preprocessing or analysis. Additionally, the <code>Computational environment</code> is now treated as a separate, fourth criterion. This reflects its broader role in computational research and data science, encompassing all code and infrastructure used for both analysis and result presentation.</p>
+<p>The <code>Input data</code> and <code>Results</code> criteria remain unchanged with respect to initial version of the rubric [<span class="citation" data-cites="nust2018">Nüst, Granell, et al. (<a href="../references.html#ref-nust2018" role="doc-biblioref">2018</a>)</span>]<span class="citation" data-cites="ostermann2021">(<a href="../references.html#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>. The former Methods criterion, which included categories for preprocessing, analysis, and computational environment in previous studies, has been simplified into a single criterion: <code>Methods, analysis, processing</code>. This change avoids ambiguity and disagreements over assigning methodological steps to either preprocessing or analysis. Additionally, the <code>Computational environment</code> is now treated as a separate, fourth criterion. This reflects its broader role in computational research and data science, encompassing all code and infrastructure used for both analysis and result presentation.</p>
 <div class="page-columns page-full">
 <div id="fig-criteria" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
@@ -584,15 +584,15 @@ Figure&nbsp;7.2: Assessment criteria and rubric [<span class="citation" data-cit
 <section id="example-reproducibility-assessment-of-a-conference-paper" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="example-reproducibility-assessment-of-a-conference-paper"><span class="header-section-number">7.3</span> Example: Reproducibility assessment of a conference paper</h2>
 <p>As example, let’s investigate this paper (or choose your own if you have a good contender): <a href="https://agile-giss.copernicus.org/articles/5/2/2024/">Developing a city-specific walkability index through a participatory approach</a>, published in the <a href="https://agile-giss.copernicus.org/articles/5/index.html">AGILE 2024 proceedings</a></p>
-<p>How to proceed: spend no more than 30 minutes on the assessment and avoid trying to fully understand the paper. Make a pragmatic judgement about how feasible reproduction is; if it looks likely (e.g.&nbsp;levels A and O), you can attempt a real reproduction later.</p>
-<p>So, how to begin? First, look for hints in the paper, such as a DASA section, data statements or similar text</p>
+<p>How to proceed: In general, spend no more than 30 minutes on the assessment and avoid trying to fully understand the paper. Make a pragmatic judgement about how feasible reproduction is; if it looks likely (e.g.&nbsp;levels A and O), you can attempt a real reproduction later.</p>
+<p>So, how to begin? Some ideas to read a paper with a computational perspective in mind are given by <span class="citation" data-cites="nust2018_readpaper">(<a href="../references.html#ref-nust2018_readpaper" role="doc-biblioref">Nüst, Boettiger, et al. 2018</a>)</span>. Apart from useful guidelines published elsewhere, when assessing a scientific article –normally structured as Introduction, Methods, Results, and Discussion– look for sections that describe the datasets, methods, and tools used. The Methods or Data and Methods sections are the usual places to check. Also look for explicit data-and-software-availability statements (DASA), data declarations, or similar sentences, which are increasingly common in recent publications.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>DASA section
+<span class="screen-reader-only">Note</span>DASA section found in the example paper
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -605,7 +605,7 @@ Figure&nbsp;7.2: Assessment criteria and rubric [<span class="citation" data-cit
 </div>
 </div>
 <p>Second, based on the DASA section or similar statements, do you think all inputs datasets/sources are publicy available? Do you have access to methods and tools (software code, etc)?</p>
-<p>Optionally, if somebody else evaluated the paper before, you can also look at the <a href="https://doi.org/10.17605/osf.io/csb7r">reproducibility report</a>.</p>
+<p>Third, if somebody else evaluated the same paper before, you can also look at the <a href="https://doi.org/10.17605/osf.io/csb7r">reproducibility report</a>.</p>
 <p>What do you think the study’s scores should be?</p>
 <table class="caption-top table">
 <colgroup>
@@ -720,6 +720,9 @@ Feldman, Gilad. 2025. <span>“The Value of Replications Goes Beyond Replicabili
 </div>
 <div id="ref-granelljosis" class="csl-entry" role="listitem">
 Granell, Carlos, Frank Olaf Ostermann, Daniel Nüst, et al. 2026. <span>“Longitudinal Assessment of Research in GIScience Domain Shows a Positive Impact of Reproducible Research Practices.”</span> <em>EarthArXiv</em> 1 (1): 1–32. <a href="https://doi.org/10.31223/X5RJ3W">https://doi.org/10.31223/X5RJ3W</a>.
+</div>
+<div id="ref-nust2018_readpaper" class="csl-entry" role="listitem">
+Nüst, Daniel, Carl Boettiger, and Ben Marwick. 2018. <em>How to Read a Research Compendium</em>. arXiv. <a href="https://doi.org/10.48550/ARXIV.1806.09525">https://doi.org/10.48550/ARXIV.1806.09525</a>.
 </div>
 <div id="ref-nust2023" class="csl-entry" role="listitem">
 Nüst, Daniel, Carlos Granell, and Frank O Ostermann. 2023. <em>Impact of Reproducible Paper Guidelines on Computational Papers: A Longitudinal Study on the AGILE and GIScience Conference Series</em>. OSF. <a href="https://doi.org/10.17605/OSF.IO/XZJCH">https://doi.org/10.17605/OSF.IO/XZJCH</a>.
