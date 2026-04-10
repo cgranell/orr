@@ -7,7 +7,6 @@ The course content is organised in different parts and chapters/units. It is not
 ```{mermaid}
 %%| fig-caption: "Course structure and navigation."
 %%| fig-align: center
-%%| theme: neutral
 flowchart TB
   A[Foreword] --> B(4. Historical Notes)
   B --> C(5. Foundations)
@@ -20,7 +19,7 @@ flowchart TB
 ```
 
 
-**Part: Baclground**. This part is an introduction to the key terms of reproducibility and replicability across disciplines. It also offers a historical account to put reproducibility in science into perspective.
+**Part: Background**. This part is an introduction to the key terms of reproducibility and replicability across disciplines. It also offers a historical account to put reproducibility in science into perspective.
 
 **Part: The Pre-Reproducibility Assessment**. This part takes the perspective of a reviewer or reader, similar to the reviewer's role in traditional peer review, to assess the level of reproducibility of a research article. It provides a set of evaluation criteria and puts them into practice with some papers from the [AGILE conference](https://agile-gi.eu/).
 

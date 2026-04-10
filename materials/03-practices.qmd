@@ -4,17 +4,19 @@ title: "Recommendations and practices: before, during and after"
  
  Researchers and scientists in academic institutions are expected to publish at a regular rate. The more, the better. It may not be demanded, but scientific publications certainly give a boost to a researcher's carreer [@szabo2025]. Incentives do not necessarily align with the goals of reproducibility, openness, and transparency. For example, the "[publish or perish](https://en.wikipedia.org/wiki/Publish_or_perish)" culture encourages researchers to focus on quantity over quality, leading to rushed publications that may lack thorough documentation and sharing of data and code (@fig-incentives). 
 
-![On the subject of incentives in research. Source: Leonid Schneider, [ForBetterScience.com](https://forbetterscience.com/)](https://forbetterscience.com/wp-content/uploads/2015/10/racing-science.jpeg?w=1440){#fig-incentives fig-align="center" width="80%"}
+![On the subject of incentives in research. Source: Leonid Schneider, [ForBetterScience.com](https://forbetterscience.com/)](../images//slides/betterforsicence_racing-science.jpeg){#fig-incentives fig-align="center" width="80%"}
+
+
 
 It is crucial to adopt practices that promote reproducibility at every stage of the research process, from planning to execution to dissemination. In this regard, [@alston2021] outlined a series of basic actions and recomentdatiosn toward making research more reproducible based on three stages of a research project: (1) **before**, (2) **during**, and (3) **after** analysis. 
 
 ```{mermaid}
+%%| fig-caption: "Three stages of a research project. Source: [@alston2021]."
 %%| fig-width: 6.5
 %%| fig-align: center
-%%| fig-caption: "Three stages of a research project. Source: [@alston2021]."
 flowchart LR
-  A[Before analysis] --> B[During analysis]
-  B --> C[After analysis]
+  A[BEFORE ANALYSIS] --> B[DURING ANALYSIS]
+  B --> C[AFTER ANALYSIS]
 ```
 
 We borrow this simple outline to better categorise and explain the set of practical recommendations and practices that follow. Note that most of the following recommendations are already [widely accepted best practices for scientific research](03-guidelines.qmd) and that striving for a reasonable level of reproducibility is more achievable than you may expect. Essentially, researchers must think carefully **before, during, and after analysis** to ensure the reproducibility, openness and transparency of their work.
@@ -38,25 +40,25 @@ The presentation emphasises that the "research journey" is often messy and non-l
 
 List of recommendations/practices:
 
-- **Adopt a project-oriented workflow**: Use dedicated folders to ensure that all paths are relative to the project root, making the project portable across different computers.
+- [#1] **Adopt a project-oriented workflow**: Use dedicated folders to ensure that all paths are relative to the project root, making the project portable across different computers.
 
-- **Organise files logically**: Use a consistent folder structure (e.g., separate folders for `/data`, `/scripts`, `/results`, and `/docs`).
+- [#2] **Organise files logically**: Use a consistent folder structure (e.g., separate folders for `/data`, `/scripts`, `/results`, and `/docs`).
 
-- **Use consistent, machine-readable file names**: Do not rely on filenames like `final_v2_REALLY_FINAL.docx`. Avoid spaces and special characters. Use delimiters like underscores or hyphens to make files easy to search and sort. Use chronological markers like ISO 8601 date formats (`YYYY-MM-DD`) in filenames so they sort naturally by time.
+- [#3] **Use consistent, machine-readable file names**: Do not rely on filenames like `final_v2_REALLY_FINAL.docx`. Avoid spaces and special characters. Use delimiters like underscores or hyphens to make files easy to search and sort. Use chronological markers like ISO 8601 date formats (`YYYY-MM-DD`) in filenames so they sort naturally by time.
 
-- **Separate raw data from processed data**: Never overwrite your raw data. Treat it as "read-only" and save any cleaned versions in a separate directory.
+- [#4] **Separate raw data from processed data**: Never overwrite your raw data. Treat it as "read-only" and save any cleaned versions in a separate directory.
 
-- **Leverage open data formats**: Use open, text-based formats whenever possible. For example, use CSV instead of Excel for tabular data, and use plain text files for code and documentation.
+- [#5] **Leverage open data formats**: Use open, text-based formats whenever possible. For example, use CSV instead of Excel for tabular data, and use plain text files for code and documentation.
 
-- **Document and write "README" files early**: Create a `README.md` file at the start of the project to describe the purpose, structure, and requirements of the research. This serves as a guide for both current and future collaborators (including your future self).
+- [#6] **Document and write "README" files early**: Create a `README.md` file at the start of the project to describe the purpose, structure, and requirements of the research. This serves as a guide for both current and future collaborators (including your future self).
 
-- **Plan for data sharing**: Identify a convenient license for your data.
+- [#7] **Plan for data sharing**: Identify a convenient license for your data.
 
-- **Plan for code sharing**: Identify a convenient license for your code and software artefacts. 
+- [#8] **Plan for code sharing**: Identify a convenient license for your code and software artefacts. 
 
-- **Use version control**: Use Git to track changes systematically and provide a "time machine" for your code (local repository).
+- [#9] **Use version control**: Use Git to track changes systematically and provide a "time machine" for your code (local repository).
 
-- **Use online remote repositories**: Use GitHub to ease collaborative development and sharing of code and software artefacts (remote repository).
+- [#10] **Use online remote repositories**: Use GitHub to ease collaborative development and sharing of code and software artefacts (remote repository).
 
 ::: {.callout-note icon=true}
 ## Slide Deck
@@ -88,25 +90,25 @@ The deck also warns against "manual interventions" (like fixing a typo in a CSV 
 
 List of recommendations/practices:
 
-- **Open data does not guarantee reproducible data**:
+- [#11] **Open data does not guarantee reproducible data**:
 
-- **Pay attention to data that is relevant for reproducibility**:
+- [#12] **Pay attention to data that is relevant for reproducibility**:
 
-- **Adopt FAIR principles for data management with caution**: FAIR data is not necessarily reproducible data. FAIR focuses on making data Findable, Accessible, Interoperable, and Reusable, but it does not guarantee that the data is well-documented or that the analysis can be reproduced. To ensure reproducibility, you need to go beyond FAIR and also focus on the quality of documentation, version control, and providing clear instructions for how to use the data.
+- [#13] **Adopt FAIR principles for data management with caution**: FAIR data is not necessarily reproducible data. FAIR focuses on making data Findable, Accessible, Interoperable, and Reusable, but it does not guarantee that the data is well-documented or that the analysis can be reproduced. To ensure reproducibility, you need to go beyond FAIR and also focus on the quality of documentation, version control, and providing clear instructions for how to use the data.
 
-- **Use open source tools whenever possible**:
+- [#14] **Use open source tools whenever possible**:
 
-- **Learn/use scripting languages**: Avoid manual "point-and-click" operations in software like Excel. If a change is made to the data, it should be *documented* in a script. AI assistants can be used to generate code snippets, but the researcher should understand and review the code to ensure it is correct and reproducible.
+- [#15] **Learn/use scripting languages**: Avoid manual "point-and-click" operations in software like Excel. If a change is made to the data, it should be *documented* in a script. AI assistants can be used to generate code snippets, but the researcher should understand and review the code to ensure it is correct and reproducible.
 
-- **Embrace notebooks**: Use Quarto or similar tools to keep your text and code (scripts) in the same file. This prevents for example "copy-paste" errors between your statistics software and your word processor.
+- [#16] **Embrace notebooks**: Use Quarto or similar tools to keep your text and code (scripts) in the same file. This prevents for example "copy-paste" errors between your statistics software and your word processor.
 
-- **Manage sofware dependences**: Save information about your software versions and package dependencies. This allows others to recreate the exact technical conditions under which your results were generated.
+- [#17] **Manage sofware dependences**: Save information about your software versions and package dependencies. This allows others to recreate the exact technical conditions under which your results were generated.
 
-- **Record your computational environment**:
+- [#18] **Record your computational environment**:
 
-- **Adopt FAIR principles for software/code management**:
+- [#19] **Adopt FAIR principles for software/code management**:
 
-- **Automate workflows**: Use tools such as Make or similar tools to automate the execution of your analysis pipeline. This ensures that all steps are executed in the correct order and that any changes to the data or code will trigger the necessary updates to the results.
+- [#20] **Automate workflows**: Use tools such as Make or similar tools to automate the execution of your analysis pipeline. This ensures that all steps are executed in the correct order and that any changes to the data or code will trigger the necessary updates to the results.
 
 ::: {.callout-note icon=true}
 ## Slide Deck 
@@ -140,25 +142,25 @@ The deck emphasises that software is a primary research object, not just a tool.
 
 List of recommendations/practices:
 
-- **Move beyond "Available Upon Request"**: Never rely on post-publication requests. Data and code must be available at the time of pre-publication or submission.
+- [#21] **Move beyond "Available Upon Request"**: Never rely on post-publication requests. Data and code must be available at the time of pre-publication or submission.
 
-- **Report software versions**: Always specify the exact versions of packages, libraries, and frameworks used. A change in version can lead to different results.
+- [#22] **Report software versions**: Always specify the exact versions of packages, libraries, and frameworks used. A change in version can lead to different results.
 
-- **Cite the software you use**: Treat software as a first-class citizen. Use commands like citation() in R to get proper references for the R engine and specific packages.
+- [#23] **Cite the software you use**: Treat software as a first-class citizen. Use commands like `citation()` in R to get proper references for the R engine and specific packages.
 
-- **Include a DASA Section**: Add a "Data and Software Availability" (DASA) section to your paper. This section should provide persistent links (like DOIs) to repositories and describe the conditions for access.
+- [#24] **Include a DASA Section**: Add a "Data and Software Availability" (DASA) section to your paper. This section should provide persistent links (like DOIs) to repositories and describe the conditions for access.
 
-- **Share preprints**: Deposit versions of your paper in repositories (like arXiv, BioRxiv, or SocArXiv) before formal journal review to increase visibility and access.
+- [#25] **Share preprints**: Deposit versions of your paper in repositories (like arXiv, BioRxiv, or SocArXiv) before formal journal review to increase visibility and access.
 
-- **Formally share data and code**: Document and deposit your resources in permanent repositories (like Zenodo or OSF) and link them to your GitHub account for versioned archiving.
+- [#26] **Formally share data and code**: Document and deposit your resources in permanent repositories (like Zenodo or OSF) and link them to your GitHub account for versioned archiving.
 
-- **Create research compendia**: Organize all digital materials (data, code, reports) in a standardized, recognizable collection to make the entire project easy to navigate.
+- [#27] **Create research compendia**: Organize all digital materials (data, code, reports) in a standardized, recognizable collection to make the entire project easy to navigate.
 
-- **Use literate programming tools**: Adopt tools like Quarto or RMarkdown to create dynamic documents where code and text are woven together, ensuring figures and tables update automatically.
+- [#28] **Use literate programming tools**: Adopt tools like Quarto or RMarkdown to create dynamic documents where code and text are woven together, ensuring figures and tables update automatically.
 
-- **Aim for reproducible manuscripts**: Look toward the future of publishing—interactive papers that allow readers to engage with the data and code directly within the article.
+- [#29] **Aim for reproducible manuscripts**: Look toward the future of publishing—interactive papers that allow readers to engage with the data and code directly within the article.
 
-- **Spread the word**: Reproducibility is a community effort and a cultural change. Encourage colleagues to adopt these practices.
+- [#30] **Spread the word**: Reproducibility is a community effort and a cultural change. Encourage colleagues to adopt these practices.
 
 
 
