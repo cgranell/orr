@@ -18,7 +18,7 @@
         "Please note that this course adheres to the following [Code of Conduct](CODE_OF_CONDUCT.md).\n",
         "By participating in this course, you agree to abide by its terms."
       ],
-      "id": "23e5c02a"
+      "id": "d8648ffc"
     },
     {
       "cell_type": "code",
@@ -56,7 +56,7 @@
         "\n",
         "Huge thanks to the [Reproducible Research @ AGILE](https://reproducible-agile.github.io/) community and folks, who have contributed over the past years to this course."
       ],
-      "id": "d26f6063"
+      "id": "b9004286"
     }
   ],
   "metadata": {

@@ -14,7 +14,6 @@ book:
   date-format: "MMM D, YYYY"
   reader-mode: true
   cover-image: "images/hex_sticker_ORR.png"
-  image: "images/ESCOLA-DOCTORAT-es-blanco.png"
   author: 
     - id: granell
       name: 
