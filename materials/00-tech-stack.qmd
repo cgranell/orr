@@ -16,9 +16,13 @@ Course participants can follow this course without using any specific tools, alt
 
 ## Git {#git}
 
+Reproducibility requires knowing exactly which version of the code produced a specific result. [Git](https://git-scm.com/) allows you to "tag" specific snapshots of your project. If a collaborator runs your analysis six months from now, they can checkout the exact commit used for the final publication, ensuring the logic hasn't shifted due to subsequent updates.
+
+See more on The Turing Way's [version control section](https://book.the-turing-way.org/reproducible-research/vcs/).
+
 ## GitHub {#github}
 
-Using [GitHub](https://github.com/) also goes a long way in helping participants visualise and understand the [Git](#git) process, which also helps them engage. The tool allows participant to view diffs (file changes over time) in the files they collaborate on, track commit histories, and search the current state and the entire history of the code base.
+Using [GitHub](https://github.com/) also goes a long way in helping participants visualise and understand the [Git](#git) process, which also helps them engage. The tool allows participants to view diffs (file changes over time) in the files they collaborate on, track commit histories, and search the current state and the entire history of the code base.
 
 ## Markdown {#markdown}
 

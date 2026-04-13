@@ -2,7 +2,7 @@
 title: "Navigating the Course"
 ---
 
-The course content is organised in different parts and chapters/units. It is not intended to follow the chapters in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs and interests. The flowchart shows the different chapters/units of the course and how they are connected. The arrows indicate the recommended order of reading, but you can navigate through the chapters in any order depending on your needs and interests
+The course content is organised in different parts and chapters/units. It is not intended to follow the chapters in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs and interests. The flowchart shows the different chapters/units of the course and how they are connected. The arrows indicate the recommended order of reading, but you can navigate through the chapters in any order depending on your needs and interests.
 
 ```{mermaid}
 %%| fig-caption: "Course structure and navigation."

@@ -2,9 +2,9 @@
 title: "Foundations of Reproducibility/Replicability"
 ---
 
-This slide deck, titled "Foundations of Reproducibility/Replicability", serves as a deep dive into the definitions and technical requirements that underpin the modern Open Science movement. It moves beyond the historical context to define the specific "rules of the game" for conducting verifiable research.
+The slide deck, titled "**Foundations of Reproducibility/Replicability**", serves as a introduction to definitions and technical requirements that underpin the modern Open Science vision. It moves beyond the historical context to define the specific "rules of the game" for conducting verifiable research.
 
-The core of the presentation is built around the "Turing Way" matrix, which categorises research based on two variables: Data and Analysis.
+The core of the presentation is built around the "Turing Way" matrix (@fig-matrix), which categorises research based on two variables: **Data** and **Analysis**.
 
 - **Reproducible**: Using the same data and same analysis to reach the same result.
 
@@ -15,12 +15,13 @@ The core of the presentation is built around the "Turing Way" matrix, which cate
 - **Generalisable**: Using new data and different methods to see if the concept applies broadly.
 
 
-![Source: [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducible-definit-e1fab23b60e9cc4744a33ed3b5089919.svg){fig-alt="Turing Way matrix" fig-align="center" width="80%"}
+![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducible-definit-e1fab23b60e9cc4744a33ed3b5089919.svg){#fig-matrix fig-alt="Turing Way matrix" fig-align="center" width="80%"}
 
 
 The deck outlines that achieving reproducibility is not an "all or nothing" state but a spectrum of practices that can be adopted incrementally. It emphasises that while the ideal is to be fully reproducible, even small steps towards transparency can significantly enhance the credibility and impact of research. 
 
-A key point in the slides is that "publication is not the scholarship; it is merely an advertisement of the scholarship". The real scholarship consists of the full software environment, the code, and the data. The presentation argues that research moves from "unreproducible" to "gold standard" as more of these artifacts are made available and linked together.
+A key point in the slides is that "publication is not the scholarship; it is merely an advertisement of the scholarship" [@claerbout1992]. The real scholarship consists of the full software environment, the code, and the data.
+The focus is then to emphasise that open and reproducibible research refers to the entire process, not just the final paper. The presentation argues that research moves from "unreproducible" to "fully reproducible" as more of these associated resources, beyond the final written paper, are made available and linked together.
 
 
 ::: {.callout-note icon=true}

@@ -13,9 +13,9 @@ title: "Historical Notes"
 :::
 
 
-This slide deck, titled "Historical Notes on Open and Reproducible Research", provides a chronological and conceptual overview of how the movement for openness in science has evolved. It frames the current "[reproducibility/replication crisis](https://en.wikipedia.org/wiki/Replication_crisis)" not as a new phenomenon, but as the latest chapter in a centuries-long effort to make knowledge transparent and verifiable.
+This slide deck, titled "**Historical Notes on Open and Reproducible Research**", provides a chronological and conceptual overview of how the movement for openness in science has evolved. It frames the current "[reproducibility/replication crisis](https://en.wikipedia.org/wiki/Replication_crisis)" not as a new phenomenon, but as the latest chapter in a centuries-long effort to make knowledge transparent and verifiable.
 
-Simply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method and scientific journals. Before this, science was often secretive, shared only through private letters. The shift toward academic journals represented the first major "open" revolution, moving from private discovery to public claim.
+Simply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method, scientific associations and scientific journals. Before this, science was often shared only through private letters amonth individuals. The shift toward academic journals represented the first major "open" revolution, moving from private discovery to public claim and conversation.
 
 The presentation transitions into the modern era, highlighting a growing concern in the scientific community -- the reproducibility crisis. It notes that a significant portion of published research across various fields cannot be independently replicated.
 
@@ -38,4 +38,4 @@ The [National Academies of Sciences, Engineering, and Medicine](https://www.nati
 
 In the [Background](https://forrt.org/replication_handbook/background.html) chapter of the FORRT Replication Handbook [@roseler2025], the authors establish repeatability not just as a tool for validation, but as the very "cornerstone" of scientific integrity. They argue that the current rarity of replication studies—often less than 1% of published work—undermines the cumulative nature of science. By bridging various disciplines from neuroimaging to economics, the chapter advocates for a shift away from isolated discoveries toward a more robust, transparent, and "repetitive" scientific culture, specifically within the realm of quantitative research.
 
-[FORRT](https://forrt.org/) [@forrt] is a *Framework for Open and Reproducible Research Training* advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. FORRT provides a pedagogical infrastructure and didactic resources designed to recognize and support the teaching and mentoring of open and reproducible science.
+The [Framework for Open and Reproducible Research Training (FORRT)](https://forrt.org/) [@forrt] seeks to advance research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. FORRT provides a pedagogical infrastructure and didactic resources designed to recognize and support the teaching and mentoring of open and reproducible science.
