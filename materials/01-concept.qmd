@@ -1,8 +1,8 @@
 ---
-title: "Foundations of Reproducibility/Replicability"
+title: "Foundations of Reproducibility and Replicability"
 ---
 
-The slide deck, titled "**Foundations of Reproducibility/Replicability**", serves as a introduction to definitions and technical requirements that underpin the modern Open Science vision. It moves beyond the historical context to define the specific "rules of the game" for conducting verifiable research.
+The slide deck, titled "**Foundations of Reproducibility and Replicability**", serves as a introduction to definitions and technical requirements that underpin the modern Open Science vision. It moves beyond the historical context to define the specific "rules of the game" for conducting verifiable research.
 
 The core of the presentation is built around the "Turing Way" matrix (@fig-matrix), which categorises research based on two variables: **Data** and **Analysis**.
 
@@ -28,7 +28,7 @@ The focus is then to emphasise that open and reproducibible research refers to t
 ## Slide Deck 
 
 ::: slides
-[Foundations of Reproducibility/Replicability](https://cgranell.github.io/rrp/materials/01-concept-slides.html)
+[Foundations of Reproducibility and Replicability](https://cgranell.github.io/rrp/materials/01-concept-slides.html)
 :::
 
 :::
