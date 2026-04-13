@@ -94,7 +94,7 @@ As a community, [CoARA](https://coara.eu/) will develop and apply changes
 -   **July 2025, UJI**: [Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2025](https://www.uji.es/investigacio/base/etica/cbpid/).
 
 
-## What UJI recommends about ORR
+## What UJI recommends
 
 As part of the [Open Knowledge Portal](https://www.uji.es/serveis/cd/bib/pco/), the UJI library provides guides for researchers about 
 

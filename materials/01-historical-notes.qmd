@@ -15,7 +15,7 @@ title: "Historical Notes"
 
 This slide deck, titled "**Historical Notes on Open and Reproducible Research**", provides a chronological and conceptual overview of how the movement for openness in science has evolved. It frames the current "[reproducibility/replication crisis](https://en.wikipedia.org/wiki/Replication_crisis)" not as a new phenomenon, but as the latest chapter in a centuries-long effort to make knowledge transparent and verifiable.
 
-Simply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method, scientific associations and scientific journals. Before this, science was often shared only through private letters amonth individuals. The shift toward academic journals represented the first major "open" revolution, moving from private discovery to public claim and conversation.
+Simply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method, scientific associations and scientific journals. Before this, science was often shared only through private letters between scientists. The shift toward academic journals represented the first major "open" revolution, moving from private discovery to public claim and conversation.
 
 The presentation transitions into the modern era, highlighting a growing concern in the scientific community -- the reproducibility crisis. It notes that a significant portion of published research across various fields cannot be independently replicated.
 
