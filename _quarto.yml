@@ -5,13 +5,16 @@ project:
 
 book:
   title: "Open Reproducible Research: Practices and Tools"
-  subtitle: "What can I do to make my next article (more) reproducible?"
+  description: "What can I do to make my next article (more) reproducible?"
+  keyword: open science, reproducibility, replicatibility, research practices, tools, quarto
+  url: "https://cgranell.github.io/orr"
   site-url: "https://cgranell.github.io/orr"
   repo-url: "https://www.github.com/cgranell/orr"
   date: "3/26/2026"
   date-format: "MMM D, YYYY"
   reader-mode: true
   cover-image: "images/hex_sticker_ORR.png"
+  image: "images/ESCOLA-DOCTORAT-es-blanco.png"
   author: 
     - id: granell
       name: 
@@ -63,10 +66,11 @@ book:
     - materials/appendice-glossary.qmd
     
 
-  #navbar: 
-  #  logo: "images/ESCOLA-DOCTORAT-es-blanco.png"
-  #  logo-alt: "Escola de Doctorat, UJI"
-  #  logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/"
+  sidebar: 
+    logo: "images/ESCOLA-DOCTORAT-es-negre.png"
+    logo-alt: "Escola de Doctorat, UJI"
+    logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/"
+    #background: "#F5F5F5"
 
   page-footer:
     center: "[Open Reproducible Research (ORR)](https://cgranell.github.io/orr)"
@@ -81,4 +85,9 @@ format:
     theme:
       light: cosmo
       dark: superhero #darkly
+    grid: # https://quarto.org/docs/output-formats/page-layout.html
+      sidebar-width: 200px
+      body-width: 900px
+      margin-width: 200px
+      gutter-width: 1.0em
 
