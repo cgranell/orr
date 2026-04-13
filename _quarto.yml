@@ -9,6 +9,7 @@ book:
   site-url: "https://cgranell.github.io/orr"
   repo-url: "https://www.github.com/cgranell/orr"
   date: "3/26/2026"
+  date-format: "MMM D, YYYY"
   reader-mode: true
   cover-image: "images/hex_sticker_ORR.png"
   author: 

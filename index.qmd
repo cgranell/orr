@@ -12,6 +12,16 @@ The course is scheduled to be offered in 2 or 3 weeks. While the course is runni
 Please note that this course adheres to the following [Code of Conduct](CODE_OF_CONDUCT.md).
 By participating in this course, you agree to abide by its terms.
 
+```{python}
+#| label: last-update
+#| echo: false
+from datetime import date
+
+# Format examples:
+# %Y = 2026, %m = 04, %d = 13
+# %B = April, %b = Apr, %A = Monday
+print(f"Last update: {date.today().strftime("%B %d, %Y")}")
+```
 
 ## License {.unnumbered}
 
