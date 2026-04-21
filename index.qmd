@@ -32,7 +32,7 @@ Check [the license](LICENSE.md) for more information.
 
 ## How to Cite this Course {.unnumbered}
 
-Granell, C. (2026). Open Reproducible Research: Practices and Tools. Retrieved from [https://cgranell.github.io/orr](https://cgranell.github.io/orr).
+Granell, C. (2026). Open Reproducible Research: Practices and Tools. http://hdl.handle.net/10234/793030. Deposited on [http://hdl.handle.net/10234/793030](http://hdl.handle.net/10234/793030) (Abril 2026). Web version retrieved from [https://cgranell.github.io/orr](https://cgranell.github.io/orr).
 
 ## Acknowledgements {.unnumbered}
 
