@@ -71,7 +71,7 @@ As a community, [CoARA](https://coara.eu/) will develop and apply changes
 
 -   **July 2023, ANECA-CRUE**: Proposal of the [CoARA National Chapter Spain](https://coara.eu/app/uploads/2023/12/National-Chaptern-Spain.pdf).
 
--   **November 2023, National Committee of Research Ethics**: published [Recomendaciones éticas para la investigación en IA](https://www.ciencia.gob.es/InfoGeneralPortal/documento/cedef913-3842-4f90-9ffc-032d256125f0).
+-   **November 2023, National Committee of Research Ethics**: published ["Recomendaciones éticas para la investigación en IA"](https://www.ciencia.gob.es/InfoGeneralPortal/documento/cedef913-3842-4f90-9ffc-032d256125f0).
 
 -   **December 2023, ANECA**: published [new criteria for SEXENIOS assessment](https://www.aneca.es/convocatoria-2023), which are a first attempt to align with the CoARA principles.
 
@@ -79,19 +79,23 @@ As a community, [CoARA](https://coara.eu/) will develop and apply changes
 
 -   **March 2024, ANECA**: published [new criteria for accreditation](https://www.aneca.es/documents/20123/53669/Criterios200324_anexos.pdf/470f9b03-fd7a-85b6-4f3a-1925c0f82c50?t=1711094067735) to associate professor and full professor, which are a first attempt to align with the CoARA principles.
 
--   **April 2024, UJI**: published a roadmap document called "[Action Plan CoARA 2024-2027](https://www.uji.es/investigacio/base/coara/noticies/pla_accio/SLT_FM_ES_CoARA_UJI.pdf)" that specifies the development of diagnosis-evaluation-implementation activities to improve research assessment at the UJI.
+-   **April 2024, UJI**: published a roadmap document called ["Action Plan CoARA 2024-2027"](https://www.uji.es/investigacio/base/coara/noticies/pla_accio/SLT_FM_ES_CoARA_UJI.pdf)" that specifies the development of diagnosis-evaluation-implementation activities to improve research assessment at the UJI.
 
--  **May 2024, UJI**: published a document called "[Plan de Acción en el marco de la Estrategia Nacional de Ciencia Abierta (2023-2027)](https://www.uji.es/upo/rest/contenido/1039818540/raw?idioma=es)" 
+-  **May 2024, UJI**: published a document called ["Plan de Acción en el marco de la Estrategia Nacional de Ciencia Abierta (2023-2027)"](https://www.uji.es/upo/rest/contenido/1039818540/raw?idioma=es).
 
--   **June 2024, UJI**: set up an institutional web site "[Evaluación de la actividade investigadora (CoARA-UJI)](https://www.uji.es/investigacio/base/coara/) to provide information about the CoARA initiative and the activities at UJI to align with its principles and commitments.
+-   **June 2024, UJI**: set up an institutional web site ["Evaluación de la actividad investigadora (CoARA-UJI)"](https://www.uji.es/investigacio/base/coara/) to provide information about the CoARA initiative and the activities at UJI to align with its principles and commitments. This web site includes action plan to adapt research assessment activities at UJI according to CoARA frame.
 
--   **Sep-Oct 2024, UJI**: published [Termometro del acceso abierto de la UJI 2023-2024](https://www.uji.es/investigacio/base/enca/noticies/termometre/informe_cas.pdf), which reports about the current situation of engagment in open access by UJI researchers. 
+-   **Sep-Oct 2024, UJI**: published ["Termómetro del acceso abierto de la UJI 2023-2024"](https://www.uji.es/investigacio/base/enca/noticies/termometre/informe_cas.pdf), which reports about the current situation of engagment in open access by UJI researchers. 
 
--   **Oct 2024, UJI**: set up an institutional web site "[Estrategia de Ciencia Abierta (ENCA-UJI)](https://www.uji.es/investigacio/base/enca/) to provide information about the activities at UJI to align with the ENCA actions.
+-   **Oct 2024, UJI**: set up an institutional web site ["Estrategia de Ciencia Abierta (ENCA-UJI)"](https://www.uji.es/investigacio/base/enca/) to provide information about the activities at UJI to align with the ENCA actions.
 
--   **Mar 2025, UJI**: published the results of the Survey on Open Science at UJI available as a brief summary "[Breve informe sobre la encuesta ¿Qué pensamos sobre la evaluación científica de nuestra investigación?](http://hdl.handle.net/10234/745519)"
+-   **Mar 2025, UJI**: published the results of the Survey on Open Science at UJI available as a brief summary ["Breve informe sobre la encuesta ¿Qué pensamos sobre la evaluación científica de nuestra investigación?"](http://hdl.handle.net/10234/745519).
 
--   **July 2025, UJI**: [Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2025](https://www.uji.es/investigacio/base/etica/cbpid/).
+-   **July 2025, UJI**: ["Código de Buenas Prácticas en Investigación y Doctorado (CBPID) 2025"](https://www.uji.es/investigacio/base/etica/cbpid/).
+
+-   **April 2026, UJI**: ["Informe sobre els processos d’avaluació de l’activitat
+investigadora de la Universitat Jaume I"](). As a response to an item in ["Action Plan CoARA 2024-2027"](https://www.uji.es/investigacio/base/coara/noticies/pla_accio/SLT_FM_ES_CoARA_UJI.pdf), this ongoing, informative study reports about the current situation of research assessment at UJI, including the criteria used in different evaluation processes, suggestions to update them to the CoARA frame, and the opinions of researchers about these processes.
+
 
 
 ## What UJI recommends
