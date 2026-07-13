@@ -1,5 +1,6 @@
 ---
 title: "Recommendations and practices: before, during and after"
+citation-location: document
 ---
  
  Researchers and scientists in academic institutions are expected to publish at a regular rate. The more, the better. It may not be demanded, but scientific publications certainly give a boost to a researcher's carreer [@szabo2025]. Incentives do not necessarily align with the goals of reproducibility, openness, and transparency. For example, the "[publish or perish](https://en.wikipedia.org/wiki/Publish_or_perish)" culture encourages researchers to focus on quantity over quality, leading to rushed publications that may lack thorough documentation and sharing of data and code (@fig-incentives). 
@@ -144,28 +145,6 @@ The deck emphasises that software is a primary research object, not just a tool.
 
 List of recommendations/practices:
 
-- [#21] **Move beyond "Available Upon Request"**: Never rely on post-publication requests. Data and code must be available at the time of pre-publication or submission.
-
-- [#22] **Report software versions**: Always specify the exact versions of packages, libraries, and frameworks used. A change in version can lead to different results.
-
-- [#23] **Cite the software you use**: Treat software as a first-class citizen. Use commands like `citation()` in R to get proper references for the R engine and specific packages.
-
-- [#24] **Include a DASA Section**: Add a "Data and Software Availability" (DASA) section to your paper. This section should provide persistent links (like DOIs) to repositories and describe the conditions for access.
-
-- [#25] **Share preprints**: Deposit versions of your paper in repositories (like arXiv, BioRxiv, or SocArXiv) before formal journal review to increase visibility and access.
-
-- [#26] **Formally share data and code**: Document and deposit your resources in permanent repositories (like Zenodo or OSF) and link them to your GitHub account for versioned archiving.
-
-- [#27] **Create research compendia**: Organize all digital materials (data, code, reports) in a standardized, recognizable collection to make the entire project easy to navigate.
-
-- [#28] **Use literate programming tools**: Adopt tools like Quarto or RMarkdown to create dynamic documents where code and text are woven together, ensuring figures and tables update automatically.
-
-- [#29] **Aim for reproducible manuscripts**: Look toward the future of publishing—interactive papers that allow readers to engage with the data and code directly within the article.
-
-- [#30] **Spread the word**: Reproducibility is a community effort and a cultural change. Encourage colleagues to adopt these practices.
-
-List of recommendations/practices:
-
 - [#21] **Move beyond "Available Upon Request"**: Never rely on post-publication requests. Data and code must be available at the time of pre-publication or submission; again, a "show me" stance rather than a "trust me" one [@stark2018]. Consider [@stodden2018]'s study, where the authors analysed 204 computational articles in *Science* published under an "available upon request" policy. Upon request, they received data and/or code from authors only for 44%, and were able to reproduce the reported findings in just 26% of cases. It is improvement over having no policy at all, but still far short of what genuine reproducibility requires.
 
 - [#22] **Report software versions**: Always specify the exact versions of packages, libraries, and frameworks used. A change in version can lead to different results becuase differences in software versions, external libraries, or compilers can be enough to break reproducibility in some disciplines [@mesnard2017], so recording precise version numbers for every tool used in a paper is essential context for anyone trying to recreate your results.
@@ -202,3 +181,5 @@ List of recommendations/practices:
 
 ## Additional resources and readings
 
+
+:::{##refs}:::
