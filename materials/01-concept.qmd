@@ -15,7 +15,7 @@ The core of the presentation is built around the "Turing Way" matrix (@fig-matri
 - **Generalisable**: Using new data and different methods to see if the concept applies broadly.
 
 
-![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducible-definit-e1fab23b60e9cc4744a33ed3b5089919.svg){#fig-matrix fig-alt="Turing Way matrix" fig-align="center" width="80%"}
+![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducible-matrix-22d4dc523c4e4f48f03ee7b4659d3d31.jpg){#fig-matrix fig-alt="Turing Way matrix" fig-align="center" width="80%"}
 
 
 The deck outlines that achieving reproducibility is not an "all or nothing" state but a spectrum of practices that can be adopted incrementally. It emphasises that while the ideal is to be fully reproducible, even small steps towards transparency can significantly enhance the credibility and impact of research. 

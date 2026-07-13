@@ -163,9 +163,7 @@ List of recommendations/practices:
 
 - [#29] **Aim for reproducible manuscripts**: Look toward the future of publishing — interactive papers that allow readers to engage with the data and code directly within the article. Two threads are converging here: interactive papers, which let readers manipulate figures and explore results directly in the text, and reproducible papers, which guarantee that the underlying code and data genuinely regenerate those results. The desirable vision is publications that are both interactive and reproducible at once, rather than treating these as separate, optional add-ons to a traditional PDF.
 
-- [#30] **Spread the word**: Reproducibility is a community effort and a cultural change. Encourage you colleagues to adopt these practices. No single set of guidelines or tools can transform research culture because lasting change depends on researchers embrancing these practices and sharing them with colleagues, students, and collaborators, so that openness and reproducibility become the norm, rather than an exceptional effort. **Would you reserve 20% of your weekly research time for reproducibility/replicability research activities?**
-
-> new, original, and innovative scholarship that broadens and expands our current understanding of [put your area of knowledge] is needed and should continue to be encouraged. Nevertheless, the emphasis on innovation over systematic replication has a cost: the inability to build cumulative knowledge and to be able to state with confidence what is, and is not, known. [@monk2023], [@lowenkamp2003]
+- [#30] **Spread the word**: Reproducibility is a community effort and a cultural change. Encourage you colleagues to adopt these practices. No single set of guidelines or tools can transform research culture because lasting change depends on researchers embrancing these practices and sharing them with colleagues, students, and collaborators, so that openness and reproducibility become the norm, rather than an exceptional effort. 
 
 
 ::: {.callout-note icon=true}
@@ -176,6 +174,11 @@ List of recommendations/practices:
 :::
 
 :::
+
+
+> new, original, and innovative scholarship that broadens and expands our current understanding of [put your area of knowledge here] is needed and should continue to be encouraged. Nevertheless, the emphasis on innovation over systematic replication has a cost: the inability to build cumulative knowledge and to be able to state with confidence what is, and is not, known. [@monk2023], [@lowenkamp2003]
+
+**Would you reserve 20%  of your weekly research time for reproducibility/replicability research activities?**. I propose 20% as a minimum, but any higher percentage is valid, of course.
 
 
 
