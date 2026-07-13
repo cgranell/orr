@@ -10,7 +10,7 @@ book:
   url: "https://cgranell.github.io/orr"
   site-url: "https://cgranell.github.io/orr"
   repo-url: "https://www.github.com/cgranell/orr"
-  date: "3/26/2026"
+  #date: "3/26/2026" # first publication
   date: last-modified
   date-format: "MMM D, YYYY"
   reader-mode: true
