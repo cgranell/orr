@@ -4,7 +4,9 @@ title: "Foundations of Reproducibility and Replicability"
 
 The slide deck, titled "**Foundations of Reproducibility and Replicability**", serves as a introduction to definitions and technical requirements that underpin the modern Open Science vision. It moves beyond the historical context to define the specific "rules of the game" for conducting verifiable research.
 
-The core of the presentation is built around the "Turing Way" matrix (@fig-matrix), which categorises research based on two dimensions: **Data** and **Analysis**.
+## The Turing Way Community matrix
+
+The core of the slide deck is built around the "Turing Way" matrix (@fig-matrix), which deconstructs the definition of reproducibility and replicability based on changes in **data** and **analysis**, similarly to others [@nust2018], [@kekedron2021gean], [@NAP2019].
 
 ![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](../images/slides/turing-way-reproducible-matrix.jpg){#fig-matrix fig-alt="Turing Way matrix" fig-align="center" width="80%"}
 
@@ -38,11 +40,19 @@ The focus is then to emphasise that **open and reproducibible research refers to
 :::
 
 
+## Replication of experiments
+ 
+Replication that goes beyond checking data and rerunning code is fundamental in experimental disciplines. Replication of experiments involves repeating a study to verify findings, test reliability, or establish generalisability, and can be divided into *direct replication* (repeating identical steps) and *conceptual replication* (testing the same hypothesis with different methods), alongside systematic extensions [@gomez2012; @kedron2025survey].
+
+Direct replications basically implement the same experimental procedure as previous research. According to [@kedron2025survey], they make limited changes to an initial study to verify the claims of the experimental study by testing for conclusion, construct, and internal validity.
+
+Conceptual replications attempt to replicate findings, including tests of hypotheses, by using different experimental procedures or materials [@schmidt2009]. This, for example, implies changes to the population or location to test validity and generalisability to new populations and contexts [@kedron2025survey].
+
 ::: {.callout-tip icon=true}
 ## Reflection: Reproducibility in your discipline
 
 ::: reflect
-Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (hint: check The Turing Way’s definitions page [@turingway2025].
+Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility?
 :::
 :::
 
@@ -57,7 +67,4 @@ If you’re still hesitant to embrace reproducibility, next talk by [Dr. Florian
 >}}
 
 
-In the [Understanding Replications and Reproductions](https://forrt.org/replication_handbook/understanding.html) chapter of the FORRT Replication Handbook [@roseler2025], the authors establish a clear taxonomy for "repetitive research", distinguishing between reproduction (same data) and replication (new data). They argue that reproduction serves as an essential, cost-effective baseline that should precede any replication attempt. By exploring the "closeness" of studies through both theoretical and methodological lenses, the chapter highlights that a "failed" replication doesn't always mean the original was wrong -- it might simply reveal the "boundary conditions" of a theory. Ultimately, the text frames these practices not as antagonistic acts, but as a collaborative spectrum ranging from simple numerical verification to the broad testing of scientific generalizability.
-
-More information on these definitions and terms accross disciplines can be found in [@barba2018] and [@plesser2018].
-
+In the [Understanding Replications and Reproductions](https://forrt.org/replication_handbook/understanding.html) chapter of the FORRT Replication Handbook [@roseler2025], the authors establish a clear taxonomy for "repetitive research", distinguishing between reproduction (same data) and replication (new data). They argue that reproduction serves as an essential, cost-effective baseline that should precede any replication attempt. By exploring the "closeness" of studies through both theoretical and methodological lenses, the chapter highlights that a "failed" replication doesn't always mean the original was wrong -- it might simply reveal the "boundary conditions" of a theory. Ultimately, the text frames these practices not as antagonistic acts, but as a collaborative spectrum ranging from simple numerical verification to the broad testing of scientific generalisability.
