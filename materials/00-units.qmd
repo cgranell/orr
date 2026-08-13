@@ -2,7 +2,7 @@
 title: "Navigating the Course"
 ---
 
-The course content is organised in different parts and chapters/units. It is not intended to follow the chapters in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs and interests. The flowchart shows the different chapters/units of the course and how they are connected. The arrows indicate the recommended order of reading, but you can navigate through the chapters in any order depending on your needs and interests.
+The course content is organised in different parts and units. It is not intended to follow the units in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs. The flowchart shows the different units of the course and how they are connected. The arrows indicate the recommended order of reading, but you can navigate through the units in any order depending on your needs and interests.
 
 ```{mermaid}
 %%| fig-caption: "Course structure and navigation."
@@ -21,17 +21,17 @@ flowchart TB
 
 **Part: Background**. This part is an introduction to the key terms of reproducibility and replicability across disciplines. It also offers a historical account to put reproducibility in science into perspective.
 
-**Part: The Pre-Reproducibility Assessment**. This part takes the perspective of a reviewer or reader, similar to the reviewer's role in traditional peer review, to assess the level of reproducibility of a research article. It provides a set of evaluation criteria and puts them into practice with some papers from the [AGILE conference](https://agile-gi.eu/).
+**Part: The Pre-Reproducibility Assessment**. This part takes the perspective of a reviewer or reader, similar to the reviewer's role in traditional peer review, to assess the level of *potential* reproducibility of a research article. It provides a set of evaluation criteria and puts them into practice with some papers from the [AGILE conference](https://agile-gi.eu/).
 
-**Part: The Reproducibility Process: Practices and Recommendations**. This part takes the perspective of a researcher or author, similar to the author's role in traditional peer review, who needs practical recommendations and practices to write their next article in a reproducible manner. Here, we discuss a series of practices and recommendations, in increasing order of complexity and technological sophistication, to integrate reproducibility into your daily research tasks. Specific practices produced by the [Reproducible Research @ AGILE](https://reproducible-agile.github.io/) initiative are also available in the field of GIScience.
+**Part: The Reproducibility Process: Practices and Recommendations**. This part takes the perspective of a researcher or author, similar to the author's role in traditional peer review, who needs practical recommendations and practices to write an article in an open, transparent and reproducible manner. Here, we discuss a series of practices and recommendations, in increasing order of complexity and technological sophistication, to integrate reproducibility and openness into your daily research tasks. Specific practices produced by the [Reproducible Research @ AGILE](https://reproducible-agile.github.io/) initiative are also available in the field of GIScience.
 
-**Part: Open Reproducible Research at UJI**. We describe the local context of the [Universitat Jaume I](https://www.uji.es/), as an actor if the Spanish research ecosystem, regarding on how open science, reproducibility, code and data sharing, and FAIR principles apply to UJI researchers. Therefore, you can skip this section if you are not affiliated with UJI and check with your host institution if similar rules and regulations apply to you.
+**Part: Open Reproducible Research at UJI**. This part describes the local context of the [Universitat Jaume I](https://www.uji.es/), as an actor of the Spanish research ecosystem, regarding on how open science, reproducibility, code and data sharing, and FAIR principles apply to UJI researchers and staff. Therefore, you can skip this section if you are not affiliated with UJI and check with your host institution if similar rules and recommendations apply to you.
 
-**Part: Tools**. This part...
+**Part: Tools**. This part is still ongoing...
 
 
 ---
 
-I am pretty sure that the chapters above only grasp the surface of open reproducible research. Depending on your needs, course length, and participant profiles, you, as an educator, can develop certain units in greater depth, add new ones focusing, for example, on the technology stack to support computational reproducibility, or include practical activities such as actual reproduction of existing papers in your discipline. 
+I am pretty sure that the units above only grasp the surface of open reproducible research. Depending on your needs, course length, and participant profiles, you, as an educator, can develop certain units in greater depth, add new ones focusing, for example, on the technology stack to support computational reproducibility, or include practical activities such as actual reproduction of existing papers in your discipline. 
 
 As a learner, you have [many articles, web sites and documents](appendice-key-people.qmd) to expand your knowledge and curiosity about reproducibility research 😀.

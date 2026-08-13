@@ -26,4 +26,4 @@ Using [GitHub](https://github.com/) also goes a long way in helping participants
 
 ## Markdown {#markdown}
 
-Markdown is a lightweight markup language for creating formatted text using a plain-text editor", [Wikipedia says](https://en.wikipedia.org/wiki/Markdown). When compared to other markup language, Markdown is really easy to read in its source code form. That's why it is widely used for blogs, collaborative software (from Trello to Github and Moodle), documentation pages, readme files, and computational notebooks. Did you know that complete books have been written using only Markdown?
+"Markdown is a lightweight markup language for creating formatted text using a plain-text editor", [Wikipedia says](https://en.wikipedia.org/wiki/Markdown). When compared to other markup language, Markdown is really easy to read in its source form. That's why it is widely used for blogs, collaborative software (from Trello to Github and Moodle), documentation pages, readme files, and computational notebooks. Did you know that complete books have been written using only Markdown?

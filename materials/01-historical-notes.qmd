@@ -17,7 +17,7 @@ This slide deck, titled "**Historical Notes on Open and Reproducible Research**"
 
 Simply put, the roots of open science can be dated back to the 17th century with the birth of the scientific method, scientific associations and scientific journals. Before this, science was often shared only through private letters between scientists. The shift toward academic journals represented the first major "open" revolution, moving from private discovery to public claim and conversation.
 
-The presentation transitions into the modern era, highlighting a growing concern in the scientific community -- the reproducibility crisis. It notes that a significant portion of published research across various fields cannot be independently replicated.
+Next, the deck transitions into the modern era, highlighting a growing concern in the scientific community -- the reproducibility crisis. It notes that a significant portion of published research across various fields cannot be independently replicated.
 
 In essence, the slide deck argues that while technology has changed, the fundamental goal remains the same: science must be a "communal" activity where the process is as visible and scrutinised as the results.
 

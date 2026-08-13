@@ -4,24 +4,28 @@ title: "Foundations of Reproducibility and Replicability"
 
 The slide deck, titled "**Foundations of Reproducibility and Replicability**", serves as a introduction to definitions and technical requirements that underpin the modern Open Science vision. It moves beyond the historical context to define the specific "rules of the game" for conducting verifiable research.
 
-The core of the presentation is built around the "Turing Way" matrix (@fig-matrix), which categorises research based on two variables: **Data** and **Analysis**.
+The core of the presentation is built around the "Turing Way" matrix (@fig-matrix), which categorises research based on two dimensions: **Data** and **Analysis**.
 
-- **Reproducible**: Using the same data and same analysis to reach the same result.
-
-- **Replicable**: Using new data but the same analysis to see if the findings hold.
-
-- **Robust**: Using the same data but different analytical methods to see if the conclusion remains stable.
-
-- **Generalisable**: Using new data and different methods to see if the concept applies broadly.
+![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](../images/slides/turing-way-reproducible-matrix.jpg){#fig-matrix fig-alt="Turing Way matrix" fig-align="center" width="80%"}
 
 
-![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducible-matrix-22d4dc523c4e4f48f03ee7b4659d3d31.jpg){#fig-matrix fig-alt="Turing Way matrix" fig-align="center" width="80%"}
+- **Reproducible**: 
+A result is reproducible when the *same* analysis steps performed on the *same* dataset consistently produces the *same* answer.
+
+- **Replicable**: A result is replicable when the *same* analysis performed on *different* datasets produces qualitatively similar answers; that is, findings holds when using new data.
+
+- **Robust**: A result is robust when the *same* dataset is subjected to *different* analysis workflows to answer the same research question and a qualitatively similar or identical answer is produced. Robustness indicates that the conclusion remains stable and independent of different implementations of an analysis (e.g., R vs a Python package for the same analysis flow).
+
+- **Generalisable**: Using *different* data and *different* methods to see if the concept applies broadly. That is, combining replicable and robust findings allow us to form generalisable results.
+
+
+![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](../images/slides/turing-way-reproducible-definition.svg){#fig-matrix-illustrated fig-alt="Turing Way matrix illustrated" fig-align="center" width="80%"}
 
 
 The deck outlines that achieving reproducibility is not an "all or nothing" state but a spectrum of practices that can be adopted incrementally. It emphasises that while the ideal is to be fully reproducible, even small steps towards transparency can significantly enhance the credibility and impact of research. 
 
 A key point in the slides is that "publication is not the scholarship; it is merely an advertisement of the scholarship" [@claerbout1992]. The real scholarship consists of the full software environment, the code, and the data.
-The focus is then to emphasise that open and reproducibible research refers to the entire process, not just the final paper. The presentation argues that research moves from "unreproducible" to "fully reproducible" as more of these associated resources, beyond the final written paper, are made available and linked together.
+The focus is then to emphasise that **open and reproducibible research refers to the entire process, not just the final paper**. The deck argues that research moves progressively from "unreproducible" to "fully reproducible" as more of these associated researhc resources, beyond the final written paper, are made openly available and linked together.
 
 
 ::: {.callout-note icon=true}
