@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3f70bac5631458d474a321d4182f9338.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b4ab9af833d6cddc0a3b650489a6264f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3f70bac5631458d474a321d4182f9338.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-343830dee7e81009abd9657442190b55.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0979d82b9fd86a60dffc52c84131057f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-343830dee7e81009abd9657442190b55.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -484,7 +487,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The course content is organised in different parts and chapters/units. It is not intended to follow the chapters in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs and interests. The flowchart shows the different chapters/units of the course and how they are connected. The arrows indicate the recommended order of reading, but you can navigate through the chapters in any order depending on your needs and interests.</p>
+<p>The course content is organised in different parts and units. It is not intended to follow the units in a particular order, but it is recommended to start with the first unit and then choose the next ones depending on your needs. The flowchart shows the different units of the course and how they are connected. The arrows indicate the recommended order of reading, but you can navigate through the units in any order depending on your needs and interests.</p>
 <div class="cell" data-fig-caption="Course structure and navigation." data-layout-align="center">
 <div class="cell-output-display">
 <div>
@@ -506,12 +509,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p><strong>Part: Background</strong>. This part is an introduction to the key terms of reproducibility and replicability across disciplines. It also offers a historical account to put reproducibility in science into perspective.</p>
-<p><strong>Part: The Pre-Reproducibility Assessment</strong>. This part takes the perspective of a reviewer or reader, similar to the reviewer’s role in traditional peer review, to assess the level of reproducibility of a research article. It provides a set of evaluation criteria and puts them into practice with some papers from the <a href="https://agile-gi.eu/">AGILE conference</a>.</p>
-<p><strong>Part: The Reproducibility Process: Practices and Recommendations</strong>. This part takes the perspective of a researcher or author, similar to the author’s role in traditional peer review, who needs practical recommendations and practices to write their next article in a reproducible manner. Here, we discuss a series of practices and recommendations, in increasing order of complexity and technological sophistication, to integrate reproducibility into your daily research tasks. Specific practices produced by the <a href="https://reproducible-agile.github.io/">Reproducible Research @ AGILE</a> initiative are also available in the field of GIScience.</p>
-<p><strong>Part: Open Reproducible Research at UJI</strong>. We describe the local context of the <a href="https://www.uji.es/">Universitat Jaume I</a>, as an actor if the Spanish research ecosystem, regarding on how open science, reproducibility, code and data sharing, and FAIR principles apply to UJI researchers. Therefore, you can skip this section if you are not affiliated with UJI and check with your host institution if similar rules and regulations apply to you.</p>
-<p><strong>Part: Tools</strong>. This part…</p>
+<p><strong>Part: The Pre-Reproducibility Assessment</strong>. This part takes the perspective of a reviewer or reader, similar to the reviewer’s role in traditional peer review, to assess the level of <em>potential</em> reproducibility of a research article. It provides a set of evaluation criteria and puts them into practice with some papers from the <a href="https://agile-gi.eu/">AGILE conference</a>.</p>
+<p><strong>Part: The Reproducibility Process: Practices and Recommendations</strong>. This part takes the perspective of a researcher or author, similar to the author’s role in traditional peer review, who needs practical recommendations and practices to write an article in an open, transparent and reproducible manner. Here, we discuss a series of practices and recommendations, in increasing order of complexity and technological sophistication, to integrate reproducibility and openness into your daily research tasks. Specific practices produced by the <a href="https://reproducible-agile.github.io/">Reproducible Research @ AGILE</a> initiative are also available in the field of GIScience.</p>
+<p><strong>Part: Open Reproducible Research at UJI</strong>. This part describes the local context of the <a href="https://www.uji.es/">Universitat Jaume I</a>, as an actor of the Spanish research ecosystem, regarding on how open science, reproducibility, code and data sharing, and FAIR principles apply to UJI researchers and staff. Therefore, you can skip this section if you are not affiliated with UJI and check with your host institution if similar rules and recommendations apply to you.</p>
+<p><strong>Part: Tools</strong>. This part is still ongoing…</p>
 <hr>
-<p>I am pretty sure that the chapters above only grasp the surface of open reproducible research. Depending on your needs, course length, and participant profiles, you, as an educator, can develop certain units in greater depth, add new ones focusing, for example, on the technology stack to support computational reproducibility, or include practical activities such as actual reproduction of existing papers in your discipline.</p>
+<p>I am pretty sure that the units above only grasp the surface of open reproducible research. Depending on your needs, course length, and participant profiles, you, as an educator, can develop certain units in greater depth, add new ones focusing, for example, on the technology stack to support computational reproducibility, or include practical activities such as actual reproduction of existing papers in your discipline.</p>
 <p>As a learner, you have <a href="../materials/appendice-key-people.html">many articles, web sites and documents</a> to expand your knowledge and curiosity about reproducibility research 😀.</p>
 
 

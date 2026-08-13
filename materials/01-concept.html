@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -61,14 +64,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3f70bac5631458d474a321d4182f9338.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b4ab9af833d6cddc0a3b650489a6264f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3f70bac5631458d474a321d4182f9338.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-343830dee7e81009abd9657442190b55.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0979d82b9fd86a60dffc52c84131057f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-343830dee7e81009abd9657442190b55.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -507,27 +510,37 @@ div.csl-indent {
 
 
 <p>The slide deck, titled “<strong>Foundations of Reproducibility and Replicability</strong>”, serves as a introduction to definitions and technical requirements that underpin the modern Open Science vision. It moves beyond the historical context to define the specific “rules of the game” for conducting verifiable research.</p>
-<p>The core of the presentation is built around the “Turing Way” matrix (<a href="#fig-matrix" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>), which categorises research based on two variables: <strong>Data</strong> and <strong>Analysis</strong>.</p>
-<ul>
-<li><p><strong>Reproducible</strong>: Using the same data and same analysis to reach the same result.</p></li>
-<li><p><strong>Replicable</strong>: Using new data but the same analysis to see if the findings hold.</p></li>
-<li><p><strong>Robust</strong>: Using the same data but different analytical methods to see if the conclusion remains stable.</p></li>
-<li><p><strong>Generalisable</strong>: Using new data and different methods to see if the concept applies broadly.</p></li>
-</ul>
-<div id="fig-matrix" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="Turing Way matrix" data-fig-align="center">
+<p>The core of the presentation is built around the “Turing Way” matrix (<a href="#fig-matrix" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>), which categorises research based on two dimensions: <strong>Data</strong> and <strong>Analysis</strong>.</p>
+<div id="fig-matrix" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center" alt="Turing Way matrix">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://book.the-turing-way.org/build/reproducible-matrix-22d4dc523c4e4f48f03ee7b4659d3d31.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Turing Way matrix">
+<img src="../images/slides/turing-way-reproducible-matrix.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Turing Way matrix">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;5.1: The Turing Way definitions for Reproducibility. Source: <span class="citation" data-cites="turingway2024_illustrations">(<a href="../references.html#ref-turingway2024_illustrations" role="doc-biblioref">The Turing Way Community and Scriberia 2024</a>)</span>
+</figcaption>
+<div class="no-row-height column-margin column-container"></div></figure>
+</div>
+<ul>
+<li><p><strong>Reproducible</strong>: A result is reproducible when the <em>same</em> analysis steps performed on the <em>same</em> dataset consistently produces the <em>same</em> answer.</p></li>
+<li><p><strong>Replicable</strong>: A result is replicable when the <em>same</em> analysis performed on <em>different</em> datasets produces qualitatively similar answers; that is, findings holds when using new data.</p></li>
+<li><p><strong>Robust</strong>: A result is robust when the <em>same</em> dataset is subjected to <em>different</em> analysis workflows to answer the same research question and a qualitatively similar or identical answer is produced. Robustness indicates that the conclusion remains stable and independent of different implementations of an analysis (e.g., R vs a Python package for the same analysis flow).</p></li>
+<li><p><strong>Generalisable</strong>: Using <em>different</em> data and <em>different</em> methods to see if the concept applies broadly. That is, combining replicable and robust findings allow us to form generalisable results.</p></li>
+</ul>
+<div id="fig-matrix-illustrated" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center" alt="Turing Way matrix illustrated">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-matrix-illustrated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/slides/turing-way-reproducible-definition.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Turing Way matrix illustrated">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-matrix-illustrated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: The Turing Way definitions for Reproducibility. Source: <span class="citation" data-cites="turingway2024_illustrations">(<a href="../references.html#ref-turingway2024_illustrations" role="doc-biblioref">The Turing Way Community and Scriberia 2024</a>)</span>
 </figcaption>
 <div class="no-row-height column-margin column-container"><div id="ref-turingway2024_illustrations" class="csl-entry" role="listitem">
 The Turing Way Community, and Scriberia. 2024. <em><span class="nocase">Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse</span></em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.10556824">https://doi.org/10.5281/zenodo.10556824</a>.
 </div></div></figure>
 </div>
 <p>The deck outlines that achieving reproducibility is not an “all or nothing” state but a spectrum of practices that can be adopted incrementally. It emphasises that while the ideal is to be fully reproducible, even small steps towards transparency can significantly enhance the credibility and impact of research.</p>
-<p>A key point in the slides is that “publication is not the scholarship; it is merely an advertisement of the scholarship” <span class="citation" data-cites="claerbout1992">(<a href="../references.html#ref-claerbout1992" role="doc-biblioref">Claerbout and Karrenbach 1992</a>)</span>. The real scholarship consists of the full software environment, the code, and the data. The focus is then to emphasise that open and reproducibible research refers to the entire process, not just the final paper. The presentation argues that research moves from “unreproducible” to “fully reproducible” as more of these associated resources, beyond the final written paper, are made available and linked together.</p>
+<p>A key point in the slides is that “publication is not the scholarship; it is merely an advertisement of the scholarship” <span class="citation" data-cites="claerbout1992">(<a href="../references.html#ref-claerbout1992" role="doc-biblioref">Claerbout and Karrenbach 1992</a>)</span>. The real scholarship consists of the full software environment, the code, and the data. The focus is then to emphasise that <strong>open and reproducibible research refers to the entire process, not just the final paper</strong>. The deck argues that research moves progressively from “unreproducible” to “fully reproducible” as more of these associated researhc resources, beyond the final written paper, are made openly available and linked together.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-claerbout1992" class="csl-entry" role="listitem">
 Claerbout, JF, and M Karrenbach. 1992. <span>“Electronic Documents Give Reproducible Research a New Meaning.”</span> In <em>SEG Technical Program Expanded Abstracts 1992</em>. Society of Exploration Geophysicists. <a href="https://doi.org/10.1190/1.1822162">https://doi.org/10.1190/1.1822162</a>.
 </div></div><div class="callout callout-style-default callout-note callout-titled">
