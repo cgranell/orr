@@ -482,7 +482,9 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#additional-resources-and-readings" id="toc-additional-resources-and-readings" class="nav-link active" data-scroll-target="#additional-resources-and-readings"><span class="header-section-number">5.1</span> Additional resources and readings</a></li>
+  <li><a href="#the-turing-way-community-matrix" id="toc-the-turing-way-community-matrix" class="nav-link active" data-scroll-target="#the-turing-way-community-matrix"><span class="header-section-number">5.1</span> The Turing Way Community matrix</a></li>
+  <li><a href="#replication-of-experiments" id="toc-replication-of-experiments" class="nav-link" data-scroll-target="#replication-of-experiments"><span class="header-section-number">5.2</span> Replication of experiments</a></li>
+  <li><a href="#additional-resources-and-readings" id="toc-additional-resources-and-readings" class="nav-link" data-scroll-target="#additional-resources-and-readings"><span class="header-section-number">5.3</span> Additional resources and readings</a></li>
   </ul>
 </nav>
     </div>
@@ -510,8 +512,14 @@ div.csl-indent {
 
 
 <p>The slide deck, titled “<strong>Foundations of Reproducibility and Replicability</strong>”, serves as a introduction to definitions and technical requirements that underpin the modern Open Science vision. It moves beyond the historical context to define the specific “rules of the game” for conducting verifiable research.</p>
-<p>The core of the presentation is built around the “Turing Way” matrix (<a href="#fig-matrix" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>), which categorises research based on two dimensions: <strong>Data</strong> and <strong>Analysis</strong>.</p>
-<div id="fig-matrix" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center" alt="Turing Way matrix">
+<section id="the-turing-way-community-matrix" class="level2 page-columns page-full" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="the-turing-way-community-matrix"><span class="header-section-number">5.1</span> The Turing Way Community matrix</h2>
+<p>The core of the slide deck is built around the “Turing Way” matrix (<a href="#fig-matrix" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>), which deconstructs the definition of reproducibility and replicability based on changes in <strong>data</strong> and <strong>analysis</strong>, similarly to others <span class="citation" data-cites="nust2018">(<a href="../references.html#ref-nust2018" role="doc-biblioref">Nüst et al. 2018</a>)</span>, <span class="citation" data-cites="kekedron2021gean">(<a href="../references.html#ref-kekedron2021gean" role="doc-biblioref"><strong>kekedron2021gean?</strong></a>)</span>, <span class="citation" data-cites="NAP2019">(<a href="../references.html#ref-NAP2019" role="doc-biblioref">National Academies of Sciences and Medicine 2019</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-nust2018" class="csl-entry" role="listitem">
+Nüst, Daniel, C Granell, B Hofer, et al. 2018. <span>“Reproducible Research and GIScience: An Evaluation Using AGILE Conference Papers.”</span> <em>PeerJ</em> 6: e5072. <a href="https://doi.org/10.7717/peerj.5072">https://doi.org/10.7717/peerj.5072</a>.
+</div><div id="ref-NAP2019" class="csl-entry" role="listitem">
+National Academies of Sciences, Engineering, and Medicine. 2019. <em>Reproducibility and Replicability in Science</em>. The National Academies Press. <a href="https://doi.org/10.17226/25303">https://doi.org/10.17226/25303</a>.
+</div></div><div id="fig-matrix" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="Turing Way matrix" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../images/slides/turing-way-reproducible-matrix.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Turing Way matrix">
@@ -527,7 +535,7 @@ Figure&nbsp;5.1: The Turing Way definitions for Reproducibility. Source: <span c
 <li><p><strong>Robust</strong>: A result is robust when the <em>same</em> dataset is subjected to <em>different</em> analysis workflows to answer the same research question and a qualitatively similar or identical answer is produced. Robustness indicates that the conclusion remains stable and independent of different implementations of an analysis (e.g., R vs a Python package for the same analysis flow).</p></li>
 <li><p><strong>Generalisable</strong>: Using <em>different</em> data and <em>different</em> methods to see if the concept applies broadly. That is, combining replicable and robust findings allow us to form generalisable results.</p></li>
 </ul>
-<div id="fig-matrix-illustrated" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center" alt="Turing Way matrix illustrated">
+<div id="fig-matrix-illustrated" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="Turing Way matrix illustrated" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-matrix-illustrated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../images/slides/turing-way-reproducible-definition.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Turing Way matrix illustrated">
@@ -558,7 +566,19 @@ Claerbout, JF, and M Karrenbach. 1992. <span>“Electronic Documents Give Reprod
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+</section>
+<section id="replication-of-experiments" class="level2 page-columns page-full" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="replication-of-experiments"><span class="header-section-number">5.2</span> Replication of experiments</h2>
+<p>Replication that goes beyond checking data and rerunning code is fundamental in experimental disciplines. Replication of experiments involves repeating a study to verify findings, test reliability, or establish generalisability, and can be divided into <em>direct replication</em> (repeating identical steps) and <em>conceptual replication</em> (testing the same hypothesis with different methods), alongside systematic extensions <span class="citation" data-cites="gomez2012 kedron2025survey">(<a href="../references.html#ref-gomez2012" role="doc-biblioref">Gómez et al. 2010</a>; <a href="../references.html#ref-kedron2025survey" role="doc-biblioref">Kedron et al. 2025</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-gomez2012" class="csl-entry" role="listitem">
+Gómez, Omar S., Natalia Juristo, and Sira Vegas. 2010. <span>“Replications Types in Experimental Disciplines.”</span> <em>Proceedings of the 2010 ACM-IEEE International Symposium on Empirical Software Engineering and Measurement</em> (New York, NY, USA), ESEM ’10. <a href="https://doi.org/10.1145/1852786.1852790">https://doi.org/10.1145/1852786.1852790</a>.
+</div></div><p>Direct replications basically implement the same experimental procedure as previous research. According to <span class="citation" data-cites="kedron2025survey">(<a href="../references.html#ref-kedron2025survey" role="doc-biblioref">Kedron et al. 2025</a>)</span>, they make limited changes to an initial study to verify the claims of the experimental study by testing for conclusion, construct, and internal validity.</p>
+<p>Conceptual replications attempt to replicate findings, including tests of hypotheses, by using different experimental procedures or materials <span class="citation" data-cites="schmidt2009">(<a href="../references.html#ref-schmidt2009" role="doc-biblioref">Schmidt 2009</a>)</span>. This, for example, implies changes to the population or location to test validity and generalisability to new populations and contexts <span class="citation" data-cites="kedron2025survey">(<a href="../references.html#ref-kedron2025survey" role="doc-biblioref">Kedron et al. 2025</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-schmidt2009" class="csl-entry" role="listitem">
+Schmidt, Stefan. 2009. <span>“Shall We Really Do It Again? The Powerful Concept of Replication Is Neglected in the Social Sciences.”</span> <em>Review of General Psychology</em> 13 (2): 90–100. <a href="https://doi.org/10.1037/a0015108">https://doi.org/10.1037/a0015108</a>.
+</div><div id="ref-kedron2025survey" class="csl-entry" role="listitem">
+Kedron, Peter, Joseph Holler, and Sarah Bardin. 2025. <span>“A Survey of Researcher Perceptions of Replication in Geography.”</span> <em>Annals of the American Association of Geographers</em> 115 (1): 184–204. <a href="https://doi.org/10.1080/24694452.2024.2415695">https://doi.org/10.1080/24694452.2024.2415695</a>.
+</div></div><div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -569,29 +589,23 @@ Claerbout, JF, and M Karrenbach. 1992. <span>“Electronic Documents Give Reprod
 </div>
 <div class="callout-body-container callout-body">
 <div class="reflect">
-<p>Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (hint: check The Turing Way’s definitions page <span class="citation" data-cites="turingway2025">(<a href="../references.html#ref-turingway2025" role="doc-biblioref">The Turing Way Community 2025</a>)</span>.</p>
+<p>Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility?</p>
 </div>
 </div>
 </div>
-<div class="no-row-height column-margin column-container"><div id="ref-turingway2025" class="csl-entry" role="listitem">
-The Turing Way Community. 2025. <em>The Turing Way: A Handbook for Reproducible, Ethical and Collaborative Research</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.3233853">https://doi.org/10.5281/zenodo.3233853</a>.
-</div></div><section id="additional-resources-and-readings" class="level2 page-columns page-full" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="additional-resources-and-readings"><span class="header-section-number">5.1</span> Additional resources and readings</h2>
+</section>
+<section id="additional-resources-and-readings" class="level2 page-columns page-full" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="additional-resources-and-readings"><span class="header-section-number">5.3</span> Additional resources and readings</h2>
 <p>If you’re still hesitant to embrace reproducibility, next talk by <a href="https://www.cruk.cam.ac.uk/research-groups/markowetz-group/">Dr.&nbsp;Florian Markowetz</a>, based on his paper <span class="citation" data-cites="markowetz2015">(<a href="../references.html#ref-markowetz2015" role="doc-biblioref">Markowetz 2015</a>)</span>, will convince you!</p>
 <div class="no-row-height column-margin column-container"><div id="ref-markowetz2015" class="csl-entry" role="listitem">
 Markowetz, F. 2015. <span>“Five Selfish Reasons to Work Reproducibly.”</span> <em>Genome Biology</em> 16: 274. <a href="https://doi.org/10.1186/s13059-015-0850-7">https://doi.org/10.1186/s13059-015-0850-7</a>.
 </div></div><div class="quarto-video ratio ratio-21x9"><iframe data-external="1" src="https://www.youtube.com/embed/yVT07Sukv9Q" title="Five Selfish Reasons to Work Reproducibly" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>In the <a href="https://forrt.org/replication_handbook/understanding.html">Understanding Replications and Reproductions</a> chapter of the FORRT Replication Handbook <span class="citation" data-cites="roseler2025">(<a href="../references.html#ref-roseler2025" role="doc-biblioref">Röseler et al. 2025</a>)</span>, the authors establish a clear taxonomy for “repetitive research”, distinguishing between reproduction (same data) and replication (new data). They argue that reproduction serves as an essential, cost-effective baseline that should precede any replication attempt. By exploring the “closeness” of studies through both theoretical and methodological lenses, the chapter highlights that a “failed” replication doesn’t always mean the original was wrong – it might simply reveal the “boundary conditions” of a theory. Ultimately, the text frames these practices not as antagonistic acts, but as a collaborative spectrum ranging from simple numerical verification to the broad testing of scientific generalizability.</p>
+<p>In the <a href="https://forrt.org/replication_handbook/understanding.html">Understanding Replications and Reproductions</a> chapter of the FORRT Replication Handbook <span class="citation" data-cites="roseler2025">(<a href="../references.html#ref-roseler2025" role="doc-biblioref">Röseler et al. 2025</a>)</span>, the authors establish a clear taxonomy for “repetitive research”, distinguishing between reproduction (same data) and replication (new data). They argue that reproduction serves as an essential, cost-effective baseline that should precede any replication attempt. By exploring the “closeness” of studies through both theoretical and methodological lenses, the chapter highlights that a “failed” replication doesn’t always mean the original was wrong – it might simply reveal the “boundary conditions” of a theory. Ultimately, the text frames these practices not as antagonistic acts, but as a collaborative spectrum ranging from simple numerical verification to the broad testing of scientific generalisability.</p>
+
+
 <div class="no-row-height column-margin column-container"><div id="ref-roseler2025" class="csl-entry" role="listitem">
 Röseler, L., L. Wallrich, H. Hartmann, et al. 2025. <em>Handbook for Reproduction and Replication Studies</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.16990114">https://doi.org/10.5281/zenodo.16990114</a>.
-</div><div id="ref-barba2018" class="csl-entry" role="listitem">
-Barba, Lorena A. 2018. <span>“Terminologies for Reproducible Research.”</span> In <em>arXiv Preprint arXiv:1802.03311</em>. <a href="https://arxiv.org/abs/1802.03311">https://arxiv.org/abs/1802.03311</a>.
-</div><div id="ref-plesser2018" class="csl-entry" role="listitem">
-Plesser, Hans E. 2018. <span>“Reproducibility Vs. Replicability: A Brief History of a Confused Terminology.”</span> <em>Frontiers in Neuroinformatics</em> Volume 11 - 2017. <a href="https://doi.org/10.3389/fninf.2017.00076">https://doi.org/10.3389/fninf.2017.00076</a>.
-</div></div><p>More information on these definitions and terms accross disciplines can be found in <span class="citation" data-cites="barba2018">(<a href="../references.html#ref-barba2018" role="doc-biblioref">Barba 2018</a>)</span> and <span class="citation" data-cites="plesser2018">(<a href="../references.html#ref-plesser2018" role="doc-biblioref">Plesser 2018</a>)</span>.</p>
-
-
-
+</div></div>
 </section>
 
 </main> <!-- /main -->
