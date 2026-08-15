@@ -6,7 +6,7 @@ The slide deck, titled "**Foundations of Reproducibility and Replicability**", s
 
 ## The Turing Way Community matrix
 
-The core of the slide deck is built around the "Turing Way" matrix (@fig-matrix), which deconstructs the definition of reproducibility and replicability based on changes in **data** and **analysis**, similarly to others [@nust2018], [@kekedron2021gean], [@NAP2019].
+The core of the slide deck is built around the "Turing Way" matrix (@fig-matrix), which deconstructs the definition of reproducibility and replicability based on changes in **data** and **analysis**, similarly to others [@nust2018], [@kedron2021gean], [@NAP2019].
 
 ![The Turing Way definitions for Reproducibility. Source: [@turingway2024_illustrations]](../images/slides/turing-way-reproducible-matrix.jpg){#fig-matrix fig-alt="Turing Way matrix" fig-align="center" width="80%"}
 
@@ -40,6 +40,14 @@ The focus is then to emphasise that **open and reproducibible research refers to
 :::
 
 
+::: {.callout-tip icon=true}
+## Reflection: Reproducibility in your discipline
+
+::: reflect
+Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility?
+:::
+
+
 ## Replication of experiments
  
 Replication that goes beyond checking data and rerunning code is fundamental in experimental disciplines. Replication of experiments involves repeating a study to verify findings, test reliability, or establish generalisability, and can be divided into *direct replication* (repeating identical steps) and *conceptual replication* (testing the same hypothesis with different methods), alongside systematic extensions [@gomez2012; @kedron2025survey].
@@ -48,12 +56,8 @@ Direct replications basically implement the same experimental procedure as previ
 
 Conceptual replications attempt to replicate findings, including tests of hypotheses, by using different experimental procedures or materials [@schmidt2009]. This, for example, implies changes to the population or location to test validity and generalisability to new populations and contexts [@kedron2025survey].
 
-::: {.callout-tip icon=true}
-## Reflection: Reproducibility in your discipline
+[Ongoing]
 
-::: reflect
-Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility?
-:::
 :::
 
 ## Additional resources and readings
