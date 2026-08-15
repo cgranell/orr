@@ -284,144 +284,144 @@
   {
     "objectID": "materials/02-agile-guidelines-impact.html",
     "href": "materials/02-agile-guidelines-impact.html",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "",
-    "text": "8.1 Paper at a glance",
+    "text": "8.1 Paper at a glance\nSummary based on (Granell et al. 2026). Fully open: preregistration, data, code and preprint are all publicly available.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#why-this-study",
     "href": "materials/02-agile-guidelines-impact.html#why-this-study",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.2 Why this study",
     "text": "8.2 Why this study\nComputational reproducibility is widely reported as weak across disciplines, and GIScience is no exception. Two earlier studies by (mostly) the same team assessed the AGILE (2018) and GIScience (2021) conference series and found that reproducibility was not yet a core concern in either community.\nThose earlier findings motivated the creation of the AGILE Reproducible Paper Guidelines (published 2019, revised 2020) and a Reproducibility Committee that reviews accepted papers and awards reproducibility badges. The GIScience conference series never adopted equivalent guidelines or review — creating a natural comparison group for this study.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#research-questions",
     "href": "materials/02-agile-guidelines-impact.html#research-questions",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.3 Research questions",
     "text": "8.3 Research questions\n\nRQ1 — Did the potential reproducibility of AGILE papers improve after the guidelines and review process were introduced?\nRQ2 — Did the potential reproducibility of GIScience papers change over the same period, with no intervention?\nRQ3 — Is there an observable difference between the two conference series in how reproducibility changed?",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#corpus-and-design",
     "href": "materials/02-agile-guidelines-impact.html#corpus-and-design",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.4 Corpus and design",
     "text": "8.4 Corpus and design\n\n224 full papers were collected from publisher sites (Springer, LIPIcs, Copernicus); 168 were eligible after excluding non‑computational papers and those from the transitional year\n\nAGILE: 109 eligible papers (2017–2019 pre‑intervention; 2021–2024 post‑intervention)\nGIScience: 58 eligible papers (2016 & 2018 pre‑guidelines; 2021 Part II & 2023 post‑guidelines)\n\n2020 papers (AGILE) and 2021 Part I (GIScience) were treated as a transitional period, assessed but excluded from the main comparison\nEight assessors were recruited; every paper was double‑scored independently (A1 = experienced assessor, A2 = assessor from a new pool), and disagreements were resolved through documented discussion",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#the-assessment-rubric-udao-scheme",
     "href": "materials/02-agile-guidelines-impact.html#the-assessment-rubric-udao-scheme",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.5 The assessment rubric (UDAO scheme)",
     "text": "8.5 The assessment rubric (UDAO scheme)\nFour criteria were rated, each on an ordinal scale:\n\n\n\n\n\n\n\nLevel\nMeaning\n\n\n\n\nU – Undocumented\nNot described, not recreatable\n\n\nD – Documented\nDescribed (text, workflow, pseudo-code) but not retrievable\n\n\nA – Available\nAccessible online (no permanent DOI)\n\n\nO – Open\nOpenly available and permanently archived (DOI)\n\n\n\nThis was applied to Input Data, Methods/Analysis/Processing, and Results, plus a separate binary check for whether the Computational Environment (hardware, OS, runtime, dependencies) was documented.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#key-result-1-agile-improved-sharply",
     "href": "materials/02-agile-guidelines-impact.html#key-result-1-agile-improved-sharply",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.6 Key result 1 — AGILE improved sharply",
     "text": "8.6 Key result 1 — AGILE improved sharply\nPre‑intervention AGILE papers looked like typical low‑reproducibility work: about 47% had undocumented data, and no paper reached “Open” on any criterion.\nPost‑intervention, the picture changed markedly: over half of papers reached High (Available or Open) on Data, about 70% on Methods, and roughly 54% on Results — levels never observed before the guidelines were introduced.\nOdds ratios comparing post‑ vs. pre‑intervention papers (all statistically significant, p &lt; 0.0001):\n\n\n\nCriterion\nOdds Ratio\n\n\n\n\nData\n≈ 19.3\n\n\nMethods\n≈ 20.5\n\n\nResults\n≈ 12.3",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#key-result-2-giscience-improved-too-but-less",
     "href": "materials/02-agile-guidelines-impact.html#key-result-2-giscience-improved-too-but-less",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.7 Key result 2 — GIScience improved too, but less",
     "text": "8.7 Key result 2 — GIScience improved too, but less\nWithout any formal guidelines, GIScience papers also became somewhat more reproducible over time — but the effect is smaller and uneven across criteria.\n\nData did not improve significantly (OR ≈ 2.0, not significant at p = 0.068) — about half of post‑guidelines papers were still undocumented for data\nMethods (OR ≈ 8.4) and Results (OR ≈ 5.3) did improve significantly, but roughly at half the effect size seen at AGILE",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#key-result-3-agiles-gain-is-larger-and-broader",
     "href": "materials/02-agile-guidelines-impact.html#key-result-3-agiles-gain-is-larger-and-broader",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.8 Key result 3 — AGILE’s gain is larger and broader",
     "text": "8.8 Key result 3 — AGILE’s gain is larger and broader\nChange in the share of “High” (Available/Open) papers, pre‑ vs. post‑intervention, in percentage points:\n\n\n\nCriterion\nAGILE\nGIScience\n\n\n\n\nData\n+33.6\n−3.9\n\n\nMethods\n+58.9\n+42.9\n\n\nResults\n+45.7\n+25.0\n\n\n\nThe authors interpret this pattern as evidence that clear, enforced guidance is a key driver of change. General community awareness alone, as observed at GIScience, appears to help, but far less than a formal guideline‑plus‑review process. Part of the GIScience improvement may even be a “spill‑over” effect from authors who also publish at AGILE.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#does-potential-reproducibility-predict-actual-reproduction",
     "href": "materials/02-agile-guidelines-impact.html#does-potential-reproducibility-predict-actual-reproduction",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.9 Does potential reproducibility predict actual reproduction?",
     "text": "8.9 Does potential reproducibility predict actual reproduction?\nThe AGILE Reproducibility Committee independently attempts to reproduce accepted papers and awards a badge on success. The authors cross‑checked their rubric scores against these badges for the 58 post‑intervention AGILE papers:\n\nPapers rated All High on the rubric received a badge about 51% of the time and largely succeeded in reproduction\nPapers rated All Low received a badge only rarely (about 5% of the time)\n\nThis suggests the rubric is a reasonably good proxy for whether a paper can actually be reproduced in practice.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#where-disagreement-happens",
     "href": "materials/02-agile-guidelines-impact.html#where-disagreement-happens",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.10 Where disagreement happens",
     "text": "8.10 Where disagreement happens\nAssessors fully agreed on only about 28% of the 224 papers; most cases involved some — usually minor — disagreement.\nData was consistently the most contentious criterion, both for “uncertain assessment” and for “significant disagreement,” in both conferences. Grey areas often involved data that were technically “Available” (hosted in a repository) but too poorly documented to actually reuse. The team chose to rate such cases conservatively as Undocumented, from the perspective of a potential user trying to reproduce the work.\nA key recommendation from this experience: require assessors to justify any rating that deviates from what the rubric would otherwise suggest, especially “Undocumented” calls.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#discussion-what-the-data-suggest",
     "href": "materials/02-agile-guidelines-impact.html#discussion-what-the-data-suggest",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.11 Discussion — what the data suggest",
     "text": "8.11 Discussion — what the data suggest\n\nThe correlation between AGILE’s guideline/review intervention and the jump in reproducibility is strong, though the study cannot claim strict causality\nEven “Available” is often not enough for the long term: links to code, data, and project pages tend to decay — the more durable goal is Open and permanently archived\nGIScience’s smaller improvement, especially the lack of progress on Data, suggests that awareness and informal norms are not sufficient substitutes for concrete guidelines paired with review",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#conclusions-and-outlook",
     "href": "materials/02-agile-guidelines-impact.html#conclusions-and-outlook",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.12 Conclusions and outlook",
     "text": "8.12 Conclusions and outlook\nA relatively small research community (AGILE) was able to shift its Open Science culture measurably through guidelines plus a lightweight reproducibility review process, built on CODECHECK principles. The approach is largely discipline‑agnostic and transferable to other conferences and journals — including the GIScience conference series and JOSIS itself.\nSuggested next steps from the authors:\n\nEncourage the GIScience conference series to adopt AGILE‑style guidelines\nSurvey author and reviewer perceptions and motivations around Open Science practices\nTrack reproducibility longitudinally across future conference editions\nMove from assessing potential reproducibility to conducting actual reproduction studies\nInvestigate how LLMs and vision‑language models might (or might not yet) assist reproducibility assessment",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
     "objectID": "materials/02-agile-guidelines-impact.html#takeaways-for-the-webinar",
     "href": "materials/02-agile-guidelines-impact.html#takeaways-for-the-webinar",
-    "title": "8  The AGILE Reproducibility Initiative",
+    "title": "8  Impact of AGILE Reproducibility Initiative",
     "section": "8.13 Takeaways for the webinar",
     "text": "8.13 Takeaways for the webinar\n\nReproducibility policy works best when it combines clear author guidelines with an enforced review mechanism, not awareness‑raising alone\nInput data remains the weakest link across the whole GIScience community — a natural focus area for any reproducibility initiative\n“Available” is not the finish line — durable, openly archived resources (with DOIs) are what actually protect reproducibility over time\nThe AGILE model — guidelines, CODECHECK‑style reproducibility review, and badges — is a transferable blueprint for other conferences and journals\n\n\n\n\n\nGranell, Carlos, Frank O. Ostermann, Daniel Nüst, et al. 2026. “Improving Reproducibility of GIScience Publications Through Novel Reproducibility Guidelines and Revised Review Procedures.” Journal of Spatial Information Science, no. 32: 67–93. https://doi.org/10.5311/josis.2026.32.591.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The AGILE Reproducibility Initiative</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
     ]
   },
   {
