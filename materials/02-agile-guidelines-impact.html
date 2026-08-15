@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="What can I do to make my next article (more) reproducible?">
+<meta name="author" content="Summary based on Granell et al.&nbsp;(2026), JOSIS 32, pp.&nbsp;67–93">
+<meta name="dcterms.date" content="2026-08-15">
+<meta name="description" content="“(Granell et al. 2026) Fully open: preregistration, data, code and preprint are all publicly available”">
 
-<title>3&nbsp; Tech stack – Open Reproducible Research: Practices and Tools</title>
+<title>8&nbsp; The AGILE Reproducibility Initiative – Open Reproducible Research: Practices and Tools</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,7 +29,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -37,22 +58,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../materials/01-historical-notes.html" rel="next">
-<link href="../materials/00-units.html" rel="prev">
+<link href="../materials/03-guidelines.html" rel="next">
+<link href="../materials/02-assessment.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3d497cff885f6278d37568d0ef0763f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0c2370553b5474e360ec0608d757d788.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3d497cff885f6278d37568d0ef0763f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3d497cff885f6278d37568d0ef0763f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,173 +97,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
 
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -255,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/00-personas.html">Foreword</a></li><li class="breadcrumb-item"><a href="../materials/00-tech-stack.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tech stack</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/02-assessment.html">The Pre-reproducibility Assessment</a></li><li class="breadcrumb-item"><a href="../materials/02-agile-guidelines-impact.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The AGILE Reproducibility Initiative</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -275,9 +131,8 @@ ul.task-list li input[type="checkbox"] {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Open Reproducible Research: Practices and Tools</a> 
-        <div class="sidebar-tools-main tools-wide">
+        <div class="sidebar-tools-main">
     <a href="https://www.github.com/cgranell/orr" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -322,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/00-tech-stack.html" class="sidebar-item-text sidebar-link active">
+  <a href="../materials/00-tech-stack.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tech stack</span></span></a>
   </div>
 </li>
@@ -374,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../materials/02-agile-guidelines-impact.html" class="sidebar-item-text sidebar-link">
+  <a href="../materials/02-agile-guidelines-impact.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The AGILE Reproducibility Initiative</span></span></a>
   </div>
 </li>
@@ -461,34 +316,55 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#paper-at-a-glance" id="toc-paper-at-a-glance" class="nav-link active" data-scroll-target="#paper-at-a-glance"><span class="header-section-number">8.1</span> Paper at a glance</a></li>
+  <li><a href="#why-this-study" id="toc-why-this-study" class="nav-link" data-scroll-target="#why-this-study"><span class="header-section-number">8.2</span> Why this study</a></li>
+  <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions"><span class="header-section-number">8.3</span> Research questions</a></li>
+  <li><a href="#corpus-and-design" id="toc-corpus-and-design" class="nav-link" data-scroll-target="#corpus-and-design"><span class="header-section-number">8.4</span> Corpus and design</a></li>
+  <li><a href="#the-assessment-rubric-udao-scheme" id="toc-the-assessment-rubric-udao-scheme" class="nav-link" data-scroll-target="#the-assessment-rubric-udao-scheme"><span class="header-section-number">8.5</span> The assessment rubric (UDAO scheme)</a></li>
+  <li><a href="#key-result-1-agile-improved-sharply" id="toc-key-result-1-agile-improved-sharply" class="nav-link" data-scroll-target="#key-result-1-agile-improved-sharply"><span class="header-section-number">8.6</span> Key result 1 — AGILE improved sharply</a></li>
+  <li><a href="#key-result-2-giscience-improved-too-but-less" id="toc-key-result-2-giscience-improved-too-but-less" class="nav-link" data-scroll-target="#key-result-2-giscience-improved-too-but-less"><span class="header-section-number">8.7</span> Key result 2 — GIScience improved too, but less</a></li>
+  <li><a href="#key-result-3-agiles-gain-is-larger-and-broader" id="toc-key-result-3-agiles-gain-is-larger-and-broader" class="nav-link" data-scroll-target="#key-result-3-agiles-gain-is-larger-and-broader"><span class="header-section-number">8.8</span> Key result 3 — AGILE’s gain is larger and broader</a></li>
+  <li><a href="#does-potential-reproducibility-predict-actual-reproduction" id="toc-does-potential-reproducibility-predict-actual-reproduction" class="nav-link" data-scroll-target="#does-potential-reproducibility-predict-actual-reproduction"><span class="header-section-number">8.9</span> Does potential reproducibility predict actual reproduction?</a></li>
+  <li><a href="#where-disagreement-happens" id="toc-where-disagreement-happens" class="nav-link" data-scroll-target="#where-disagreement-happens"><span class="header-section-number">8.10</span> Where disagreement happens</a></li>
+  <li><a href="#discussion-what-the-data-suggest" id="toc-discussion-what-the-data-suggest" class="nav-link" data-scroll-target="#discussion-what-the-data-suggest"><span class="header-section-number">8.11</span> Discussion — what the data suggest</a></li>
+  <li><a href="#conclusions-and-outlook" id="toc-conclusions-and-outlook" class="nav-link" data-scroll-target="#conclusions-and-outlook"><span class="header-section-number">8.12</span> Conclusions and outlook</a></li>
+  <li><a href="#takeaways-for-the-webinar" id="toc-takeaways-for-the-webinar" class="nav-link" data-scroll-target="#takeaways-for-the-webinar"><span class="header-section-number">8.13</span> Takeaways for the webinar</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#git" id="toc-git" class="nav-link active" data-scroll-target="#git"><span class="header-section-number">3.1</span> Git</a></li>
-  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">3.2</span> GitHub</a></li>
-  <li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown"><span class="header-section-number">3.3</span> Markdown</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/00-personas.html">Foreword</a></li><li class="breadcrumb-item"><a href="../materials/00-tech-stack.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tech stack</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materials/02-assessment.html">The Pre-reproducibility Assessment</a></li><li class="breadcrumb-item"><a href="../materials/02-agile-guidelines-impact.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The AGILE Reproducibility Initiative</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tech stack</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The AGILE Reproducibility Initiative</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Summary based on Granell et al.&nbsp;(2026), JOSIS 32, pp.&nbsp;67–93 </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 15, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -498,79 +374,191 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This course teaches best practices and recommendations for getting started with computational reproducibility to PhD students and research staff from diverse backgrounds with no prior experience, in principle, in computational skills.</p>
-<div id="tbl-tech-tbl-colwidths-55151515-striped-.hover" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tech-tbl-colwidths-55151515-striped-.hover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.1: Importance of each tech/tool according to the <a href="../materials/03-practices.html">stages of a research project</a>; ✓✓✓ very important , ✓✓ fairly important, ✓ important, ✗: Not at all
-</figcaption>
-<div aria-describedby="tbl-tech-tbl-colwidths-55151515-striped-.hover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section id="paper-at-a-glance" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="paper-at-a-glance"><span class="header-section-number">8.1</span> Paper at a glance</h2>
+</section>
+<section id="why-this-study" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="why-this-study"><span class="header-section-number">8.2</span> Why this study</h2>
+<p>Computational reproducibility is widely reported as weak across disciplines, and GIScience is no exception. Two earlier studies by (mostly) the same team assessed the <strong>AGILE</strong> (2018) and <strong>GIScience</strong> (2021) conference series and found that reproducibility was not yet a core concern in either community.</p>
+<p>Those earlier findings motivated the creation of the <strong>AGILE Reproducible Paper Guidelines</strong> (published 2019, revised 2020) and a <strong>Reproducibility Committee</strong> that reviews accepted papers and awards reproducibility badges. The GIScience conference series never adopted equivalent guidelines or review — creating a natural comparison group for this study.</p>
+</section>
+<section id="research-questions" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="research-questions"><span class="header-section-number">8.3</span> Research questions</h2>
+<ol type="1">
+<li><strong>RQ1</strong> — Did the potential reproducibility of AGILE papers improve after the guidelines and review process were introduced?</li>
+<li><strong>RQ2</strong> — Did the potential reproducibility of GIScience papers change over the same period, with no intervention?</li>
+<li><strong>RQ3</strong> — Is there an observable difference between the two conference series in how reproducibility changed?</li>
+</ol>
+</section>
+<section id="corpus-and-design" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="corpus-and-design"><span class="header-section-number">8.4</span> Corpus and design</h2>
+<ul>
+<li><strong>224 full papers</strong> were collected from publisher sites (Springer, LIPIcs, Copernicus); <strong>168 were eligible</strong> after excluding non‑computational papers and those from the transitional year
+<ul>
+<li>AGILE: 109 eligible papers (2017–2019 pre‑intervention; 2021–2024 post‑intervention)</li>
+<li>GIScience: 58 eligible papers (2016 &amp; 2018 pre‑guidelines; 2021 Part II &amp; 2023 post‑guidelines)</li>
+</ul></li>
+<li>2020 papers (AGILE) and 2021 Part I (GIScience) were treated as a <strong>transitional period</strong>, assessed but excluded from the main comparison</li>
+<li>Eight assessors were recruited; every paper was double‑scored independently (A1 = experienced assessor, A2 = assessor from a new pool), and disagreements were resolved through documented discussion</li>
+</ul>
+</section>
+<section id="the-assessment-rubric-udao-scheme" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="the-assessment-rubric-udao-scheme"><span class="header-section-number">8.5</span> The assessment rubric (UDAO scheme)</h2>
+<p>Four criteria were rated, each on an ordinal scale:</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th>Before</th>
-<th>During</th>
-<th>After</th>
+<th>Level</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="#git">Git</a></td>
-<td>✓✓</td>
-<td>✓</td>
-<td>✗</td>
+<td><strong>U</strong> – Undocumented</td>
+<td>Not described, not recreatable</td>
 </tr>
 <tr class="even">
-<td><a href="#github">GitHub</a></td>
-<td>✗</td>
-<td>✓✓</td>
-<td>✓</td>
+<td><strong>D</strong> – Documented</td>
+<td>Described (text, workflow, pseudo-code) but not retrievable</td>
 </tr>
 <tr class="odd">
-<td><a href="#markdown">Markdown</a></td>
-<td>✓✓</td>
-<td>✓✓✓</td>
-<td>✗</td>
+<td><strong>A</strong> – Available</td>
+<td>Accessible online (no permanent DOI)</td>
+</tr>
+<tr class="even">
+<td><strong>O</strong> – Open</td>
+<td>Openly available <strong>and</strong> permanently archived (DOI)</td>
 </tr>
 </tbody>
 </table>
-</div>
-</figure>
-</div>
-<p>Course participants can follow this course without using any specific tools, although the technologies for computational reproducibility are broad and changing rapidly. The following list (ordered alphabetically) is an ongoing effort to compile recent and mature technology to support any stage and/or of reproducibility research (see side table). While they are not strictly necessary to follow this course, participants are encouraged to familiarise themselves with some of these technologies and tools to begin practising.</p>
-<section id="git" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="git"><span class="header-section-number">3.1</span> Git</h2>
-<p>Reproducibility requires knowing exactly which version of the code produced a specific result. <a href="https://git-scm.com/">Git</a> allows you to “tag” specific snapshots of your project. If a collaborator runs your analysis six months from now, they can checkout the exact commit used for the final publication, ensuring the logic hasn’t shifted due to subsequent updates.</p>
-<p>See more on The Turing Way’s <a href="https://book.the-turing-way.org/reproducible-research/vcs/">version control section</a>.</p>
+<p>This was applied to <strong>Input Data</strong>, <strong>Methods/Analysis/Processing</strong>, and <strong>Results</strong>, plus a separate binary check for whether the <strong>Computational Environment</strong> (hardware, OS, runtime, dependencies) was documented.</p>
 </section>
-<section id="github" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="github"><span class="header-section-number">3.2</span> GitHub</h2>
-<p>Using <a href="https://github.com/">GitHub</a> also goes a long way in helping participants visualise and understand the <a href="#git">Git</a> process, which also helps them engage. The tool allows participants to view diffs (file changes over time) in the files they collaborate on, track commit histories, and search the current state and the entire history of the code base.</p>
+<section id="key-result-1-agile-improved-sharply" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="key-result-1-agile-improved-sharply"><span class="header-section-number">8.6</span> Key result 1 — AGILE improved sharply</h2>
+<p>Pre‑intervention AGILE papers looked like typical low‑reproducibility work: about 47% had <strong>undocumented data</strong>, and no paper reached “Open” on any criterion.</p>
+<p>Post‑intervention, the picture changed markedly: over half of papers reached <strong>High</strong> (Available or Open) on Data, about 70% on Methods, and roughly 54% on Results — levels never observed before the guidelines were introduced.</p>
+<p>Odds ratios comparing post‑ vs.&nbsp;pre‑intervention papers (all statistically significant, p &lt; 0.0001):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Criterion</th>
+<th>Odds Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data</td>
+<td><strong>≈ 19.3</strong></td>
+</tr>
+<tr class="even">
+<td>Methods</td>
+<td><strong>≈ 20.5</strong></td>
+</tr>
+<tr class="odd">
+<td>Results</td>
+<td><strong>≈ 12.3</strong></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="markdown" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="markdown"><span class="header-section-number">3.3</span> Markdown</h2>
-<p>“Markdown is a lightweight markup language for creating formatted text using a plain-text editor”, <a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia says</a>. When compared to other markup language, Markdown is really easy to read in its source form. That’s why it is widely used for blogs, collaborative software (from Trello to Github and Moodle), documentation pages, readme files, and computational notebooks. Did you know that complete books have been written using only Markdown?</p>
+<section id="key-result-2-giscience-improved-too-but-less" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="key-result-2-giscience-improved-too-but-less"><span class="header-section-number">8.7</span> Key result 2 — GIScience improved too, but less</h2>
+<p>Without any formal guidelines, GIScience papers also became somewhat more reproducible over time — but the effect is smaller and uneven across criteria.</p>
+<ul>
+<li><strong>Data</strong> did not improve significantly (OR ≈ 2.0, not significant at p = 0.068) — about half of post‑guidelines papers were still undocumented for data</li>
+<li><strong>Methods</strong> (OR ≈ 8.4) and <strong>Results</strong> (OR ≈ 5.3) did improve significantly, but roughly at half the effect size seen at AGILE</li>
+</ul>
+</section>
+<section id="key-result-3-agiles-gain-is-larger-and-broader" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="key-result-3-agiles-gain-is-larger-and-broader"><span class="header-section-number">8.8</span> Key result 3 — AGILE’s gain is larger and broader</h2>
+<p>Change in the share of “High” (Available/Open) papers, pre‑ vs.&nbsp;post‑intervention, in percentage points:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Criterion</th>
+<th>AGILE</th>
+<th>GIScience</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data</td>
+<td><strong>+33.6</strong></td>
+<td>−3.9</td>
+</tr>
+<tr class="even">
+<td>Methods</td>
+<td><strong>+58.9</strong></td>
+<td>+42.9</td>
+</tr>
+<tr class="odd">
+<td>Results</td>
+<td><strong>+45.7</strong></td>
+<td>+25.0</td>
+</tr>
+</tbody>
+</table>
+<p>The authors interpret this pattern as evidence that <strong>clear, enforced guidance is a key driver of change</strong>. General community awareness alone, as observed at GIScience, appears to help, but far less than a formal guideline‑plus‑review process. Part of the GIScience improvement may even be a “spill‑over” effect from authors who also publish at AGILE.</p>
+</section>
+<section id="does-potential-reproducibility-predict-actual-reproduction" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="does-potential-reproducibility-predict-actual-reproduction"><span class="header-section-number">8.9</span> Does potential reproducibility predict actual reproduction?</h2>
+<p>The AGILE Reproducibility Committee independently attempts to reproduce accepted papers and awards a badge on success. The authors cross‑checked their rubric scores against these badges for the 58 post‑intervention AGILE papers:</p>
+<ul>
+<li>Papers rated <strong>All High</strong> on the rubric received a badge about 51% of the time and largely succeeded in reproduction</li>
+<li>Papers rated <strong>All Low</strong> received a badge only rarely (about 5% of the time)</li>
+</ul>
+<p>This suggests the rubric is a reasonably good <strong>proxy</strong> for whether a paper can actually be reproduced in practice.</p>
+</section>
+<section id="where-disagreement-happens" class="level2" data-number="8.10">
+<h2 data-number="8.10" class="anchored" data-anchor-id="where-disagreement-happens"><span class="header-section-number">8.10</span> Where disagreement happens</h2>
+<p>Assessors fully agreed on only about 28% of the 224 papers; most cases involved some — usually minor — disagreement.</p>
+<p><strong>Data</strong> was consistently the most contentious criterion, both for “uncertain assessment” and for “significant disagreement,” in both conferences. Grey areas often involved data that were technically “Available” (hosted in a repository) but too poorly documented to actually reuse. The team chose to rate such cases conservatively as <strong>Undocumented</strong>, from the perspective of a potential user trying to reproduce the work.</p>
+<p>A key recommendation from this experience: require assessors to justify any rating that deviates from what the rubric would otherwise suggest, especially “Undocumented” calls.</p>
+</section>
+<section id="discussion-what-the-data-suggest" class="level2" data-number="8.11">
+<h2 data-number="8.11" class="anchored" data-anchor-id="discussion-what-the-data-suggest"><span class="header-section-number">8.11</span> Discussion — what the data suggest</h2>
+<ul>
+<li>The correlation between AGILE’s guideline/review intervention and the jump in reproducibility is strong, though the study cannot claim strict causality</li>
+<li>Even “Available” is often not enough for the long term: links to code, data, and project pages tend to decay — the more durable goal is <strong>Open</strong> and permanently archived</li>
+<li>GIScience’s smaller improvement, especially the lack of progress on <strong>Data</strong>, suggests that awareness and informal norms are not sufficient substitutes for concrete guidelines paired with review</li>
+</ul>
+</section>
+<section id="conclusions-and-outlook" class="level2" data-number="8.12">
+<h2 data-number="8.12" class="anchored" data-anchor-id="conclusions-and-outlook"><span class="header-section-number">8.12</span> Conclusions and outlook</h2>
+<p>A relatively small research community (AGILE) was able to shift its Open Science culture measurably through <strong>guidelines plus a lightweight reproducibility review process</strong>, built on CODECHECK principles. The approach is largely <strong>discipline‑agnostic</strong> and transferable to other conferences and journals — including the GIScience conference series and JOSIS itself.</p>
+<p>Suggested next steps from the authors:</p>
+<ul>
+<li>Encourage the GIScience conference series to adopt AGILE‑style guidelines</li>
+<li>Survey author and reviewer perceptions and motivations around Open Science practices</li>
+<li>Track reproducibility longitudinally across future conference editions</li>
+<li>Move from assessing <em>potential</em> reproducibility to conducting <em>actual</em> reproduction studies</li>
+<li>Investigate how LLMs and vision‑language models might (or might not yet) assist reproducibility assessment</li>
+</ul>
+</section>
+<section id="takeaways-for-the-webinar" class="level2" data-number="8.13">
+<h2 data-number="8.13" class="anchored" data-anchor-id="takeaways-for-the-webinar"><span class="header-section-number">8.13</span> Takeaways for the webinar</h2>
+<ul>
+<li>Reproducibility policy works best when it combines <strong>clear author guidelines</strong> with an <strong>enforced review mechanism</strong>, not awareness‑raising alone</li>
+<li><strong>Input data</strong> remains the weakest link across the whole GIScience community — a natural focus area for any reproducibility initiative</li>
+<li>“Available” is not the finish line — durable, <strong>openly archived</strong> resources (with DOIs) are what actually protect reproducibility over time</li>
+<li>The AGILE model — guidelines, CODECHECK‑style reproducibility review, and badges — is a transferable blueprint for other conferences and journals</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-granell2026josis" class="csl-entry" role="listitem">
+Granell, Carlos, Frank O. Ostermann, Daniel Nüst, et al. 2026. <span>“Improving Reproducibility of GIScience Publications Through Novel Reproducibility Guidelines and Revised Review Procedures.”</span> <em>Journal of Spatial Information Science</em>, no. 32: 67–93. <a href="https://doi.org/10.5311/josis.2026.32.591">https://doi.org/10.5311/josis.2026.32.591</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -971,13 +959,13 @@ Table&nbsp;3.1: Importance of each tech/tool according to the <a href="../materi
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../materials/00-units.html" class="pagination-link" aria-label="Navigating the Course">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Navigating the Course</span></span>
+      <a href="../materials/02-assessment.html" class="pagination-link" aria-label="Assessment Criteria">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Assessment Criteria</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../materials/01-historical-notes.html" class="pagination-link" aria-label="Historical Notes">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Historical Notes</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../materials/03-guidelines.html" class="pagination-link" aria-label="Guidelines for open and reproducible research">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Guidelines for open and reproducible research</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -999,4 +987,5 @@ Table&nbsp;3.1: Importance of each tech/tool according to the <a href="../materi
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
