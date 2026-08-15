@@ -83,6 +83,7 @@ citation-location: margin
 
 format: 
   html:
+    smooth-scroll: true
     theme:
       light: cosmo
       dark: superhero #darkly

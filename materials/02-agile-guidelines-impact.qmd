@@ -1,25 +1,13 @@
 ---
-title: "The AGILE Reproducibility Initiative"
-author: "Summary based on Granell et al. (2026), JOSIS 32, pp. 67–93"
-description: |
-  "[@granell2026josis] Fully open: preregistration, data, code and preprint are all publicly available"
+title: "Impact of AGILE Reproducibility Initiative"
 reference-location: margin
 citation-location: document
-date: today
-format:
-  html:
-    toc: true
-    toc-depth: 2
-    toc-location: left
-    number-sections: true
-    theme: cosmo
-    code-fold: false
-    smooth-scroll: true
 ---
 
 
 ## Paper at a glance
 
+Summary based on [@granell2026josis]. Fully open: preregistration, data, code and preprint are all publicly available.
 
 ## Why this study
 
