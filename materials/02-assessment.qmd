@@ -26,11 +26,11 @@ citation-location: document
 
 Whatever motivated your choice, if a paper interests you enough to attempt reproduction you should first understand its methods and materials in detail. Before starting a full reproduction, assess the paper’s *pre‑reproducibility* [@stark2018]: as a reader or reviewer, do you have access to the data, code, parameters, and documentation needed? Are the methods and dependencies described clearly? How feasible would it be to reproduce it?
 
-In the context of the [Reproducible Research \@ AGILE](https://reproducible-agile.github.io/), we proposed a set of criteria to evaluate the degree of reproducibility of an article [@nust2018]. In that work, we evaluated a selection of papers published in the [AGILE conference series](https://agile-gi.eu/). Later, using the same assessmebnt criteria and methodological approach, we evaluated the level of reproducibility of conference articles published in the [GIScience conference series](https://giscience.org/) [@ostermann2021]. 
+In the context of the [Reproducible Research \@ AGILE](https://reproducible-agile.github.io/), we proposed a set of criteria to evaluate the degree of *potential* reproducibility of an article [@nust2018]. In that work, we evaluated a selection of papers published in the [AGILE conference series](https://agile-gi.eu/). Later, using the same assessment criteria and methodological approach, we evaluated the level of reproducibility of conference articles published in the [GIScience conference series](https://giscience.org/) [@ostermann2021]. 
 
 
 ::: column-margin
-![The Turing Way project [@turingway2024_illustrations]](https://book.the-turing-way.org/build/reproducibility-fd9332756bd72cff1fd0c632f419c12a.jpg){#fig-turingway}
+![The Turing Way project [@turingway2024_illustrations]](../images/slides/turing-way-reproducibility.jpg){#fig-turingway}
 :::
 
 With the experience gained in the above studies, we revised the set of assessment criteria for reproducibility in a recent study [@granell2026josis] -- see also published prereg study [@nust2023] and preprint [@granell2025josispreprint]. The resulting criteria, which are compatible with the original ones, are shown in @fig-criteria, which in turn align nicely with the welcome illustration (see @fig-turingway) of The Turing Way project's [Guide for Reproducible Research](https://book.the-turing-way.org/reproducible-research/reproducible-research/).
@@ -49,7 +49,7 @@ The `Input data` and `Results` criteria remain unchanged with respect to initial
 
 
 ::: column-screen-inset-right
-![Assessment criteria and rubric [@nust2023][@granell2026josis]](../images/slides/reproducible-assessment-criteria-rubric.png){#fig-criteria}
+![Assessment criteria and rubric [@granell2026josis]](../images/slides/reproducible-assessment-criteria-rubric.png){#fig-criteria}
 :::
 
 Finally, numeric levels previously used in the past rubric are replaced with descriptive labels and single-letter codes. This enhances interpretability, because the levels were always only ordinal, and avoids any misinterpretation as to the differences in value between the labels, because efforts of going from one level to the next and the impact of a higher level compared to a lower one are far from equal steps orlinear relationships. The UDAO levels are, in ascending order of potential reproducibility:  
@@ -145,7 +145,7 @@ Based on the **reproduction plan template** ([doc](../static/repro_plan.docx), [
 
 - Given a reference list, [FLoRa Annotator](https://forrt.org/annotator/) finds which studies have been replicated and how the authors interpreted the results. 
 
-- [CODECHECK](https://codecheck.org.uk/project/) provides an approach for independent execution of computations underlying research articles. See Daniel's presentation to learn what CODECHECK is about.
+- [CODECHECK](https://codecheck.org.uk/project/) provides an approach for independent execution of computations underlying research articles. Indeed, the AGILE reproducibility review is a concrete implementation of the CODECHECK principles [@nust2021]. See Daniel's presentation to learn what CODECHECK is about.
 
 {{< video https://www.uni-muenster.de/imperia/md/video/MueCOS/danielnust-3-3-2026.mp4
     title="How to get your reproducibility certificate with CODECHECK by Daniel Nüst"

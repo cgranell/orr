@@ -1,0 +1,132 @@
+---
+title: "The AGILE Reproducibility Initiative"
+author: "Summary based on Granell et al. (2026), JOSIS 32, pp. 67–93"
+description: |
+  "[@granell2026josis] Fully open: preregistration, data, code and preprint are all publicly available"
+reference-location: margin
+citation-location: document
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-location: left
+    number-sections: true
+    theme: cosmo
+    code-fold: false
+    smooth-scroll: true
+---
+
+
+## Paper at a glance
+
+
+## Why this study
+
+Computational reproducibility is widely reported as weak across disciplines, and GIScience is no exception. Two earlier studies by (mostly) the same team assessed the **AGILE** (2018) and **GIScience** (2021) conference series and found that reproducibility was not yet a core concern in either community.
+
+Those earlier findings motivated the creation of the **AGILE Reproducible Paper Guidelines** (published 2019, revised 2020) and a **Reproducibility Committee** that reviews accepted papers and awards reproducibility badges. The GIScience conference series never adopted equivalent guidelines or review — creating a natural comparison group for this study.
+
+## Research questions
+
+1. **RQ1** — Did the potential reproducibility of AGILE papers improve after the guidelines and review process were introduced?
+2. **RQ2** — Did the potential reproducibility of GIScience papers change over the same period, with no intervention?
+3. **RQ3** — Is there an observable difference between the two conference series in how reproducibility changed?
+
+## Corpus and design
+
+- **224 full papers** were collected from publisher sites (Springer, LIPIcs, Copernicus); **168 were eligible** after excluding non‑computational papers and those from the transitional year
+  - AGILE: 109 eligible papers (2017–2019 pre‑intervention; 2021–2024 post‑intervention)
+  - GIScience: 58 eligible papers (2016 & 2018 pre‑guidelines; 2021 Part II & 2023 post‑guidelines)
+- 2020 papers (AGILE) and 2021 Part I (GIScience) were treated as a **transitional period**, assessed but excluded from the main comparison
+- Eight assessors were recruited; every paper was double‑scored independently (A1 = experienced assessor, A2 = assessor from a new pool), and disagreements were resolved through documented discussion
+
+## The assessment rubric (UDAO scheme)
+
+Four criteria were rated, each on an ordinal scale:
+
+| Level | Meaning |
+|---|---|
+| **U** – Undocumented | Not described, not recreatable |
+| **D** – Documented | Described (text, workflow, pseudo-code) but not retrievable |
+| **A** – Available | Accessible online (no permanent DOI) |
+| **O** – Open | Openly available **and** permanently archived (DOI) |
+
+This was applied to **Input Data**, **Methods/Analysis/Processing**, and **Results**, plus a separate binary check for whether the **Computational Environment** (hardware, OS, runtime, dependencies) was documented.
+
+## Key result 1 — AGILE improved sharply
+
+Pre‑intervention AGILE papers looked like typical low‑reproducibility work: about 47% had **undocumented data**, and no paper reached "Open" on any criterion.
+
+Post‑intervention, the picture changed markedly: over half of papers reached **High** (Available or Open) on Data, about 70% on Methods, and roughly 54% on Results — levels never observed before the guidelines were introduced.
+
+Odds ratios comparing post‑ vs. pre‑intervention papers (all statistically significant, p < 0.0001):
+
+| Criterion | Odds Ratio |
+|---|---|
+| Data | **≈ 19.3** |
+| Methods | **≈ 20.5** |
+| Results | **≈ 12.3** |
+
+## Key result 2 — GIScience improved too, but less
+
+Without any formal guidelines, GIScience papers also became somewhat more reproducible over time — but the effect is smaller and uneven across criteria.
+
+- **Data** did not improve significantly (OR ≈ 2.0, not significant at p = 0.068) — about half of post‑guidelines papers were still undocumented for data
+- **Methods** (OR ≈ 8.4) and **Results** (OR ≈ 5.3) did improve significantly, but roughly at half the effect size seen at AGILE
+
+## Key result 3 — AGILE's gain is larger and broader
+
+Change in the share of "High" (Available/Open) papers, pre‑ vs. post‑intervention, in percentage points:
+
+| Criterion | AGILE | GIScience |
+|---|---|---|
+| Data | **+33.6** | −3.9 |
+| Methods | **+58.9** | +42.9 |
+| Results | **+45.7** | +25.0 |
+
+The authors interpret this pattern as evidence that **clear, enforced guidance is a key driver of change**. General community awareness alone, as observed at GIScience, appears to help, but far less than a formal guideline‑plus‑review process. Part of the GIScience improvement may even be a "spill‑over" effect from authors who also publish at AGILE.
+
+## Does potential reproducibility predict actual reproduction?
+
+The AGILE Reproducibility Committee independently attempts to reproduce accepted papers and awards a badge on success. The authors cross‑checked their rubric scores against these badges for the 58 post‑intervention AGILE papers:
+
+- Papers rated **All High** on the rubric received a badge about 51% of the time and largely succeeded in reproduction
+- Papers rated **All Low** received a badge only rarely (about 5% of the time)
+
+This suggests the rubric is a reasonably good **proxy** for whether a paper can actually be reproduced in practice.
+
+## Where disagreement happens
+
+Assessors fully agreed on only about 28% of the 224 papers; most cases involved some — usually minor — disagreement.
+
+**Data** was consistently the most contentious criterion, both for "uncertain assessment" and for "significant disagreement," in both conferences. Grey areas often involved data that were technically "Available" (hosted in a repository) but too poorly documented to actually reuse. The team chose to rate such cases conservatively as **Undocumented**, from the perspective of a potential user trying to reproduce the work.
+
+A key recommendation from this experience: require assessors to justify any rating that deviates from what the rubric would otherwise suggest, especially "Undocumented" calls.
+
+## Discussion — what the data suggest
+
+- The correlation between AGILE's guideline/review intervention and the jump in reproducibility is strong, though the study cannot claim strict causality
+- Even "Available" is often not enough for the long term: links to code, data, and project pages tend to decay — the more durable goal is **Open** and permanently archived
+- GIScience's smaller improvement, especially the lack of progress on **Data**, suggests that awareness and informal norms are not sufficient substitutes for concrete guidelines paired with review
+
+## Conclusions and outlook
+
+A relatively small research community (AGILE) was able to shift its Open Science culture measurably through **guidelines plus a lightweight reproducibility review process**, built on CODECHECK principles. The approach is largely **discipline‑agnostic** and transferable to other conferences and journals — including the GIScience conference series and JOSIS itself.
+
+Suggested next steps from the authors:
+
+- Encourage the GIScience conference series to adopt AGILE‑style guidelines
+- Survey author and reviewer perceptions and motivations around Open Science practices
+- Track reproducibility longitudinally across future conference editions
+- Move from assessing *potential* reproducibility to conducting *actual* reproduction studies
+- Investigate how LLMs and vision‑language models might (or might not yet) assist reproducibility assessment
+
+## Takeaways for the webinar
+
+- Reproducibility policy works best when it combines **clear author guidelines** with an **enforced review mechanism**, not awareness‑raising alone
+- **Input data** remains the weakest link across the whole GIScience community — a natural focus area for any reproducibility initiative
+- "Available" is not the finish line — durable, **openly archived** resources (with DOIs) are what actually protect reproducibility over time
+- The AGILE model — guidelines, CODECHECK‑style reproducibility review, and badges — is a transferable blueprint for other conferences and journals
+
+

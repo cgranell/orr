@@ -51,6 +51,7 @@ book:
     - part: "The Pre-reproducibility Assessment"
       chapters:
         - materials/02-assessment.qmd
+        - materials/02-agile-guidelines-impact.qmd
     - part: "The Reproducibility Process: Practices and Recommendations"
       chapters:
         - materials/03-guidelines.qmd

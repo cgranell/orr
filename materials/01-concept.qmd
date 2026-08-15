@@ -39,7 +39,6 @@ The focus is then to emphasise that **open and reproducibible research refers to
 
 :::
 
-
 ::: {.callout-tip icon=true}
 ## Reflection: Reproducibility in your discipline
 
@@ -47,6 +46,7 @@ The focus is then to emphasise that **open and reproducibible research refers to
 Reflect on the extent to which these terms (reproduction, replication, robustness, generalisation) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility?
 :::
 
+:::
 
 ## Replication of experiments
  
@@ -58,7 +58,7 @@ Conceptual replications attempt to replicate findings, including tests of hypoth
 
 [Ongoing]
 
-:::
+
 
 ## Additional resources and readings
 
