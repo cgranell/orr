@@ -1,0 +1,72 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "# Preface {.unnumbered}\n",
+        "\n",
+        "Hello!\n",
+        "And welcome!\n",
+        "\n",
+        "This introductory course, **Open Reproducible Research (ORR)**, emphasises the principles and strategies of open science and reproducible research, and provides concrete recommendations and best practices for applying them to scientific/academic projects. The course is not limited to a particular discipline or area of knowledge; it is intended for participants with diverse backgrounds. Where relevant, specific aspects are illustrated in the field  of [GIScience](https://en.wikipedia.org/wiki/Geographic_information_science). \n",
+        "\n",
+        "This material contains something for everyone who wants to teach or learn open and reproducible research practices. Instructors may begin by exploring the [connections among the core chapters](materials/00-units.qmd) and the [technology stack](materials/00-tech-stack.qmd) before proceeding to the other chapters. The course does not include pedagogical and desing principles; it is a brief, practical introduction based on a [curated list of related works](references.qmd) and my previous experience on the topic. If you are a learner, consider jumping straight into the [next chapter](materials/00-personas.qmd) to identify your *learner persona*. \n",
+        "\n",
+        "The course is scheduled to be offered in 2 or 3 weeks. While the course is running, some material might not be visible and will be unlocked as the course unfolds. At any other time, this website (as a book format) remains online and publicy accesible, with small updates happening on an ongoing basis and larger updates every time the course is offered again.\n",
+        "\n",
+        "Please note that this course adheres to the following [Code of Conduct](CODE_OF_CONDUCT.md).\n",
+        "By participating in this course, you agree to abide by its terms."
+      ],
+      "id": "e8008fa1"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| label: last-update\n",
+        "#| echo: false\n",
+        "from datetime import date\n",
+        "\n",
+        "# Format examples:\n",
+        "# %Y = 2026, %m = 04, %d = 13\n",
+        "# %B = April, %b = Apr, %A = Monday\n",
+        "print(f\"Last update: {date.today().strftime(\"%B %d, %Y\")}\")"
+      ],
+      "id": "last-update",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## License {.unnumbered}\n",
+        "\n",
+        "<a rel=\"license\" href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"><img src=\"https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png\" alt=\"Creative Commons License\" style=\"border-width:0\"/></a><br />\n",
+        "\n",
+        "This online work is licensed under a <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> (CC-BY-NC-SA-4.0).\n",
+        "Check [the license](LICENSE.md) for more information.\n",
+        "\n",
+        "## How to Cite this Course {.unnumbered}\n",
+        "\n",
+        "Granell, C. (2026). Open Reproducible Research: Practices and Tools. Deposited on [http://hdl.handle.net/10234/793030](http://hdl.handle.net/10234/793030) (Abril 2026). Web version retrieved from [https://cgranell.github.io/orr](https://cgranell.github.io/orr).\n",
+        "\n",
+        "## Acknowledgements {.unnumbered}\n",
+        "\n",
+        "Huge thanks to the [Reproducible Research @ AGILE](https://reproducible-agile.github.io/) community and folks, who have contributed over the past years to this course."
+      ],
+      "id": "27e7925e"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/home/cgranell/positron/orr/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
