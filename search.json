@@ -363,7 +363,7 @@
     "href": "materials/02-agile-guidelines-impact.html#please-cite",
     "title": "Impact of AGILE Reproducibility Initiative",
     "section": "Please cite",
-    "text": "Please cite\n@article{granell2026improving,\n  title   = {Improving reproducibility of GIScience publications through\n             novel reproducibility guidelines and revised review procedures},\n  author  = {Granell, Carlos and Ostermann, Frank O. and N{\\\"u}st, Daniel and\n             Kedron, Peter and Koukouraki, Eftychia and Matey-Sanz, Miguel and\n             Decoupes, R{\\'e}my and Trilles, Sergio and Graser, Anita and Niers, Tom},\n  journal = {Journal of Spatial Information Science},\n  number  = {32},\n  pages   = {67--93},\n  year    = {2026},\n  doi     = {10.5311/JOSIS.2026.32.591}\n}",
+    "text": "Please cite\n@article{granell2026improving,\n  title   = {Improving reproducibility of GIScience publications through\n             novel reproducibility guidelines and revised review procedures},\n  author  = {Granell, Carlos and Ostermann, Frank O. and N{\\\"u}st, Daniel and\n             Kedron, Peter and Koukouraki, Eftychia and Matey-Sanz, Miguel and\n             Decoupes, R{\\'e}my and Trilles, Sergio and Graser, Anita and Niers, Tom},\n  journal = {Journal of Spatial Information Science},\n  number  = {32},\n  pages   = {67--93},\n  year    = {2026},\n  doi     = {10.5311/JOSIS.2026.32.591}\n}\n\n  This page was built on the Academic Project Page Template, which itself is based on the Nerfies project page. Released under a CC BY-SA 4.0 license.",
     "crumbs": [
       "The Pre-reproducibility Assessment",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Impact of AGILE Reproducibility Initiative</span>"
