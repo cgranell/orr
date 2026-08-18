@@ -1,0 +1,128 @@
+body {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  color: #222;
+}
+
+/* ---------- Header ---------- */
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.venue-line {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+.project-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0.25rem 0 1rem;
+}
+.authors {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+.affiliations {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.25rem 0 1.25rem;
+}
+
+/* ---------- Link buttons ---------- */
+.link-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.link-buttons .btn {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  background: #1a1a1a;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+.link-buttons .btn:hover {
+  opacity: 0.75;
+}
+
+/* ---------- Stat strip ---------- */
+.stat-strip {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0 1rem;
+  padding: 1.5rem 1rem;
+  background: #f7f7f8;
+  border-radius: 12px;
+}
+.stat {
+  flex: 1 1 180px;
+  max-width: 220px;
+  text-align: center;
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+.stat-label {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+/* ---------- Section eyebrow labels ---------- */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #888;
+  margin: 0 0 0.25rem;
+}
+
+/* Section H2 right under the eyebrow */
+.eyebrow + h2,
+h2 {
+  margin-top: 0.25rem;
+  font-size: 1.4rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e2e2e2;
+  margin: 2.5rem 0;
+}
+
+/* ---------- Footer ---------- */
+.page-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e2e2;
+}
+
+/* code block */
+pre {
+  background: #f7f7f8;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  overflow-x: auto;
+}
