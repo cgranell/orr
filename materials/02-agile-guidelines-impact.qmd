@@ -44,19 +44,19 @@ format:
 <div class="stat-strip">
   <div class="stat">
     <div class="stat-number">19×</div>
-    <div class="stat-label">higher odds of having higher rank for <strong>Data</strong> in post-intervention AGILE papers</div>
+    <div class="stat-label">higher odds of having higher rank for `Data` in post-intervention AGILE papers</div>
   </div>
   <div class="stat">
     <div class="stat-number">20×</div>
-    <div class="stat-label">higher odds of having higher rank for <strong>Methods</strong> in post-intervention AGILE papers</div>
+    <div class="stat-label">higher odds of having higher rank for `Methods` in post-intervention AGILE papers</div>
   </div>
   <div class="stat">
     <div class="stat-number">55.4%</div>
-    <div class="stat-label">of post-intervention AGILE papers reach a <strong>High (A + O)</strong> reproducibility level for <strong>Data</strong></div>
+    <div class="stat-label">of post-intervention AGILE papers reach a <strong>High (A + O)</strong> reproducibility level for `Data`</div>
   </div>
   <div class="stat">
     <div class="stat-number">0%</div>
-    <div class="stat-label">of GIScience papers improved significantly on <strong>Data</strong> — no formal guidelines were adopted there</div>
+    <div class="stat-label">of GIScience papers improved significantly on `Data` — no formal guidelines were adopted there</div>
   </div>
 </div>
 ```
@@ -67,7 +67,7 @@ format:
 <p class="eyebrow">TL;DR</p>
 ```
 
-A decade of AGILE conference papers shows that reproducibility guidelines, paired with an enforced reproducibility review, work. Comparing the **AGILE** conference series — which introduced author guidelines and a badge-awarding Reproducibility Committee in 2020 — with the **GIScience** conference series — which adopted no such policy — this study finds that AGILE papers became dramatically more reproducible after the intervention (odds ratios of 12–20× across criteria, all *p* < 0.0001), while GIScience papers improved only modestly and showed **no significant gain at all for data**. Potential reproducibility scores also track real outcomes: AGILE papers rated highly reproducible were consistently awarded actual reproduction badges. The conclusion: **clear, enforced guidance — not awareness alone — is what moves the needle.**
+A decade of AGILE conference papers shows that reproducibility guidelines, paired with an enforced reproducibility review, work. Comparing the **AGILE** conference series, which introduced author guidelines and a badge-awarding Reproducibility Committee in 2020, with the **GIScience** conference series, which adopted no such policy, this study finds that AGILE papers became dramatically more reproducible after the intervention (odds ratios of 12–20× across criteria, all *p* < 0.0001), while GIScience papers improved only modestly and showed **no significant gain at all for `Data`**. Potential reproducibility scores also track real outcomes: AGILE papers rated highly reproducible were consistently awarded actual reproduction badges. The conclusion: **rather than awareness alone, clear and enforced guidance is what moves the needle.**
 
 ------------------------------------------------------------------------
 
@@ -77,7 +77,7 @@ A decade of AGILE conference papers shows that reproducibility guidelines, paire
 
 ## Reproducibility guidelines exist — but do they actually work?
 
-Across disciplines, researchers routinely fail to reproduce published computational results, even when authors claim to share code and data. The GIScience discipline is no exception: earlier work separately assessed the AGILE and GIScience conference series and found that reproducibility and replicability had not been a core concern in either community. That diagnosis led to a concrete intervention — the **AGILE Reproducible Paper Guidelines** (2019, revised 2020) — and a **Reproducibility Committee** that attempts to actually reproduce every accepted full paper and awards a badge on success. The GIScience conference series adopted no equivalent policy, giving the authors an untreated comparison group.
+Across disciplines, researchers routinely fail to reproduce published computational results, even when authors claim to share code and data. The GIScience discipline is no exception: our earlier work separately assessed the [AGILE](https://doi.org/10.7717/peerj.5072) and [GIScience](https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2) conference series and found that reproducibility and replicability had not been a core concern in either community. That diagnosis led to a concrete intervention — the **[AGILE Reproducible Paper Guidelines](https://osf.io/cb7z8/)** (2019, revised 2020) — and a **[Reproducibility Review process](https://reproducible-agile.github.io/)** to support actual reproduction of every accepted full paper and award a badge on success. The GIScience conference series adopted no equivalent policy, giving the authors an untreated comparison group.
 
 **Why this matters.** If such policies are ineffective, they represent a significant waste of author and reviewer time. If they work, they offer other communities — including journals like JOSIS — a validated, transferable template for improving open and reproducible research practice.
 
@@ -97,9 +97,9 @@ The study is framed around three questions:
 
 The authors assembled a nine-year, balanced corpus spanning both conference series, then had it independently double-scored against a structured rubric.
 
-- **Corpus:** 224 full papers collected from publisher sites (Springer, LIPIcs, Copernicus); 168 eligible after excluding non-computational papers and one transitional year per conference — **109 AGILE** papers (2017–19 pre- / 2021–24 post-intervention) and **58 GIScience** papers (2016 & 2018 pre- / 2021 & 2023 post-guidelines).
+- **Corpus:** 224 full papers collected for both conference series; 168 eligible after excluding non-computational papers and one transitional year (2020) per conference: **109 AGILE** papers (2017–19 pre- / 2021–24 post-intervention) and **58 GIScience** papers (2016 & 2018 pre- / 2021 & 2023 post-guidelines).
 - **Assessors:** eight recruited reviewers; every paper independently double-scored, with disagreements resolved through documented discussion.
-- **Rubric (UDAO scheme):** four ordinal levels — **U**ndocumented, **D**ocumented, **A**vailable, **O**pen (openly archived with a DOI) — applied to three criteria: **Input Data**, **Methods/Analysis/Processing**, **Results**, plus a binary check for **Computational Environment** documentation.
+- **Rubric (UDAO scheme):** four ordinal levels — **U**ndocumented, **D**ocumented, **A**vailable, **O**pen (openly archived with a DOI) — applied to three criteria: `Data` , `Methods`, `Results`, plus a binary check for `Computational Environment` documentation.
 - **Analysis:** cumulative-link mixed-effects models comparing pre- vs. post-intervention papers, with authors treated as random effects to account for researchers publishing across both periods.
 
 ------------------------------------------------------------------------
@@ -110,11 +110,11 @@ The authors assembled a nine-year, balanced corpus spanning both conference seri
 
 ## Guidelines plus review measurably improved AGILE papers
 
-- **AGILE's reproducibility jumped after the intervention.** Pre-intervention, 47% of papers left their data completely **U**ndocumented and none reached **O**pen on any criterion. Post-intervention, over half of papers reached a High level (**A**vailable/**O**pen) for data, ~70% for methods, and ~54% for results — odds ratios of 19.3× (data), 20.5× (methods), and 12.3× (results), all *p* < 0.0001.
-- **GIScience improved too, but far less — and not on data at all.** Methods (OR ≈ 8.4) and results (OR ≈ 5.3) improved significantly without any formal policy change, but the odds ratio for data was 2.0 and *not* statistically significant (*p* = 0.068): roughly half of post-guidelines papers still left their data **U**ndocumented.
-- **AGILE's gains are larger and broader than GIScience's across every criterion.** In percentage-point terms, the share of High papers (**A**vailable/**O**pen) rose by +33.6 (data), +58.9 (methods), and +45.7 (results) at AGILE, versus −3.9, +42.9, and +25.0 at GIScience — evidence that clear, enforced guidance is a stronger driver of change than general community awareness alone.
+- **AGILE's reproducibility jumped after the intervention.** Pre-intervention, 47% of papers left their data completely **U**ndocumented and none reached **O**pen on any criterion. Post-intervention, over half of papers reached a High level (**A**vailable/**O**pen) for `Data`, ~70% for `Methods`, and ~54% for `Results` — odds ratios of 19.3×, 20.5×, and 12.3× respectivelly, all *p* < 0.0001.
+- **GIScience improved too, but far less — and not on data at all.** `Methods` (OR ≈ 8.4) and `Results` (OR ≈ 5.3) improved significantly without any formal policy change, but the odds ratio for `Data` was 2.0 and *not* statistically significant (*p* = 0.068): roughly half of post-guidelines papers still left their data **U**ndocumented.
+- **AGILE's gains are larger and broader than GIScience's across every criterion.** In percentage-point terms, the share of High papers (**A**vailable/**O**pen) rose by +33.6 (`Data`), +58.9 (`Methods`), and +45.7 (`Results`) at AGILE, versus −3.9, +42.9, and +25.0 at GIScience — evidence that clear, enforced guidance is a stronger driver of change than general community awareness alone.
 - **Potential reproducibility predicts real reproduction outcomes.** Cross-checking rubric scores against actual AGILE Reproducibility Committee badges: papers rated "All High" earned a badge in ~51% of cases and largely succeeded, while papers rated "All Low" earned one in only approximately ~5% of the cases — the rubric is a workable proxy for real reproducibility.
-- **Input data is the community's persistent weak spot.** Across both conferences and both periods, data was consistently the most contentious criterion for assessors, and the criterion least likely to achieve the **O**pen level: technically **A**vailable datasets were often too poorly documented to be reused.
+- **`Data` is the community's persistent weak spot.** Across both conferences and both periods, `Data` was consistently the most contentious criterion for assessors, and the criterion least likely to achieve the **O**pen level: technically **A**vailable datasets were often too poorly documented to be reused.
 
 ------------------------------------------------------------------------
 
@@ -126,9 +126,9 @@ The authors assembled a nine-year, balanced corpus spanning both conference seri
 
 Both conference communities experienced the same decade of growing Open Science awareness. Only AGILE combined that awareness with two concrete mechanisms: a **mandatory Data and Software Availability (DASA) section** in every submission, and a **CODECHECK-style reproducibility review**, in which specialised "codechecker" reviewers independently attempt to execute each accepted paper's workflow and award a timestamped, public reproducibility badge.
 
-- **Mandatory disclosure changes author behaviour.** Requiring authors to state where data, code, and methods live — or justify why they can't — appears to close much of the "undocumented" gap that persists at GIScience.
+- **Mandatory disclosure changes author behaviour.** Requiring authors to state where data, code, and methods live, or justify why they can't, appears to close much of the "**U**ndocumented" gap that persists at GIScience.
 - **Independent execution checks catch what disclosure alone misses.** The badge-vs-score comparison shows real reproduction attempts validate the rubric's High/Low distinction, giving authors and readers a credible, verifiable signal.
-- **Community spill-over is real but secondary.** Some of GIScience's modest gains may reflect authors who also publish at AGILE bringing better habits with them — but this informal diffusion is far weaker than a directly enforced policy.
+- **Community spill-over is real but secondary.** Some of GIScience's modest gains may reflect authors who also publish at AGILE bringing better habits with them, but this informal diffusion is far weaker than a directly enforced policy.
 
 ------------------------------------------------------------------------
 
@@ -153,12 +153,13 @@ A modestly sized conference community demonstrably raised the reproducibility of
 
 Data, code, notebooks (R/Quarto and Python/Jupyter), the Assessment Protocol, and the preprint are all openly available:
 
-- **Repository:** [github.com/nuest/reproducible-research-giscience-longitudinal-study](https://github.com/nuest/reproducible-research-giscience-longitudinal-study)
-- **Archive (Zenodo):** [doi.org/10.5281/zenodo.21097308](https://doi.org/10.5281/zenodo.21097308)
+- **Assessment Protocol:** [10.17605/OSF.IO/ZYM6Q](https://doi.org/10.17605/OSF.IO/ZYM6Q)
+- **Repository (GitHub):** [github.com/nuest/reproducible-research-giscience-longitudinal-study](https://github.com/nuest/reproducible-research-giscience-longitudinal-study)
+- **Archive (Zenodo):** [10.5281/zenodo.21097308](https://doi.org/10.5281/zenodo.21097308)
 - **Software Heritage archive** for long-term code preservation
-- **Preregistration:** [doi.org/10.17605/OSF.IO/XZJCH](https://doi.org/10.17605/OSF.IO/XZJCH)
-- **Preprint:** [doi.org/10.31223/X5RJ3W](https://doi.org/10.31223/X5RJ3W)
-- **CODECHECK Certificate:** [doi.org/110.5281/zenodo.21807544](https://doi.org/110.5281/zenodo.21807544)
+- **Preregistration:** [10.17605/OSF.IO/XZJCH](https://doi.org/10.17605/OSF.IO/XZJCH)
+- **Preprint:** [10.31223/X5RJ3W](https://doi.org/10.31223/X5RJ3W)
+- **CODECHECK Certificate:** [110.5281/zenodo.21807544](https://doi.org/110.5281/zenodo.21807544)
 
 ------------------------------------------------------------------------
 
