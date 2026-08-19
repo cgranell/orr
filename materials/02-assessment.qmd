@@ -45,7 +45,7 @@ With the experience gained in the above studies, we revised the set of assessmen
 - `Results`
 - `Computational environment`
 
-The `Input data` and `Results` criteria remain unchanged with respect to initial version of the rubric [@nust2018][@ostermann2021]. The former Methods criterion, which included categories for preprocessing, analysis, and computational environment in previous studies, has been simplified into a single criterion: `Methods, analysis, processing`. This change avoids ambiguity and disagreements over assigning methodological steps to either  preprocessing or analysis. Additionally, the `Computational environment` is now treated as a separate, fourth criterion. This reflects its broader role in computational research and data science, encompassing all code and infrastructure used for both analysis and result presentation. 
+The `Input data` and `Results` criteria remain unchanged with respect to initial version of the rubric [@nust2018],[@ostermann2021]. The former Methods criterion, which included categories for preprocessing, analysis, and computational environment in previous studies, has been simplified into a single criterion: `Methods, analysis, processing`. This change avoids ambiguity and disagreements over assigning methodological steps to either  preprocessing or analysis. Additionally, the `Computational environment` is now treated as a separate, fourth criterion. This reflects its broader role in computational research and data science, encompassing all code and infrastructure used for both analysis and result presentation. 
 
 
 ::: column-screen-inset-right
@@ -54,11 +54,11 @@ The `Input data` and `Results` criteria remain unchanged with respect to initial
 
 Finally, numeric levels previously used in the past rubric are replaced with descriptive labels and single-letter codes. This enhances interpretability, because the levels were always only ordinal, and avoids any misinterpretation as to the differences in value between the labels, because efforts of going from one level to the next and the impact of a higher level compared to a lower one are far from equal steps orlinear relationships. The UDAO levels are, in ascending order of potential reproducibility:  
 
-- **Not Applicable (NA)**
-- **Undocumented (U)**
-- **Documented (D)**
-- **Documented and Available (A)** 
-- **Documented, Available, and Open (O)**
+- **Not Applicable -- NA**
+- **Undocumented -- U**
+- **Documented -- D**
+- (Documented and)** Available -- A** 
+- (Documented, Available, and) **Open -- O**
 
 For the `Computational environment` criterion, only a binary evaluation (True/False) is applied, recognising the challenges from past assessments to consistently assigning more granular levels.
 

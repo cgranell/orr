@@ -21,7 +21,7 @@ flowchart LR
 We borrow this simple outline to better categorise and explain the set of practical recommendations and practices that follow. Note that most of the following recommendations are already [widely accepted best practices for scientific research](03-guidelines.qmd) and that striving for a reasonable level of reproducibility is more achievable than you may expect. Essentially, researchers must think carefully **before, during, and after analysis** to ensure the reproducibility, openness and transparency of their work.
 
 
-## Before analysis: planing for reproducibility
+## Before analysis: planning for reproducibility
 
 ::: {.column-margin}
 
@@ -176,10 +176,15 @@ List of recommendations/practices:
 :::
 
 
-> new, original, and innovative scholarship that broadens and expands our current understanding of [put your area of knowledge here] is needed and should continue to be encouraged. Nevertheless, the emphasis on innovation over systematic replication has a cost: the inability to build cumulative knowledge and to be able to state with confidence what is, and is not, known. [@monk2023], [@lowenkamp2003]
 
-**Would you reserve 20%  of your weekly research time for reproducibility/replicability research activities?**. I propose 20% as a minimum, but any higher percentage is valid, of course.
+::: {.callout-tip icon=true}
+## Reflection: Reproducibility research in your weekly work
 
+> new, original, and innovative scholarship that broadens and expands our current understanding of [put your area of knowledge here] is needed and should continue to be encouraged. Nevertheless, the *emphasis on innovation over systematic replication* has a cost: the inability to build cumulative knowledge and to be able to state with confidence what is, and is not, known. [@monk2023], [@lowenkamp2003] (italics mine)
+
+**Would you reserve 20% of your weekly research time for reproducibility/replicability?**. I propose 20% as a minimum, but any higher percentage is valid, of course.
+
+:::
 
 
 ## Additional resources and readings
