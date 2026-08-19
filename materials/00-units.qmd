@@ -13,8 +13,8 @@ flowchart TB
   C --> D{Role?}
   D --> |reviewer/reader| E[The Pre-reprodubility Assessment]
   D --> |author/researcher| F[The Reproducibility Process]
-  E --> G(10. ORR @ UJI)
-  F --> G(10. ORR @ UJI)
+  E --> G(ORR @ UJI)
+  F --> G(ORR @ UJI)
   G --> H[Tools]
 ```
 
