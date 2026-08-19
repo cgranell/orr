@@ -180,9 +180,11 @@ List of recommendations/practices:
 ::: {.callout-tip icon=true}
 ## Reflection: Reproducibility research in your weekly work
 
-> new, original, and innovative scholarship that broadens and expands our current understanding of [put your area of knowledge here] is needed and should continue to be encouraged. Nevertheless, the *emphasis on innovation over systematic replication* has a cost: the inability to build cumulative knowledge and to be able to state with confidence what is, and is not, known. [@monk2023], [@lowenkamp2003] (italics mine)
+(italics mine)
 
-**Would you reserve 20% of your weekly research time for reproducibility/replicability?**. I propose 20% as a minimum, but any higher percentage is valid, of course.
+> new, original, and innovative scholarship that broadens and expands our current understanding of [put your area of knowledge here] is needed and should continue to be encouraged. Nevertheless, the *emphasis on innovation over systematic replication* has a cost: the inability to build cumulative knowledge and to be able to state with confidence what is, and is not, known. [@monk2023], [@lowenkamp2003]
+
+**Would you reserve 20% of your weekly research time for reproducibility/replicability?** I propose 20% as a minimum, but any higher percentage is valid, of course.
 
 :::
 

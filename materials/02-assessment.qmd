@@ -57,7 +57,7 @@ Finally, numeric levels previously used in the past rubric are replaced with des
 - **Not Applicable -- NA**
 - **Undocumented -- U**
 - **Documented -- D**
-- (Documented and)** Available -- A** 
+- (Documented and) **Available -- A** 
 - (Documented, Available, and) **Open -- O**
 
 For the `Computational environment` criterion, only a binary evaluation (True/False) is applied, recognising the challenges from past assessments to consistently assigning more granular levels.
