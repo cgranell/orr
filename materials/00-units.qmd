@@ -13,11 +13,18 @@ config:
 ---
 
 flowchart TB
-  A[Foreword] --> B([4. Historical Notes])
+  A[Foreword] --> B
+  subgraph B[Background]
+    direction LR
+    B1([4. Historical Notes]) --> B2([5. Foundations]) 
+    B2 --> B3([6. Across disciplines])
+    style B1 fill:#FFF
+    style B2 fill:#FFF
+    style B3 fill:#FFF
+  end
   style A fill:#4C78A8,color:#FFF
-  B --> C([5. Foundations])
-  C --> C1([6. Across disciplines])
-  C --> D{ROLE?}
+  style B fill:#4C78A8,color:#FFF
+  B --> D{ROLE?}
   subgraph E[Pre-reprodubility Assessment]
       direction TB
       E1([7. Assessment criteria]) --> E2([8. AGILE Reproducibility])
