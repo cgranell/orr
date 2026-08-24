@@ -500,15 +500,41 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TB
-  A[Foreword] --&gt; B(4. Historical Notes)
-  B --&gt; C(5. Foundations)
-  C --&gt; D{Role?}
-  D --&gt; |reviewer/reader| E[The Pre-reprodubility Assessment]
-  D --&gt; |author/researcher| F[The Reproducibility Process]
+<pre class="mermaid mermaid-js">---
+config:
+  theme: 'base'
+---
+
+flowchart TB
+  A[Foreword] --&gt; B([4. Historical Notes])
+  style A fill:#4C78A8,color:#000
+  B --&gt; C([5. Foundations])
+  C --&gt; C1([6. Across disciplines])
+  C --&gt; D{ROLE?}
+  subgraph E[Pre-reprodubility Assessment]
+      direction TB
+      E1([7. Assessment criteria]) --&gt; E2([8. AGILE Reproducibility])
+      style E1 fill:#FFF
+      style E2 fill:#FFF
+  end
+  style E fill:#4C78A8,color:#000
+  subgraph F[Reprodubility Process]
+      direction TB
+      F1([9. Guidelines]) --&gt; F2([10. Practices])
+      F2 --&gt; F3([11. Case study])
+      style F1 fill:#FFF
+      style F2 fill:#FFF
+      style F3 fill:#FFF
+  end
+  style F fill:#4C78A8,color:#000
+  D --&gt; |reviewer/reader| E
+  D --&gt; |author/researcher| F
   E --&gt; G(ORR @ UJI)
   F --&gt; G(ORR @ UJI)
+  style G fill:#4C78A8,color:#000
   G --&gt; H[Tools]
+  style H fill:#4C78A8,color:#000
+  
 </pre>
 </div>
 <p></p></figure><p></p>
