@@ -14,7 +14,7 @@ config:
 
 flowchart TB
   A[Foreword] --> B([4. Historical Notes])
-  style A fill:#4C78A8,color:#000
+  style A fill:#4C78A8,color:#FFF
   B --> C([5. Foundations])
   C --> C1([6. Across disciplines])
   C --> D{ROLE?}
@@ -24,7 +24,7 @@ flowchart TB
       style E1 fill:#FFF
       style E2 fill:#FFF
   end
-  style E fill:#4C78A8,color:#000
+  style E fill:#4C78A8,color:#FFF
   subgraph F[Reprodubility Process]
       direction TB
       F1([9. Guidelines]) --> F2([10. Practices])
@@ -33,14 +33,14 @@ flowchart TB
       style F2 fill:#FFF
       style F3 fill:#FFF
   end
-  style F fill:#4C78A8,color:#000
+  style F fill:#4C78A8,color:#FFF
   D --> |reviewer/reader| E
   D --> |author/researcher| F
   E --> G(ORR @ UJI)
   F --> G(ORR @ UJI)
-  style G fill:#4C78A8,color:#000
+  style G fill:#4C78A8,color:#FFF
   G --> H[Tools]
-  style H fill:#4C78A8,color:#000
+  style H fill:#4C78A8,color:#FFF
   
 ```
 
