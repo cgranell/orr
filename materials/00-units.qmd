@@ -7,15 +7,41 @@ The course content is organised in different parts and units. It is not intended
 ```{mermaid}
 %%| fig-caption: "Course structure and navigation."
 %%| fig-align: center
+---
+config:
+  theme: 'base'
+---
+
 flowchart TB
-  A[Foreword] --> B(4. Historical Notes)
-  B --> C(5. Foundations)
-  C --> D{Role?}
-  D --> |reviewer/reader| E[The Pre-reprodubility Assessment]
-  D --> |author/researcher| F[The Reproducibility Process]
+  A[Foreword] --> B([4. Historical Notes])
+  style A fill:#4C78A8,color:#000
+  B --> C([5. Foundations])
+  C --> C1([6. Across disciplines])
+  C --> D{ROLE?}
+  subgraph E[Pre-reprodubility Assessment]
+      direction TB
+      E1([7. Assessment criteria]) --> E2([8. AGILE Reproducibility])
+      style E1 fill:#FFF
+      style E2 fill:#FFF
+  end
+  style E fill:#4C78A8,color:#000
+  subgraph F[Reprodubility Process]
+      direction TB
+      F1([9. Guidelines]) --> F2([10. Practices])
+      F2 --> F3([11. Case study])
+      style F1 fill:#FFF
+      style F2 fill:#FFF
+      style F3 fill:#FFF
+  end
+  style F fill:#4C78A8,color:#000
+  D --> |reviewer/reader| E
+  D --> |author/researcher| F
   E --> G(ORR @ UJI)
   F --> G(ORR @ UJI)
+  style G fill:#4C78A8,color:#000
   G --> H[Tools]
+  style H fill:#4C78A8,color:#000
+  
 ```
 
 
