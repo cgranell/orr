@@ -3,11 +3,11 @@
 Hello!
 And welcome!
 
-This introductory course, **Open Reproducible Research (ORR)**, emphasises the principles and strategies of open science and reproducible research, and provides concrete recommendations and best practices for applying them to scientific/academic projects. The course is not limited to a particular discipline or area of knowledge; it is intended for participants with diverse backgrounds. Where relevant, specific aspects are illustrated in the field  of [GIScience](https://en.wikipedia.org/wiki/Geographic_information_science). 
+This introductory course, **Open Reproducible Research (ORR)**, emphasises the principles and strategies of open science and reproducible research, and provides concrete recommendations and best practices for applying them to scientific research and academic projects. The course is not limited to a particular discipline or area of knowledge; it is intended for participants with diverse backgrounds. Where relevant, specific aspects are illustrated in the field  of [GIScience](https://geospacebok.eu/GIST). 
 
-This material contains something for everyone who wants to teach or learn open and reproducible research practices. Instructors may begin by exploring the [connections among the core chapters](materials/00-units.qmd) and the [technology stack](materials/00-tech-stack.qmd) before proceeding to the other chapters. The course does not include pedagogical and desing principles; it is a brief, practical introduction based on a [curated list of related works](references.qmd) and my previous experience on the topic. If you are a learner, consider jumping straight into the [next chapter](materials/00-personas.qmd) to identify your *learner persona*. 
+This course contains materials for everyone who wants to teach or learn open and reproducible research practices. Facilitatos may begin by exploring the [connections among the core chapters](materials/00-units.qmd) and the [technology stack](materials/00-tech-stack.qmd) before proceeding to the other units. The course does not include pedagogical and desing principles; it is a brief, practical introduction based on a [curated list of related works](references.qmd) and my previous experience on the topic. If you are a learner, consider jumping straight into the [learner persona](materials/00-personas.qmd) unit to place yourself.
 
-The course is scheduled to be offered in 2 or 3 weeks. While the course is running, some material might not be visible and will be unlocked as the course unfolds. At any other time, this website (as a book format) remains online and publicy accesible, with small updates happening on an ongoing basis and larger updates every time the course is offered again.
+The course is scheduled to be offered in 2 or 3 weeks and designed to be lectured in person. While the course is running, some material might not be visible and will be unlocked as the course unfolds. At any other time, this website (as a book format) remains online and publicy accesible, with small updates happening on an ongoing basis and larger updates every time the course is offered again.
 
 Please note that this course adheres to the following [Code of Conduct](CODE_OF_CONDUCT.md).
 By participating in this course, you agree to abide by its terms.
@@ -36,4 +36,4 @@ Granell, C. (2026). Open Reproducible Research: Practices and Tools. Deposited o
 
 ## Acknowledgements {.unnumbered}
 
-Huge thanks to the [Reproducible Research @ AGILE](https://reproducible-agile.github.io/) community and folks, who have contributed over the past years to this course.
+Huge thanks to the [Reproducible Research @ AGILE](https://reproducible-agile.github.io/) community and folks who, intentionally or not, have contributed to this course over the years.
